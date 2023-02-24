@@ -1,0 +1,49 @@
+[
+  {
+    "name": "conflict",
+    "template": "conflict.html",
+    "count": 5,
+    "skills": [
+      {
+        "skill": "TF : Technical / Functional Competence",
+        "description": "TF : Technical / Functional Competence",
+        "average": 0.0
+      },
+      {
+        "skill": "GM : General Managerial Competence",
+        "description": "GM : General Managerial Competence",
+        "average": 0.0
+      },
+      {
+        "skill": "AU : Autonomy Independence",
+        "description": "AU : Autonomy Independence",
+        "average": 0.0
+      },
+      {
+        "skill": "SE : Security / Stability",
+        "description": "SE : Security / Stability",
+        "average": 0.0
+      },
+      {
+        "skill": "EC : Entrepreneurial Creativity",
+        "description": "EC : Entrepreneurial Creativity",
+        "average": 0.0
+      },
+      {
+        "skill": "SV : Sense of Service, Dedication to a Cause",
+        "description": "SV : Sense of Service, Dedication to a Cause",
+        "average": 0.0
+      },
+      {
+        "skill": "CH : Pure Challenge",
+        "description": "CH : Pure Challenge",
+        "average": 0.0
+      },
+      {
+        "skill": "LS : Lifestyle",
+        "description": "LS : Lifestyle",
+        "average": 0.0
+      }
+    ]
+  }
+]
