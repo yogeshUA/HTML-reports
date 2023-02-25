@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./conflict.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      nonce="undefined"
+      src="https://cdn.zingchart.com/zingchart.min.js"
+    ></script>
+
+    <title>zapilio</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="hero_section">
+        <img
+          src="./conflict/coverImage.png"
+          alt="hero-sec"
+          class="landing_template"
+        />
+        <h1 class="heading">CONFLICT ASSESSMENT REPORT</h1>
+        <div class="name_wrapper">
+          <span class="name">{{John Michael Doe}}</span
+          ><span class="date">{{September 21, 2022}}</span>
+        </div>
+      </div>
+      <div class="conadidate_section">
+        <h2 class="candidate_heading">Candidate Details</h2>
+        <div class="details_wrapper">
+          <h3 class="condidate_name">Name - {{JOHN MICHAEL DOE}}</h3>
+          <div class="wrapper">
+            <div>
+              <span class="assessment_sub_heading"
+                >Assessed for
+                <span class="sub_heading_indicator">Resilience</span></span
+              >
+              <span class="company_name"
+                >For {{BOSCH GLOBAL SOFTWARE TECHNOLOGIES}}</span
+              >
+            </div>
+            <div>
+              <span class="date_of_assessment">Date - {{15/01/2023}}</span>
+              <span class="no_of_assessment">No. of Assessments - {{01}}</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="content">
+          The applicant took {{1}} assessment on {{15/01/23}} which was
+        </h2>
+        <div class="grit_img_section">
+          <img src="./conflict/image1.png" alt="grit_icon" class="grit_img" />
+          <img
+            src="./conflict/conflict.png"
+            alt=""
+            class="inner_icon"
+            style="left: 110px"
+          />
+          <div class="inner_content_wrapper">
+            <p class="inner_heading">Conflict Management</p>
+            <p class="inner_content">
+              Helps the organization understand the Incoming applicants and/or
+              existing employees preferred conflict management styles. It also
+              aids in obtaining profound and precise insights into their belief
+              and attitude toward issues and ownership.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="introduction">
+        <h1 class="intro_heading">
+          Conflict<br />
+          Management
+        </h1>
+        <p class="intro_sub_heading">Theory</p>
+        <p class="intro_content">
+          According to Adkins Reginald[2], the techniques used to deal with
+          conflicts are based on many variables such as our basic underlying
+          temperament, personality, environment, and where we are in our
+          professional career.
+        </p>
+        <p class="intro_sub_heading">Validity and reliability</p>
+        <p class="intro_content">
+          Cronbach’s coefficient alpha for the conflict management styles
+          questionnaire was found to be highly reliable (α = 0.86), and factor
+          analyses supported the factor structure of the scale.
+        </p>
+        <div class="details_wrapper1">
+          <p class="intro_sub_heading">Meaning of factors</p>
+          <p class="intro_content">
+            The Conflict Management Styles can be clubbed together into the
+            following five major styles. None of these strategies are superior
+            in and of itself.
+          </p>
+        </div>
+        <div class="details_wrapper2">
+          <p class="header1">Collaborating</p>
+          <p class="intro_content">
+            Working through differences will lead to creative solutions that
+            will satisfy both parties' concerns.
+          </p>
+        </div>
+        <div class="details_wrapper3">
+          <p class="header2">Avoiding</p>
+          <p class="intro_content">
+            Avoiding conflict by withdrawing, sidestepping, or postponing.
+          </p>
+        </div>
+        <div class="">
+          <p class="header3">Compromising</p>
+          <p class="intro_content">
+            Both ends are placed against the middle in an attempt to serve the
+            "common good," while ensuring each person can maintain something of
+            their original position.
+          </p>
+        </div>
+        <div style="margin-top: 150px">
+          <div class="details_wrapper5">
+            <p class="header4">Accommodating</p>
+            <p class="intro_content">
+              Appease others by downplaying conflict, thus protecting the
+              relationship.
+            </p>
+          </div>
+        </div>
+        <div class="details_wrapper6">
+          <p class="header5">Competing</p>
+          <p class="intro_content">
+            When goals are extremely important, one must sometimes use power to
+            win.
+          </p>
+        </div>
+
+        <p class="scoring">
+          Average Score &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp;Individual score
+        </p>
+
+        <div class="graph_section">
+          <div id="myChart"></div>
+        </div>
+
+        <p class="desc_line1">
+          [2]Adkins, Reginald (2006). “Conflict Management Styles Assessment.”
+          elementaltruths.com. Quoted by Kathy Kacher & Trina Hoefling
+          http://www.thesmartworkplace.com/wp-content/uploads/2017/05/ConflictManagementStylesAsses
+          sment.pdf<br />
+          Reginald (Reg) Adkins, Ph.D., Elemental Truths
+          http://elementaltruths.blogspot.com/2006/11/conflict-management-quiz.html
+        </p>
+      </div>
+      <div class="introduction">
+        <h1 class="intro_heading">Collaborating</h1>
+        <p class="intro_content">
+          Working through differences will lead to creative solutions that will
+          satisfy both parties' concerns. Teamwork and cooperation help everyone
+          achieve their goals, while also maintaining relationships. Problems
+          are solved in ways in which an optimum result is provided for all
+          involved.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input type="range" value="80" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>high</span>
+            <span>5</span>
+          </div>
+        </div>
+        <div class="discription">
+          <p class="intro_content1" style="margin-top: 5">
+            Collaborators highly value both their goals and their relationships.
+            They view conflict as a problem to be solved and seek a solution
+            that achieves both their goals and the goals of the other person.
+            They see conflict as a means of improving relationships by reducing
+            tension between two persons. They try to begin a discussion that
+            identifies the conflict as a problem and strive to resolve tensions
+            and maintain the relationship by seeking solutions that satisfy both
+            themselves and the other person.
+          </p>
+        </div>
+
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph">
+            <p class="graph2_desc">Ideal When</p>
+            <p>Time is not a concern</p>
+            <p>Peer conflict is involved</p>
+            <p>Participants can be future-focused</p>
+            <p>There are diverse interests and issues at play</p>
+            <p>The issues and the relationship are both significant</p>
+            <p>Learning and trying to merge differing perspectives</p>
+            <p>Trying to gain commitment through consensus building</p>
+            <p>
+              New insights can be beneficial in achieving creative solutions
+            </p>
+            <p>
+              Both parties want to address all concerns and are committed to the
+              process
+            </p>
+          </div>
+        </div>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1">
+            <p class="graph2_desc1">Difficult When</p>
+            <p>Issues are trivial</p>
+            <p>Time and resources are limited</p>
+          </div>
+        </div>
+      </div>
+      <div class="introduction">
+        <h1 class="intro_heading">Avoiding</h1>
+        <p class="intro_content">
+          Involves avoiding conflicts by withdrawing, sidestepping, or
+          postponing. They believe that this isn't the right time or place to
+          address this issue. It can be seen as a non-confrontational approach.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input type="range" value="80" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>high</span>
+            <span>5</span>
+          </div>
+        </div>
+        <div class="discription">
+          <p class="intro_content1" style="margin-top: 5">
+            A low score in avoiding as conflict management strategy suggests
+            that the individual may prioritize winning conflicts over
+            maintaining relationships. They may see every conflict as an
+            opportunity to prove their superiority and may not selectively
+            choose which battles to engage. They may not be concerned with the
+            potential harm to relationships as they try to resolve conflicts in
+            a manner beneficial to themselves.
+          </p>
+        </div>
+
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph">
+            <p class="graph2_desc">Ideal When</p>
+            <p>Another issue is more pressing</p>
+            <p>Time constraints demand a delay</p>
+            <p>The stakes are not high or the issue is trivial</p>
+            <p>Confrontation will hurt a working relationship</p>
+            <p>There is little chance of satisfying they wants</p>
+            <p>Others can more effectively resolve the conflict</p>
+            <p>Disruption outweighs the benefit of conflict resolution</p>
+            <p>
+              Gathering information is more important than an immediate decision
+            </p>
+          </div>
+        </div>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1">
+            <p class="graph2_desc1">Difficult When</p>
+            <p>They care about the issue</p>
+            <p>Negative feelings may linger</p>
+          </div>
+        </div>
+      </div>
+      <div class="introduction">
+        <h1 class="intro_heading">Compromising</h1>
+        <p class="intro_content">
+          Both ends are placed against the middle in an attempt to serve the
+          "common good," while ensuring each person can maintain something of
+          their original position. They believe that winning something while
+          losing a little is a fair deal. It can be seen as the middle-ground
+          approach.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input type="range" value="80" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>high</span>
+            <span>5</span>
+          </div>
+        </div>
+        <div class="discription">
+          <p class="intro_content1" style="margin-top: 5">
+            Compromisers are moderately concerned with both their goals and
+            their relationships with others. They typically seek a compromise;
+            they give up part of their goals and persuade the other person in a
+            conflict to give up part of their goals. They seek a conflict
+            solution in which both sides gain something, the middle ground
+            between two extreme positions. They are willing to sacrifice part of
+            their goals in order to find agreement for the common good.
+          </p>
+        </div>
+
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph">
+            <p class="graph2_desc">Ideal When</p>
+            <p>There are no time restraints</p>
+            <p>Collaboration or competition fails</p>
+            <p>Finding a resolution is better than nothing</p>
+            <p>Cooperation is important, but resources are limited</p>
+            <p>Important or complex issues have no clear or simple solutions</p>
+            <p>
+              Short-term solutions are needed until more information can be
+              obtained
+            </p>
+            <p>
+              All conflicting people are equal in power and have strong
+              interests in different solutions
+            </p>
+          </div>
+        </div>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1">
+            <p class="graph2_desc1">Difficult When</p>
+            <p>They can not live with the consequences</p>
+          </div>
+        </div>
+
+        <div class="introduction"></div>
+        <h1 class="intro_heading">Accommodating</h1>
+        <p class="intro_content">
+          The strategy to appease others by downplaying conflict, thus
+          protecting the relationship. Working toward a common purpose is more
+          important than any of the peripheral concerns. They worry that the
+          trauma of confronting differences may damage fragile relationships.
+          They believe in giving in to maintain relationships.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input type="range" value="80" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>high</span>
+            <span>5</span>
+          </div>
+        </div>
+        <div class="discription">
+          <p class="intro_content1" style="margin-top: 5">
+            A low score in accommodation as a conflict management strategy may
+            indicate the individual prioritizes his/ her own needs and goals
+            over the needs and goals of others. They may not be willing to
+            compromise or make concessions in order to resolve conflicts and may
+            instead try to assert their own ideas and desires. This can lead to
+            an inability to effectively resolve conflicts and may result in
+            ongoing tension or damage to relationships.
+          </p>
+        </div>
+
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph">
+            <p class="graph2_desc">Ideal When</p>
+            <p>They are flexible with the outcome</p>
+            <p>Time is limited or when harmony and stability are valued</p>
+            <p>Maintaining the relationship outweighs other considerations</p>
+            <p>
+              It is necessary to build up good faith for future problem solving
+            </p>
+            <p>
+              The issue is trivial to them, or more important to the other party
+            </p>
+            <p>Suggestions or changes are not important to the accommodator</p>
+            <p>
+              They are wrong, or in a situation where competition could damage
+              your position
+            </p>
+          </div>
+        </div>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1">
+            <p class="graph2_desc1">Difficult When</p>
+            <p>Likely to increase resentment</p>
+            <p>Used habitually to gain acceptance</p>
+            <p>
+              A likely lack of reciprocity will result in escalating the
+              conflict
+            </p>
+          </div>
+        </div>
+        <div class="introduction"></div>
+        <h1 class="intro_heading">Competing</h1>
+        <p class="intro_content">
+          When goals are extremely important, one must sometimes use power to
+          win. Believes in "winning" a conflict with the competition. It can be
+          seen as an Authoritarian approach.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input type="range" value="80" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>high</span>
+            <span>5</span>
+          </div>
+        </div>
+        <div class="discription">
+          <p class="intro_content1" style="margin-top: 5">
+            A low score in competing as a conflict management strategy may
+            suggest that the individual prioritizes maintaining relationships
+            over winning conflicts. Even if it means caving into the other
+            person's demands, they might be prepared to compromise their own
+            objectives or preferences in order to keep the relationship intact.
+            In an effort to preserve connections, they might try to resolve
+            disputes amicably, even if doing so means putting aside their
+            personal needs or preferences.
+          </p>
+        </div>
+
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph">
+            <p class="graph2_desc">Ideal When</p>
+            <p>Tough decisions require leadership</p>
+            <p>Unpopular decisions need to be implemented</p>
+            <p>
+              Fostering intimate or supportive relationships is not critical
+            </p>
+            <p>
+              Others are likely to take advantage of non‐competitive behavior
+            </p>
+            <p>
+              Conflict resolution is urgent and quick decision is vital in a
+              crisis
+            </p>
+            <p>
+              Conflict involves personal differences that are difficult to
+              change
+            </p>
+          </div>
+        </div>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1">
+            <p class="graph2_desc1">Difficult When</p>
+            <p>Cooperation with others is important</p>
+            <p>Respect from others is diminished needlessly</p>
+          </div>
+        </div>
+
+        <h1 class="take_away_heading">Key takeaways</h1>
+        <ul class="key_take_away_list">
+          <li class="key_take_away_list_item">
+            {{The candidate’s highly favored Conflict Management style is/are
+            Collaborate and compromise.}}
+          </li>
+          <li class="key_take_away_list_item">
+            {{The candidate’s least favored Conflict Management style is/are
+            Avoiding and competing}}
+          </li>
+        </ul>
+        <h1 class="take_away_heading2">Suggested interview questions</h1>
+        <ul class="key_take_away_list">
+          <li class="key_take_away_list_item">
+            Can you provide examples of conflicts that you believe are better
+            managed by avoiding active involvement?
+          </li>
+          <li class="key_take_away_list_item">
+            Are you comfortable taking an aggressive approach toward resolving
+            any conflict?
+          </li>
+          <li class="key_take_away_list_item">
+            How do you approach an issue where compromise is
+            inopportune/unfavourable?
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <img src="./conflict/resilience-09.png" alt="footer" class="footer_img" />
+      <p>&#169; {{2023}} zapilio.com CONFIDENTIAL DOCUMENT</p>
+    </footer>
+
+    <script>
+      ZC.LICENSE = [
+        "569d52cefae586f634c54f86dc99e6a9",
+        "b55b025e438fa8a98e32482b5f768ff5",
+      ];
+      var myConfig = {
+        type: "line",
+        scaleX: {
+          labels: [
+            "Collaborating",
+            "Avoiding",
+            "Compromising",
+            "Accommodating",
+            "Competing",
+          ],
+          item: {
+            angle: -90,
+            maxChars: 10,
+            offsetX: 20,
+          },
+          tick: {
+            visible: false,
+          },
+        },
+        scaleY: {
+          label: {
+            text: "Scores",
+            angle: 270,
+            textAlign: "center",
+            x: "-20px",
+            offsetY: "50px",
+          },
+        },
+        series: [
+          {
+            values: [20, 40, 25, 50, 15, 45, 33],
+          },
+          {
+            values: [5, 30, 21, 18, 59, 50, 28],
+          },
+        ],
+      };
+
+      zingchart.render({
+        id: "myChart",
+        data: myConfig,
+        height: 400,
+        width: 900,
+        defaults: {
+          series: {
+            text: "",
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
