@@ -199,6 +199,13 @@ body {
   height: 120px;
   width: 120px;
 }
+.inner_icon {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  height: 120px;
+  width: 120px;
+}
 
 .inner_content_wrapper {
   position: absolute;
