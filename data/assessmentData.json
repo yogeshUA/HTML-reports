@@ -1,48 +1,118 @@
 [
   {
-    "name": "conflict",
-    "template": "conflict.html",
-    "count": 5,
+    "name": "Coping Styles Assessment",
+    "template": "coping.html",
+    "count": 1,
+    "inference": true,
+    "levels": [1, 2.5, 4],
     "skills": [
       {
-        "skill": "TF : Technical / Functional Competence",
-        "description": "TF : Technical / Functional Competence",
-        "average": 0.0
+        "skill": "Avoidant coping",
+        "skill1T1": "A strategy where one avoids dealing with stressors, difficulties, or unpleasant emotions by retreating, withdrawing, or ignoring them.",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "low",
+            "skill1TT1": "A low score on the avoidant style of coping indicates that an individual does not use avoidance as a primary way of managing stressors and difficulties. ",
+            "skill1C": "Characteristics of individuals who score low on avoidant coping style may include:",
+            "skill1S": [
+              "They may confront stressors and difficulties head-on, rather than avoiding or retreating from them.",
+              "They may express their emotions and talk about their feelings with others.",
+              "They may take responsibility for their actions and the outcomes of their efforts",
+              "They may be open to new information and new ways of approaching problems.",
+              "They may take a proactive approach to address stressors, using problem-solving strategies to find solutions.",
+              "They may seek support from others, rather than isolating themselves.",
+              "They may be flexible in their thinking and able to adapt to changing circumstances."
+            ]
+          },
+
+          {
+            "level": "high",
+            "skill1TT1": "A high score on the avoidant style of coping indicates that an individual uses avoidance and retreat as their primary way of managing stressors and difficulties.",
+            "skill1C": "Characteristics of individuals who score high on avoidant coping style may include:.",
+            "skill1S": [
+              "They may withdraw from social situations or from activities that trigger stress.",
+              "They may deny or ignore the existence of the problem or may minimize its impact.",
+              "They may suppress or avoid their emotions, rather than express or address them.",
+              "They may be passive in their approach to problem-solving, relying on others to take action.",
+              "They may avoid taking responsibility for their actions or may blame others for their problems.",
+              "They may engage in activities such as substance use or other forms of escapism to avoid dealing with stressors.",
+              "They may isolate themselves from others, either physically or emotionally."
+            ]
+          }
+        ]
       },
       {
-        "skill": "GM : General Managerial Competence",
-        "description": "GM : General Managerial Competence",
-        "average": 0.0
+        "skill": "Emotion focused coping",
+        "skill2T1": "A strategy that focuses on acknowledging and addressing the emotions elicited by a stressor followed by managing and regulating them.",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "low",
+            "Skill2TT1": "A low score on the avoidant style of coping indicates that an individual does not use avoidance as a primary way of managing stressors and difficulties. ",
+            "skill2C": "Characteristics of individuals who score low on emotion-focused coping style may include:",
+            "skill2S": [
+              "They may take a proactive approach to address stressors, using problem-solving strategies to find solutions.",
+              "They may identify and utilize available resources, such as support from others, to manage stressors.",
+              "They may take direct action to address the source of the stressor, rather than ignoring or avoiding it.",
+              "They may have confidence in their abilities to manage and overcome stressors.",
+              "They may take responsibility for their actions and the outcomes of their efforts.",
+              "They may be open to new information and new ways of approaching problems.",
+              "They may be flexible in their thinking and able to adapt to changing circumstances."
+            ]
+          },
+
+          {
+            "level": "high",
+            "skill2TT1": "A high score on the emotion-focused style of coping indicates that an individual uses strategies aimed at managing and regulating emotions in response to stressors or difficulties.",
+            "skill2C": "Characteristics of individuals who score high on emotion-focused coping style may include:",
+            "skill2S": [
+              "They may express their emotions by talking to others or writing about their feelings.",
+              "They may engage in mindfulness practices, such as meditation, or use relaxation techniques to reduce stress.",
+              "They may turn to friends, family, or support groups for emotional support and validation.",
+              "They may use positive self-talk or affirmations to maintain a positive outlook.",
+              "They may be highly attuned to their emotions and prioritize their emotional well-being.",
+              "They may avoid stressful situations or people that trigger negative emotions.",
+              "They may take time to process and understand their emotions, rather than suppressing or ignoring them."
+            ]
+          }
+        ]
       },
       {
-        "skill": "AU : Autonomy Independence",
-        "description": "AU : Autonomy Independence",
-        "average": 0.0
-      },
-      {
-        "skill": "SE : Security / Stability",
-        "description": "SE : Security / Stability",
-        "average": 0.0
-      },
-      {
-        "skill": "EC : Entrepreneurial Creativity",
-        "description": "EC : Entrepreneurial Creativity",
-        "average": 0.0
-      },
-      {
-        "skill": "SV : Sense of Service, Dedication to a Cause",
-        "description": "SV : Sense of Service, Dedication to a Cause",
-        "average": 0.0
-      },
-      {
-        "skill": "CH : Pure Challenge",
-        "description": "CH : Pure Challenge",
-        "average": 0.0
-      },
-      {
-        "skill": "LS : Lifestyle",
-        "description": "LS : Lifestyle",
-        "average": 0.0
+        "skill": "Task focused coping",
+        "skill3T1": "A strategy where one focuses on taking concrete and direct actions to solve or manage a stressor.",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "low",
+            "skill3TT1": "A low score on the task-focused style of coping indicates that an individual does not use a direct, problem-solving approach as a primary way of managing stressors and difficulties. ",
+            "skill3C": "Characteristics of individuals who score low on task-focused coping style may include:",
+            "skill3S": [
+              " They may express their emotions and talk about their feelings with others.",
+              "They may engage in mindfulness practices, such as meditation, or use relaxation techniques to reduce stress.",
+              "They may turn to friends, family, or support groups for emotional support and validation.",
+              "They may use positive self-talk or affirmations to maintain a positive outlook.",
+              "They may be highly attuned to their emotions and prioritize their emotional well-being.",
+              "They may avoid stressful situations or people that trigger negative emotions.",
+              "They may take time to process and understand their emotions, rather than suppressing or ignoring them."
+            ]
+          },
+
+          {
+            "level": "high",
+            "skill3TT1": "A high score on the task-focused style of coping indicates that an individual uses strategies aimed at directly addressing and solving stressors or difficulties.",
+            "skill3C": "Characteristics of individuals who score high on task-focused coping style may include:",
+            "skill3S": [
+              "They may take a proactive approach to address stressors, using problem-solving strategies to find solutions.",
+              "They may identify and utilize available resources, such as support from others, to manage stressors.",
+              "They may take direct action to address the source of the stressor, rather than ignoring or avoiding it.",
+              "They may have confidence in their abilities to manage and overcome stressors.",
+              "They may take responsibility for their actions and the outcomes of their efforts.",
+              "They may be open to new information and new ways of approaching problems.",
+              "They may be flexible in their thinking and able to adapt to changing circumstances."
+            ]
+          }
+        ]
       }
     ]
   }

@@ -4,11 +4,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 .main {
   max-width: 800px;
 }
 .hero_section {
   position: relative;
+  width: 800px;
+  height: 1132px;
 }
 .landing_template {
   width: 100%;
@@ -50,7 +53,7 @@ body {
 }
 
 .conadidate_section {
-  margin: 0 48px;
+  /* margin: 0 48px; */
   font-family: Inter;
 }
 .details_wrapper {
@@ -150,7 +153,7 @@ body {
 
 .introduction {
   font-family: Inter;
-  margin: 110px 54px 0px;
+  /* margin: 110px 54px 0px; */
 }
 
 .intro_heading {
@@ -187,14 +190,15 @@ body {
   color: rgb(85, 84, 84);
 }
 .graph_section {
-  margin-top: 64px;
+  /* margin-top: 44px; */
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #myChart {
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   min-height: 150px;
 }
 
@@ -208,6 +212,7 @@ body {
 }
 
 .indicator_low,
+.indicator_moderate,
 .indicator_high {
   width: 32px;
   height: 20px;
@@ -217,9 +222,12 @@ body {
 .indicator_high {
   margin-top: 12px;
 }
+.indicator_moderate {
+  margin-top: 12px;
+}
 .indicator_high::before {
   content: "";
-  background-color: #00735c;
+  background-color: #2c9e8f;
   width: 32px;
   height: 20px;
   position: absolute;
@@ -229,7 +237,17 @@ body {
 }
 .indicator_low::before {
   content: "";
-  background-color: #d64161;
+  background-color: #d8186a;
+  width: 32px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  border-radius: 12px;
+}
+.indicator_moderate::before {
+  content: "";
+  background-color: #a39a34;
   width: 32px;
   height: 20px;
   position: absolute;
@@ -255,7 +273,7 @@ body {
 }
 
 .desc_line1 {
-  margin-top: 72px;
+  margin-top: 22px;
 }
 .desc_line2 {
   margin-top: 22px;
@@ -282,11 +300,41 @@ input[type="range"] {
 }
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 38px;
+  background: #424143;
+  box-shadow: -800px 0 0 800px #f15722;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px; /* set the height of the slider rail */
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
   width: 20px;
-  height: 32px;
-  background: #0359bb;
-  box-shadow: -800px 0 0 800px rgb(253, 95, 21);
-  border: 2px solid #999;
+  height: 20px; /* set the height of the slider thumb */
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
 }
 
 .range_tracker {
@@ -294,6 +342,7 @@ input[type="range"] {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
+  gap: 5px;
 }
 .range_tracker > span {
   height: 16px;
@@ -307,6 +356,7 @@ input[type="range"] {
   font-size: 12px;
   font-weight: 500;
   margin-top: 4px;
+  color: #424143;
 }
 
 .graph_section2 {
@@ -323,6 +373,7 @@ input[type="range"] {
 }
 .list_after_graph {
   margin-top: 40px;
+  color: rgb(139, 139, 139);
 }
 
 .list_wrapper_after_graph {
@@ -333,6 +384,7 @@ input[type="range"] {
   font-size: 14px;
   line-height: 10px;
   font-weight: 500;
+  line-height: 1.2em;
   color: rgb(92, 91, 91);
 }
 
@@ -382,6 +434,51 @@ footer {
 }
 .footer_img {
   width: 100%;
+}
+.page {
+  width: 800px;
+  height: 1132px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+.page_footer {
+  width: 850px;
+  display: flex;
+  left: -50;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15px;
+}
+.footer_title {
+  padding: 5px 0;
+  padding-left: 90px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 460px;
+  background-color: #f2f3f2;
+  transform: skew(-45deg);
+}
+.copyright {
+  font-size: 12px;
+  transform: skew(45deg);
+}
+.report {
+  font-size: 8px;
+  transform: skew(45deg);
+}
+.page_number {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 130px;
+  text-align: center;
+  background-image: url("https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419670809_page_number.png");
+}
+.list_points {
+  line-height: 1.5em;
 }
 
 footer > p {

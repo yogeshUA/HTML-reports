@@ -1,69 +1,64 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./coping.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script
-      nonce="undefined"
-      src="https://cdn.zingchart.com/zingchart.min.js"
-    ></script>
 
     <title>zapilio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc/dist/chartjs-plugin-datalabels.min.js"></script>
+    <link rel="stylesheet" href="./coping.css" />
   </head>
   <body>
     <main class="main">
+      <!-- !COVER -->
       <div class="hero_section">
         <img
-          src="./conflict/coverImage.png"
+          src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419452059_coverImage.png"
           alt="hero-sec"
           class="landing_template"
         />
-        <h1 class="heading">
-          COPING STYLES <br />ASSESSMENT<br />
-          REPORT
-        </h1>
+        <h1 class="heading">COPING STYLES ASSESSMENT REPORT</h1>
+
         <div class="name_wrapper">
-          <span class="name">{{John Michael Doe}}</span
-          ><span class="date">{{September 21, 2022}}</span>
+          <span class="name">{{applicant}}</span
+          ><span class="date">{{dtAssessment}}</span>
         </div>
       </div>
-      <div class="conadidate_section">
+      <!-- !CANDIDATE DETAILS -->
+      <div class="conadidate_section page">
         <h2 class="candidate_heading">Candidate Details</h2>
         <div class="details_wrapper">
-          <h3 class="condidate_name">Name - {{JOHN MICHAEL DOE}}</h3>
+          <h3 class="condidate_name">Name - {{applicant}}</h3>
           <div class="wrapper">
             <div>
               <span class="assessment_sub_heading"
                 >Assessed for
                 <span class="sub_heading_indicator">Coping Styles</span></span
               >
-              <span class="company_name"
-                >For {{BOSCH GLOBAL SOFTWARE TECHNOLOGIES}}</span
-              >
+              <span class="company_name">For {{job}}</span>
             </div>
             <div>
-              <span class="date_of_assessment">Date - {{15/01/2023}}</span>
-              <span class="no_of_assessment">No. of Assessments - {{01}}</span>
+              <span class="date_of_assessment">Date - {{dtAssessment}}</span>
+              <span class="no_of_assessment">No. of Assessments - 1</span>
             </div>
           </div>
         </div>
         <h2 class="content">
-          The applicant took {{1}} assessment on {{15/01/23}} which was
+          The applicant took 1 assessment on {{dtAssessment}} which was
         </h2>
         <div class="grit_img_section">
-          <img src="./conflict/image1.png" alt="grit_icon" class="grit_img" />
           <img
-            src="./conflict/Copying.png"
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419500668_image1.png"
+            alt="grit_icon"
+            class="grit_img"
+          />
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677533761126_Copying%20style-11.png"
             alt=""
             class="inner_icon"
-            style="left: 105px"
+            style="left: 106px"
           />
           <div class="inner_content_wrapper">
             <p class="inner_heading">Coping Styles</p>
@@ -75,304 +70,240 @@
             </p>
           </div>
         </div>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">02</div>
+        </div>
       </div>
-      <div class="introduction">
+      <!-- !ASSESSMENT DETAILS -->
+      <div class="introduction page">
         <h1 class="intro_heading">Coping Styles</h1>
         <p class="intro_sub_heading">Theory</p>
         <p class="intro_content">
-          According to James Hamilton, communication is influenced by three
-          factors, each of which influences a person's communication style
-          differently. This scale measures the Locus of control while
-          communicating, through 17 items. Each item contains a statement
-          describing the general feelings about public speaking in particular
-          and communication in general. Respondents rate how accurate these
-          feelings and thoughts are, on a four-point scale from Strongly
-          Disagree to Strongly Agree.
+          According to S. Joseph, R. Williams, and W. Yule, we have an
+          inclination toward specific coping strategies, most natural to us,
+          based on how we think about ourselves and the world. This
+          questionnaire measures three coping strategies through 30 items. Each
+          item contains a statement describing the thoughts and behavior while
+          being burdened. Respondents rate how often they indulge in the
+          behavior described in each statement on a four-point scale from I
+          usually don't do this at all to I usually do this a lot.
         </p>
 
-        <div class="details_wrapper1">
-          <p class="intro_sub_heading">Meaning of factors</p>
-          <p class="intro_content">
-            The Coping Style Questionnaire was developed to understand one’s
-            preferred strategy to get through difficult situations.
-          </p>
-        </div>
-        <div class="details_wrapper2">
-          <p class="header1">Avoidant coping</p>
-          <p class="intro_content">
-            A strategy where one avoids dealing with stressors, difficulties, or
-            unpleasant emotions by retreating, withdrawing, or ignoring them.
-          </p>
-        </div>
-        <div class="details_wrapper3">
-          <p class="header2">Emotion-focused coping</p>
-          <p class="intro_content">
-            A strategy that focuses on acknowledging and addressing the emotions
-            elicited by a stressor followed by managing and regulating them.
-          </p>
-        </div>
-        <div class="">
-          <p class="header3">Task-focused coping</p>
-          <p class="intro_content">
-            A strategy where one focuses on taking concrete and direct actions
-            to solve or manage a stressor.
-          </p>
-        </div>
-        <div>
-          <p class="scoring" style="margin-top: 170px">
-            Average Score &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp;Low Score &nbsp;&nbsp; &nbsp; &nbsp;0-3
-          </p>
-          <p class="scoring" style="margin-top: 10px">
-            Individual Score &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;High score &nbsp;&nbsp;
-            &nbsp; &nbsp;3-5
-          </p>
-
-          <div class="graph_section">
-            <div id="myChart"></div>
-          </div>
-
-          <p class="desc_line1">
-            Joseph, S., Williams, R., & Yule, W. (1992). 30-item Coping Style
-            Questionnaire [Database record]. Retrieved from PsycTESTS. doi:
-            10.1037/t14068-000<br />
-            The confirmatory factor analysis supported the scale's three-factor
-            structure and Cronbach's alpha coefficient (0.80 to 0.91) suggested
-            high reliability.
-          </p>
-        </div>
-        <div class="intro" style="margin-top: 100px">
-          <h1 class="intro_heading">Avoidant coping</h1>
-          <div class="discription">
-            <p class="intro_content1" style="margin-top: 5">
+        <p class="intro_sub_heading">Meaning of factor</p>
+        <p class="intro_content">
+          The Coping Style Questionnaire was developed to understand one’s
+          preferred strategy to get through difficult situations.
+        </p>
+        <!-- #559C5B #AF4BA8 #4F4B9E #34D025 #B619CC  #317BAF #559C5B-->
+        <div class="skill_list">
+          <div>
+            <hr color="#559C5B" size="3" />
+            <em class="skill_title" style="color: #559c5b">Avoidant coping</em>
+            <p class="skill_desc">
               A strategy where one avoids dealing with stressors, difficulties,
               or unpleasant emotions by retreating, withdrawing, or ignoring
               them.
             </p>
           </div>
-          <div class="graph_section2">
-            <div>
-              <input type="range" value="80" />
-            </div>
-            <div class="range_tracker"><span></span><span></span></div>
-            <div class="range_label">
-              <span>1</span>
-              <span>low</span>
-              <span>3</span>
-              <span>high</span>
-              <span>5</span>
-            </div>
-          </div>
-          <div class="discription">
-            <p class="intro_content" style="margin-top: 5">
-              A low score on the avoidant style of coping indicates that an
-              individual does not use avoidance as a primary way of managing
-              stressors and difficulties.
+          <div>
+            <hr color="#AF4BA8" size="3" />
+            <em class="skill_title" style="color: #af4ba8"
+              >Emotion-focused coping</em
+            >
+            <p class="skill_desc">
+              A strategy that focuses on acknowledging and addressing the
+              emotions elicited by a stressor followed by managing and
+              regulating them.
             </p>
           </div>
-
-          <div class="discription">
-            <p class="intro_content2" style="margin-top: 5">
-              Characteristics of individuals who score low on avoidant coping
-              style may include:
-            </p>
-          </div>
-
-          <div class="list_after_graph">
-            <div class="list_wrapper_after_graph">
-              <p class="">
-                They may confront stressors and difficulties head-on, rather
-                than avoiding or
-              </p>
-              <p>retreating from them.</p>
-              <p class="">
-                They may express their emotions and talk about their feelings
-                with others.
-              </p>
-              <p class="">
-                They may take responsibility for their actions and the outcomes
-                of their efforts.
-              </p>
-              <p class="">
-                They may take responsibility for their actions and the outcomes
-                of their efforts.
-              </p>
-              <p class="">
-                They may be open to new information and new ways of approaching
-                problems.
-              </p>
-              <p class="">
-                They may take a proactive approach to address stressors, using
-                problem-solving strategies to
-              </p>
-              <p>find solutions.</p>
-              <p class="">
-                They may seek support from others, rather than isolating
-                themselves.
-              </p>
-              <p class="">
-                They may be flexible in their thinking and be able to adapt to
-                changing circumstances.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="intro" style="margin-top: 100px">
-          <h1 class="intro_heading">Emotion-focused coping</h1>
-          <div class="discription">
-            <p class="intro_content1" style="margin-top: 5">
-              A strategy that focuses on acknowledging and addressing emotions
-              elicited by a stressor followed by managing and regulating them.
-            </p>
-          </div>
-          <div class="graph_section2">
-            <div>
-              <input type="range" value="80" />
-            </div>
-            <div class="range_tracker"><span></span><span></span></div>
-            <div class="range_label">
-              <span>1</span>
-              <span>low</span>
-              <span>3</span>
-              <span>high</span>
-              <span>5</span>
-            </div>
-          </div>
-          <div class="discription">
-            <p class="intro_content" style="margin-top: 5">
-              A low score on the emotion-focused style of coping indicates that
-              an individual does not use emotional regulation and management as
-              a primary way of managing stressors and difficulties.
-            </p>
-          </div>
-
-          <div class="discription">
-            <p class="intro_content2" style="margin-top: 5">
-              Characteristics of individuals who score low on emotion-focused
-              coping style may include:
-            </p>
-          </div>
-
-          <div class="list_after_graph">
-            <div class="list_wrapper_after_graph">
-              <p class="">
-                They may confront stressors and difficulties head-on, rather
-                than avoiding or
-              </p>
-              <p>retreating from them.</p>
-              <p class="">
-                They may express their emotions and talk about their feelings
-                with others.
-              </p>
-              <p class="">
-                They may take responsibility for their actions and the outcomes
-                of their efforts.
-              </p>
-              <p class="">
-                They may be open to new information and new ways of approaching
-                problems.
-              </p>
-              <p class="">
-                They may take a proactive approach to address stressors, using
-                problem-solving
-              </p>
-              <p>strategies to find solutions.</p>
-              <p class="">
-                They may seek support from others, rather than isolating
-                themselves.
-              </p>
-              <p class="">
-                They may be flexible in their thinking and be able to adapt to
-                changing
-              </p>
-              <p>circumstances.</p>
-            </div>
-          </div>
-        </div>
-        <div class="intro" style="margin-top: 100px">
-          <h1 class="intro_heading">Task-focused coping</h1>
-          <div class="discription">
-            <p class="intro_content1" style="margin-top: 5">
+          <div>
+            <hr color="#4F4B9E" size="3" />
+            <em class="skill_title" style="color: #4f4b9e"
+              >Task-focused coping</em
+            >
+            <p class="skill_desc">
               A strategy where one focuses on taking concrete and direct actions
               to solve or manage a stressor.
             </p>
           </div>
-          <div class="graph_section2">
-            <div>
-              <input type="range" value="80" />
-            </div>
-            <div class="range_tracker"><span></span><span></span></div>
-            <div class="range_label">
-              <span>1</span>
-              <span>low</span>
-              <span>3</span>
-              <span>high</span>
-              <span>5</span>
-            </div>
+        </div>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
-          <div class="discription">
-            <p class="intro_content" style="margin-top: 5">
-              A high score on the task-focused style of coping indicates that an
-              individual uses strategies aimed at directly addressing and
-              solving stressors or difficulties.
+
+          <div class="page_number">03</div>
+        </div>
+      </div>
+
+      <div class="introduction page">
+        <!-- !SKILL LIST CONTINUED -->
+        <div class="skill_list">
+          <div class="scores">
+            <p>
+              Average Score
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Low
+              Score &nbsp;&nbsp;0-3
             </p>
           </div>
-
-          <div class="discription">
-            <p class="intro_content2" style="margin-top: 5">
-              Characteristics of individuals who score high on task-focused
-              coping style may include:
+          <div class="scores">
+            <p>
+              Individual Score
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;High
+              Score &nbsp;&nbsp;3-5
             </p>
-          </div>
-
-          <div class="list_after_graph">
-            <div class="list_wrapper_after_graph">
-              <p class="">
-                They may take a proactive approach to address stressors, using
-              </p>
-              <p>problem-solving strategies to find solutions.</p>
-              <p class="">
-                They may identify and utilize available resources, such as
-                support from others, to
-              </p>
-              <p>manage stressors.</p>
-              <p class="">
-                They may take direct action to address the source of the
-                stressor, rather than
-              </p>
-              <p>ignoring or avoiding it.</p>
-              <p class="">
-                They may have confidence in their abilities to manage and
-                overcome stressors.
-              </p>
-              <p class="">
-                They may take responsibility for their actions and the outcomes
-                of their efforts.
-              </p>
-
-              <p class="">
-                They may be open to new information and new ways of approaching
-                problems.
-              </p>
-              <p class="">
-                They may be flexible in their thinking and be able to adapt to
-                changing
-              </p>
-              <p>circumstances.</p>
-            </div>
           </div>
         </div>
 
+        <div class="graph-container">
+          <div class="graph">
+            <canvas id="myChart1" width="200px" height="200px"></canvas>
+          </div>
+        </div>
+        <p class="desc_line1">
+          Joseph, S., Williams, R., & Yule, W. (1992). 30-item Coping Style
+          Questionnaire [Database record]. Retrieved from PsycTESTS. doi:
+          10.1037/t14068-000 <br />
+          The confirmatory factor analysis supported the scale's three-factor
+          structure and Cronbach's alpha coefficient (0.80 to 0.91) suggested
+          high reliability.
+        </p>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">04</div>
+        </div>
+      </div>
+
+      <!-- !Avoidant coping -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Avoidant coping</h1>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="4" max="20" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>4</span>
+            <span>low</span>
+            <span>12</span>
+            <span>High</span>
+            <span>20</span>
+          </div>
+        </div>
+        <p class="intro_sub_heading">{{skillTT1}}</p>
+        <p class="graph2_desc skill1C">{{skill1C}}</p>
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph skill1S">
+            <p>{{skill1S}}</p>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">05</div>
+        </div>
+      </div>
+
+      <!-- !Emotion-focused coping -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Emotion-focused coping</h1>
+        <p class="skill_desc" style="margin-top: 70px">{{skill2T1}}</p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill2" min="3" max="12" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>3</span>
+            <span>low</span>
+            <span>8</span>
+            <span>High</span>
+            <span>12</span>
+          </div>
+        </div>
+        <p class="intro_sub_heading">{{skill2TT1}}</p>
+        <p class="graph2_desc skill2C">{{skill2C}}</p>
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph skill2S">
+            <!-- {{#if skill2S}} {{#each skill2S}}
+            <p>{{this}}</p>
+            {{/each}} {{/if}} -->
+
+            <p>{{skill2S}}</p>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">06</div>
+        </div>
+      </div>
+      <!-- !Task-focused coping -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Task-focused coping</h1>
+        <p class="skill_desc" style="margin-top: 70px">{{skill3T1}}</p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill2" min="3" max="12" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>3</span>
+            <span>low</span>
+            <span>8</span>
+            <span>High</span>
+            <span>12</span>
+          </div>
+        </div>
+        <p class="intro_sub_heading">{{skill3TT1}}</p>
+        <p class="graph2_desc skill2C">{{skill3C}}</p>
+        <div class="list_after_graph">
+          <div class="list_wrapper_after_graph skill2S">
+            <!-- {{#if skill2S}} {{#each skill2S}}
+            <p>{{this}}</p>
+            {{/each}} {{/if}} -->
+
+            <p>{{skill3S}}</p>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">07</div>
+        </div>
+      </div>
+
+      <div class="introduction page">
         <h1 class="take_away_heading">Key takeaways</h1>
         <ul class="key_take_away_list">
-          <li class="key_take_away_list_item">
-            {{The candidate’s highly favoured coping style is Task-focused.}}
-          </li>
-          <li class="key_take_away_list_item">
-            {{The candidate least favored Communication Coping style is
-            Avoidant.}}
-          </li>
+          <li class="key_take_away_list_item">{{skill1T1}}</li>
         </ul>
         <h1 class="take_away_heading2">Suggested interview questions</h1>
         <ul class="key_take_away_list">
@@ -385,63 +316,62 @@
             be rather than trying to reduce it? Why did you make that decision?
           </li>
         </ul>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">12</div>
+        </div>
       </div>
     </main>
     <footer>
-      <img src="./conflict/resilience-09.png" alt="footer" class="footer_img" />
-      <p>&#169; {{2023}} zapilio.com CONFIDENTIAL DOCUMENT</p>
+      <img
+        src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419609662_lastPage.png"
+        alt="footer"
+        class="footer_img"
+      />
+      <p>&#169; 2023 zapilio.com CONFIDENTIAL DOCUMENT</p>
     </footer>
 
     <script>
-      ZC.LICENSE = [
-        "569d52cefae586f634c54f86dc99e6a9",
-        "b55b025e438fa8a98e32482b5f768ff5",
-      ];
-      var myConfig = {
-        type: "line",
-        scaleX: {
-          labels: [
-            "Avoidant coping",
-            "Emotion-focused coping",
-            "Task-focused coping",
-          ],
-          item: {
-            angle: -90,
-            maxChars: 10,
-            offsetX: 20,
-          },
-          tick: {
-            visible: false,
-          },
-        },
-        scaleY: {
-          label: {
-            text: "Scores",
-            angle: 270,
-            textAlign: "center",
-            x: "-20px",
-            offsetY: "50px",
-          },
-        },
-        series: [
-          {
-            values: [20, 40, 25, 50, 15, 45, 33],
-          },
-          {
-            values: [5, 30, 21, 18, 59, 50, 28],
-          },
-        ],
-      };
+       var score = [{{ applicantData }}];
 
-      zingchart.render({
-        id: "myChart",
-        data: myConfig,
-        height: 400,
-        width: 900,
-        defaults: {
-          series: {
-            text: "",
+      // populate the sliders with socres
+      score.forEach((score, i) => {
+        const myRangeInput = document.getElementById(`skill${i + 1}`);
+        myRangeInput.value = score;
+      });
+
+
+      const ctx = document.getElementById("myChart1");
+      const myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Avoidant coping", "Emotion-focused coping","Task-focused coping"],
+          datasets: [
+            {
+              label: "",
+              data: [{{applicantData}}],
+
+              pointRadius: 6,
+              backgroundColor: "rgb(253, 136, 93)",
+              showLine: true,
+            },
+          ],
+        },
+
+        options: {
+          scales: {
+            x: {
+              ticks: {
+                maxRotation: 90,
+                minRotation: 90,
+              },
+            },
           },
+          responsive: true,
         },
       });
     </script>
