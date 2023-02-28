@@ -8,7 +8,465 @@
     <title>zapilio</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc/dist/chartjs-plugin-datalabels.min.js"></script>
-    <link rel="stylesheet" href="./workethics.css" />
+    <style>
+      body {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        max-width: 800px;
+      }
+      .hero_section {
+        position: relative;
+        width: 800px;
+        height: 1132px;
+        border: 1px solid;
+      }
+      .landing_template {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .heading {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        position: absolute;
+        bottom: 240px;
+        left: 25px;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+      }
+
+      .name_wrapper {
+        position: absolute;
+        bottom: 225px;
+        right: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .name,
+      .date {
+        font-family: Inter;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 0.5px;
+        padding: 0px 20px;
+      }
+      .date {
+        border-left: 1px solid #333;
+      }
+
+      .conadidate_section {
+        /* margin: 0 48px; */
+        font-family: Inter;
+      }
+      .details_wrapper {
+        margin-top: 0px;
+        padding: 8px 0px 40px;
+        border-bottom: 2px solid rgb(253, 136, 93);
+      }
+      .candidate_heading {
+        text-align: center;
+        background-color: rgb(231, 230, 230);
+        padding: 8px;
+        letter-spacing: 0.5px;
+      }
+
+      .condidate_name {
+        font-family: Inter;
+        font-size: 16px;
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .wrapper div {
+        display: flex;
+        flex-direction: column;
+      }
+      .wrapper div:nth-child(2) {
+        border-left: 2px solid #333;
+        padding-left: 18px;
+      }
+      .assessment_sub_heading {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .sub_heading_indicator {
+        color: rgb(255, 60, 0);
+      }
+      .company_name {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 12px;
+      }
+      .date_of_assessment {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .no_of_assessment {
+        margin-top: 12px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .content {
+        font-size: 16px;
+        margin-top: 40px;
+      }
+      .grit_img_section {
+        width: 100%;
+        margin-top: 56px;
+        position: relative;
+      }
+
+      .grit_img {
+        width: 100%;
+      }
+      .inner_icon {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        height: 120px;
+        width: 120px;
+      }
+
+      .inner_content_wrapper {
+        position: absolute;
+        top: 64px;
+        right: 60px;
+        font-family: Inter;
+      }
+
+      .inner_heading {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        line-height: 0px;
+        letter-spacing: 0.5px;
+      }
+
+      .inner_content {
+        font-size: 10px;
+        max-width: 350px;
+        font-weight: 300;
+        color: rgb(255, 250, 250);
+        line-height: 12px;
+      }
+
+      .introduction {
+        font-family: Inter;
+        /* margin: 110px 54px 0px; */
+      }
+
+      .intro_heading {
+        font-size: 42px;
+        color: #4e4e4e;
+        letter-spacing: 0.5px;
+        position: relative;
+        margin-bottom: 56px;
+      }
+      .intro_heading::after {
+        content: "";
+        background-color: rgb(243, 99, 3);
+        height: 5px;
+        width: 90px;
+        position: absolute;
+        bottom: -18px;
+        left: 0px;
+      }
+
+      .intro_sub_heading {
+        font-size: 15px;
+        font-weight: 700;
+        font-style: italic;
+        color: #4d4d4d;
+        margin-bottom: 24px;
+        margin-top: 32px;
+      }
+
+      .intro_content {
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(85, 84, 84);
+      }
+
+      .zc-ref {
+        display: none;
+      }
+      .score_label {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+      }
+
+      .score {
+        font-weight: 600;
+        text-align: center;
+        font-family: Inter;
+        color: rgb(90, 89, 89);
+        font-size: 14px;
+      }
+
+      .intro_content1 {
+        font-style: normal;
+        line-height: 28px;
+      }
+
+      input[type="range"] {
+        margin: auto;
+        -webkit-appearance: none;
+        position: relative;
+        overflow: hidden;
+        height: 16px;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 0;
+        border-radius: 4px;
+      }
+
+      ::-webkit-slider-runnable-track {
+        background: #999999;
+      }
+      ::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 38px;
+        background: #424143;
+        box-shadow: -800px 0 0 800px #f15722;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 5px; /* set the height of the slider rail */
+        border-radius: 5px;
+        background: #ddd;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px; /* set the height of the slider thumb */
+        border-radius: 50%;
+        background: #4caf50;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4caf50;
+        cursor: pointer;
+      }
+
+      .range_tracker {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        gap: 5px;
+      }
+      .range_tracker > span {
+        height: 16px;
+        width: 49%;
+        border: 1px solid rgb(139, 139, 139);
+        border-top: none;
+      }
+      .range_label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 4px;
+        color: #424143;
+      }
+
+      .graph_section2 {
+        border-top: 1px solid rgb(243, 79, 3);
+        padding-top: 32px;
+        margin-top: 111px;
+      }
+      .graph2_desc {
+        color: #02a887;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 80px;
+      }
+      .list_after_graph {
+        margin-top: 40px;
+        color: rgb(139, 139, 139);
+      }
+
+      .list_wrapper_after_graph {
+        position: relative;
+      }
+      .list_wrapper_after_graph p {
+        padding-left: 50px;
+        font-size: 14px;
+        line-height: 10px;
+        font-weight: 500;
+        white-space: pre-wrap;
+        line-height: 1.2em;
+        color: rgb(92, 91, 91);
+      }
+
+      .list_wrapper_after_graph::before {
+        content: "";
+        height: 100%;
+        width: 30px;
+        background-color: #03866c;
+        position: absolute;
+      }
+
+      .take_away_heading {
+        margin-top: 100px;
+      }
+
+      .key_take_away_list {
+        list-style: none;
+        border: 1px solid orangered;
+        padding: 12px;
+        padding-left: 32px;
+      }
+
+      .key_take_away_list li {
+        font-size: 14px;
+        color: #666565;
+        line-height: 32px;
+        font-weight: 500;
+      }
+      .key_take_away_list li::before {
+        content: "\2022";
+        color: orangered;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      .take_away_heading2 {
+        margin-top: 48px;
+      }
+      footer {
+        max-width: 800px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer_img {
+        width: 100%;
+      }
+      .page {
+        width: 800px;
+        height: 1132px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        position: relative;
+        border: 1px solid;
+      }
+      .page_footer {
+        width: 850px;
+        display: flex;
+        left: -50;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 15px;
+      }
+      .footer_title {
+        padding: 5px 0;
+        padding-left: 90px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 460px;
+        background-color: #f2f3f2;
+        transform: skew(-45deg);
+      }
+      .copyright {
+        font-size: 12px;
+        transform: skew(45deg);
+      }
+      .report {
+        font-size: 8px;
+        transform: skew(45deg);
+      }
+      .page_number {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        width: 130px;
+        text-align: center;
+        background-image: url("https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419670809_page_number.png");
+      }
+
+      footer > p {
+        background-color: rgb(241, 88, 33);
+        position: absolute;
+        line-height: 24px;
+        bottom: 0px;
+        text-align: center;
+        font-family: Inter;
+        width: 70%;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        color: white;
+      }
+      .skill_title {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .skill_desc {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666565;
+      }
+      .skill_list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .graph-container {
+        margin: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .graph {
+        height: 500px;
+        width: 500px;
+      }
+      .desc_line1,
+      .desc_line2 {
+        font-weight: 500;
+        font-size: 12px;
+        color: rgb(107, 106, 106);
+        font-family: Inter;
+        line-height: 16px;
+      }
+    </style>
   </head>
   <body>
     <main class="main">

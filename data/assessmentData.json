@@ -115,5 +115,64 @@
         ]
       }
     ]
+  },
+
+  {
+    "name": "Brief Resilience Scale",
+    "template": "resilence.html",
+    "count": 1,
+    "inference": true,
+    "levels": [1, 3, 4.3, 5],
+    "skills": [
+      {
+        "skill": "Individual Description",
+        "skill1T1": "Adaptability to stressful circumstances, the ability to recover from stress, the ability to function above normal in spite of significant adversity, and the ability to function above the norm are all factors that contribute to resilience.",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "low",
+            "skill1TT1": "The applicant has scored low on resilience. They struggle with being able to move on in life when they encounter difficulties in terms of major changes, setbacks, or adversities. They can not adjust to challenging circumstances and overcome hardships. ",
+            "skill1C": "In a corporate setting, they are likely to struggle in the following situations",
+            "skill1S": [
+              "Keep a positive attitude",
+              "Adjust to environmental changes",
+              "Be productive irrespective of the barriers",
+              "Be focused on achieving goals successfully",
+              "Feeling a sense of control over the situation",
+              "Absorb shocks and carry on with their operations",
+              "Keeping motivation level high for self as well as others"
+            ]
+          },
+          {
+            "level": "Moderate",
+            "skill1TT1": "The applicant has scored moderately on resilience. It is a quality that enables them to move on in life despite a few difficulties they encounter by overcoming a few of the setbacks and adversities. They can adjust to challenging circumstances and overcome hardship with great effort.",
+            "skill1C": "In a corporate setting, they are likely to perform similarly to most people in the following situations",
+            "skill1S": [
+              "Keep a positive attitude",
+              "Adjust to environmental changes",
+              "Be productive irrespective of the barriers",
+              "Be focused on achieving goals successfully",
+              "Feeling a sense of control over the situation",
+              "Absorb shocks and carry on with their operations",
+              "Keeping motivation level high for self as well as others"
+            ]
+          },
+          {
+            "level": "high",
+            "skill1TT1": "The applicant has scored high on resilience. It is a quality that enables them to move on in life despite the difficulties they encounter by overcoming setbacks and adversities. They can adjust to challenging circumstances and triumph over hardship.",
+            "skill1C": "In a corporate setting, they are likely to excel in the following situations",
+            "skill1S": [
+              "Keep a positive attitude",
+              "Adjust to environmental changes",
+              "Be productive irrespective of the barriers",
+              "Be focused on achieving goals successfully",
+              "Feeling a sense of control over the situation",
+              "Absorb shocks and carry on with their operations",
+              "Keeping motivation level high for self as well as others"
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
