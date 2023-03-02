@@ -1,0 +1,1412 @@
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>zapilio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc/dist/chartjs-plugin-datalabels.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        max-width: 800px;
+      }
+      .hero_section {
+        position: relative;
+        width: 800px;
+        height: 1132px;
+        border: 1px solid;
+      }
+      .landing_template {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .heading {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        position: absolute;
+        bottom: 240px;
+        left: 25px;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+      }
+
+      .name_wrapper {
+        position: absolute;
+        bottom: 225px;
+        right: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .name,
+      .date {
+        font-family: Inter;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 0.5px;
+        padding: 0px 20px;
+      }
+      .date {
+        border-left: 1px solid #333;
+      }
+
+      .conadidate_section {
+        /* margin: 0 48px; */
+        font-family: Inter;
+      }
+      .details_wrapper {
+        margin-top: 0px;
+        padding: 8px 0px 40px;
+        border-bottom: 2px solid rgb(253, 136, 93);
+      }
+      .candidate_heading {
+        text-align: center;
+        background-color: rgb(231, 230, 230);
+        padding: 8px;
+        letter-spacing: 0.5px;
+      }
+
+      .condidate_name {
+        font-family: Inter;
+        font-size: 16px;
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .wrapper div {
+        display: flex;
+        flex-direction: column;
+      }
+      .wrapper div:nth-child(2) {
+        border-left: 2px solid #333;
+        padding-left: 18px;
+      }
+      .assessment_sub_heading {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .sub_heading_indicator {
+        color: rgb(255, 60, 0);
+      }
+      .company_name {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 12px;
+      }
+      .date_of_assessment {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .no_of_assessment {
+        margin-top: 12px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .content {
+        font-size: 16px;
+        margin-top: 40px;
+      }
+      .grit_img_section {
+        width: 100%;
+        margin-top: 56px;
+        position: relative;
+      }
+
+      .grit_img {
+        width: 100%;
+      }
+      .inner_icon {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        height: 120px;
+        width: 120px;
+      }
+
+      .inner_content_wrapper {
+        position: absolute;
+        top: 64px;
+        right: 60px;
+        font-family: Inter;
+      }
+
+      .inner_content_wrapper1 {
+        position: absolute;
+        top: 54px;
+        left: 48px;
+        font-family: Inter;
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        gap: 49px;
+      }
+      .inner_content_wrapper2 {
+        position: absolute;
+        top: 54px;
+        left: 35px;
+        font-family: Inter;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+      .inner_content_wrapper3 {
+        position: absolute;
+        top: 54px;
+        left: 35px;
+        font-family: Inter;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      .inner_content_wrapper4 {
+        position: absolute;
+        top: 54px;
+        left: 35px;
+        font-family: Inter;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+      }
+      .inner_content_wrapper5 {
+        position: absolute;
+        top: 54px;
+        left: 35px;
+        font-family: Inter;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 38px;
+      }
+      .inner_content_wrapper6 {
+        position: absolute;
+        top: 54px;
+        left: 35px;
+        font-family: Inter;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 55px;
+      }
+      .inner_content_wrapper7 {
+        position: absolute;
+        top: 54px;
+        left: 25px;
+        font-family: Inter;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+      }
+
+      .inner_heading {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        line-height: 0px;
+        letter-spacing: 0.5px;
+      }
+
+      .inner_heading1 {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        line-height: 0px;
+        letter-spacing: 0.5px;
+      }
+      .inner_heading2 {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        line-height: 0px;
+        letter-spacing: 0.5px;
+        margin-left: -20px; /* adjust the value as needed */
+      }
+
+      .inner_content {
+        font-size: 10px;
+        max-width: 350px;
+        font-weight: 300;
+        color: rgb(255, 250, 250);
+        line-height: 12px;
+      }
+
+      .introduction {
+        font-family: Inter;
+        /* margin: 110px 54px 0px; */
+      }
+
+      .intro_heading {
+        font-size: 42px;
+        color: #4e4e4e;
+        letter-spacing: 0.5px;
+        position: relative;
+        margin-bottom: 56px;
+      }
+      .intro_heading::after {
+        content: "";
+        background-color: rgb(243, 99, 3);
+        height: 5px;
+        width: 90px;
+        position: absolute;
+        bottom: -18px;
+        left: 0px;
+      }
+
+      .intro_sub_heading {
+        font-size: 15px;
+        font-weight: 700;
+        font-style: italic;
+        color: #4d4d4d;
+        margin-bottom: 24px;
+        margin-top: 32px;
+      }
+
+      .intro_content {
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(85, 84, 84);
+      }
+
+      .zc-ref {
+        display: none;
+      }
+      .score_label {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+      }
+
+      .score {
+        font-weight: 600;
+        text-align: center;
+        font-family: Inter;
+        color: rgb(90, 89, 89);
+        font-size: 14px;
+      }
+
+      .intro_content1 {
+        font-style: normal;
+        line-height: 28px;
+      }
+
+      input[type="range"] {
+        margin: auto;
+        -webkit-appearance: none;
+        position: relative;
+        overflow: hidden;
+        height: 16px;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 0;
+        border-radius: 4px;
+      }
+
+      ::-webkit-slider-runnable-track {
+        background: #999999;
+      }
+      ::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 38px;
+        background: #424143;
+        box-shadow: -800px 0 0 800px #f15722;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 5px; /* set the height of the slider rail */
+        border-radius: 5px;
+        background: #ddd;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px; /* set the height of the slider thumb */
+        border-radius: 50%;
+        background: #4caf50;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4caf50;
+        cursor: pointer;
+      }
+
+      .range_tracker {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        gap: 5px;
+      }
+      .range_tracker > span {
+        height: 16px;
+        width: 49%;
+        border: 1px solid rgb(139, 139, 139);
+        border-top: none;
+      }
+      .range_label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 4px;
+        color: #424143;
+      }
+
+      .graph_section2 {
+        border-top: 1px solid rgb(243, 79, 3);
+        padding-top: 32px;
+        margin-top: 111px;
+      }
+      .graph2_desc {
+        color: #02a887;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 80px;
+      }
+      .list_after_graph {
+        margin-top: 40px;
+        color: rgb(139, 139, 139);
+      }
+
+      .list_wrapper_after_graph {
+        position: relative;
+      }
+      .list_wrapper_after_graph p {
+        padding-left: 50px;
+        font-size: 14px;
+        line-height: 10px;
+        font-weight: 500;
+        white-space: pre-wrap;
+        line-height: 1.2em;
+        color: rgb(92, 91, 91);
+      }
+
+      .list_wrapper_after_graph::before {
+        content: "";
+        height: 100%;
+        width: 30px;
+        background-color: #03866c;
+        position: absolute;
+      }
+
+      .take_away_heading {
+        margin-top: 100px;
+      }
+
+      .key_take_away_list {
+        list-style: none;
+        border: 1px solid orangered;
+        padding: 12px;
+        padding-left: 32px;
+      }
+
+      .key_take_away_list li {
+        font-size: 14px;
+        color: #666565;
+        line-height: 32px;
+        font-weight: 500;
+      }
+      .key_take_away_list li::before {
+        content: "\2022";
+        color: orangered;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      .take_away_heading2 {
+        margin-top: 48px;
+      }
+      footer {
+        max-width: 800px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer_img {
+        width: 100%;
+      }
+      .page {
+        width: 800px;
+        height: 1132px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        position: relative;
+        border: 1px solid;
+      }
+      .page_footer {
+        width: 850px;
+        display: flex;
+        left: -50;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 15px;
+      }
+      .footer_title {
+        padding: 5px 0;
+        padding-left: 90px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 460px;
+        background-color: #f2f3f2;
+        transform: skew(-45deg);
+      }
+      .copyright {
+        font-size: 12px;
+        transform: skew(45deg);
+      }
+      .report {
+        font-size: 8px;
+        transform: skew(45deg);
+      }
+      .page_number {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        width: 130px;
+        text-align: center;
+        background-image: url("https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419670809_page_number.png");
+      }
+
+      footer > p {
+        background-color: rgb(241, 88, 33);
+        position: absolute;
+        line-height: 24px;
+        bottom: 0px;
+        text-align: center;
+        font-family: Inter;
+        width: 70%;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        color: white;
+      }
+      .skill_title {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .skill_desc {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666565;
+      }
+      .skill_list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .graph-container {
+        margin: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .graph {
+        height: 500px;
+        width: 500px;
+      }
+      .desc_line1,
+      .desc_line2 {
+        font-weight: 500;
+        font-size: 12px;
+        color: rgb(107, 106, 106);
+        font-family: Inter;
+        line-height: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <!-- !COVER -->
+      <div class="hero_section">
+        <img
+          src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419452059_coverImage.png"
+          alt="hero-sec"
+          class="landing_template"
+        />
+        <h1 class="heading">I-ADAPT-M ASSESSMENT REPORT</h1>
+
+        <div class="name_wrapper">
+          <span class="name">{{applicant}}</span
+          ><span class="date">{{dtAssessment}}</span>
+        </div>
+      </div>
+      <!-- !CANDIDATE DETAILS -->
+      <div class="conadidate_section page">
+        <h2 class="candidate_heading">Candidate Details</h2>
+        <div class="details_wrapper">
+          <h3 class="condidate_name">Name - {{applicant}}</h3>
+          <div class="wrapper">
+            <div>
+              <span class="assessment_sub_heading"
+                >Assessed for
+                <span class="sub_heading_indicator">I-ADAPT</span></span
+              >
+              <span class="company_name">For {{job}}</span>
+            </div>
+            <div>
+              <span class="date_of_assessment">Date - {{dtAssessment}}</span>
+              <span class="no_of_assessment">No. of Assessments - 1</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="content">
+          The applicant took 1 assessment on {{dtAssessment}} which was
+        </h2>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419500668_image1.png"
+            alt="grit_icon"
+            class="grit_img"
+          />
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677670403980_I-ADAPT%20new3-16.png"
+            alt=""
+            class="inner_icon"
+            style="left: 106px"
+          />
+          <div class="inner_content_wrapper">
+            <p class="inner_heading">-ADAPT-M</p>
+            <p class="inner_content">
+              Measures how adaptable the applicants and/ or employees are in
+              work settings. It helps the user in obtaining more profound and
+              precise insights into their coping strategies while handling
+              career challenges and transitions.
+            </p>
+          </div>
+        </div>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">02</div>
+        </div>
+      </div>
+      <!-- !ASSESSMENT DETAILS -->
+      <div class="introduction page">
+        <h1 class="intro_heading">I-ADAPT-M</h1>
+        <p class="intro_sub_heading">Theory</p>
+        <p class="intro_content">
+          According to R. Ployhart, and P. Bliese, in current times, employees
+          need to exhibit adaptability in ideas, values, and behavior. This
+          scale quantifies the level of eight such adaptability areas through 55
+          items. Each item contains a statement describing the general feelings
+          experienced towards self and work. Respondents rate how accurate these
+          feelings and thoughts are, on a five-point scale from Strongly
+          Disagree to Strongly Agree.
+        </p>
+        <p class="intro_sub_heading">Meaning of factor</p>
+        <p class="intro_content">
+          The I-ADAPT-M was developed using eight dimensions of adaptive
+          performance to help identify the strengths of the applicants/
+          employees.
+        </p>
+        <!-- #559C5B #AF4BA8 #4F4B9E #34D025 #B619CC  #317BAF #559C5B-->
+        <div class="skill_list">
+          <div>
+            <hr color="#559C5B" size="3" />
+            <em class="skill_title" style="color: #559c5b"
+              >Handling Emergency or Crisis Situations</em
+            >
+            <p class="skill_desc">
+              Reacting with appropriate and proper urgency in life-threatening,
+              dangerous, or emergency situations.
+            </p>
+          </div>
+          <div>
+            <hr color="#af4ba8" size="3" />
+            <em class="skill_title" style="color: #af4ba8"
+              >Handling Work Stress</em
+            >
+            <p class="skill_desc">
+              Remaining composed and cool when faced with difficult
+              circumstances or a highly demanding workload or schedule.
+            </p>
+          </div>
+          <div>
+            <hr color="#af4ba8" size="3" />
+            <em class="skill_title" style="color: #af4ba8"
+              >Handling Work Stress</em
+            >
+            <p class="skill_desc">
+              Employing unique types of analyses and generating new, innovative
+              ideas in complex areas.
+            </p>
+          </div>
+          <div>
+            <hr color="#28c03c" size="3" />
+            <em class="skill_title" style="color: #28c03c"
+              >Dealing with Uncertain and Unpredictable Work Situations</em
+            >
+            <p class="skill_desc">
+              Taking effective action when necessary without knowing the full
+              picture or having all facts at hand.
+            </p>
+          </div>
+        </div>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">03</div>
+        </div>
+      </div>
+
+      <div class="introduction page">
+        <!-- !SKILL LIST CONTINUED -->
+        <div>
+          <hr color="#940f05" size="3" />
+          <em class="skill_title" style="color: #940f05"
+            >Learning Work Tasks, Technologies, and Procedures</em
+          >
+          <p class="skill_desc">
+            Demonstrating enthusiasm for learning new approaches and
+            technologies for conducting work.
+          </p>
+        </div>
+        <div>
+          <hr color="#aa9310" size="3" />
+          <em class="skill_title" style="color: #aa9310"
+            >Demonstrating Interpersonal Adaptability</em
+          >
+          <p class="skill_desc">
+            Being flexible and open-minded when dealing with others.
+          </p>
+        </div>
+        <div>
+          <hr color="#107eaa" size="3" />
+          <em class="skill_title" style="color: #107eaa"
+            >Demonstrating Cultural Adaptability</em
+          >
+          <p class="skill_desc">
+            Taking action to learn about and understand the climate,
+            orientation, needs, and values of other groups, organizations, or
+            cultures.
+          </p>
+        </div>
+        <div>
+          <hr color="#777504" size="3" />
+          <em class="skill_title" style="color: #777504"
+            >Demonstrating Physically Oriented Adaptability</em
+          >
+          <p class="skill_desc">
+            Adjusting to challenging environmental states such as extreme heat,
+            humidity, cold, or dirt.
+          </p>
+        </div>
+        <div class="graph-container">
+          <div class="graph">
+            <canvas id="myChart1" width="200px" height="200px"></canvas>
+          </div>
+        </div>
+        <p class="desc_line1" style="margin-top: 100px">
+          PLOYHART, R., & BLIESE, P. (2006). Individual Adaptability (I-ADAPT)
+          Theory: Conceptualizing the Antecedents, Consequences, and Measurement
+          of Individual Differences in Adaptability. Understanding Adaptability:
+          A Prerequisite for Effective Performance within Complex Environments,
+          3–39. https://doi.org/10.1016/S1479-3601(05)06001-7. The factor
+          analysis showcased a six-factor structure and internal consistency
+          (0.88) suggesting high reliability and validity.
+        </p>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">04</div>
+        </div>
+      </div>
+
+      <!-- !Handling Emergency or Crisis Situations-->
+      <div class="introduction page">
+        <h1 class="intro_heading">Handling Emergency or Crisis Situations</h1>
+        <p class="intro_sub_heading">
+          Reacting with appropriate and proper urgency in life-threatening,
+          dangerous, or emergency situations.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="1" max="5" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill1C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper1">
+                <div class="inner_heading1">
+                  <p>Product</p>
+                  <p>recalls</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Natural</p>
+                  <p>disasters</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Workplace</p>
+                  <p>accidents</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Public</p>
+                  <p>relations</p>
+                  <p>crises</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Cybersecurity</p>
+                  <p>breaches</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">05</div>
+        </div>
+      </div>
+
+      <!-- !Handling Work Stress-->
+      <div class="introduction page">
+        <h1 class="intro_heading">Handling Work Stress</h1>
+        <p class="intro_sub_heading">
+          Remaining composed and cool when faced with difficult circumstances or
+          a highly demanding workload or schedule.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="0" max="19" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill2TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill2C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper2">
+                <div class="inner_heading1">
+                  <p>Remote</p>
+                  <p>work</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Tight</p>
+                  <p>deadlines</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Conflict</p>
+                  <p>resolution</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>organizational</p>
+                  <p>changes</p>
+                </div>
+                <div class="inner_heading2">
+                  <p>High-</p>
+                  <p>pressure</p>
+                  <p>work</p>
+                  <p>environments</p>
+                </div>
+              </div>
+            </div>
+            <!-- <p>
+    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677579749866_STEUM-11.png"
+         alt="grit_icon"
+         class="grit_img"
+         style="margin-left: -40px; " />
+    <div class="inner_content_wrapper">
+      <p class="inner_heading">STEUM</p>
+    </div>
+  </p> -->
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">06</div>
+        </div>
+      </div>
+      <!-- !Solving Problems Creatively-->
+      <div class="introduction page">
+        <h1 class="intro_heading">Solving Problems Creatively</h1>
+        <p class="intro_sub_heading">
+          Employing unique types of analyses and generating new, innovative
+          ideas in complex areas.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="1" max="5" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill3TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill3C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper3">
+                <div class="inner_heading1">
+                  <p>Customer</p>
+                  <p>service</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Talent</p>
+                  <p>management</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Product</p>
+                  <p>development</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Process</p>
+                  <p>improvement</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Marketing and</p>
+                  <p>advertising</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">05</div>
+        </div>
+      </div>
+      <!-- !Dealing with Uncertain and
+Unpredictable Work Situations-->
+      <div class="introduction page">
+        <h1 class="intro_heading">
+          Dealing with Uncertain and Unpredictable Work Situations
+        </h1>
+        <p class="intro_sub_heading">
+          Taking effective action when necessary without knowing the full
+          picture or having all facts at hand.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="1" max="5" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill4TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill4C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper4">
+                <div class="inner_heading1">
+                  <p>Market</p>
+                  <p>volatility</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Talent</p>
+                  <p>shortages</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Global</p>
+                  <p>pandemics</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Regulatory</p>
+                  <p>changes</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Disruptive</p>
+                  <p>technologies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">06</div>
+        </div>
+      </div>
+      <!-- !Learning Work Tasks,
+Technologies, and Procedures-->
+      <div class="introduction page">
+        <h1 class="intro_heading">
+          Demonstrating enthusiasm for learning new approaches and technologies
+          for conducting work.
+        </h1>
+        <p class="intro_sub_heading">
+          Taking effective action when necessary without knowing the full
+          picture or having all facts at hand.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="1" max="5" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill5TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill5C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper5">
+                <div class="inner_heading1">
+                  <p>Process</p>
+                  <p>changes</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Compilance</p>
+                  <p>training</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Career</p>
+                  <p>development</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Adopting new</p>
+                  <p>technologies</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Onboarding</p>
+                  <p>new</p>
+                  <p>employees</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">07</div>
+        </div>
+      </div>
+      <!-- !Demonstrating Interpersonal
+Adaptability-->
+      <div class="introduction page">
+        <h1 class="intro_heading">Demonstrating Interpersonal Adaptability</h1>
+        <p class="intro_sub_heading">
+          Being flexible and open-minded when dealing with others.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="1" max="5" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill6TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill6C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper6">
+                <div class="inner_heading1">
+                  <p>Remote</p>
+                  <p>work</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Leading</p>
+                  <p>change</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Managing</p>
+                  <p>conflicts</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Working with</p>
+                  <p>diverse teams</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Dealing</p>
+                  <p>with</p>
+                  <p>difficult</p>
+                  <p>clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">07</div>
+        </div>
+      </div>
+      <!-- !Demonstrating Cultural
+Adaptability-->
+      <div class="introduction page">
+        <h1 class="intro_heading">Demonstrating Cultural Adaptability</h1>
+        <p class="intro_sub_heading">
+          Taking action to learn about and understand the climate, orientation,
+          needs, and values of other groups, organizations, or cultures.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="1" max="5" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill7TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill7C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper7">
+                <div class="inner_heading1">
+                  <p>Remote</p>
+                  <p>work</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Global</p>
+                  <p>supply</p>
+                  <p>chains</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Diversity</p>
+                  <p>and</p>
+                  <p>inclusions</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>International</p>
+                  <p>expansion</p>
+                </div>
+                <div class="inner_heading1" style="margin-left: -30px">
+                  <p>Mergers</p>
+                  <p>and</p>
+                  <p>acquisitions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">08</div>
+        </div>
+      </div>
+      <!-- !Demonstrating Physically
+Oriented Adaptability-->
+      <div class="introduction page">
+        <h1 class="intro_heading">
+          Demonstrating Physically Oriented Adaptability
+        </h1>
+        <p class="intro_sub_heading">
+          Adjusting to challenging environmental states such as extreme heat,
+          humidity, cold, or dirt.
+        </p>
+
+        <div class="graph_section2">
+          <div>
+            <input id="skill1" min="1" max="5" type="range" value="10" />
+          </div>
+          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_label">
+            <span>1</span>
+            <span>low</span>
+            <span>3</span>
+            <span>High</span>
+            <span>5</span>
+          </div>
+        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill8TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill8C}}</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper7">
+                <div class="inner_heading1">
+                  <p>Job</p>
+                  <p>flexibility</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Remote</p>
+                  <p>work</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Bussiness</p>
+                  <p>travel</p>
+                </div>
+                <div class="inner_heading1">
+                  <p>Worksite</p>
+                  <p>hazards</p>
+                </div>
+                <div class="inner_heading1" style="margin-left: -30px">
+                  <p>Shifting</p>
+                  <p>work</p>
+                  <p>demands</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">09</div>
+        </div>
+      </div>
+      <div class="introduction page">
+        <h1 class="take_away_heading">Key takeaways</h1>
+        <ul class="key_take_away_list">
+          <li class="key_take_away_list_item">{{keys}}</li>
+        </ul>
+        <h1 class="take_away_heading2">Suggested interview questions</h1>
+        <ul class="key_take_away_list">
+          <li class="key_take_away_list_item">{{question1}}</li>
+          <li class="key_take_away_list_item">{{question2}}</li>
+          <li class="key_take_away_list_item">{{question3}}</li>
+          <li class="key_take_away_list_item">{{question4}}</li>
+        </ul>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">09</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419609662_lastPage.png"
+        alt="footer"
+        class="footer_img"
+      />
+      <p>&#169; 2023 zapilio.com CONFIDENTIAL DOCUMENT</p>
+    </footer>
+
+    <script>
+       var score = [{{ applicantData }}];
+
+      // populate the sliders with socres
+      score.forEach((score, i) => {
+        const myRangeInput = document.getElementById(`skill${i + 1}`);
+        myRangeInput.value = score;
+      });
+
+      const ctx = document.getElementById("myChart1");
+      const myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Handling Emergency or Crisis Situations", "Handling Work Stress","Handling Work Stress","Dealing with Uncertain and Unpredictable Work Situations","Learning Work Tasks, Technologies, and Procedures","Demonstrating Interpersonal Adaptability","Demonstrating Cultural Adaptability","Demonstrating Physically Oriented Adaptability"],
+          datasets: [
+            {
+              label: "",
+              data: [{{applicantData}}],
+
+              pointRadius: 6,
+              backgroundColor: "rgb(253, 136, 93)",
+              showLine: true,
+            },
+          ],
+        },
+
+        options: {
+          scales: {
+            x: {
+              ticks: {
+                maxRotation: 90,
+                minRotation: 90,
+              },
+            },
+          },
+          responsive: true,
+        },
+      });
+    </script>
+  </body>
+</html>
