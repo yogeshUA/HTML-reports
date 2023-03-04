@@ -1803,5 +1803,50 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Frit Assessment Report",
+    "template": "Grit.html",
+    "count": 1,
+    "inference": true,
+    "levels": [1, 3, 5],
+    "skills": [
+      {
+        "skill": "Grit",
+        "skill1T1": "Grit refers to a person’s passion and perseverance for long-term goals.",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "low",
+            "skill1TT1": "The applicant has scored low on the Grit scale. They are not passionate and perseverant. They easily get distracted and move from one task to another. They rarely attach personal meaning or value to any tasks they perform. They find little to no value in pushing through their work when it is facing lots of obstacles, downfall, or stagnant progress.",
+            "skill1C": "The applicant's score on this scale suggests that they tend to struggle with",
+            "skill1S": [
+              "Controlling their impulses and prioritizing their tasks",
+              "Bouncing back from failure and keep moving forward",
+              "Being deeply committed to their work and having a strong sense of purpose",
+              "Adapting to changing circumstances and finding creative solutions to problems",
+              "Having a clear understanding of their goals and working tirelessly to achieve them",
+              "Having a strong resolve to achieve their goals in the face of challenges and setbacks",
+              "Not giving up easily and keep pushing forward, even under challenging circumstances"
+            ]
+          },
+
+          {
+            "level": "high",
+            "skill1TT1": "The applicant has scored high on the Grit scale. They are passionate and perseverant. They are not passionate about everything. But they focus their time and energy on one/limited things which hold meaning and importance for them personally.",
+            "skill1C": "People who score similarly to the applicant on this scale suggest that they tend to",
+            "skill1S": [
+              "Control their impulses and prioritize their tasks",
+              "Bounce back from failure and keep moving forward",
+              "Keep pushing forward despite challenging circumstances",
+              "Have a strong resolve to achieve goals even after setbacks",
+              "Be deeply committed to their work and have a strong sense of purpose",
+              "Adapt to changing circumstances and find creative solutions to problems",
+              "Have a clear understanding of their goals and work tirelessly to achieve them"
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
