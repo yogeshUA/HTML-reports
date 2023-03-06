@@ -1,0 +1,1213 @@
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>zapilio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc/dist/chartjs-plugin-datalabels.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        max-width: 800px;
+      }
+      .hero_section {
+        position: relative;
+        width: 800px;
+        height: 1132px;
+        border: 1px solid;
+      }
+      .landing_template {
+        width: 100%;
+        object-fit: contain;
+      }
+      table {
+        border-collapse: separate;
+        border-spacing: 0 20px; /* increase the spacing value to add more space between rows */
+      }
+      td,
+      th {
+        padding: 2px 55px; /* add vertical padding to cells to create space between rows */
+        border-bottom: 1px solid rgb(156, 146, 146); /* add a border after each row */
+      }
+
+      .heading {
+        font-family: Inter;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 64px;
+        position: absolute;
+        bottom: 240px;
+        left: 25px;
+        width: 40%;
+        display: flex;
+        flex-wrap: no-wrap;
+        white-space: nowrap; /* prevent text from wrapping */
+        color: white;
+      }
+      .name_wrapper {
+        position: absolute;
+        bottom: 225px;
+        right: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .name,
+      .date {
+        font-family: Inter;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 0.5px;
+        padding: 0px 20px;
+      }
+      .date {
+        border-left: 1px solid #333;
+      }
+
+      .conadidate_section {
+        /* margin: 0 48px; */
+        font-family: Inter;
+      }
+      .details_wrapper {
+        margin-top: 0px;
+        padding: 8px 0px 40px;
+        border-bottom: 2px solid rgb(253, 136, 93);
+      }
+      .candidate_heading {
+        text-align: center;
+        background-color: rgb(231, 230, 230);
+        padding: 8px;
+        letter-spacing: 0.5px;
+      }
+
+      .condidate_name {
+        font-family: Inter;
+        font-size: 16px;
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .wrapper div {
+        display: flex;
+        flex-direction: column;
+      }
+      .wrapper div:nth-child(2) {
+        border-left: 2px solid #333;
+        padding-left: 18px;
+      }
+      .assessment_sub_heading {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .sub_heading_indicator {
+        color: rgb(255, 60, 0);
+      }
+      .company_name {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 12px;
+      }
+      .date_of_assessment {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .no_of_assessment {
+        margin-top: 12px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .content {
+        font-size: 16px;
+        margin-top: 40px;
+      }
+      .grit_img_section {
+        width: 100%;
+        margin-top: 56px;
+        position: relative;
+      }
+
+      .grit_img_section2 {
+        width: 100%;
+        margin-right: 200px;
+        position: relative;
+      }
+
+      .grit_img_section3 {
+        position: relative;
+        left: -70px; /* adjust the value to your desired position */
+      }
+
+      .grit_img {
+        width: 100%;
+      }
+
+      .inner_icon {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        height: 120px;
+        width: 120px;
+      }
+
+      .inner_content_wrapper {
+        position: absolute;
+        top: 64px;
+        right: 60px;
+        font-family: Inter;
+      }
+
+      .inner_heading {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        line-height: 0px;
+        letter-spacing: 0.5px;
+      }
+
+      .inner_content {
+        font-size: 10px;
+        max-width: 350px;
+        font-weight: 300;
+        color: rgb(255, 250, 250);
+        line-height: 12px;
+      }
+
+      .introduction {
+        font-family: Inter;
+        /* margin: 110px 54px 0px; */
+      }
+
+      .intro_heading {
+        font-size: 42px;
+        color: #4e4e4e;
+        letter-spacing: 0.5px;
+        position: relative;
+        margin-bottom: 56px;
+      }
+      .intro_heading::after {
+        content: "";
+        background-color: rgb(243, 99, 3);
+        height: 5px;
+        width: 90px;
+        position: absolute;
+        bottom: -18px;
+        left: 0px;
+      }
+      li:before {
+        content: "•";
+        color: darkorange;
+        font-size: 1.6em;
+        margin-right: 0.5em;
+      }
+      .lists-container li {
+        margin-right: 200px;
+      }
+
+      .lists-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .list1,
+      .list2 {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .intro_sub_heading {
+        font-size: 15px;
+        font-weight: 700;
+        font-style: italic;
+        color: #4d4d4d;
+        margin-bottom: 24px;
+        margin-top: 32px;
+      }
+
+      .intro_sub_heading1 {
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        color: #4d4d4d;
+      }
+
+      .intro_content {
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(85, 84, 84);
+      }
+
+      .zc-ref {
+        display: none;
+      }
+      .score_label {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+      }
+
+      .score {
+        font-weight: 600;
+        text-align: center;
+        font-family: Inter;
+        color: rgb(90, 89, 89);
+        font-size: 14px;
+      }
+
+      .intro_content1 {
+        font-style: normal;
+        line-height: 28px;
+      }
+
+      input[type="range"] {
+        margin: auto;
+        -webkit-appearance: none;
+        position: relative;
+        overflow: hidden;
+        height: 16px;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 0;
+        border-radius: 4px;
+      }
+
+      ::-webkit-slider-runnable-track {
+        background: #999999;
+      }
+      ::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 38px;
+        background: #424143;
+        box-shadow: -800px 0 0 800px #f15722;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 5px; /* set the height of the slider rail */
+        border-radius: 5px;
+        background: #ddd;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px; /* set the height of the slider thumb */
+        border-radius: 50%;
+        background: #4caf50;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4caf50;
+        cursor: pointer;
+      }
+
+      .range_tracker {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        gap: 5px;
+      }
+      .range_tracker > span {
+        height: 16px;
+        width: 49%;
+        border: 1px solid rgb(139, 139, 139);
+        border-top: none;
+      }
+      .range_label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 4px;
+        color: #424143;
+      }
+
+      .graph_section2 {
+        border-top: 1px solid rgb(243, 79, 3);
+        padding-top: 32px;
+        margin-top: 111px;
+      }
+      .graph2_desc {
+        color: #02a887;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 80px;
+      }
+      .list_after_graph {
+        margin-top: 40px;
+        color: rgb(139, 139, 139);
+      }
+
+      .list_wrapper_after_graph {
+        position: relative;
+      }
+      .list_wrapper_after_graph p {
+        padding-left: 50px;
+        font-size: 14px;
+        line-height: 10px;
+        font-weight: 500;
+        white-space: pre-wrap;
+        line-height: 1.2em;
+        color: rgb(92, 91, 91);
+      }
+
+      .list_wrapper_after_graph::before {
+        content: "";
+        height: 100%;
+        width: 30px;
+        background-color: #03866c;
+        position: absolute;
+      }
+      .list_after_graph1 {
+        margin-top: 40px;
+        list-style-type: disc;
+        color: rgb(139, 139, 139);
+      }
+
+      .list_wrapper_after_graph1 {
+        position: relative;
+        list-style-type: disc;
+      }
+      .list_wrapper_after_graph1 p {
+        padding-left: 50px;
+        font-size: 14px;
+        list-style-type: disc;
+        line-height: 10px;
+        font-weight: 500;
+        white-space: pre-wrap;
+        line-height: 1.2em;
+        color: rgb(92, 91, 91);
+      }
+
+      .list_wrapper_after_graph1::before {
+        content: "";
+        height: 100%;
+        list-style-type: disc;
+        width: 30px;
+        background-color: #03866c;
+        position: absolute;
+      }
+
+      .take_away_heading {
+        margin-top: 100px;
+      }
+
+      .key_take_away_list {
+        list-style: none;
+        border: 1px solid orangered;
+        padding: 12px;
+        padding-left: 32px;
+      }
+
+      .key_take_away_list li {
+        font-size: 14px;
+        color: #666565;
+        line-height: 32px;
+        font-weight: 500;
+      }
+      .key_take_away_list li::before {
+        content: "\2022";
+        color: orangered;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      .take_away_heading2 {
+        margin-top: 48px;
+      }
+      footer {
+        max-width: 800px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer_img {
+        width: 100%;
+      }
+      .page {
+        width: 800px;
+        height: 1132px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        position: relative;
+        border: 1px solid;
+      }
+      .page_footer {
+        width: 850px;
+        display: flex;
+        left: -50;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 15px;
+      }
+      .footer_title {
+        padding: 5px 0;
+        padding-left: 90px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 460px;
+        background-color: #f2f3f2;
+        transform: skew(-45deg);
+      }
+      .copyright {
+        font-size: 12px;
+        transform: skew(45deg);
+      }
+      .report {
+        font-size: 8px;
+        transform: skew(45deg);
+      }
+      .page_number {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        width: 130px;
+        text-align: center;
+        background-image: url("https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419670809_page_number.png");
+      }
+
+      .no-margin {
+        margin: 3px;
+        padding: 0;
+      }
+
+      footer > p {
+        background-color: rgb(241, 88, 33);
+        position: absolute;
+        line-height: 24px;
+        bottom: 0px;
+        text-align: center;
+        font-family: Inter;
+        width: 70%;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        color: white;
+      }
+      .skill_title {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .skill_desc {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666565;
+      }
+      .skill_list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .graph-container {
+        margin: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .graph {
+        height: 500px;
+        width: 500px;
+      }
+      .desc_line1,
+      .desc_line2 {
+        font-weight: 500;
+        font-size: 12px;
+        color: rgb(107, 106, 106);
+        font-family: Inter;
+        line-height: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <!-- !COVER -->
+      <div class="hero_section">
+        <img
+          src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419452059_coverImage.png"
+          alt="hero-sec"
+          class="landing_template"
+        />
+        <h1 class="heading">
+          VALUE PRIORITIES<br />
+          ASSESSMENT <br />REPORT
+        </h1>
+        <div class="name_wrapper">
+          <span class="name">{{applicant}}</span
+          ><span class="date">{{dtAssessment}}</span>
+        </div>
+      </div>
+      <!-- !CANDIDATE DETAILS -->
+      <div class="conadidate_section page">
+        <h2 class="candidate_heading">Candidate Details</h2>
+        <div class="details_wrapper">
+          <h3 class="condidate_name">Name - {{applicant}}</h3>
+          <div class="wrapper">
+            <div>
+              <span class="assessment_sub_heading"
+                >Assessed for
+                <span class="sub_heading_indicator"
+                  >Value Priorities</span
+                ></span
+              >
+              <span class="company_name">For {{job}}</span>
+            </div>
+            <div>
+              <span class="date_of_assessment">Date - {{dtAssessment}}</span>
+              <span class="no_of_assessment">No. of Assessments - 1</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="content">
+          The applicant took 1 assessment on {{dtAssessment}} which was
+        </h2>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419500668_image1.png"
+            alt="grit_icon"
+            class="grit_img"
+          />
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678080419855_value%2010-14.png"
+            alt=""
+            class="inner_icon"
+            style="left: 106px"
+          />
+          <div class="inner_content_wrapper">
+            <p class="inner_heading">Value Priorities</p>
+            <p class="inner_content">
+              Aid to obtain profound and precise insights into the value
+              underpinnings of the beliefs and attitudes of the candidate.
+            </p>
+          </div>
+        </div>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">02</div>
+        </div>
+      </div>
+      <!-- !ASSESSMENT DETAILS -->
+      <div class="introduction page">
+        <h1 class="intro_heading">
+          Value Priorities<br />
+          (10 Values)
+        </h1>
+        <p class="intro_content">
+          According to Schwartz theory of basic human values[1], 10 human values
+          are arranged along a circular motivational continuum. Each item
+          consists of a single sentence that describes a particular person in
+          terms of the ambitions, wants, or objectives they value most in life.
+          Respondents rate how similar the person described is to them.
+        </p>
+        <p class="intro_sub_heading">Values Definition</p>
+        <p class="intro_content">
+          Based on the Schwartz theory of basic values, this assessment
+          describes the four major values of an individual along with 10
+          sub-values.
+        </p>
+        <!-- #559C5B #AF4BA8 #4F4B9E #34D025 #B619CC  #317BAF #559C5B-->
+        <div class="skill_list">
+          <div class="grit_img_section1">
+            <img
+              src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678083082401_graph12.png"
+              alt="grit_icon"
+              class="grit_img1"
+            />
+          </div>
+        </div>
+
+        <p class="desc_line1" style="margin-top: 100px">
+          [1]Schwartz, S. H. (2021). A Repository of Schwartz Value Scales with
+          Instructions and an Introduction. Online Readings in Psychology and
+          Culture, 2(2). https://doi.org/10.9707/2307-0919.1173
+        </p>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">03</div>
+        </div>
+      </div>
+
+      <div class="introduction page">
+        <!-- !SKILL LIST CONTINUED -->
+        <table style="margin-top: 20px">
+          <tr>
+            <th class="intro_sub_heading1">Major Values</th>
+            <th class="intro_sub_heading1">Sub Values</th>
+            <th class="intro_sub_heading1" style="color: #f15722">
+              Priorities
+            </th>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading">Self Transcendence</td>
+            <td style="font-size: 14px">Universalism</td>
+            <td style="font-size: 14px">
+              Preserve Nature<br />
+              Promote Equality<br />
+              Liberal
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading">Self Enhancement</td>
+            <td style="font-size: 14px">Benevolence</td>
+            <td style="font-size: 14px">
+              Caring<br />
+              Trustworthy<br />
+              Compassionate
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading"></td>
+            <td style="font-size: 14px">Power</td>
+            <td style="font-size: 14px">
+              Prestige <br />Authority<br />
+              Wealth
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading">Openness to change</td>
+            <td style="font-size: 14px">Achievement</td>
+            <td style="font-size: 14px">
+              Mastery<br />
+              Go-getter<br />
+              Eminence
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading"></td>
+            <td style="font-size: 14px">Stimulation</td>
+            <td style="font-size: 14px">
+              Novelty<br />
+              Adventure<br />
+              Excitement
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading">Conservation</td>
+            <td style="font-size: 14px">Self-direction</td>
+            <td style="font-size: 14px">
+              Free will<br />
+              Creativity<br />
+              Autonomy
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading"></td>
+            <td style="font-size: 14px">Hedonism</td>
+            <td style="font-size: 14px">
+              Pleasure<br />
+              Self-indulgence<br />
+              Sensuous Gratification
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading"></td>
+            <td style="font-size: 14px">Tradition</td>
+            <td style="font-size: 14px">
+              Preserve Culture<br />
+              Religious Traditions<br />
+              Humble
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading"></td>
+            <td style="font-size: 14px">Conformity</td>
+            <td style="font-size: 14px">
+              Conformist<br />
+              Harmony<br />
+              People-pleaser
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading"></td>
+            <td style="font-size: 14px">Security</td>
+            <td style="font-size: 14px">
+              Protection<br />
+              Personal safety<br />
+              Personal security
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading"></td>
+            <td style="font-size: 14px">Face</td>
+            <td style="font-size: 14px">
+              Honor<br />
+              Dignity<br />
+              Reputation
+            </td>
+          </tr>
+        </table>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">04</div>
+        </div>
+      </div>
+
+      <!-- !Self Enhancement -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Self Enhancement</h1>
+        <p class="intro_sub_heading">
+          Values the pursuit of one’s relative success and dominance over others
+        </p>
+        <div class="skill_list">
+          <div class="grit_img_section3">
+            <img
+              src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678098884557_selfEnhancement.png"
+              alt="grit_icon"
+              class="grit_img"
+            />
+          </div>
+        </div>
+
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
+        <p class="intro_sub_heading">Score Interpretation</p>
+        <p class="skill_desc">
+          The applicant's score on the Self-Enhancement Scale suggests that they
+          tend to be
+        </p>
+
+        <div class="lists-container">
+          <ul class="list1">
+            <li>{{skillscore1T1}}</li>
+            <li>{{skillscore1T2}}</li>
+            <li>{{skillscore1T3}}</li>
+            <li>{{skillscore1T4}}</li>
+          </ul>
+          <ul class="list2">
+            <li>{{skillscore2T1}}</li>
+            <li>{{skillscore2T2}}</li>
+            <li>{{skillscore2T3}}</li>
+            <li>{{skillscore2T4}}</li>
+          </ul>
+        </div>
+        <p class="intro_sub_heading">Subscale Composition</p>
+        <p class="skill_desc">
+          A deep understanding of the applicant's values can be gained through
+          the following subscale score breakup.
+        </p>
+
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Power
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Attainment or preservation of a dominant position
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Achievement
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Competence in cultural standards, obtaining social approval
+          </p>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">05</div>
+        </div>
+      </div>
+      <!-- !Self Transcendence -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Self Transcendence</h1>
+        <p class="intro_sub_heading">
+          Values acceptance of others as equals and concern for their welfare
+        </p>
+        <div class="skill_list">
+          <div class="grit_img_section3">
+            <img
+              src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678100614173_SelfTranscedence.png"
+              alt="grit_icon"
+              class="grit_img"
+            />
+          </div>
+        </div>
+
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
+        <p class="intro_sub_heading">Score Interpretation</p>
+        <p class="skill_desc"></p>
+        The applicant's score on the Self-Transcendence Scale suggests that they
+        are indifferent to
+        <div class="lists-container">
+          <ul class="list1">
+            <li>{{skillscore1T1}}</li>
+            <li>{{skillscore1T2}}</li>
+            <li>{{skillscore1T3}}</li>
+            <li>{{skillscore1T4}}</li>
+          </ul>
+        </div>
+        <p class="intro_sub_heading">Subscale Composition</p>
+        <p class="skill_desc">
+          A deep understanding of the applicant's values can be gained through
+          the following subscale score breakup.
+        </p>
+
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Universalism
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Survival needs of individuals and groups
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Benevolence
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Need for affiliation
+          </p>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">06</div>
+        </div>
+      </div>
+      <!-- !Openness to Change -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Openness to Change</h1>
+        <p class="intro_sub_heading">
+          Values independent thought and action and favors change
+        </p>
+        <div class="skill_list">
+          <div class="grit_img_section3">
+            <img
+              src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678101202532_Screenshot%20%28569%29.png"
+              alt="grit_icon"
+              class="grit_img"
+            />
+          </div>
+        </div>
+
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
+        <p class="intro_sub_heading">Score Interpretation</p>
+        <p class="skill_desc"></p>
+        The applicant's score on the Openness to Change Scale suggests that they
+        tend to be
+        <div class="lists-container">
+          <ul class="list1">
+            <li>{{skillscore1T1}}</li>
+            <li>{{skillscore1T2}}</li>
+            <li>{{skillscore1T3}}</li>
+            <li>{{skillscore1T4}}</li>
+          </ul>
+        </div>
+        <p class="intro_sub_heading">Subscale Composition</p>
+        <p class="skill_desc">
+          A deep understanding of the applicant's values can be gained through
+          the following subscale score breakup.
+        </p>
+
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Self-direction
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Need for autonomy and independence
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Stimulation
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Excitement to try out new things
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Hedonism
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Values pleasure associated with satisfying needs
+          </p>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">07</div>
+        </div>
+      </div>
+      <!-- !Conservation -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Conservation</h1>
+        <p class="intro_sub_heading">
+          Values submissiveness, self-restriction, preservation of traditional
+          practices, and protection of stability
+        </p>
+        <div class="skill_list">
+          <div class="grit_img_section3">
+            <img
+              src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678101787458_conservation.png"
+              alt="grit_icon"
+              class="grit_img"
+            />
+          </div>
+        </div>
+
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
+        <p class="intro_sub_heading">Score Interpretation</p>
+        <p class="skill_desc"></p>
+        The applicant's score on the Conservation Scale suggests that they are
+        indifferent to
+        <div class="lists-container">
+          <ul class="list1">
+            <li>{{skillscore1T1}}</li>
+            <li>{{skillscore1T2}}</li>
+            <li>{{skillscore1T3}}</li>
+            <li>{{skillscore1T4}}</li>
+          </ul>
+        </div>
+        <p class="intro_sub_heading">Subscale Composition</p>
+        <p class="skill_desc">
+          A deep understanding of the applicant's values can be gained through
+          the following subscale score breakup.
+        </p>
+
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Tradition
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Responsiveness to immutable expectations from the past
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Conformity
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Subordination to people with whom one frequently interacts
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Security
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Safety for self or those with whom one identifies
+          </p>
+        </div>
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">08</div>
+        </div>
+      </div>
+      <!-- !Face -->
+      <div class="introduction page">
+        <h1 class="intro_heading">Face</h1>
+        <p class="intro_sub_heading">
+          Face is located between the higher order self-enhancement and
+          conservation values and is measured and interpreted independently.
+        </p>
+
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
+        <p class="intro_sub_heading">Score Interpretation</p>
+        <p class="skill_desc"></p>
+        The applicant's score on the Face Scale suggests that they tend to
+        <div class="lists-container">
+          <ul class="list1">
+            <li>{{skillscore1T1}}</li>
+            <li>{{skillscore1T2}}</li>
+            <li>{{skillscore1T3}}</li>
+            <li>{{skillscore1T4}}</li>
+          </ul>
+        </div>
+        <p class="intro_sub_heading">Subscale Composition</p>
+        <p class="skill_desc">
+          A deep understanding of the applicant's values can be gained through
+          the following subscale score breakup.
+        </p>
+
+        <div>
+          <p class="intro_sub_heading no-margin" style="font-size: 14px">
+            Face
+          </p>
+          <p class="skill_desc no-margin" style="font-size: 12px">
+            Maintaining one’s public image and avoiding humiliation
+          </p>
+        </div>
+        <br />
+        <br />
+
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">09</div>
+        </div>
+      </div>
+
+      <div class="introduction page">
+        <h1 class="take_away_heading">Key takeaways</h1>
+        <ul class="key_take_away_list">
+          <li class="key_take_away_list_item">{{skill1T1}}</li>
+        </ul>
+        <h1 class="take_away_heading2">Suggested interview questions</h1>
+        <ul class="key_take_away_list">
+          <li class="key_take_away_list_item">{{question1}}</li>
+          <li class="key_take_away_list_item">{{question2}}</li>
+          <li class="key_take_away_list_item">{{question3}}</li>
+        </ul>
+        <div class="page_footer">
+          <div class="footer_title">
+            <div class="copyright">&#169; 2023 zapilio.com</div>
+            <div class="report">CONFIDENTIAL DOCUMENT</div>
+          </div>
+
+          <div class="page_number">10</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419609662_lastPage.png"
+        alt="footer"
+        class="footer_img"
+      />
+      <p>&#169; 2023 zapilio.com CONFIDENTIAL DOCUMENT</p>
+    </footer>
+
+    <script>
+       var score = [{{ applicantData }}];
+
+      // populate the sliders with socres
+      score.forEach((score, i) => {
+        const myRangeInput = document.getElementById(`skill${i + 1}`);
+        myRangeInput.value = score;
+      });
+
+      // const serials = Array.from({ length: 7 }, (_, i) => i + 1);
+      // const scoredIndicator = document.querySelector(`.skill1S`);
+      // const pseudoElementStyle = window.getComputedStyle(scoredIndicator, "::before");
+      // pseudoElementStyle.setProperty("background-color", "#d8186a");
+
+      // iterate over the array of serials
+      // const serials = [{{skill1L}},{{skill2L}},{{skill3L}}, {{skill4L}}, {{skill5L}}, {{skill6L}}, {{skill7L}}]
+      // serials.forEach((serial,i) => {
+
+      // const scoredIndicator = document.getElementsByClassName(`skill${serial}S`);
+      // const scoredText = document.querySelector(`.skill${i+1}C`);
+
+      // computed style of the ::before pseudo-element of the <div> element
+      // const pseudoElementStyle = window.getComputedStyle(scoredIndicator, "::before");
+
+      //  background color of the pseudo-element based on the value of scored
+      // if (scored === "High") {
+      // pseudoElementStyle.setProperty("background-color", "#03866c");
+      // scoredText.style.color = "#03866c";
+      // } else {
+      // pseudoElementStyle.setProperty("background-color", "#d8186a");
+      // scoredText.style.color = "#d8186a";
+      // }
+      // });
+      // const labels = Utils.months({ count: 7 });
+      const ctx = document.getElementById("myChart1");
+      const myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Centrality of Work", "Self-Reliance", "Hard Work", "Leisure", "Morality/Ethics", "Delay of Gratification", "Wasted Time"],
+          datasets: [
+            {
+              label: "",
+              data: [{{applicantData}}],
+
+              pointRadius: 6,
+              backgroundColor: "rgb(253, 136, 93)",
+              showLine: true,
+            },
+          ],
+        },
+
+        options: {
+          scales: {
+            x: {
+              ticks: {
+                maxRotation: 90,
+                minRotation: 90,
+              },
+            },
+          },
+          responsive: true,
+        },
+      });
+    </script>
+  </body>
+</html>

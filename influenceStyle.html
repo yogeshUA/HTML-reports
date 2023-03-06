@@ -607,7 +607,8 @@
         transform: translateY(-50%);
         }/* Style the slider */
 
-.slider::-webkit-slider-thumb {
+        
+ .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 40px;
@@ -616,6 +617,7 @@
   cursor: pointer;
   border-radius: 50%;
   position: relative;
+  
 }
 
 .slider::-webkit-slider-thumb::before {
@@ -1427,11 +1429,14 @@ group they are trying to influence make their own decisions.
     <script>
 var slider = document.getElementById("myRange");
 var output = document.getElementById("sliderValue");
+
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
-  output.innerHTML = this.value;
+  output.innerHTML = "";
+  output.innerHTML = slider.value;
 }
+
 
     </script>
   </body>
