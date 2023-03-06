@@ -1805,7 +1805,7 @@
     ]
   },
   {
-    "name": "Frit Assessment Report",
+    "name": "Grit Assessment Report",
     "template": "Grit.html",
     "count": 1,
     "inference": true,
