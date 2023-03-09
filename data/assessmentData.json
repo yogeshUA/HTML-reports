@@ -1782,18 +1782,24 @@
     "template": "Influence.html",
     "count": 1,
     "inference": true,
-
+    "details": true,
     "skills": [
       {
         "skill": "Value-Driven Style",
-        "skill1T1": "Value-driven style of influencing focuses on aligning their message with the values and beliefs of the person or group they are trying to influence.",
+        "description": "Value-driven style of influencing focuses on aligning their message with the values and beliefs of the person or group they are trying to influence.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "skill1TT1": "A high score on the value-driven style of influencing indicates the applicant has the ability to align their message with their audience's values and beliefs, building trust and credibility by demonstrating understanding and respect for their values. They are perceived as ethical, trustworthy, and effective in influencing others by appealing to their moral sense and creating mutual understanding.",
-            "skill1C": "Good at influencing others in the following situations",
-            "skill1S": [
+            "count": 5,
+            "inference": [
+              "A high score on the value-driven style of influencing indicates the applicant has the ability to align their message with their audience's values and beliefs, building trust and credibility by demonstrating understanding and respect for their values. They are perceived as ethical, trustworthy, and effective in influencing others by appealing to their moral sense and creating mutual understanding."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Campaigns to support a particular cause",
               "Sales of products or services that have a strong social or environmental impact",
               "Social responsibility initiatives to promote and defend specific ethical or moral principles",
@@ -1804,9 +1810,14 @@
 
           {
             "level": "low",
-            "skill1TT1": "A low value-driven influence score means difficulty aligning message with audience values, leading to lack of trust and credibility. This results in the person being perceived as less ethical, trustworthy, and effective in influencing others. Difficulty creating mutual understanding and shared goals with audience.",
-            "skill1C": "Likely to struggle with convincing others in the following situations",
-            "skill1S": [
+            "count": 5,
+            "inference": [
+              "A low value-driven influence score means difficulty aligning message with audience values, leading to lack of trust and credibility. This results in the person being perceived as less ethical, trustworthy, and effective in influencing others. Difficulty creating mutual understanding and shared goals with audience."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Campaigns to support a particular cause",
               "Sales of products or services that have a strong social or environmental impact",
               "Social responsibility initiatives to promote and defend specific ethical or moral principles",
@@ -1818,14 +1829,20 @@
       },
       {
         "skill": "Goal Setting Style",
-        "skill2T1": "Goal setting style of influencing helps the person or group they are trying to influence to set and achieve specific and measurable goals.",
+        "description": "Goal setting style of influencing helps the person or group they are trying to influence to set and achieve specific and measurable goals.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill2TT1": "A high score on goal-setting style of influencing means the applicant is good at identifying and addressing the needs and goals of the people they want to influence, and helping them develop a plan to achieve those goals. This leads to high motivation and commitment, and the audience is more likely to take action. A high score suggests they are seen as effective in helping others set and achieve goals, providing clear direction and purpose, and understanding their audience's aspirations.",
-            "skill2C": "Good at influencing others in the following situations",
-            "skill2S": [
+            "count": 5,
+            "inference": [
+              "A high score on goal-setting style of influencing means the applicant is good at identifying and addressing the needs and goals of the people they want to influence, and helping them develop a plan to achieve those goals. This leads to high motivation and commitment, and the audience is more likely to take action. A high score suggests they are seen as effective in helping others set and achieve goals, providing clear direction and purpose, and understanding their audience's aspirations."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Setting clear, measurable goals and holding team members accountable for achieving them",
               "Career development and coaching to help individuals set and achieve personal and professional goals.",
               "Performance improvement initiatives to set performance standards and track progress towards specific objectives",
@@ -1835,9 +1852,14 @@
 
           {
             "level": "low",
-            "Skill2TT1": "A low score on the goal-setting style of influencing indicates difficulty in identifying and addressing audiences’ needs, difficulty helping them develop a plan, and lack of support and resources offered, leading to low motivation and commitment. This results in being perceived as less effective in helping others set and achieve goals, lacking the ability to provide clear direction and purpose.",
-            "skill2C": "Likely to struggle with convincing others in the following situations",
-            "skill2S": [
+            "count": 5,
+            "inference": [
+              "A low score on the goal-setting style of influencing indicates difficulty in identifying and addressing audiences’ needs, difficulty helping them develop a plan, and lack of support and resources offered, leading to low motivation and commitment. This results in being perceived as less effective in helping others set and achieve goals, lacking the ability to provide clear direction and purpose."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Another issue is more pressing",
               "Time constraints demand a delay",
               "The stakes are not high or the issue is trivial",
@@ -1852,14 +1874,20 @@
       },
       {
         "skill": "Need Fulfillment Style",
-        "skill3T1": "Need fulfilment style of influencing focuses on identifying and addressing the needs of the person or group they are trying to influence.",
+        "description": "Need fulfilment style of influencing focuses on identifying and addressing the needs of the person or group they are trying to influence.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill3TT1": "High score on need fulfilment style of influencing means the applicant is skilled in identifying and meeting the needs of their audience. They understand audience's needs and provide solutions and resources to meet them, building trust and credibility. They are seen as helpful, reliable, and effective in providing what their audience needs.",
-            "skill3C": "Good at influencing others in the following situations",
-            "skill3S": [
+            "count": 5,
+            "inference": [
+              "High score on need fulfilment style of influencing means the applicant is skilled in identifying and meeting the needs of their audience. They understand audience's needs and provide solutions and resources to meet them, building trust and credibility. They are seen as helpful, reliable, and effective in providing what their audience needs."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Customer service to meet the needs and expectations of the customer",
               "Building trust and rapport by fulfilling the needs and desires of the other person",
               "Finding a mutually acceptable solution that meets the needs and concerns of all parties involved",
@@ -1869,9 +1897,14 @@
 
           {
             "level": "low",
-            "Skill3TT1": "A low score on the need fulfilment style of influencing indicates difficulty identifying and addressing audience needs, lacking understanding of their wants and desires, and difficulty providing solutions. This results in a lack of trust and credibility, leading to low acceptance and effectiveness in providing resources. The influencer may be perceived as less helpful, unreliable, and ineffective in meeting audience needs and providing solutions to problems.",
-            "skill3C": "Likely to struggle with convincing others in the following situations",
-            "skill3S": [
+            "count": 5,
+            "inference": [
+              "A low score on the need fulfilment style of influencing indicates difficulty identifying and addressing audience needs, lacking understanding of their wants and desires, and difficulty providing solutions. This results in a lack of trust and credibility, leading to low acceptance and effectiveness in providing resources. The influencer may be perceived as less helpful, unreliable, and ineffective in meeting audience needs and providing solutions to problems."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Customer service to meet the needs and expectations of the customer",
               "Building trust and rapport by fulfilling the needs and desires of the other person",
               "Finding a mutually acceptable solution that meets the needs and concerns of all parties involved",
@@ -1882,14 +1915,20 @@
       },
       {
         "skill": "Visioning Style",
-        "skill4T1": "Visioning style of influencing focuses on helping the person or group they are trying to influence to envision a positive future and to inspire them to take action to achieve that future.",
+        "description": "Visioning style of influencing focuses on helping the person or group they are trying to influence to envision a positive future and to inspire them to take action to achieve that future.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill4TT1": "A high score on the visioning style of influencing means the person has the ability to create a compelling vision aligned with audience values and aspirations, motivating them to take steps towards realizing it. They use techniques like storytelling and imagery, provide guidance and support, and inspire action towards a shared goal. This results in being perceived as visionary, inspiring, and effective in motivating others towards a shared goal.",
-            "skill4C": "Good at influencing others in the following situations",
-            "skill4S": [
+            "count": 5,
+            "inference": [
+              "A high score on the visioning style of influencing means the person has the ability to create a compelling vision aligned with audience values and aspirations, motivating them to take steps towards realizing it. They use techniques like storytelling and imagery, provide guidance and support, and inspire action towards a shared goal. This results in being perceived as visionary, inspiring, and effective in motivating others towards a shared goal."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Imagine and communicate new and visionary ideas and solutions",
               "Help individuals understand and embrace a shared vision as a leader",
               "Accurately communicate a clear and inspiring vision for the future of the organization.",
@@ -1900,9 +1939,14 @@
 
           {
             "level": "low",
-            "Skill4TT1": "A low score on visioning style of influencing means difficulty creating a compelling future vision that aligns with the target group's values. The applicant may struggle to motivate them to make it a reality. This can lead to a lack of motivation and commitment, hindering the ability to effectively guide, provide resources and support towards a shared goal.",
-            "skill4C": "Likely to struggle with convincing others in the following situations",
-            "skill4S": [
+            "count": 5,
+            "inference": [
+              "A low score on visioning style of influencing means difficulty creating a compelling future vision that aligns with the target group's values. The applicant may struggle to motivate them to make it a reality. This can lead to a lack of motivation and commitment, hindering the ability to effectively guide, provide resources and support towards a shared goal."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Imagine and communicate new and visionary ideas and solutions",
               "Help individuals understand and embrace a shared vision as a leader",
               "Accurately communicate a clear and inspiring vision for the future of the organization.",
@@ -1916,12 +1960,18 @@
         "skill": "Rational Presentation Style",
         "skill5T1": "Rational presentation style of influencing uses logical arguments, facts, and evidence to persuade the person or group they are trying to influence.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill5TT1": "A high score on rational presentation style of influencing indicates the ability to use logical arguments, facts, and evidence to persuade others. The influencer presents information clearly and logically, using evidence to support their position and appealing to reason and logic. This results in being perceived as logical, persuasive, and effective in using evidence to make a case.",
-            "skill5C": "Good at influencing others in the following situations",
-            "skill5S": [
+            "count": 5,
+            "inference": [
+              "A high score on rational presentation style of influencing indicates the ability to use logical arguments, facts, and evidence to persuade others. The influencer presents information clearly and logically, using evidence to support their position and appealing to reason and logic. This results in being perceived as logical, persuasive, and effective in using evidence to make a case."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Technical negotiations and discussions based on facts, data, and logic",
               "Problem-solving and decision-making by analyzing and evaluating options",
               "Making informed investment decisions based on sound financial principles",
@@ -1931,9 +1981,14 @@
 
           {
             "level": "low",
-            "Skill5TT1": "A low score in rational presentation style of influencing means difficulty in using logic, facts and evidence to persuade. May lack clear, organized presentation and supporting data, leading to less credibility and effectiveness. This could result in perception as less persuasive and logical in making a case.",
-            "skill5C": "Likely to struggle with convincing others in the following situations",
-            "skill5S": [
+            "count": 5,
+            "inference": [
+              "A low score in rational presentation style of influencing means difficulty in using logic, facts and evidence to persuade. May lack clear, organized presentation and supporting data, leading to less credibility and effectiveness. This could result in perception as less persuasive and logical in making a case."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Technical negotiations and discussions based on facts, data, and logic",
               "Problem-solving and decision-making by analyzing and evaluating options",
               "Making informed investment decisions based on sound financial principles",
@@ -1946,12 +2001,18 @@
         "skill": "Pushing/ Driving",
         "skill6T1": "Pushing/ driving style of influencing uses assertiveness, directness, and a sense of urgency to persuade the person or group they are trying to influence.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill6TT1": "High score on pushing/driving style indicates applicant's ability to be assertive, direct and create a sense of urgency to influence. They motivate action through tactics like deadlines, incentives, rewards, or consequences. They are seen as persuasive, decisive and effective in getting results even under pressure.",
-            "skill6C": "Good at influencing others in the following situations",
-            "skill6S": [
+            "count": 5,
+            "inference": [
+              "High score on pushing/driving style indicates applicant's ability to be assertive, direct and create a sense of urgency to influence. They motivate action through tactics like deadlines, incentives, rewards, or consequences. They are seen as persuasive, decisive and effective in getting results even under pressure."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Achieving a specific outcome by pushing oneself and others to execute the mission successfully.",
               "Competitive sports or games, where the aim is to win by pushing oneself and others to their limits.",
               "Tight deadline projects with pressure to complete the work as quickly as possible and meet the deadline",
@@ -1961,9 +2022,14 @@
 
           {
             "level": "low",
-            "Skill6TT1": "A low score on the pushing/driving style of influencing indicates difficulty in using assertiveness, directness, and urgency to persuade others. The influencer struggles with taking charge, setting clear expectations, and pushing the audience to take action, and may lack effectiveness in tactics like setting deadlines or using incentives or consequences. This results in low motivation and commitment from the audience, and the influencer is perceived as less persuasive, less decisive, and less effective in motivating action, even under pressure.",
-            "skill6C": "Likely to struggle with convincing others in the following situations",
-            "skill6S": [
+            "count": 5,
+            "inference": [
+              "A low score on the pushing/driving style of influencing indicates difficulty in using assertiveness, directness, and urgency to persuade others. The influencer struggles with taking charge, setting clear expectations, and pushing the audience to take action, and may lack effectiveness in tactics like setting deadlines or using incentives or consequences. This results in low motivation and commitment from the audience, and the influencer is perceived as less persuasive, less decisive, and less effective in motivating action, even under pressure."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Achieving a specific outcome by pushing oneself and others to execute the mission successfully.",
               "Competitive sports or games, where the aim is to win by pushing oneself and others to their limits.",
               "Tight deadline projects with pressure to complete the work as quickly as possible and meet the deadline",
@@ -1974,14 +2040,20 @@
       },
       {
         "skill": "Institutionalizing Style",
-        "skill7T1": "Institutionalizing style of influencing seeks to embed ideas, policies, or practices within the organisation or group they are trying to influence.",
+        "description": "Institutionalizing style of influencing seeks to embed ideas, policies, or practices within the organisation or group they are trying to influence.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill7TT1": "High score in institutionalizing style means the applicant is skilled at embedding ideas, policies, or practices within a group. They create systems that ease adoption and make change permanent, part of the group's culture. They are perceived as effective in implementing and maintaining change within the group.",
-            "skill7C": "Good at influencing others in the following situations",
-            "skill7S": [
+            "count": 5,
+            "inference": [
+              "High score in institutionalizing style means the applicant is skilled at embedding ideas, policies, or practices within a group. They create systems that ease adoption and make change permanent, part of the group's culture. They are perceived as effective in implementing and maintaining change within the group."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Achieving a specific outcome by pushing oneself and others to execute the mission successfully.",
               "Competitive sports or games, where the aim is to win by pushing oneself and others to their limits.",
               "Tight deadline projects with pressure to complete the work as quickly as possible and meet the deadline",
@@ -1991,9 +2063,14 @@
 
           {
             "level": "low",
-            "Skill7TT1": "A low score in the institutionalizing style of influencing suggests the applicant may have difficulty embedding their ideas into the organization/group and creating lasting change. They may struggle with creating systems that make it easy for people to adopt their ideas and make them part of the group's culture and way of doing things, leading to a lack of permanent change.",
-            "skill7C": "Likely to struggle with convincing others in the following situations",
-            "skill7S": [
+            "count": 5,
+            "inference": [
+              "A low score in the institutionalizing style of influencing suggests the applicant may have difficulty embedding their ideas into the organization/group and creating lasting change. They may struggle with creating systems that make it easy for people to adopt their ideas and make them part of the group's culture and way of doing things, leading to a lack of permanent change."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Policy development and implementation",
               "Establishing and maintaining clear roles, responsibilities, and reporting lines",
               "Creating and maintaining policies and procedures that govern employment and workplace practices.",
@@ -2004,14 +2081,20 @@
       },
       {
         "skill": "Educating Style",
-        "skill8T1": "The Educating style of influencing uses teaching and training methods to help the person or group they are trying to influence to understand and adopt their ideas or perspective.",
+        "description": "The Educating style of influencing uses teaching and training methods to help the person or group they are trying to influence to understand and adopt their ideas or perspective.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill8TT1": "A high score on educating style means being skilled in teaching and training to help others understand and adopt ideas. They provide information, knowledge, and skills, building understanding, knowledge, and skills in the audience. They are effective in communicating new ideas. A high score suggests they are perceived as an effective teacher, trainer, and communicator.",
-            "skill8C": "Good at influencing others in the following situations",
-            "skill8S": [
+            "count": 5,
+            "inference": [
+              "A high score on educating style means being skilled in teaching and training to help others understand and adopt ideas. They provide information, knowledge, and skills, building understanding, knowledge, and skills in the audience. They are effective in communicating new ideas. A high score suggests they are perceived as an effective teacher, trainer, and communicator."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Upskilling employees by teaching them new skills and knowledge",
               "Educating an audience through public speaking and presentations",
               "Mentoring and coaching employees as an aid to progress in their career",
@@ -2021,9 +2104,14 @@
 
           {
             "level": "low",
-            "Skill8TT1": "A low score on educating style of influencing suggests a struggle to use teaching and training methods to help others understand and adopt ideas. They may not provide information, knowledge, and skills effectively, leading to a lack of understanding and acceptance of their message by the audience. They may be perceived as less effective as a teacher, trainer, or communicator, struggling to build understanding and knowledge in others.",
-            "skill8C": "Likely to struggle with convincing others in the following situations",
-            "skill8S": [
+            "count": 5,
+            "inference": [
+              "A low score on educating style of influencing suggests a struggle to use teaching and training methods to help others understand and adopt ideas. They may not provide information, knowledge, and skills effectively, leading to a lack of understanding and acceptance of their message by the audience. They may be perceived as less effective as a teacher, trainer, or communicator, struggling to build understanding and knowledge in others."
+            ],
+            "skill8C": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Policy development and implementation",
               "Establishing and maintaining clear roles, responsibilities, and reporting lines",
               "Creating and maintaining policies and procedures that govern employment and workplace practices.",
@@ -2034,14 +2122,20 @@
       },
       {
         "skill": "Supporting Style",
-        "skill9T1": "Supporting style of influencing uses a supportive and collaborative approach to help the person or group they are trying to influence make their own decisions.",
+        "description": "Supporting style of influencing uses a supportive and collaborative approach to help the person or group they are trying to influence make their own decisions.",
         "average": 0.0,
+        "levels": [8, 16],
         "analysis": [
           {
             "level": "high",
-            "Skill9TT1": "A high score in the supporting style of influencing shows the applicant's ability to use a collaborative and supportive approach to persuade the person or group they are trying to influence. They listen, understand the audience's perspective, and provide guidance and resources to help them make decisions. They build trust through showing genuine concern for their well-being and are successful in helping people increase their confidence and self-efficacy. This high score suggests they are seen as trustworthy and effective in aiding decision making and goal achievement.",
-            "skill9C": "Good at influencing others in the following situations",
-            "skill9S": [
+            "count": 5,
+            "inference": [
+              "A high score in the supporting style of influencing shows the applicant's ability to use a collaborative and supportive approach to persuade the person or group they are trying to influence. They listen, understand the audience's perspective, and provide guidance and resources to help them make decisions. They build trust through showing genuine concern for their well-being and are successful in helping people increase their confidence and self-efficacy. This high score suggests they are seen as trustworthy and effective in aiding decision making and goal achievement."
+            ],
+            "character": [
+              "Good at influencing others in the following situations"
+            ],
+            "struggle": [
               "Providing support and resources for individuals to improve their mental health and well-being",
               "Team building and collaboration by creating a positive and supportive environment for teamwork",
               "Providing customers with the help and support they need to resolve issues and meet their needs",
@@ -2051,9 +2145,14 @@
 
           {
             "level": "low",
-            "Skill9TT1": "A low score on the supporting style of influencing means the applicant may have difficulty using a collaborative approach to help others make decisions. They may struggle with active listening, understanding perspectives, and providing guidance. This could lead to a lack of trust and credibility, making it harder for the audience to accept or act on the influencer's message. A low score suggests they may be seen as less supportive, less trustworthy, and less effective at helping others achieve their goals.",
-            "skill9C": "Likely to struggle with convincing others in the following situations",
-            "skill9S": [
+            "count": 5,
+            "inference": [
+              "A low score on the supporting style of influencing means the applicant may have difficulty using a collaborative approach to help others make decisions. They may struggle with active listening, understanding perspectives, and providing guidance. This could lead to a lack of trust and credibility, making it harder for the audience to accept or act on the influencer's message. A low score suggests they may be seen as less supportive, less trustworthy, and less effective at helping others achieve their goals."
+            ],
+            "character": [
+              "Likely to struggle with convincing others in the following situations"
+            ],
+            "struggle": [
               "Providing support and resources for individuals to improve their mental health and well-being",
               "Team building and collaboration by creating a positive and supportive environment for teamwork",
               "Providing customers with the help and support they need to resolve issues and meet their needs",
