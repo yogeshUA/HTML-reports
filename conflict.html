@@ -656,7 +656,7 @@
             <canvas id="myChart1" width="200px" height="200px"></canvas>
           </div>
         </div>
-        <p class="desc_line1">
+        <p class="desc_line1" style="margin-top: 240px">
           [2]Adkins, Reginald (2006). “Conflict Management Styles Assessment.”
           elementaltruths.com. Quoted by Kathy Kacher & Trina Hoefling
           http://www.thesmartworkplace.com/wp-content/uploads/2017/05/ConflictManagementStylesAsses
@@ -688,22 +688,22 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill1" min="4" max="20" type="range" value="10" />
+            <input id="skill1" min="3" max="12" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
-            <span>4</span>
+            <span>3</span>
             <span>low</span>
-            <span>12</span>
+            <span>8</span>
             <span>High</span>
-            <span>20</span>
+            <span>12</span>
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
 
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
-            <p class="graph2_desc skill1C">{{skill1C}}</p>
+            <p class="graph2_desc skill1C">Ideal when</p>
 
             <p>{{skill1S}}</p>
           </div>
@@ -711,7 +711,7 @@
 
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill1D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill1E}}</p>
           </div>
         </div>
@@ -755,13 +755,13 @@
             <!-- {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
             {{/each}} {{/if}} -->
-            <p class="graph2_desc skill2C">{{skill2C}}</p>
+            <p class="graph2_desc skill2C">Ideal when</p>
             <p>{{skill2S}}</p>
           </div>
         </div>
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill2D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill2E}}</p>
           </div>
         </div>
@@ -788,7 +788,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="3" max="12" type="range" value="10" />
+            <input id="skill3" min="3" max="12" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -806,13 +806,13 @@
             <!-- {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
             {{/each}} {{/if}} -->
-            <p class="graph2_desc skill2C">{{skill3C}}</p>
+            <p class="graph2_desc skill2C">Ideal when</p>
             <p>{{skill3S}}</p>
           </div>
         </div>
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill3D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill3E}}</p>
           </div>
         </div>
@@ -840,7 +840,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="3" max="12" type="range" value="10" />
+            <input id="skill4" min="3" max="12" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -858,13 +858,13 @@
             <!-- {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
             {{/each}} {{/if}} -->
-            <p class="graph2_desc skill2C">{{skill4C}}</p>
+            <p class="graph2_desc skill2C">Ideal when</p>
             <p>{{skill4S}}</p>
           </div>
         </div>
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill4D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill4E}}</p>
           </div>
         </div>
@@ -890,7 +890,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="3" max="12" type="range" value="10" />
+            <input id="skill5" min="3" max="12" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -908,13 +908,13 @@
             <!-- {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
             {{/each}} {{/if}} -->
-            <p class="graph2_desc skill2C">{{skill5C}}</p>
+            <p class="graph2_desc skill2C">Ideal when</p>
             <p>{{skill5S}}</p>
           </div>
         </div>
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill5D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill5E}}</p>
           </div>
         </div>
@@ -960,7 +960,7 @@
     </footer>
 
     <script>
-       var score = [{{ applicantData }}];
+      var score = [{{applicantData}}];
 
       // populate the sliders with socres
       score.forEach((score, i) => {
@@ -968,12 +968,17 @@
         myRangeInput.value = score;
       });
 
-
       const ctx = document.getElementById("myChart1");
       const myChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: ["Collaborating", "Avoiding", "Compromising", "Accommodating", "Competing"],
+          labels: [
+            "Collaborating",
+            "Avoiding",
+            "Compromising",
+            "Accommodating",
+            "Competing",
+          ],
           datasets: [
             {
               label: "",

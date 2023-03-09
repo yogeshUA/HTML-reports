@@ -32,11 +32,11 @@
 
       .heading {
         font-family: Inter;
-        font-weight: 800;
-        font-size: 40px;
+        font-weight: 600;
+        font-size: 54px;
         line-height: 64px;
         position: absolute;
-        bottom: 240px;
+        bottom: 280px;
         left: 25px;
         width: 40%;
         display: flex;
@@ -233,15 +233,162 @@
         flex-direction: column;
         /* position: absolute; */
       }
-.small-img {
-    width: 500px;
-    margin-left:-40px;
-}
+      .small-img {
+        width: 500px;
+        margin-left: -40px;
+      }
       .score {
         font-weight: 600;
         text-align: center;
         font-family: Inter;
         color: rgb(90, 89, 89);
+        font-size: 14px;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container12 {
+        max-width: 870px;
+        width: 100%;
+        position: relative;
+      }
+      .wrapper3 {
+        width: 100%;
+        display: flex;
+        gap: 32px;
+        margin-top: 50px;
+      }
+      .static_labels {
+        width: 100%;
+        max-width: 870px;
+      }
+      .column11 {
+        display: flex;
+        flex-direction: column;
+        flex: 0.9;
+        gap: 16px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .column22 {
+        flex: 0.2;
+        display: flex;
+        justify-content: center;
+      }
+      .track {
+        background-color: rgb(203, 207, 207);
+        flex: 1;
+        border-radius: 2px;
+        height: 24px;
+        position: relative;
+      }
+      .text_label {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 14px;
+        flex: 0.4;
+        text-align: right;
+      }
+      .track .label {
+        background-color: rgb(248, 92, 35);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-family: Inter;
+        font-weight: 400;
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 95%;
+      }
+
+      .bar_graph {
+        background: rgb(203, 207, 207);
+        height: 100%;
+        position: relative;
+        width: 48px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        overflow: hidden;
+      }
+      .graph_label {
+        color: white;
+        padding: 4px 12px;
+        font-family: Inter;
+        font-weight: 400;
+        position: absolute;
+        bottom: 0px;
+        height: 20%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .heading1 {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: -35px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .numbers {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .static_numbers {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 0.57;
+        margin-left: 0%;
+        margin-top: 24px;
+        padding-top: 12px;
+        border-top: 1px solid rgb(80, 79, 79);
+      }
+      .numbers > span {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .low_high_box {
+        width: 99%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4%;
+      }
+      .low_high_box > span {
+        width: 62.6%;
+        border: 1px solid rgb(131, 128, 128);
+        border-top: none;
+        height: 16px;
+        margin-top: 6px;
+      }
+      .low_high {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 12px;
+        gap: 33%;
+      }
+
+      .low_high > span {
+        width: 18%;
+        font-weight: 500;
+        font-family: Inter;
         font-size: 14px;
       }
 
@@ -515,7 +662,7 @@
       .skill_list {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 34px;
       }
       .graph-container {
         margin: 60px 0;
@@ -544,41 +691,41 @@
         margin-right: 10px;
       }
       #value-driven-style {
-        font-size:14px;
+        font-size: 14px;
         position: absolute;
         top: 46%;
         left: 120px;
         transform: translateY(-50%);
       }
-       #value-driven-style1 {
+      #value-driven-style1 {
         font-size: 14px;
         position: absolute;
         top: 49%;
         left: 120px;
         transform: translateY(-50%);
       }
-       #value-driven-style2 {
+      #value-driven-style2 {
         font-size: 14px;
         position: absolute;
         top: 52%;
         left: 100px;
         transform: translateY(-50%);
       }
-       #value-driven-style3 {
+      #value-driven-style3 {
         font-size: 14px;
         position: absolute;
         top: 56%;
         left: 150px;
         transform: translateY(-50%);
       }
-        #value-driven-style4 {
+      #value-driven-style4 {
         font-size: 14px;
         position: absolute;
         top: 59%;
         left: 75px;
         transform: translateY(-50%);
       }
-       #value-driven-style5 {
+      #value-driven-style5 {
         font-size: 14px;
         position: absolute;
         top: 62%;
@@ -599,52 +746,48 @@
         left: 150px;
         transform: translateY(-50%);
       }
-        #value-driven-style8 {
+      #value-driven-style8 {
         font-size: 14px;
         position: absolute;
         top: 71%;
         left: 150px;
         transform: translateY(-50%);
-        }/* Style the slider */
+      } /* Style the slider */
 
-        
- .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 40px;
-  height: 40px;
-  background: #FF4500;
-  cursor: pointer;
-  border-radius: 50%;
-  position: relative;
-  
-}
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 40px;
+        height: 40px;
+        background: #ff4500;
+        cursor: pointer;
+        border-radius: 50%;
+        position: relative;
+      }
 
-.slider::-webkit-slider-thumb::before {
-  content: attr(value);
-  font-size: 18px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+      .slider::-webkit-slider-thumb::before {
+        content: attr(value);
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 
-/* Add the value attribute to the thumb */
-.slider::-webkit-slider-thumb::before {
-  content: attr(value);
-  /* Other styles as before */
-}
+      /* Add the value attribute to the thumb */
+      .slider::-webkit-slider-thumb::before {
+        content: attr(value);
+        /* Other styles as before */
+      }
 
-/* Update the value of the value attribute as the slider moves */
-.slider::-webkit-slider-thumb {
-  /* Other styles as before */
-  content: attr(value); /* Add this line to update the value of the value attribute */
-}
-
-
-
-    
+      /* Update the value of the value attribute as the slider moves */
+      .slider::-webkit-slider-thumb {
+        /* Other styles as before */
+        content: attr(
+          value
+        ); /* Add this line to update the value of the value attribute */
+      }
     </style>
   </head>
   <body>
@@ -665,7 +808,7 @@
         </div>
       </div>
       <!-- !CANDIDATE DETAILS -->
-      <div class="conadidate_section page">
+      <!-- <div class="conadidate_section page">
         <h2 class="candidate_heading">Candidate Details</h2>
         <div class="details_wrapper">
           <h3 class="condidate_name">Name - {{applicant}}</h3>
@@ -702,7 +845,7 @@
           />
           <div class="inner_content_wrapper">
             <p class="inner_heading">Influencing styles</p>
-            <p class="inner_content">
+            <p class="inner_content" style="margin-top:20px">
               Measure the applicant's and/or current employees' dominant or
               preferred style while influencing others. It helps obtain profound
               and precise insights into their strategies and confidence in
@@ -718,9 +861,9 @@
 
           <div class="page_number">02</div>
         </div>
-      </div>
+      </div> -->
       <!-- !ASSESSMENT DETAILS -->
-      <div class="introduction page">
+      <!-- <div class="introduction page">
         <h1 class="intro_heading">Influencing styles audit</h1>
         <p class="intro_sub_heading">Theory</p>
         <p class="intro_content">
@@ -739,7 +882,7 @@
           influencing.
         </p>
         <!-- #559C5B #AF4BA8 #4F4B9E #34D025 #B619CC  #317BAF #559C5B-->
-        <div class="skill_list">
+      <!-- <div class="skill_list">
           <div>
             <hr color="#559C5B" size="3" />
             <em class="skill_title" style="color: #559c5b"
@@ -793,10 +936,10 @@
 
           <div class="page_number">03</div>
         </div>
-      </div>
-
-      <div class="introduction page">
-        <!-- !SKILL LIST CONTINUED -->
+      </div> -->
+      <!-- !SKILL LIST CONTINUED -->
+       <div class="introduction page">
+      
         <div class="skill_list">
           <div>
             <hr color="#317BAF" size="3" />
@@ -834,96 +977,34 @@
           </div>
         </div>
 
-        <div class="graph_section3">
-          <div>
-            <label for="skill2" id="value-driven-style"
-              >Value-Driven Style</label
-            >
-            <div class="slider-container">
-   <input type="range" min="0" max="16" value="8" class="slider" id="myRange">
-<div id="sliderValue"></div>
+        <div class="graph_section" >
+         <div class="container12">
+        <div class="wrapper3">
+          <div class="column11"></div>
+          <div class="column22">
+            <div class="sun_column">
+                <span class="graph_label"></span>
+              </div>
+            </div>
+            <div class="sun_column22">
+              <p id="total_label"></p>
             </div>
           </div>
-          <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style1" >Goal Setting Stylee</label
-            >
-            <div class="slider-container">
-             <input type="range" min="0" max="16" value="8" step="1" class="slider" id="myRange">
-
+        </div>
+        <div class="static_labels">
+          <div class="column"></div>
+          <div class="column22">
+            <div class="static_numbers">
+              <div class="numbers">
+         0<span>4</span>8<span>12</span>16
+              </div>
+              <div class="low_high_box"><span></span><span></span></div>
+              <div class="low_high"><span>Low</span><span>High</span></div>
             </div>
-            </div>
-             <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style2" 
-              >Need Fulfillment Style</label
-            >
-            <div class="slider-container">
-              <input id="skill2" min="0" max="16" type="range" value="8" />
-            </div>
-            </div>
-             <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style3" 
-              >Visioning Style</label
-            >
-            <div class="slider-container">
-              <input id="skill2" min="0" max="16" type="range" value="8" />
-            </div>
-            </div>
-             <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style4" 
-              >Rational Presentation Style</label
-            >
-            <div class="slider-container">
-              <input id="skill2" min="0" max="16" type="range" value="8" />
-            </div>
-            </div>
-             <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style5"
-              >Pushing/ Driving</label
-            >
-            <div class="slider-container">
-              <input id="skill2" min="0" max="16" type="range" value="8" />
-            </div>
-            </div>
-             <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style6" 
-              >Institutionalizing Style</label
-            >
-            <div class="slider-container">
-              <input id="skill2" min="0" max="16" type="range" value="8" />
-            </div>
-            </div>
-             <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style7"
-              >Educating Style</label
-            >
-            <div class="slider-container">
-              <input id="skill2" min="0" max="16" type="range" value="8" />
-            </div>
-            </div>
-             <div style="margin-top: 20px">
-            <label for="skill2" id="value-driven-style8" >Supporting Style</label
-            >
-            <div class="slider-container">
-              <input id="skill2" min="0" max="16" type="range" value="8" />
-            </div>
-            </div>
-         
-
-          <div class="range_tracker1">
-            <span></span>
-            <span></span>
           </div>
-          <div class="range_label1">
-            <span>0</span>
-            <span>low</span>
-            <span>8</span>
-            <span>High</span>
-            <span>16</span>
-          </div>
-           </div>
-     
-
-        <p class="desc_line1" style="margin-top:150px">
+        </div>
+      </div>
+        <p class="desc_line1" >
           Reproduced from 50 Activities for Unblocking Organizational Communication, Dave Francis, Gower, Aldershot, 1987
 The confirmatory factor analysis supported the scale's factor structure and Cronbach's alpha coefficient suggested high
 reliability.
@@ -937,19 +1018,21 @@ reliability.
           </div>
 
           <div class="page_number">04</div>
-        </div>
+        </div> 
          </div>
-      </div>
+      </div> 
+    </div> 
 
       <!-- ! Value-Driven Style-->
       <div class="introduction page">
         <h1 class="intro_heading">Value-Driven Style</h1>
         <p class="intro_sub_heading">
-          Value-driven style of influencing focuses on aligning their message with the values and beliefs of the
-person or group they are trying to influence.
+          Value-driven style of influencing focuses on aligning their message
+          with the values and beliefs of the person or group they are trying to
+          influence.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -963,13 +1046,16 @@ person or group they are trying to influence.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867406994_value2.png" alt="grit_icon" class="grit_img small-img">
-</div>
+        <p class="intro_sub_heading" style="margin-top: 100px" >skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867406994_value2.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
 
-             
-        <p class="graph2_desc skill1C">{{skill1C}}</p>
+        <p class="graph2_desc skill1C" >{{skill1C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
             <p>{{skill1S}}</p>
@@ -985,15 +1071,15 @@ person or group they are trying to influence.
           <div class="page_number">05</div>
         </div>
       </div>
- <!-- ! Goal Setting Style-->
+      <!-- ! Goal Setting Style-->
       <div class="introduction page">
         <h1 class="intro_heading">Goal Setting Style</h1>
         <p class="intro_sub_heading">
-        Goal setting style of influencing helps the person or group they are trying to influence to set and
-achieve specific and measurable goals.
+          Goal setting style of influencing helps the person or group they are
+          trying to influence to set and achieve specific and measurable goals.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1007,12 +1093,15 @@ achieve specific and measurable goals.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill2TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677865176830_valuesinfluence.png" alt="grit_icon" class="grit_img small-img">
-</div>
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677865176830_valuesinfluence.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
 
-             
         <p class="graph2_desc skill1C">{{skill2C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1033,11 +1122,12 @@ achieve specific and measurable goals.
       <div class="introduction page">
         <h1 class="intro_heading">Need Fulfillment Style</h1>
         <p class="intro_sub_heading">
-       Need fulfillment style of influencing focuses on identifying and addressing the needs of the person or
-group they are trying to influence.
+          Need fulfillment style of influencing focuses on identifying and
+          addressing the needs of the person or group they are trying to
+          influence.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1051,12 +1141,15 @@ group they are trying to influence.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill3TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867516614_value3.png" alt="grit_icon" class="grit_img small-img">
-</div>
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867516614_value3.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
 
-             
         <p class="graph2_desc skill1C">{{skill3C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1073,15 +1166,16 @@ group they are trying to influence.
           <div class="page_number">07</div>
         </div>
       </div>
-       <!-- ! Visioning Style-->
+      <!-- ! Visioning Style-->
       <div class="introduction page">
         <h1 class="intro_heading">Visioning Style</h1>
         <p class="intro_sub_heading">
-      Visioning style of influencing focuses on helping the person or group they are trying to influence to
-envision a positive future and to inspire them to take action to achieve that future.
+          Visioning style of influencing focuses on helping the person or group
+          they are trying to influence to envision a positive future and to
+          inspire them to take action to achieve that future.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1095,10 +1189,14 @@ envision a positive future and to inspire them to take action to achieve that fu
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill4TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867639937_value4.png" alt="grit_icon" class="grit_img small-img">
-</div>     
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867639937_value4.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
         <p class="graph2_desc skill1C">{{skill4C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1119,11 +1217,12 @@ envision a positive future and to inspire them to take action to achieve that fu
       <div class="introduction page">
         <h1 class="intro_heading">Rational Presentation Style</h1>
         <p class="intro_sub_heading">
-      Rational presentation style of influencing uses logical arguments, facts, and evidence to persuade
-the person or group they are trying to influence.
+          Rational presentation style of influencing uses logical arguments,
+          facts, and evidence to persuade the person or group they are trying to
+          influence.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1137,10 +1236,14 @@ the person or group they are trying to influence.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill5TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867783577_value5.png" alt="grit_icon" class="grit_img small-img">
-</div>     
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867783577_value5.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
         <p class="graph2_desc skill1C">{{skill5C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1157,15 +1260,16 @@ the person or group they are trying to influence.
           <div class="page_number">09</div>
         </div>
       </div>
-       <!-- ! Pushing/ Driving-->
+      <!-- ! Pushing/ Driving-->
       <div class="introduction page">
         <h1 class="intro_heading">Rational Presentation Style</h1>
         <p class="intro_sub_heading">
-      Pushing/ driving style of influencing uses assertiveness, directness, and a sense of urgency to
-persuade the person or group they are trying to influence.
+          Pushing/ driving style of influencing uses assertiveness, directness,
+          and a sense of urgency to persuade the person or group they are trying
+          to influence.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1179,10 +1283,14 @@ persuade the person or group they are trying to influence.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill6TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867909934_value6.png" alt="grit_icon" class="grit_img small-img">
-</div>     
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677867909934_value6.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
         <p class="graph2_desc skill1C">{{skill6C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1199,15 +1307,16 @@ persuade the person or group they are trying to influence.
           <div class="page_number">10</div>
         </div>
       </div>
-       <!-- ! Institutionalizing Style-->
+      <!-- ! Institutionalizing Style-->
       <div class="introduction page">
         <h1 class="intro_heading">Institutionalizing Style</h1>
         <p class="intro_sub_heading">
-     Institutionalizing style of influencing seeks to embed ideas, policies, or practices within the organisation
-or group they are trying to influence.
+          Institutionalizing style of influencing seeks to embed ideas,
+          policies, or practices within the organisation or group they are
+          trying to influence.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1221,10 +1330,14 @@ or group they are trying to influence.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill7TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677868035658_value7.png" alt="grit_icon" class="grit_img small-img">
-</div>     
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677868035658_value7.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
         <p class="graph2_desc skill1C">{{skill7C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1245,11 +1358,12 @@ or group they are trying to influence.
       <div class="introduction page">
         <h1 class="intro_heading">Educating Style</h1>
         <p class="intro_sub_heading">
-    The Educating style of influencing uses teaching and training methods to help the person or group
-they are trying to influence to understand and adopt their ideas or perspective.
+          The Educating style of influencing uses teaching and training methods
+          to help the person or group they are trying to influence to understand
+          and adopt their ideas or perspective.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1263,10 +1377,14 @@ they are trying to influence to understand and adopt their ideas or perspective.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill8TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677868129769_value8.png" alt="grit_icon" class="grit_img small-img">
-</div>     
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677868129769_value8.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
         <p class="graph2_desc skill1C">{{skill8C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1283,15 +1401,16 @@ they are trying to influence to understand and adopt their ideas or perspective.
           <div class="page_number">12</div>
         </div>
       </div>
-       <!-- ! Supporting Style-->
+      <!-- ! Supporting Style-->
       <div class="introduction page">
         <h1 class="intro_heading">Supporting Style</h1>
         <p class="intro_sub_heading">
-   Supporting style of influencing uses a supportive and collaborative approach to help the person or
-group they are trying to influence make their own decisions.
+          Supporting style of influencing uses a supportive and collaborative
+          approach to help the person or group they are trying to influence make
+          their own decisions.
         </p>
 
-        <div class="graph_section2" style="margin-top:60px">
+        <div class="graph_section2" style="margin-top: 60px">
           <div>
             <input id="skill1" min="4" max="20" type="range" value="10" />
           </div>
@@ -1305,10 +1424,14 @@ group they are trying to influence make their own decisions.
           </div>
         </div>
         <p class="skill_desc" style="margin-top: 70px">{{skill9TT1}}</p>
-        <p class="intro_sub_heading" style="margin-top:100px">skills</p>
-       <div class="grit_img_section">
-    <img src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677868260533_value9.png" alt="grit_icon" class="grit_img small-img">
-</div>     
+        <p class="intro_sub_heading" style="margin-top: 100px">skills</p>
+        <div class="grit_img_section">
+          <img
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677868260533_value9.png"
+            alt="grit_icon"
+            class="grit_img small-img"
+          />
+        </div>
         <p class="graph2_desc skill1C">{{skill9C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
@@ -1324,7 +1447,7 @@ group they are trying to influence make their own decisions.
 
           <div class="page_number">13</div>
         </div>
-      </div> 
+      </div>
 
       <div class="introduction page">
         <h1 class="take_away_heading">Key takeaways</h1>
@@ -1333,15 +1456,9 @@ group they are trying to influence make their own decisions.
         </ul>
         <h1 class="take_away_heading2">Suggested interview questions</h1>
         <ul class="key_take_away_list">
-          <li class="key_take_away_list_item">
-           {{question1}}
-          </li>
-          <li class="key_take_away_list_item">
-           {{question2}}
-          </li>
-          <li class="key_take_away_list_item">
-            {{question3}}
-          </li>
+          <li class="key_take_away_list_item">{{question1}}</li>
+          <li class="key_take_away_list_item">{{question2}}</li>
+          <li class="key_take_away_list_item">{{question3}}</li>
         </ul>
         <div class="page_footer">
           <div class="footer_title">
@@ -1427,17 +1544,78 @@ group they are trying to influence make their own decisions.
       });
     </script>
     <script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("sliderValue");
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("sliderValue");
 
-output.innerHTML = slider.value;
+      output.innerHTML = slider.value;
 
-slider.oninput = function() {
-  output.innerHTML = "";
-  output.innerHTML = slider.value;
-}
+      slider.oninput = function () {
+        output.innerHTML = "";
+        output.innerHTML = slider.value;
+      };
+    </script>
+    <script>
+      const mock_data = [
+        {
+          label: 'Value-Driven Style',
+          point_achieved: {{applicantdata}},
+        },
+        {
+          label: 'Goal Setting Style',
+          point_achieved: {{applicantdata}},
+        },
+        {
+          label: 'Need Fulfillment Style',
+          point_achieved: {{applicantdata}},
+        },
+        {
+          label: 'Visioning Style',
+          point_achieved: {{applicantdata}},
+        },
+        {
+          label: 'Rational Presentation Style',
+          point_achieved: {{applicantdata}},
+        },
+        {
+          label: 'Pushing/ Driving',
+          point_achieved: {{applicantdata}},
+        },
+        {
+          label: 'Institutionalizing Style',
+          point_achieved: {{applicantdata}},
+        },
+         {
+          label: 'Educating Style',
+          point_achieved: {{applicantdata}},
+        },
+        {
+          label: 'Supporting Style',
+          point_achieved: {{applicantdata}},
+        },
+      ];
 
+      const listItemsWrapper = document.querySelector('.column11');
+      const totalPoint = document.querySelector('.graph_label');
 
+      let sum = 0;
+
+      const listItems = mock_data.map((item, i) => {
+        sum += Number(item.point_achieved);
+        return `<div class="row" key={${i}} >
+          <span class="text_label">${item.label}</span
+          ><span class="track"><span class="label" style="margin-left:${
+            item.point_achieved * 15.5
+          }%">${item.point_achieved}</span></span>
+          </div>`;
+      });
+
+      totalPoint.textContent = sum;
+      const onePercent = sum / (mock_data?.length * 6);
+      const totalPercent = Math.round(onePercent * 100);
+      totalPoint.style.height = `${totalPercent}%`;
+      window.onload = () => {
+        listItemsWrapper.innerHTML = listItems.join('');
+      };
     </script>
   </body>
 </html>

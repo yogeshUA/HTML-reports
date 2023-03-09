@@ -4,18 +4,20 @@
     "template": "coping.html",
     "count": 1,
     "inference": true,
-    "levels": [1, 2.5, 4],
+    "details": false,
     "skills": [
       {
         "skill": "Avoidant coping",
-        "skill1T1": "A strategy where one avoids dealing with stressors, difficulties, or unpleasant emotions by retreating, withdrawing, or ignoring them.",
+        "description": "A strategy where one avoids dealing with stressors, difficulties, or unpleasant emotions by retreating, withdrawing, or ignoring them.",
         "average": 0.0,
+        "levels": [2.5, 4],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "A low score on the avoidant style of coping indicates that an individual does not use avoidance as a primary way of managing stressors and difficulties. ",
-            "skill1C": "Characteristics of individuals who score low on avoidant coping style may include:",
-            "skill1S": [
+            "count": 3,
+            "inference": "A low score on the avoidant style of coping indicates that an individual does not use avoidance as a primary way of managing stressors and difficulties. ",
+            "character": "Characteristics of individuals who score low on avoidant coping style may include:",
+            "struggle": [
               "They may confront stressors and difficulties head-on, rather than avoiding or retreating from them.",
               "They may express their emotions and talk about their feelings with others.",
               "They may take responsibility for their actions and the outcomes of their efforts",
@@ -28,9 +30,10 @@
 
           {
             "level": "high",
-            "skill1TT1": "A high score on the avoidant style of coping indicates that an individual uses avoidance and retreat as their primary way of managing stressors and difficulties.",
-            "skill1C": "Characteristics of individuals who score high on avoidant coping style may include:.",
-            "skill1S": [
+            "count": 3,
+            "inference": "A high score on the avoidant style of coping indicates that an individual uses avoidance and retreat as their primary way of managing stressors and difficulties.",
+            "character": "Characteristics of individuals who score high on avoidant coping style may include:.",
+            "struggle": [
               "They may withdraw from social situations or from activities that trigger stress.",
               "They may deny or ignore the existence of the problem or may minimize its impact.",
               "They may suppress or avoid their emotions, rather than express or address them.",
@@ -44,14 +47,16 @@
       },
       {
         "skill": "Emotion focused coping",
-        "skill2T1": "A strategy that focuses on acknowledging and addressing the emotions elicited by a stressor followed by managing and regulating them.",
+        "description": "A strategy that focuses on acknowledging and addressing the emotions elicited by a stressor followed by managing and regulating them.",
         "average": 0.0,
+        "levels": [2.5, 4],
         "analysis": [
           {
             "level": "low",
-            "Skill2TT1": "A low score on the avoidant style of coping indicates that an individual does not use avoidance as a primary way of managing stressors and difficulties. ",
-            "skill2C": "Characteristics of individuals who score low on emotion-focused coping style may include:",
-            "skill2S": [
+            "count": 3,
+            "inference": "A low score on the avoidant style of coping indicates that an individual does not use avoidance as a primary way of managing stressors and difficulties. ",
+            "character": "Characteristics of individuals who score low on emotion-focused coping style may include:",
+            "struggle": [
               "They may take a proactive approach to address stressors, using problem-solving strategies to find solutions.",
               "They may identify and utilize available resources, such as support from others, to manage stressors.",
               "They may take direct action to address the source of the stressor, rather than ignoring or avoiding it.",
@@ -64,9 +69,10 @@
 
           {
             "level": "high",
-            "skill2TT1": "A high score on the emotion-focused style of coping indicates that an individual uses strategies aimed at managing and regulating emotions in response to stressors or difficulties.",
-            "skill2C": "Characteristics of individuals who score high on emotion-focused coping style may include:",
-            "skill2S": [
+            "count": 3,
+            "inference": "A high score on the emotion-focused style of coping indicates that an individual uses strategies aimed at managing and regulating emotions in response to stressors or difficulties.",
+            "character": "Characteristics of individuals who score high on emotion-focused coping style may include:",
+            "struggle": [
               "They may express their emotions by talking to others or writing about their feelings.",
               "They may engage in mindfulness practices, such as meditation, or use relaxation techniques to reduce stress.",
               "They may turn to friends, family, or support groups for emotional support and validation.",
@@ -80,14 +86,16 @@
       },
       {
         "skill": "Task focused coping",
-        "skill3T1": "A strategy where one focuses on taking concrete and direct actions to solve or manage a stressor.",
+        "description": "A strategy where one focuses on taking concrete and direct actions to solve or manage a stressor.",
         "average": 0.0,
+        "levels": [2.5, 4],
         "analysis": [
           {
             "level": "low",
-            "skill3TT1": "A low score on the task-focused style of coping indicates that an individual does not use a direct, problem-solving approach as a primary way of managing stressors and difficulties. ",
-            "skill3C": "Characteristics of individuals who score low on task-focused coping style may include:",
-            "skill3S": [
+            "count": 3,
+            "inference": "A low score on the task-focused style of coping indicates that an individual does not use a direct, problem-solving approach as a primary way of managing stressors and difficulties. ",
+            "character": "Characteristics of individuals who score low on task-focused coping style may include:",
+            "struggle": [
               " They may express their emotions and talk about their feelings with others.",
               "They may engage in mindfulness practices, such as meditation, or use relaxation techniques to reduce stress.",
               "They may turn to friends, family, or support groups for emotional support and validation.",
@@ -100,9 +108,10 @@
 
           {
             "level": "high",
-            "skill3TT1": "A high score on the task-focused style of coping indicates that an individual uses strategies aimed at directly addressing and solving stressors or difficulties.",
-            "skill3C": "Characteristics of individuals who score high on task-focused coping style may include:",
-            "skill3S": [
+            "count": 3,
+            "inference": "A high score on the task-focused style of coping indicates that an individual uses strategies aimed at directly addressing and solving stressors or difficulties.",
+            "character": "Characteristics of individuals who score high on task-focused coping style may include:",
+            "struggle": [
               "They may take a proactive approach to address stressors, using problem-solving strategies to find solutions.",
               "They may identify and utilize available resources, such as support from others, to manage stressors.",
               "They may take direct action to address the source of the stressor, rather than ignoring or avoiding it.",
@@ -116,6 +125,7 @@
       }
     ]
   },
+
   {
     "name": "Brief Resilience Scale",
     "template": "resilence.html",
@@ -179,18 +189,22 @@
     "template": "communication.html",
     "count": 1,
     "inference": true,
-    "levels": [5, 12, 20],
+    "details": false,
     "skills": [
       {
         "skill": "Luck",
-        "skill1T1": "The degree to which a person believes that luck affects their interactions and communication style is referred to as Luck in the Communication Locus of control.",
+        "description": "The degree to which a person believes that luck affects their interactions and communication style is referred to as Luck in the Communication Locus of control.",
         "average": 0.0,
+        "levels": [12, 20],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The applicant has scored low on the Luck subscale, indicating that the applicant believes that the fate plays a role in his/her interactions. They believe that the circumstances which lead to any conversation dictate the tone , the content and at times even the outcome of the discussion. As a result of this they avoid planning conversations and let destiny play out its course. ",
-            "skill1C": "The applicant does not feel that the following things play an important role in communications",
-            "skill1S": [
+            "count": 3,
+            "inference": [
+              "The applicant has scored low on the Luck subscale, indicating that the applicant believes that the fate plays a role in his/her interactions. They believe that the circumstances which lead to any conversation dictate the tone , the content and at times even the outcome of the discussion. As a result of this they avoid planning conversations and let destiny play out its course. "
+            ],
+            "character": "The applicant does not feel that the following things play an important role in communications",
+            "struggle": [
               "Networking opportunities: A chance meeting with a senior executive or someone in a position to offer a new opportunity can be a matter of luck.",
               "Timing: Delivering a presentation at the right time, when decision-makers are available to listen, can be crucial in securing a favourable outcome.",
               "Impression management: Making a good first impression can often depend on luck, such as the way someone is dressed or the impression they give off in a first meeting.",
@@ -201,9 +215,12 @@
 
           {
             "level": "high",
-            "skill1TT1": "The applicant has scored high on the Luck subscale, indicating that the applicant does not believe in fate and cosmic timing. They stand by the fact that one's efforts and perseverance leads to success rather than fate or destiny. They plan and practice all their important conversations to ensure they are well prepared and are able to achieve their desired outcome.",
-            "skill1C": "The applicant might feel that the following things play an important role in communications",
-            "skill1S": [
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on the Luck subscale, indicating that the applicant does not believe in fate and cosmic timing. They stand by the fact that one's efforts and perseverance leads to success rather than fate or destiny. They plan and practice all their important conversations to ensure they are well prepared and are able to achieve their desired outcome."
+            ],
+            "character": "The applicant might feel that the following things play an important role in communications",
+            "struggle": [
               "Networking opportunities: A chance meeting with a senior executive or someone in a position to offer a new opportunity can be a matter of luck.",
               "Timing: Delivering a presentation at the right time, when decision-makers are available to listen, can be crucial in securing a favourable outcome.",
               "Impression management: Making a good first impression can often depend on luck, such as the way someone is dressed or the impression they give off in a first meeting.",
@@ -215,14 +232,18 @@
       },
       {
         "skill": "Self Control",
-        "skill2T1": "The degree to which a person believes that he/she has influence and control over himself/herself while engaging in conversations is referred as self-control.",
+        "description": "The degree to which a person believes that he/she has influence and control over himself/herself while engaging in conversations is referred as self-control.",
         "average": 0.0,
+        "levels": [15, 24],
         "analysis": [
           {
             "level": "low",
-            "Skill2TT1": "The applicant does not feel that the following things play an important role in communications",
-            "skill2C": "Characteristics of individuals who score low on emotion-focused coping style may include:",
-            "skill2S": [
+            "count": 3,
+            "inference": [
+              "The applicant does not feel that the following things play an important role in communications"
+            ],
+            "character": "Characteristics of individuals who score low on emotion-focused coping style may include:",
+            "struggle": [
               "Conflict resolution: Conflicts are a common occurrence in any workplace, and the ability to control one's thoughts, feelings, and behaviour is crucial in resolving disputes and maintaining positive relationships.",
               "Presentations and meetings: Giving a presentation or participating in a meeting can be stressful, and having self-control can help one remain calm, focused, and confident.",
               "Difficult conversations: In a corporate setting, one may need to have difficult conversations with colleagues or superiors, and self-control can help maintain professionalism and avoid escalating the situation.",
@@ -233,9 +254,12 @@
 
           {
             "level": "high",
-            "skill2TT1": "The applicant has scored high on the Self-control subscale, indicating that the applicant can regulate his/her own thoughts, feelings, and behaviors in order to effectively interact with others. They have good self-control, and are able to manage their emotions, keep their reactions in check, and think before they speak or act. This allows them to communicate effectively, listen attentively, and respond appropriately to the other person.",
-            "skill2C": "The applicant might feel that the following things play an important role in communications",
-            "skill2S": [
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on the Self-control subscale, indicating that the applicant can regulate his/her own thoughts, feelings, and behaviors in order to effectively interact with others. They have good self-control, and are able to manage their emotions, keep their reactions in check, and think before they speak or act. This allows them to communicate effectively, listen attentively, and respond appropriately to the other person."
+            ],
+            "character": "The applicant might feel that the following things play an important role in communications",
+            "struggle": [
               "Conflict resolution: Conflicts are a common occurrence in any workplace, and the ability to control one's thoughts, feelings, and behaviour is crucial in resolving disputes and maintaining positive relationships.",
               "Presentations and meetings: Giving a presentation or participating in a meeting can be stressful, and having self-control can help one remain calm, focused, and confident.",
               "Difficult conversations: In a corporate setting, one may need to have difficult conversations with colleagues or superiors, and self-control can help maintain professionalism and avoid escalating the situation.",
@@ -247,14 +271,18 @@
       },
       {
         "skill": "Social System Control (SSC)",
-        "skill3T1": "The degree to which a person believes that environmental or societal circumstances affect their interactions and communication style is referred to as social system control.",
+        "description": "The degree to which a person believes that environmental or societal circumstances affect their interactions and communication style is referred to as social system control.",
         "average": 0.0,
+        "levels": [15, 24],
         "analysis": [
           {
             "level": "low",
-            "skill3TT1": "The applicant has scored low on the Social Systems Control (SSC) subscale, indicating that the applicant feels that his/her interactions are influenced by others involved. They might not feel in control of the conversation and would follow the lead others provide. As a result of this they might not verbalise their thoughts or ideas as they didn't find the right space/gap to mention it. This particular form of constriction may stem from their culture, respecting elders and authority, or low self-esteem. ",
-            "skill3C": "The applicant does not feel that the following things play an important role in communications",
-            "skill3S": [
+            "count": 3,
+            "inference": [
+              "The applicant has scored low on the Social Systems Control (SSC) subscale, indicating that the applicant feels that his/her interactions are influenced by others involved. They might not feel in control of the conversation and would follow the lead others provide. As a result of this they might not verbalise their thoughts or ideas as they didn't find the right space/gap to mention it. This particular form of constriction may stem from their culture, respecting elders and authority, or low self-esteem. "
+            ],
+            "character": "The applicant does not feel that the following things play an important role in communications",
+            "struggle": [
               "Building relationships: Understanding and following social norms can help build strong and positive relationships with colleagues, superiors, and stakeholders.",
               "Maintaining professionalism: Adhering to the social norms of a corporate setting can help maintain a professional image and avoid creating negative impressions.",
               "Improving credibility: Communicating in a manner that is aligned with the social norms of a corporate setting can help establish credibility and build trust with others.",
@@ -262,12 +290,14 @@
               "Promoting teamwork: Understanding and following the social norms of a corporate setting can help promote teamwork and collaboration, which are essential for success in many organizations."
             ]
           },
-
           {
             "level": "high",
-            "skill3TT1": "The applicant has scored high on the Social Systems Control (SSC) subscale, indicating that the applicant feels that his/her interactions are not dictated by the social norms. They will verbalise their ideas and thoughts irrespective of its conventionality. They usually lead the conversation and steer it in their intended direction. They might be seen as rebels or rude for not following the social statue quo..",
-            "skill3C": "The applicant might feel that the following things play an important role in communications",
-            "skill3S": [
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on the Social Systems Control (SSC) subscale, indicating that the applicant feels that his/her interactions are not dictated by the social norms. They will verbalise their ideas and thoughts irrespective of its conventionality. They usually lead the conversation and steer it in their intended direction. They might be seen as rebels or rude for not following the social statue quo.."
+            ],
+            "character": "The applicant might feel that the following things play an important role in communications",
+            "struggle": [
               "Building relationships: Understanding and following social norms can help build strong and positive relationships with colleagues, superiors, and stakeholders.",
               "Maintaining professionalism: Adhering to the social norms of a corporate setting can help maintain a professional image and avoid creating negative impressions.",
               "Improving credibility: Communicating in a manner that is aligned with the social norms of a corporate setting can help establish credibility and build trust with others.",
@@ -600,22 +630,25 @@
     ]
   },
   {
-    "name": "Conflict Assessment Report",
+    "name": "Conflict Management Styles Assessment",
     "template": "conflict.html",
     "count": 1,
     "inference": true,
-    "levels": [3, 8, 12],
+    "details": false,
     "skills": [
       {
         "skill": "Collaborating",
-        "skill1T1": "The process of working through differences will lead to creative solutions that will satisfy both parties concerns. Teamwork and cooperation help everyone achieve their goals while maintaining relationships. Problems are solved in ways in which an optimum result is provided for all involved.",
+        "description": "The process of working through differences will lead to creative solutions that will satisfy both parties concerns. Teamwork and cooperation help everyone achieve their goals while maintaining relationships. Problems are solved in ways in which an optimum result is provided for all involved.",
         "average": 0.0,
+        "levels": [8, 12],
         "analysis": [
           {
             "level": "high",
-            "skill1TT1": "Collaborators highly value both their goals and their relationships. They view conflict as a problem to be solved and seek a solution that achieves both their goals and the goals of the other person. They see conflict as a means of improving relationships by reducing tension between two persons. They try to begin a discussion that identifies the conflict as a problem and strive to resolve tensions and maintain the relationship by seeking solutions that satisfy both themselves and the other person. ",
-            "skill1C": "Ideal when",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "Collaborators highly value both their goals and their relationships. They view conflict as a problem to be solved and seek a solution that achieves both their goals and the goals of the other person. They see conflict as a means of improving relationships by reducing tension between two persons. They try to begin a discussion that identifies the conflict as a problem and strive to resolve tensions and maintain the relationship by seeking solutions that satisfy both themselves and the other person. "
+            ],
+            "character": [
               "Time is not a concern",
               "Peer conflict is involved",
               "Participants can be future-focused",
@@ -626,15 +659,20 @@
               "New insights can be beneficial in achieving creative solutions",
               "Both parties want to address all concerns and are committed to the process"
             ],
-            "skill1D": "Difficult when",
-            "skill1E": ["Issues are trivial", "Time and resources are limited."]
+
+            "struggle": [
+              "Issues are trivial",
+              "Time and resources are limited."
+            ]
           },
 
           {
             "level": "low",
-            "skill1TT1": "A low score in collaboration as a conflict management strategy suggests that the individual may prioritize his/her own needs and goals over the needs and goals of others. They may not view conflicts as an opportunity to improve relationships and may instead see them as a threat to their own interests. This may lead to an inability to effectively resolve conflicts and may result in ongoing tension or damage to relationships.",
-            "skill1C": "Ideal when",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "A low score in collaboration as a conflict management strategy suggests that the individual may prioritize his/her own needs and goals over the needs and goals of others. They may not view conflicts as an opportunity to improve relationships and may instead see them as a threat to their own interests. This may lead to an inability to effectively resolve conflicts and may result in ongoing tension or damage to relationships."
+            ],
+            "character": [
               "Time is not a concern",
               "Peer conflict is involved",
               "Participants can be future-focused",
@@ -645,21 +683,28 @@
               "New insights can be beneficial in achieving creative solutions",
               "Both parties want to address all concerns and are committed to the process"
             ],
-            "skill1D": "Difficult when",
-            "skill1E": ["Issues are trivial", "Time and resources are limited."]
+
+            "struggle": [
+              "Issues are trivial",
+              "Time and resources are limited."
+            ]
           }
         ]
       },
       {
         "skill": "Avoiding",
-        "skill2T1": "The process of avoiding conflicts by withdrawing, sidestepping, or postponing. They believe that this isn't the right time or place to address this issue. It can be seen as a non-confrontational approach.",
+        "description": "The process of avoiding conflicts by withdrawing, sidestepping, or postponing. They believe that this isn't the right time or place to address this issue. It can be seen as a non-confrontational approach.",
         "average": 0.0,
+        "levels": [8, 12],
         "analysis": [
           {
             "level": "high",
-            "Skill2TT1": "Avoiders tend to value avoiding confrontation more than either their goals or relationships. They often find it easier to withdraw from a conflict than to face it. This might even include completely giving up relationships or goals that are associated with the conflict.",
-            "skill2C": "Ideal when",
-            "skill2S": [
+            "count": 1,
+            "inference": [
+              "Avoiders tend to value avoiding confrontation more than either their goals or relationships. They often find it easier to withdraw from a conflict than to face it. This might even include completely giving up relationships or goals that are associated with the conflict."
+            ],
+
+            "character": [
               "Another issue is more pressing",
               "Time constraints demand a delay",
               "The stakes are not high or the issue is trivial",
@@ -669,8 +714,8 @@
               "Disruption outweighs the benefit of conflict resolution",
               "Gathering information is more important than an immediate decision"
             ],
-            "skill2D": "Difficult when",
-            "skill2E": [
+
+            "struggle": [
               "You care about the issue.",
               "Negative feelings may linger"
             ]
@@ -678,9 +723,12 @@
 
           {
             "level": "low",
-            "Skill2TT1": "A low score in avoiding as conflict management strategy suggests that the individual may prioritize winning conflicts over maintaining relationships. They may see every conflict as an opportunity to prove their superiority and may not selectively choose which battles to engage in. They may not be concerned with the potential harm to relationships as they try to resolve conflicts in a manner beneficial to themselves.",
-            "skill2C": "Ideal when",
-            "skill2S": [
+            "count": 1,
+            "inference": [
+              "A low score in avoiding as conflict management strategy suggests that the individual may prioritize winning conflicts over maintaining relationships. They may see every conflict as an opportunity to prove their superiority and may not selectively choose which battles to engage in. They may not be concerned with the potential harm to relationships as they try to resolve conflicts in a manner beneficial to themselves."
+            ],
+
+            "character": [
               "Another issue is more pressing",
               "Time constraints demand a delay",
               "The stakes are not high or the issue is trivial",
@@ -690,8 +738,8 @@
               "Disruption outweighs the benefit of conflict resolution",
               "Gathering information is more important than an immediate decision"
             ],
-            "skill2D": "Difficult when",
-            "skill2E": [
+
+            "struggle": [
               "You care about the issue.",
               "Negative feelings may linger"
             ]
@@ -700,14 +748,18 @@
       },
       {
         "skill": "Compromising",
-        "skill3T1": "The process in which both ends are placed against the middle in an attempt to serve the common good, while ensuring each person can maintain something of their original position. They believe that winning something while losing a little is a fair deal. It can be seen as the middle-ground approach.",
+        "description": "The process in which both ends are placed against the middle in an attempt to serve the common good, while ensuring each person can maintain something of their original position. They believe that winning something while losing a little is a fair deal. It can be seen as the middle-ground approach.",
         "average": 0.0,
+        "levels": [8, 12],
         "analysis": [
           {
             "level": "high",
-            "Skill3TT1": "Compromisers are moderately concerned with both their goals and their relationships with others. They typically seek a compromise; they give up part of their goals and persuade the other person in a conflict to give up part of their goals. They seek a conflict solution in which both sides gain something; the middle ground between two extreme positions. They are willing to sacrifice part of their goals in order to find agreement for the common good.",
-            "skill3C": "Ideal when",
-            "skill3S": [
+            "count": 1,
+            "inference": [
+              "Compromisers are moderately concerned with both their goals and their relationships with others. They typically seek a compromise; they give up part of their goals and persuade the other person in a conflict to give up part of their goals. They seek a conflict solution in which both sides gain something; the middle ground between two extreme positions. They are willing to sacrifice part of their goals in order to find agreement for the common good."
+            ],
+
+            "character": [
               "There are no time restraints",
               "Collaboration or competition fails",
               "Finding a resolution is better than nothing",
@@ -716,15 +768,18 @@
               "Short-term solutions are needed until more information can be obtained",
               "All conflicting people are equal in power and have strong interests in different solutions"
             ],
-            "skill3D": "Difficult when",
-            "skill3E": ["You can not live with the consequences"]
+
+            "struggle": ["You can not live with the consequences"]
           },
 
           {
             "level": "low",
-            "Skill3TT1": "A low score in compromising as a conflict management strategy may indicate the individual is overly aggressive and combative when it comes to resolving conflicts. They may prioritize winning and their own needs and goals over the needs and goals of others, and may not be willing to compromise or make concessions. This approach may lead to a resolution of the conflict, but can also harm relationships and create resentment. It may also lead to an inability to effectively resolve conflicts in the long term.",
-            "skill3C": "Ideal when",
-            "skill3S": [
+            "count": 1,
+            "inference": [
+              "A low score in compromising as a conflict management strategy may indicate the individual is overly aggressive and combative when it comes to resolving conflicts. They may prioritize winning and their own needs and goals over the needs and goals of others, and may not be willing to compromise or make concessions. This approach may lead to a resolution of the conflict, but can also harm relationships and create resentment. It may also lead to an inability to effectively resolve conflicts in the long term."
+            ],
+
+            "character": [
               "There are no time restraints",
               "Collaboration or competition fails",
               "Finding a resolution is better than nothing",
@@ -733,21 +788,25 @@
               "Short-term solutions are needed until more information can be obtained",
               "All conflicting people are equal in power and have strong interests in different solutions"
             ],
-            "skill3D": "Difficult when",
-            "skill3E": ["You can not live with the consequences"]
+
+            "struggle": ["You can not live with the consequences"]
           }
         ]
       },
       {
         "skill": "Accommodating",
-        "skill4T1": "The process to appease others by downplaying conflict, thus protecting the relationship. Working toward a common purpose is more important than any of the peripheral concerns. They worry that the trauma of confronting differences may damage fragile relationships. They believe in giving in to maintain relationships.",
+        "description": "The process to appease others by downplaying conflict, thus protecting the relationship. Working toward a common purpose is more important than any of the peripheral concerns. They worry that the trauma of confronting differences may damage fragile relationships. They believe in giving in to maintain relationships.",
         "average": 0.0,
+        "levels": [8, 12],
         "analysis": [
           {
             "level": "high",
-            "Skill4TT1": "Accommodators typically value relationships over their own goals; if forced to choose, they will often sacrifice their goals in order to maintain relationships. They generally want to be liked by others, and prefer to avoid conflict because they believe addressing it will damage relationships. They try to smooth over conflict to prevent damage to the relationship.",
-            "skill4C": "Ideal when",
-            "skill4S": [
+            "count": 1,
+            "inference": [
+              "Accommodators typically value relationships over their own goals; if forced to choose, they will often sacrifice their goals in order to maintain relationships. They generally want to be liked by others, and prefer to avoid conflict because they believe addressing it will damage relationships. They try to smooth over conflict to prevent damage to the relationship."
+            ],
+
+            "character": [
               "You are flexible with the outcome",
               "Time is limited or when harmony and stability are valued",
               "Maintaining the relationship outweighs other considerations",
@@ -756,8 +815,8 @@
               "It is necessary to build up good faith for future problem solving",
               "You are wrong, or in a situation where competition could damage your position."
             ],
-            "skill4D": "Difficult when",
-            "skill4E": [
+
+            "struggle": [
               "Likely to increase resentment.",
               "Used habitually to gain acceptance",
               "A likely lack of reciprocity will result in escalating the conflict."
@@ -766,9 +825,12 @@
 
           {
             "level": "low",
-            "Skill4TT1": "A low score in accommodation as a conflict management strategy may indicate the individual prioritizes his/ her own needs and goals over the needs and goals of others. They may not be willing to compromise or make concessions in order to resolve conflicts and may instead try to assert their own ideas and desires. This can lead to an inability to effectively resolve conflicts and may result in ongoing tension or damage to relationships.",
-            "skill4C": "Ideal when",
-            "skill4S": [
+            "count": 1,
+            "inference": [
+              "A low score in accommodation as a conflict management strategy may indicate the individual prioritizes his/ her own needs and goals over the needs and goals of others. They may not be willing to compromise or make concessions in order to resolve conflicts and may instead try to assert their own ideas and desires. This can lead to an inability to effectively resolve conflicts and may result in ongoing tension or damage to relationships."
+            ],
+
+            "character": [
               "You are flexible with the outcome",
               "Time is limited or when harmony and stability are valued",
               "Maintaining the relationship outweighs other considerations",
@@ -777,8 +839,8 @@
               "It is necessary to build up good faith for future problem solving",
               "You are wrong, or in a situation where competition could damage your position."
             ],
-            "skill4D": "Difficult when",
-            "skill4E": [
+
+            "struggle": [
               "Likely to increase resentment.",
               "Used habitually to gain acceptance",
               "A likely lack of reciprocity will result in escalating the conflict."
@@ -788,14 +850,17 @@
       },
       {
         "skill": "Competing",
-        "skill5T1": "The process was taken when goals are extremely important, one must sometimes use power to win. They believe in winning a conflict with the competition. It can be seen as an Authoritarian approach.",
+        "description": "The process was taken when goals are extremely important, one must sometimes use power to win. They believe in winning a conflict with the competition. It can be seen as an Authoritarian approach.",
         "average": 0.0,
         "analysis": [
           {
             "level": "high",
-            "Skill5TT1": "Competitors typically value their goals over relationships, meaning that if forced to choose, they would seek to achieve their goals even at the cost of the relationship involved. They are typically more concerned with accomplishing their goals than with being liked by others. They might try to force opponents to accept their solution to the conflict by overpowering them.",
-            "skill5C": "Ideal when",
-            "skill5S": [
+            "count": 1,
+            "inference": [
+              "Competitors typically value their goals over relationships, meaning that if forced to choose, they would seek to achieve their goals even at the cost of the relationship involved. They are typically more concerned with accomplishing their goals than with being liked by others. They might try to force opponents to accept their solution to the conflict by overpowering them."
+            ],
+
+            "character": [
               "Tough decisions require leadership",
               "Unpopular decisions need to be implemented",
               "Fostering intimate or supportive relationships is not critical",
@@ -803,8 +868,8 @@
               "Conflict involves personal differences that are difficult to change",
               "Others are likely to take advantage of non‐competitive behaviour"
             ],
-            "skill5D": "Difficult when",
-            "skill5E": [
+
+            "struggle": [
               "Cooperation from others is important.",
               "Respect from others is diminished needlessly."
             ]
@@ -812,9 +877,11 @@
 
           {
             "level": "low",
-            "Skill5TT1": "A low score in competing as a conflict management strategy may suggest that the individual prioritizes maintaining relationships over winning conflicts. Even if it means caving into the other person's demands, they might be prepared to compromise their own objectives or preferences in order to keep the relationship intact. In an effort to preserve connections, they might try to resolve disputes amicably, even if doing so means putting aside their personal needs or preferences",
-            "skill5C": "Ideal when",
-            "skill5S": [
+            "count": 1,
+            "inference": [
+              "A low score in competing as a conflict management strategy may suggest that the individual prioritizes maintaining relationships over winning conflicts. Even if it means caving into the other person's demands, they might be prepared to compromise their own objectives or preferences in order to keep the relationship intact. In an effort to preserve connections, they might try to resolve disputes amicably, even if doing so means putting aside their personal needs or preferences"
+            ],
+            "character": [
               "Tough decisions require leadership",
               "Unpopular decisions need to be implemented",
               "Fostering intimate or supportive relationships is not critical",
@@ -822,8 +889,8 @@
               "Conflict involves personal differences that are difficult to change",
               "Others are likely to take advantage of non‐competitive behaviour"
             ],
-            "skill5D": "Difficult when",
-            "skill5E": [
+
+            "struggle": [
               "Cooperation from others is important.",
               "Respect from others is diminished needlessly."
             ]
@@ -837,17 +904,21 @@
     "template": "Decisionmaking.html",
     "count": 1,
     "inference": true,
-    "levels": [1, 3, 5],
+    "details": false,
     "skills": [
       {
         "skill": "Anxious",
-        "skill1T1": "Anxious decision-making style is characterized by high levels of anxiety and fear when making decisions.",
+        "description": "Anxious decision-making style is characterized by high levels of anxiety and fear when making decisions.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The candidate has secured a low score in the anxious subscale. This suggests that they ",
-            "skill1S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the anxious subscale. This suggests that they "
+            ],
+            "character": [
               "Trust their abilities",
               "Less prone to worrying",
               "Rely on facts and logical reasoning",
@@ -858,8 +929,11 @@
 
           {
             "level": "high",
-            "skill1TT1": "The candidate has secured a high score in the anxious subscale. This suggests that they",
-            "skill1S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the anxious subscale. This suggests that they"
+            ],
+            "character": [
               "May be seen as nervous, fearful, and indecisive.",
               "Are likely to experience high levels of anxiety when making decisions",
               "May be prone to worry and may have difficulty trusting their own abilities. ",
@@ -871,13 +945,17 @@
       },
       {
         "skill": "Avoidant",
-        "skill2T1": "Avoidant decision-making style is characterized by hesitation, procrastination, and fear of negative outcomes.",
+        "description": "Avoidant decision-making style is characterized by hesitation, procrastination, and fear of negative outcomes.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill2TT1": "The candidate has secured a low score in the avoidant subscale. This suggests that they ",
-            "skill2S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the avoidant subscale. This suggests that they "
+            ],
+            "character": [
               "Are comfortable with making decisions",
               "Are unflappable in the face of uncertainty",
               "Do not cower from confrontations or difficulties",
@@ -888,9 +966,12 @@
 
           {
             "level": "high",
-            "skill2TT1": "The candidate has secured a high score in the avoidant subscale. This suggests that they",
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the avoidant subscale. This suggests that they"
+            ],
 
-            "skill2S": [
+            "character": [
               "May miss opportunities and lack progress.",
               "May be hesitant or resistant to decision making",
               "May be seen as passive, indecisive and unassertive",
@@ -902,14 +983,18 @@
       },
       {
         "skill": "Brooding",
-        "skill3T1": "Brooding decision-making style is characterized by preoccupation with negative thoughts and feelings when making decisions.",
+        "description": "Brooding decision-making style is characterized by preoccupation with negative thoughts and feelings when making decisions.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill3TT1": "The candidate has secured a low score in the brooding subscale. This suggests that they",
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the brooding subscale. This suggests that they"
+            ],
 
-            "skill3S": [
+            "character": [
               "Are clear and decisive",
               "May be seen as optimistic and confident",
               "Keep a positive attitude while taking decisions",
@@ -920,9 +1005,11 @@
 
           {
             "level": "high",
-            "skill3TT1": "The candidate has secured a high score in the brooding subscale. This suggests that they",
-
-            "skill3S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the brooding subscale. This suggests that they"
+            ],
+            "character": [
               "May be seen as pessimistic and critical.",
               "Are prone to ruminating and overthinking",
               "Are preoccupied with negative thoughts and feelings",
@@ -934,13 +1021,17 @@
       },
       {
         "skill": "Dependent",
-        "skill4T1": "Dependent decision-making style is characterized by a strong reliance on others when making decisions.",
+        "description": "Dependent decision-making style is characterized by a strong reliance on others when making decisions.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill4TT1": "The candidate has secured a low score in the dependent subscale. This suggests that they",
-            "skill4S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the dependent subscale. This suggests that they"
+            ],
+            "character": [
               "Are confident in their abilities",
               "Like being independent and autonomous",
               "May be seen as self-reliant and assertive",
@@ -952,8 +1043,11 @@
 
           {
             "level": "high",
-            "skill4TT1": "The candidate has secured a high score in the dependent subscale. This suggests that they",
-            "skill4S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the dependent subscale. This suggests that they"
+            ],
+            "character": [
               "Ignore their personal preferences and needs",
               "Rely heavily on the input and guidance from others",
               "May be seen as cooperative, supportive and conformist",
@@ -965,13 +1059,17 @@
       },
       {
         "skill": "Intuitive",
-        "skill5T1": "Intuitive decision-making style is characterized by a reliance on gut feelings, instincts, and emotions when making decisions, rather than on facts and data.",
+        "description": "Intuitive decision-making style is characterized by a reliance on gut feelings, instincts, and emotions when making decisions, rather than on facts and data.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill5TT1": "The candidate has secured a low score in the intuitive subscale. This suggests that they",
-            "skill5S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the intuitive subscale. This suggests that they"
+            ],
+            "character": [
               "May be seen as practical and logical",
               "Rely on data and facts rather than gut feeling",
               "Are likely to plan ahead and avoid taking risks",
@@ -982,8 +1080,11 @@
 
           {
             "level": "high",
-            "skill5TT1": "The candidate has secured a high score in the intuitive subscale. This suggests that they",
-            "skill5S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the intuitive subscale. This suggests that they"
+            ],
+            "character": [
               "Focused on the big picture",
               "May be seen as creative, visionary, and spontaneous",
               "Rely on their instincts and gut feelings when making decisions",
@@ -995,13 +1096,17 @@
       },
       {
         "skill": "Spontaneous",
-        "skill6T1": "Spontaneous decision-making style is characterized by a quick, impulsive, and intuitive decision-making process",
+        "description": "Spontaneous decision-making style is characterized by a quick, impulsive, and intuitive decision-making process",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill6TT1": "The candidate has secured a low score in the spontaneous subscale. This suggests that they",
-            "skill6S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the spontaneous subscale. This suggests that they"
+            ],
+            "character": [
               "May be inflexible and lack creativity",
               "May be seen as cautious and systematic",
               "Are likely to plan ahead and avoid taking risks",
@@ -1012,8 +1117,11 @@
 
           {
             "level": "high",
-            "skill6TT1": "The candidate has secured a high score in the spontaneous subscale. This suggests that they",
-            "skill6S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the spontaneous subscale. This suggests that they"
+            ],
+            "character": [
               "Have “go with the flow” mentality",
               "Are impulsive, flexible and comfortable with ambiguity",
               "May take reckless decisions due to a lack of interest in details, rules and procedures",
@@ -1025,13 +1133,17 @@
       },
       {
         "skill": "Vigilant",
-        "skill7T1": "Vigilant decision-making style is characterized by a careful and systematic approach to decision-making, a thorough examination of all options, and potential consequences before making a choice.",
+        "description": "Vigilant decision-making style is characterized by a careful and systematic approach to decision-making, a thorough examination of all options, and potential consequences before making a choice.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill7TT1": "The candidate has secured a low score in the vigilant subscale. This suggests that they",
-            "skill7S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the vigilant subscale. This suggests that they"
+            ],
+            "character": [
               "Are open to new experiences",
               "Are comfortable with taking risky decisions",
               "May be seen as more flexible, optimistic, and less meticulous",
@@ -1042,8 +1154,11 @@
 
           {
             "level": "high",
-            "skill7TT1": "The candidate has secured a high score in the vigilant subscale. This suggests that they",
-            "skill7S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the vigilant subscale. This suggests that they"
+            ],
+            "character": [
               "May be inflexible and lack creativity",
               "Are highly analytical and detail-oriented",
               "May be seen as cautious and systematic",
@@ -1056,13 +1171,17 @@
       },
       {
         "skill": "Respected",
-        "skill8T1": "Respected decision-making style is characterized by the perception of trust others have in an individual's ability to make good decisions and handle the consequences that may arise from them.",
+        "description": "Respected decision-making style is characterized by the perception of trust others have in an individual's ability to make good decisions and handle the consequences that may arise from them.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill8TT1": "The candidate has secured a low score in the respected subscale. This suggests that others might see them as",
-            "skill8S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the respected subscale. This suggests that others might see them as"
+            ],
+            "character": [
               "Underconfident",
               "Not a decision-taker",
               "Out-of-place as an advisor or guide",
@@ -1073,8 +1192,11 @@
 
           {
             "level": "high",
-            "skill8TT1": "The candidate has secured a high score in the respected subscale. This suggests that others might see them as",
-            "skill8S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the respected subscale. This suggests that others might see them as"
+            ],
+            "character": [
               "Decisive",
               "Confident",
               "Leaders and trusted advisors",
@@ -1087,11 +1209,15 @@
         "skill": "Confident",
         "skill9T1": "Confident decision-making style is characterized by trust in one's own abilities and judgment when making decisions.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill9TT1": "The candidate has secured a low score in the confident subscale. This suggests that they",
-            "skill9S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a low score in the confident subscale. This suggests that they"
+            ],
+            "character": [
               "Do not trust their abilities and skills",
               "Seek validation and approval from others",
               "Are hesitant while dealing with uncertainty",
@@ -1102,8 +1228,11 @@
 
           {
             "level": "high",
-            "skill9TT1": "The candidate has secured a high score in the confident subscale. This suggests that they",
-            "skill9S": [
+            "count": 3,
+            "inference": [
+              "The candidate has secured a high score in the confident subscale. This suggests that they"
+            ],
+            "character": [
               "Trust their judgement",
               "Take initiatives in making decisions",
               "Confident in their ability to take decisions",
@@ -1175,149 +1304,205 @@
     "template": "iadapt.html",
     "count": 1,
     "inference": true,
-    "levels": [1, 3, 5],
+    "details": false,
     "skills": [
       {
         "skill": "Handling Emergency or Crisis Situations",
-        "skill1T1": "Reacting with appropriate and proper urgency in life-threatening, dangerous, or emergency situations.",
+        "description": "Reacting with appropriate and proper urgency in life-threatening, dangerous, or emergency situations.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The applicant received a low score on the subscale for handling emergency or crisis situations. This demonstrates that they are not quick or precise when reacting in situations that could be harmful, urgent, or life-threatening. They struggle with evaluating the benefits and drawbacks of various strategies while dealing with danger or crisis. Their inability to focus and organize their ideas has an impact on how quickly and accurately they make decisions. They cannot maintain their composure under pressure and their ability to regulate their emotions. They avoid taking the initiative to cope with threats or emergencies.",
-            "skill1C": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant received a low score on the subscale for handling emergency or crisis situations. This demonstrates that they are not quick or precise when reacting in situations that could be harmful, urgent, or life-threatening. They struggle with evaluating the benefits and drawbacks of various strategies while dealing with danger or crisis. Their inability to focus and organize their ideas has an impact on how quickly and accurately they make decisions. They cannot maintain their composure under pressure and their ability to regulate their emotions. They avoid taking the initiative to cope with threats or emergencies."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill1TT1": "The applicant received a high score on the subscale for handling emergency or crisis situations. This shows that they are prompt and accurate in responding to potentially dangerous, urgent, or life-threatening circumstances. They immediately weigh the advantages and disadvantages of several approaches to handling danger or crises. They have perfected making quick judgments based on concentrated and organized thought. They are able to remain objective and in control of their emotions while remaining focused on the current circumstance. They take initiative right away to take appropriate action and deal with danger or emergencies.",
-            "skill1C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant received a high score on the subscale for handling emergency or crisis situations. This shows that they are prompt and accurate in responding to potentially dangerous, urgent, or life-threatening circumstances. They immediately weigh the advantages and disadvantages of several approaches to handling danger or crises. They have perfected making quick judgments based on concentrated and organized thought. They are able to remain objective and in control of their emotions while remaining focused on the current circumstance. They take initiative right away to take appropriate action and deal with danger or emergencies."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       },
       {
         "skill": "Handling Work Stress",
-        "skill2T1": "Remaining composed and cool when faced with difficult circumstances or a highly demanding workload or schedule.",
+        "description": "Remaining composed and cool when faced with difficult circumstances or a highly demanding workload or schedule.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill2TT1": "On the subscale for handling work stress, the candidate received a low score. Showing a lack of ability to remain calm and composed when faced with difficult work or deadlines. They become agitated when faced with unexpected information or events. They frequently experience frustration as they try to focus their efforts on identifying practical solutions rather than blaming others. They act erratically and panic when faced with challenging circumstances. They might even cause panic in those who are around them.",
-            "skill2C": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "On the subscale for handling work stress, the candidate received a low score. Showing a lack of ability to remain calm and composed when faced with difficult work or deadlines. They become agitated when faced with unexpected information or events. They frequently experience frustration as they try to focus their efforts on identifying practical solutions rather than blaming others. They act erratically and panic when faced with challenging circumstances. They might even cause panic in those who are around them."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill2TT1": "The candidate received a high score on the scale for handling work stress. They demonstrate their ability to maintain cool and composure under pressure from daunting tasks or deadlines. Even when confronted with unexpected news or circumstances, they can keep their calm. By putting their energy into finding workable answers rather than placing blame, they can effectively control their frustration. In difficult situations, they exhibit fortitude and the highest levels of professionalism. They serve as a steadying force for others around them.",
-            "skill2C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The candidate received a high score on the scale for handling work stress. They demonstrate their ability to maintain cool and composure under pressure from daunting tasks or deadlines. Even when confronted with unexpected news or circumstances, they can keep their calm. By putting their energy into finding workable answers rather than placing blame, they can effectively control their frustration. In difficult situations, they exhibit fortitude and the highest levels of professionalism. They serve as a steadying force for others around them."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       },
       {
         "skill": "Solving Problems Creatively",
-        "skill3T1": "Employing unique types of analyses and generating new, innovative ideas in complex areas.",
+        "description": "Employing unique types of analyses and generating new, innovative ideas in complex areas.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill3TT1": "The candidate received a low score on the subscale measuring creative problem-solving. They have trouble analyzing and coming up with novel, innovative ideas on complex topics. By looking at problems from the inside out and backward, they are unable to come up with creative solutions. They struggle to draw links between ideas and sources, combine ideas that might not seem related, and develop innovative solutions. The thought of considering so many possibilities overwhelms them. They might ignore possibilities outside of the limitations. They despise coming up with new techniques for gathering or using resources when there aren't enough to do the task.",
-            "skill3C": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The candidate received a low score on the subscale measuring creative problem-solving. They have trouble analyzing and coming up with novel, innovative ideas on complex topics. By looking at problems from the inside out and backward, they are unable to come up with creative solutions. They struggle to draw links between ideas and sources, combine ideas that might not seem related, and develop innovative solutions. The thought of considering so many possibilities overwhelms them. They might ignore possibilities outside of the limitations. They despise coming up with new techniques for gathering or using resources when there aren't enough to do the task."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill3TT1": "The candidate received a high score on the subscale measuring creative problem-solving. They use distinct forms of analysis and produce fresh, original concepts in challenging fields. They are able to find novel solutions by turning issues inside out and backward. They combine material that can seem unconnected and come up with original answers. They look at many options that others might overlook. They consider possibilities outside of the constraints to determine if there are better strategies. They have a propensity for discovering new methods of collecting or utilizing resources when insufficient resources are available to perform the job.",
-            "skill3C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The candidate received a high score on the subscale measuring creative problem-solving. They use distinct forms of analysis and produce fresh, original concepts in challenging fields. They are able to find novel solutions by turning issues inside out and backward. They combine material that can seem unconnected and come up with original answers. They look at many options that others might overlook. They consider possibilities outside of the constraints to determine if there are better strategies. They have a propensity for discovering new methods of collecting or utilizing resources when insufficient resources are available to perform the job."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       },
       {
         "skill": "Dealing with Uncertain and Unpredictable Work Situations",
-        "skill4T1": "Employing unique types of analyses and generating new, innovative ideas in complex areas.",
+        "description": "Employing unique types of analyses and generating new, innovative ideas in complex areas.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill4TT1": "The applicant received low scores on the dealing with uncertain and unpredictable work situations subscale. Demonstrating that when people lack access to all the facts or the complete picture, their productivity suffers. They need time to adjust and alter their responses to unexpected or unanticipated events and conditions. They encounter difficulties while they adjust their methods, goals, plans of action, or priorities in response to shifting conditions. They struggle to establish standards and enforce them so that everyone can maintain concentration in difficult situations for themselves and others. They have a black-and-white perspective.",
-            "skill4C": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant received low scores on the dealing with uncertain and unpredictable work situations subscale. Demonstrating that when people lack access to all the facts or the complete picture, their productivity suffers. They need time to adjust and alter their responses to unexpected or unanticipated events and conditions. They encounter difficulties while they adjust their methods, goals, plans of action, or priorities in response to shifting conditions. They struggle to establish standards and enforce them so that everyone can maintain concentration in difficult situations for themselves and others. They have a black-and-white perspective."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill4TT1": "The applicant received high scores on dealing with uncertain and unpredictable work situations. They show that they operate effectively when necessary even though they don't have access to all the information or the full picture. In reaction to unforeseen or unanticipated events and circumstances, they are able to quickly and effortlessly shift gear. They successfully alter strategies, objectives, plans of action, or priorities in reaction to changing circumstances. They create rules for themselves and others that help everyone stay focused in challenging circumstances. They do not see things in absolutes.",
-            "skill4C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant received high scores on dealing with uncertain and unpredictable work situations. They show that they operate effectively when necessary even though they don't have access to all the information or the full picture. In reaction to unforeseen or unanticipated events and circumstances, they are able to quickly and effortlessly shift gear. They successfully alter strategies, objectives, plans of action, or priorities in reaction to changing circumstances. They create rules for themselves and others that help everyone stay focused in challenging circumstances. They do not see things in absolutes."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       },
       {
         "skill": "Learning Work Tasks, Technologies, and Procedures",
-        "skill5T1": "Demonstrating enthusiasm for learning new approaches and technologies for conducting work.",
+        "description": "Demonstrating enthusiasm for learning new approaches and technologies for conducting work.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill5TT1": "The applicant has scored low on the learning work tasks, technologies, and procedures subscale. They have trouble learning new techniques and tools for performing their tasks. They avoid trying anything new in order to stay up-to date-with knowledge and skills. They refrain from performing previously taught tasks or using new skills quickly. They feel at ease continuing their outdated working methods and procedures. They avoid participating in activities or training required to adapt to future requirements. They are afraid of acknowledging their shortcomings at work.",
-            "skill5C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on the learning work tasks, technologies, and procedures subscale. They have trouble learning new techniques and tools for performing their tasks. They avoid trying anything new in order to stay up-to date-with knowledge and skills. They refrain from performing previously taught tasks or using new skills quickly. They feel at ease continuing their outdated working methods and procedures. They avoid participating in activities or training required to adapt to future requirements. They are afraid of acknowledging their shortcomings at work."
+            ],
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill5TT1": "The applicant has scored high on the learning work tasks, technologies, and procedures subscale. They have a passion for picking up new methods and tools for doing their jobs. They take the required steps to stay updated on information and abilities. They pick up new skills or previously learned duties fast and effectively. They adapt to new working practices and procedures with ease. They look for and take part in tasks or training that will prepare them for these adjustments as the needs of their work alter in the future. They take action to improve work performance deficiencies.",
-            "skill5C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on the learning work tasks, technologies, and procedures subscale. They have a passion for picking up new methods and tools for doing their jobs. They take the required steps to stay updated on information and abilities. They pick up new skills or previously learned duties fast and effectively. They adapt to new working practices and procedures with ease. They look for and take part in tasks or training that will prepare them for these adjustments as the needs of their work alter in the future. They take action to improve work performance deficiencies."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       },
       {
         "skill": "Demonstrating Interpersonal Adaptability",
-        "skill6T1": "Being flexible and open-minded when dealing with others.",
+        "description": "Being flexible and open-minded when dealing with others.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill6TT1": "The applicant scored low on the demonstrating interpersonal adaptability subscale. They find it difficult to adjust and comprehend individuals when engaging with them. They frequently ignore other people's opinions and viewpoints. They have trouble being receptive to suggestions for work-related improvement or constructive criticism. They have trouble connecting and socializing with persons who have a wide range of personalities. They struggle to persuade, influence, or work more effectively with people because they are unable to read their behavior.",
-            "skill6C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant scored low on the demonstrating interpersonal adaptability subscale. They find it difficult to adjust and comprehend individuals when engaging with them. They frequently ignore other people's opinions and viewpoints. They have trouble being receptive to suggestions for work-related improvement or constructive criticism. They have trouble connecting and socializing with persons who have a wide range of personalities. They struggle to persuade, influence, or work more effectively with people because they are unable to read their behavior."
+            ],
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill6TT1": "The applicant scored high on the demonstrating interpersonal adaptability subscale. When interacting with others, they are adaptable and understanding. They pay attention to and take into account the views and ideas of others, changing their own views as necessary. They increase their productivity by being open and accepting constructive criticism or suggestions for improvement regarding their work. They can successfully interact and form bonds with people who have a broad spectrum of personalities. They have deep insight into the behavior of others and adapt their own actions to convince, influence, or collaborate more successfully with them.",
-            "skill6C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant scored high on the demonstrating interpersonal adaptability subscale. When interacting with others, they are adaptable and understanding. They pay attention to and take into account the views and ideas of others, changing their own views as necessary. They increase their productivity by being open and accepting constructive criticism or suggestions for improvement regarding their work. They can successfully interact and form bonds with people who have a broad spectrum of personalities. They have deep insight into the behavior of others and adapt their own actions to convince, influence, or collaborate more successfully with them."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       },
       {
         "skill": "Demonstrating Cultural Adaptability",
-        "skill7T1": "Taking action to learn about and understand the climate, orientation, needs, and values of other groups, organizations, or cultures.",
+        "description": "Taking action to learn about and understand the climate, orientation, needs, and values of other groups, organizations, or cultures.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill7TT1": "The applicant has scored low on the demonstration cultural adaptability subscale. They find it difficult to seize opportunities in advance to understand the circumstances, preferences, demands, and values of other groups, organizations, or cultures. They struggle to feel comfortable with practices, traditions, and beliefs dissimilar from theirs. They are unwilling to modify their behavior in order to adhere to the customs and values of others. They may unintentionally offend other groups, organizations, or civilizations because they are unaware of the consequences of their behavior.",
-            "skill7C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on the demonstration cultural adaptability subscale. They find it difficult to seize opportunities in advance to understand the circumstances, preferences, demands, and values of other groups, organizations, or cultures. They struggle to feel comfortable with practices, traditions, and beliefs dissimilar from theirs. They are unwilling to modify their behavior in order to adhere to the customs and values of others. They may unintentionally offend other groups, organizations, or civilizations because they are unaware of the consequences of their behavior."
+            ],
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill7TT1": "The applicant has scored high on the demonstration cultural adaptability subscale. They take the opportunity to become familiar with and comprehend the conditions, preferences, requirements, and values of other groups, organizations, or cultures. They easily adapt to and feel at ease with many beliefs, practices, and traditions. They voluntarily alter their actions or demeanor as required to adhere to or respect the values and traditions of others. They are aware of the effects of their actions and modify their actions to keep friendly relations with various groups, organizations, or cultures.",
-            "skill7C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on the demonstration cultural adaptability subscale. They take the opportunity to become familiar with and comprehend the conditions, preferences, requirements, and values of other groups, organizations, or cultures. They easily adapt to and feel at ease with many beliefs, practices, and traditions. They voluntarily alter their actions or demeanor as required to adhere to or respect the values and traditions of others. They are aware of the effects of their actions and modify their actions to keep friendly relations with various groups, organizations, or cultures."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       },
       {
         "skill": "Demonstrating Physically Oriented Adaptability",
-        "skill8T1": "Adjusting to challenging environmental states such as extreme heat, humidity, cold, or dirt.",
+        "description": "Adjusting to challenging environmental states such as extreme heat, humidity, cold, or dirt.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",
-            "Skill8TT1": "The applicant has scored low on the demonstrating physically oriented adaptability subscale. They cannot survive under harsh climatic circumstances including extreme heat, humidity, cold, or pollution. While exerting physical effort to do challenging or demanding tasks, they frequently feel fatigued. They struggle in occupations that need them to alter their body weight and muscle strength or develop their ability to perform manual labor.",
-            "skill8C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on the demonstrating physically oriented adaptability subscale. They cannot survive under harsh climatic circumstances including extreme heat, humidity, cold, or pollution. While exerting physical effort to do challenging or demanding tasks, they frequently feel fatigued. They struggle in occupations that need them to alter their body weight and muscle strength or develop their ability to perform manual labor."
+            ],
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
             "level": "high",
-            "skill8TT1": "The applicant has scored high on the demonstrating physically oriented adaptability subscale. They are able to cope with difficult environmental conditions such high heat, humidity, cold, or dirt. They frequently exert physical effort to finish difficult or demanding jobs. They perform well in professions that demand them to change their body weight and muscle strength or become skilled at carrying out physical chores.",
-            "skill8C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on the demonstrating physically oriented adaptability subscale. They are able to cope with difficult environmental conditions such high heat, humidity, cold, or dirt. They frequently exert physical effort to finish difficult or demanding jobs. They perform well in professions that demand them to change their body weight and muscle strength or become skilled at carrying out physical chores."
+            ],
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       }
@@ -1328,113 +1513,188 @@
     "template": "Psychologicalwellbeing.html",
     "count": 1,
     "inference": true,
-    "levels": [3, 11, 21],
+    "details": false,
     "skills": [
       {
         "skill": "Autonomy",
-        "skill1T1": "Autonomy is characterized by a sense of authority and self-determination and evaluating oneself according to self-imposed criteria rather than looking for social approval.",
+        "description": "Autonomy is characterized by a sense of authority and self-determination and evaluating oneself according to self-imposed criteria rather than looking for social approval.",
         "average": 0.0,
+        "levels": [11, 21],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The applicant has scored low on the Autonomy subscale. They are concerned about the expectations and evaluations of others. They heavily rely on the judgments of others to make important decisions It is essential for them to conform to social pressures to think and act in certain ways. They rarely go against societal norms and cultural expectations. This at times leads to them not pursuing their desires or dreams.",
-            "skill1C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 3,
+            "inference": [
+              "The applicant has scored low on the Autonomy subscale. They are concerned about the expectations and evaluations of others. They heavily rely on the judgments of others to make important decisions It is essential for them to conform to social pressures to think and act in certain ways. They rarely go against societal norms and cultural expectations. This at times leads to them not pursuing their desires or dreams."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
 
           {
             "level": "high",
-            "skill1TT1": "The applicant scored high on the Autonomy subscale. They are self-determined and independent. They are able to resist social pressures to think and act in certain ways. They function autonomously and resist enculturation. They have an internal locus of evaluation, whereby they don't look to others for approval, but evaluate themselves by personal standards. They don't succumb to the collective fears, beliefs, and laws of the masses.",
-            "skill1C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 3,
+            "inference": [
+              "The applicant scored high on the Autonomy subscale. They are self-determined and independent. They are able to resist social pressures to think and act in certain ways. They function autonomously and resist enculturation. They have an internal locus of evaluation, whereby they don't look to others for approval, but evaluate themselves by personal standards. They don't succumb to the collective fears, beliefs, and laws of the masses."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
       {
         "skill": "Environmental Mastery",
-        "skill2T1": "Environmental Mastery is characterized by ability to choose and create environments suitable to one’s psychic conditions.",
+
+        "description": "Environmental Mastery is characterized by ability to choose and create environments suitable to one’s psychic conditions.",
         "average": 0.0,
+        "levels": [11, 21],
         "analysis": [
           {
             "level": "low",
-            "Skill2TT1": "The applicant has scored low on the Environmental Mastery subscale. They have difficulty managing everyday affairs as they feel they are unable to change or improve their surrounding. This could also steam from their inability to identify and act on the opportunities their surroundings provide. They feel they lack an overall sense of control over the external world.",
-            "skill2C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored low on the Environmental Mastery subscale. They have difficulty managing everyday affairs as they feel they are unable to change or improve their surrounding. This could also steam from their inability to identify and act on the opportunities their surroundings provide. They feel they lack an overall sense of control over the external world."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
 
           {
             "level": "high",
-            "skill2TT1": "The applicant has scored high on the Environmental Mastery subscale. They have a sense of mastery and competence in managing the environment. They control a complex array of external activities and make effective use of surrounding opportunities. They are able to choose or create contexts suitable to personal needs and values. They are able to manipulate, control and advance in complex environments by implementing creativity through physical and mental activities.",
-            "skill2C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored high on the Environmental Mastery subscale. They have a sense of mastery and competence in managing the environment. They control a complex array of external activities and make effective use of surrounding opportunities. They are able to choose or create contexts suitable to personal needs and values. They are able to manipulate, control and advance in complex environments by implementing creativity through physical and mental activities."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
       {
         "skill": "Personal Growth",
-        "skill3T1": "Personal Growth is characterized by actualizing oneself and realising one's potentialities.",
+        "description": "Personal Growth is characterized by actualizing oneself and realising one's potentialities.",
         "average": 0.0,
+        "levels": [11, 21],
         "analysis": [
           {
             "level": "low",
-            "Skill3TT1": "The applicant has scored low on the Personal Growth subscale. They feel personal stagnation, that is they lack any sort of individual progress. They constantly have this sensation of lacking improvement or expansion over a period of time. They are bored and uninterested in their life. They are unable to develop new attitudes or behaviors.",
-            "skill3C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored low on the Personal Growth subscale. They feel personal stagnation, that is they lack any sort of individual progress. They constantly have this sensation of lacking improvement or expansion over a period of time. They are bored and uninterested in their life. They are unable to develop new attitudes or behaviors."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
 
           {
             "level": "high",
-            "skill3TT1": "The applicant has scored high on the Personal Growth subscale. They have an urge for continued development and see themselves as growing and expanding. They are open to new experiences and keep developing their potential. They put in efforts to reach their potential and strive to improve over time. They continuously change themselves to acquire self-knowledge and effectiveness.",
-            "skill3C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on the Personal Growth subscale. They have an urge for continued development and see themselves as growing and expanding. They are open to new experiences and keep developing their potential. They put in efforts to reach their potential and strive to improve over time. They continuously change themselves to acquire self-knowledge and effectiveness."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
       {
         "skill": "Positive Relations with Others",
-        "skill4T1": "Positive relations with others is characterized by the development and maintenance of warm and trusting relations with others.",
+        "description": "Positive relations with others is characterized by the development and maintenance of warm and trusting relations with others.",
         "average": 0.0,
+        "levels": [11, 21],
         "analysis": [
           {
             "level": "low",
-            "Skill4TT1": "The applicant has scored low on the Positive Relations with Others subscale. They have limited close relationships with others as they sparingly trust others. They struggle with peeing themselves and being warm and concerned about others. This reflects in their isolated and frustrated interpersonal relationships. They are unable to handle the intricacies and vulnerabilities of a close relationship, thus are not willing to make compromises to sustain important ties with others.",
-            "skill4C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored low on the Positive Relations with Others subscale. They have limited close relationships with others as they sparingly trust others. They struggle with peeing themselves and being warm and concerned about others. This reflects in their isolated and frustrated interpersonal relationships. They are unable to handle the intricacies and vulnerabilities of a close relationship, thus are not willing to make compromises to sustain important ties with others."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
 
           {
             "level": "high",
-            "skill4TT1": "The applicant has scored high on the Positive Relations with Others subscale. They share warm, satisfying, and trusting relationships with others. They are concerned about the welfare of others as they are capable of experiencing strong empathy, affection, and intimacy. They create stronger bonds, deeper friendships, and a better understanding of the give and take of human relationships.",
-            "skill4C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on the Positive Relations with Others subscale. They share warm, satisfying, and trusting relationships with others. They are concerned about the welfare of others as they are capable of experiencing strong empathy, affection, and intimacy. They create stronger bonds, deeper friendships, and a better understanding of the give and take of human relationships."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
       {
         "skill": "Purpose in Life",
-        "skill5T1": "Purpose in life is characterized by finding meaning and purpose in one’s past and present life, typically through the realization of goals and objective.",
+        "description": "Purpose in life is characterized by finding meaning and purpose in one’s past and present life, typically through the realization of goals and objective.",
         "average": 0.0,
+        "levels": [11, 21],
         "analysis": [
           {
             "level": "low",
-            "Skill5TT1": "The applicant has scored low on the Purpose in Life subscale. They feel as if they lack a sense of meaning in their life. They have restricted goals or aims and lack a sense of direction. They are unable to see the purpose or meaning in their past life. They have no outlook or beliefs that gives their life meaning. They might come off as confused and lost as they don't know where they are going in the bigger picture.",
-            "skill5C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored low on the Purpose in Life subscale. They feel as if they lack a sense of meaning in their life. They have restricted goals or aims and lack a sense of direction. They are unable to see the purpose or meaning in their past life. They have no outlook or beliefs that gives their life meaning. They might come off as confused and lost as they don't know where they are going in the bigger picture."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
 
           {
             "level": "high",
-            "skill5TT1": "The applicant has scored high on the Self-acceptance subscale. They possess a positive attitude toward the self. They acknowledge and accept multiple aspects of themselves, including good and bad qualities. They accept their past life and believe that all the obstacles were essential for their growth.",
-            "skill5C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored high on the Self-acceptance subscale. They possess a positive attitude toward the self. They acknowledge and accept multiple aspects of themselves, including good and bad qualities. They accept their past life and believe that all the obstacles were essential for their growth."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
       {
         "skill": "Self-acceptance",
-        "skill6T1": "Self-acceptance is characterized by positive attitude towards self and one's past life.",
+        "description": "Self-acceptance is characterized by positive attitude towards self and one's past life.",
         "average": 0.0,
+        "levels": [11, 21],
         "analysis": [
           {
             "level": "low",
-            "Skill6TT1": "The applicant has scored low on the Self-acceptance subscale. They are dissatisfied with themselves. They are disappointed with what had occurred in their past life. They are insecure and conscious about certain personal qualities of theirs. They constantly have thoughts about being someone other than what they are. They rarely like anything about themselves and might struggle with self-esteem issues.",
-            "skill6C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored low on the Self-acceptance subscale. They are dissatisfied with themselves. They are disappointed with what had occurred in their past life. They are insecure and conscious about certain personal qualities of theirs. They constantly have thoughts about being someone other than what they are. They rarely like anything about themselves and might struggle with self-esteem issues."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
 
           {
             "level": "high",
-            "skill6TT1": "The applicant has scored high on the Self-acceptance subscale. They possess a positive attitude toward the self. They acknowledge and accept multiple aspects of themselves, including good and bad qualities. They accept their past life and believe that all the obstacles were essential for their growth.",
-            "skill6C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 3,
+
+            "inference": [
+              "The applicant has scored high on the Self-acceptance subscale. They possess a positive attitude toward the self. They acknowledge and accept multiple aspects of themselves, including good and bad qualities. They accept their past life and believe that all the obstacles were essential for their growth."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       }
@@ -1813,14 +2073,18 @@
     "skills": [
       {
         "skill": "Grit",
-        "skill1T1": "Grit refers to a person’s passion and perseverance for long-term goals.",
+        "description": "Grit refers to a person’s passion and perseverance for long-term goals.",
         "average": 0.0,
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The applicant has scored low on the Grit scale. They are not passionate and perseverant. They easily get distracted and move from one task to another. They rarely attach personal meaning or value to any tasks they perform. They find little to no value in pushing through their work when it is facing lots of obstacles, downfall, or stagnant progress.",
-            "skill1C": "The applicant's score on this scale suggests that they tend to struggle with",
-            "skill1S": [
+            "inference": [
+              "The applicant has scored low on the Grit scale. They are not passionate and perseverant. They easily get distracted and move from one task to another. They rarely attach personal meaning or value to any tasks they perform. They find little to no value in pushing through their work when it is facing lots of obstacles, downfall, or stagnant progress."
+            ],
+            "character": [
+              "The applicant's score on this scale suggests that they tend to struggle with"
+            ],
+            "struggle": [
               "Controlling their impulses and prioritizing their tasks",
               "Bouncing back from failure and keep moving forward",
               "Being deeply committed to their work and having a strong sense of purpose",
@@ -1833,9 +2097,13 @@
 
           {
             "level": "high",
-            "skill1TT1": "The applicant has scored high on the Grit scale. They are passionate and perseverant. They are not passionate about everything. But they focus their time and energy on one/limited things which hold meaning and importance for them personally.",
-            "skill1C": "People who score similarly to the applicant on this scale suggest that they tend to",
-            "skill1S": [
+            "inference": [
+              "The applicant has scored high on the Grit scale. They are passionate and perseverant. They are not passionate about everything. But they focus their time and energy on one/limited things which hold meaning and importance for them personally."
+            ],
+            "character": [
+              "People who score similarly to the applicant on this scale suggest that they tend to"
+            ],
+            "struggle": [
               "Control their impulses and prioritize their tasks",
               "Bounce back from failure and keep moving forward",
               "Keep pushing forward despite challenging circumstances",
@@ -1843,6 +2111,172 @@
               "Be deeply committed to their work and have a strong sense of purpose",
               "Adapt to changing circumstances and find creative solutions to problems",
               "Have a clear understanding of their goals and work tirelessly to achieve them"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Value Priorities Assessment Report",
+    "template": "value10.html",
+    "count": 1,
+    "inference": true,
+    "skills": [
+      {
+        "skill": "Self Enhancement",
+        "levels": [4, 15, 24],
+        "skill1T1": "Value-driven style of influencing focuses on aligning their message with the values and beliefs of the person or group they are trying to influence.",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "high",
+            "skill1TT1": "For the applicant it is essential to follow the social rules and safety protocols at all times. They are against risking their or anybody's safety to order to achieve anything. Besides this they also value their traditions and would not do anything that conflicts with their traditional values system. They are the conformists and regulate their actions based on the societal expectations. They value stability in self, relationships as well as society",
+
+            "skillscores": [
+              "Cautious",
+              "Comformist",
+              "Harmonious",
+              "Rule follower",
+              "Preserve culture",
+              "Values traditions"
+            ]
+          },
+
+          {
+            "level": "low",
+            "skill1TT1": "The applicant does not limit their efforts because of safety of theirs or of anybody else around them. While planning and working they exclude the restrictions that come from societal rules and regulations. They prefer to keep their life free from any sort of social, traditional, religious restrictions. They do not cower away from doing something they want because of policies or social norms. They do not involve themselves into creating harmony or stability in the society.",
+            "skillscores": [
+              "Personal Safety",
+              "National Defense",
+              "Social Expectations",
+              "Traditional Customs",
+              "Laws and regulations",
+              "Cultural values and beliefs"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Self Transcendence",
+        "levels": [6, 22, 36],
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "high",
+            "Skill2TT1": "It is important for the applicant to take everyone around them on the path of progress. They feel the need to create a better world through conserving nature and encouraging the people to be better versions of themselves. They have a sense of justice or fairness and tend to aim for it. They are dependable and trustworthy. They are people oriented and would care for others despite their differences.",
+
+            "skillscores": [
+              "Caring",
+              "Inclusive",
+              "Dependable",
+              "Nature lover",
+              "Understanding",
+              "Environmentalist",
+              "Committed to equality",
+              "Vocal against injustice"
+            ]
+          },
+
+          {
+            "level": "low",
+            "Skill2TT1": "The applicant believes in their individual progress and do not get themselves involved in what is others business. They do not seek support or encouragement from others nor do they encourage others for their progress. They have a limited view. They might not be keen on frequent personal contact.",
+
+            "skillscores": [
+              "Injustice",
+              "Discrimination",
+              "Environmental issues",
+              "Whether others think of them as caring or dependable"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Openness to Change",
+        "levels": [4, 15, 24],
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "high",
+            "Skill3TT1": "For the applicant it is important to have new and innovative experiences. They seek for an environment which pushes them to try and learn new things. If they have to follow a monotonous routine, then they would lose interest and experience burnout. They like to explore their thoughts and ideas. They have a liking for freedom and are action oriented. All their actions have the motive to increase or maintain their self-respect. ",
+            "skillscores": [
+              "Explorer",
+              "Adventurous",
+              "Novelty seeker",
+              "Action-oriented",
+              "Creative thinker",
+              "Pleasure seeker",
+              "Self-determined",
+              "Independent thinker"
+            ]
+          },
+          {
+            "level": "low",
+            "Skill3TT1": "It is important for the applicant to be in an environment where they know what to expect. They aren't comfortable in attempting something they are unfamiliar with. They feel confident and content in following their routine. They will thrive in a monotonous routine, where all their tasks are well defined. They are comfortable with following leads.",
+            "skillscores": [
+              "Pleasure",
+              "Creativity",
+              "Adventure",
+              "Independence"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Conservation",
+        "levels": [4, 15, 24],
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "high",
+            "Skill4TT1": "For the applicant it is essential to follow the social rules and safety protocols at all times. They are against risking their or anybody's safety to order to achieve anything. Besides this they also value their traditions and would not do anything that conflicts with their traditional values system. They are the conformists and regulate their actions based on the societal expectations. They value stability in self, relationships as well as society.",
+            "skillscores": [
+              "Cautious",
+              "Comformist",
+              "Harmonious",
+              "Rule follower",
+              "Preserve culture",
+              "Values traditions"
+            ]
+          },
+          {
+            "level": "low",
+            "Skill4TT1": "The applicant does not limit their efforts because of safety of theirs or of anybody else around them. While planning and working they exclude the restrictions that come from societal rules and regulations. They prefer to keep their life free from any sort of social, traditional, religious restrictions. They do not cower away from doing something they want because of policies or social norms. They do not involve themselves into creating harmony or stability in the society.",
+            "skillscores": [
+              "Personal Safety",
+              "National Defense",
+              "Social Expectations",
+              "Traditional Customs",
+              "Laws and regulations",
+              "Cultural values and beliefs"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Face",
+        "levels": [6, 22, 36],
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "high",
+
+            "Skill5TT1": "Face is located between the higher order self-enhancement and conservation values and is measured and interpreted independently.",
+            "skillscores": [
+              "Follow etiquettes",
+              "Maintain a Positive image",
+              "Worry about their reputation",
+              "Be apprehensive of public opinion"
+            ]
+          },
+          {
+            "level": "low",
+            "Skill5TT1": "Face is located between the higher order self-enhancement and conservation values and is measured and interpreted independently.",
+            "skillscores": [
+              "Public opinion",
+              "Their reputation",
+              "Following etiquettes",
+              "Maintaining a Positive image"
             ]
           }
         ]

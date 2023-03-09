@@ -4,7 +4,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
     <title>zapilio</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc/dist/chartjs-plugin-datalabels.min.js"></script>
@@ -647,7 +646,7 @@
             <canvas id="myChart1" width="200px" height="200px"></canvas>
           </div>
         </div>
-        <p class="desc_line1">
+        <p class="desc_line1" style="margin-top: 200px">
           Hamilton, J. (1991). The development of a communication-specific locus
           of control instrument. Communication Reports, 4(2), 107-112.
           <br /><br />
@@ -671,7 +670,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill1" min="4" max="20" type="range" value="10" />
+            <input id="skill1" min="5" max="20" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -707,7 +706,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="4" max="20" type="range" value="10" />
+            <input id="skill2" min="6" max="24" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -744,15 +743,15 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill3" min="4" max="20" type="range" value="10" />
+            <input id="skill3" min="6" max="24" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
-            <span>4</span>
+            <span>6</span>
             <span>low</span>
-            <span>12</span>
+            <span>15</span>
             <span>High</span>
-            <span>20</span>
+            <span>24</span>
           </div>
         </div>
         <p class="intro_sub_heading">{{skill3TT1}}</p>
@@ -818,7 +817,7 @@
     </footer>
     <script>
       // Static score values
-      var score = [{{ applicantData }}];
+      var score = [{{applicantData}}];
 
       // Populate the sliders with scores
       score.forEach((score, i) => {
