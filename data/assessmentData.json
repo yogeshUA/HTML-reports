@@ -131,18 +131,24 @@
     "template": "resilence.html",
     "count": 1,
     "inference": true,
-    "levels": [1, 3, 4.3, 5],
+    "details": false,
     "skills": [
       {
         "skill": "Individual Description",
-        "skill1T1": "Adaptability to stressful circumstances, the ability to recover from stress, the ability to function above normal in spite of significant adversity, and the ability to function above the norm are all factors that contribute to resilience.",
+        "description": "Adaptability to stressful circumstances, the ability to recover from stress, the ability to function above normal in spite of significant adversity, and the ability to function above the norm are all factors that contribute to resilience.",
         "average": 0.0,
+        "levels": [1, 3, 4.3, 5],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The applicant has scored low on resilience. They struggle with being able to move on in life when they encounter difficulties in terms of major changes, setbacks, or adversities. They can not adjust to challenging circumstances and overcome hardships. ",
-            "skill1C": "In a corporate setting, they are likely to struggle in the following situations",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on resilience. They struggle with being able to move on in life when they encounter difficulties in terms of major changes, setbacks, or adversities. They can not adjust to challenging circumstances and overcome hardships. "
+            ],
+            "character": [
+              "In a corporate setting, they are likely to struggle in the following situations"
+            ],
+            "struggle": [
               "Keep a positive attitude",
               "Adjust to environmental changes",
               "Be productive irrespective of the barriers",
@@ -154,9 +160,14 @@
           },
           {
             "level": "Moderate",
-            "skill1TT1": "The applicant has scored moderately on resilience. It is a quality that enables them to move on in life despite a few difficulties they encounter by overcoming a few of the setbacks and adversities. They can adjust to challenging circumstances and overcome hardship with great effort.",
-            "skill1C": "In a corporate setting, they are likely to perform similarly to most people in the following situations",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "The applicant has scored moderately on resilience. It is a quality that enables them to move on in life despite a few difficulties they encounter by overcoming a few of the setbacks and adversities. They can adjust to challenging circumstances and overcome hardship with great effort."
+            ],
+            "character": [
+              "In a corporate setting, they are likely to perform similarly to most people in the following situations"
+            ],
+            "struggle": [
               "Keep a positive attitude",
               "Adjust to environmental changes",
               "Be productive irrespective of the barriers",
@@ -168,9 +179,14 @@
           },
           {
             "level": "high",
-            "skill1TT1": "The applicant has scored high on resilience. It is a quality that enables them to move on in life despite the difficulties they encounter by overcoming setbacks and adversities. They can adjust to challenging circumstances and triumph over hardship.",
-            "skill1C": "In a corporate setting, they are likely to excel in the following situations",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on resilience. It is a quality that enables them to move on in life despite the difficulties they encounter by overcoming setbacks and adversities. They can adjust to challenging circumstances and triumph over hardship."
+            ],
+            "character": [
+              "In a corporate setting, they are likely to excel in the following situations"
+            ],
+            "struggle": [
               "Keep a positive attitude",
               "Adjust to environmental changes",
               "Be productive irrespective of the barriers",
@@ -314,18 +330,24 @@
     "template": "problemsolving.html",
     "count": 1,
     "inference": true,
-    "levels": [7, 22, 35],
+    "details": false,
     "skills": [
       {
         "skill": "Independent Problem Solving",
-        "skill1T1": "Independent problem-solving refers to the ability to identify and solve problems without needing assistance or guidance from others.",
+        "description": "Independent problem-solving refers to the ability to identify and solve problems without needing assistance or guidance from others.",
         "average": 0.0,
+        "levels": [22, 35],
         "analysis": [
           {
             "level": "high",
-            "skill1TT1": "A high score on independent problem solving indicates that an individual is able to effectively identify and solve problems on their own, without the need for assistance or guidance from others. ",
-            "skill1C": "Some characteristics of an individual with a high score on independent problem-solving may include:",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "A high score on independent problem solving indicates that an individual is able to effectively identify and solve problems on their own, without the need for assistance or guidance from others. "
+            ],
+            "character": [
+              "Some characteristics of an individual with a high score on independent problem-solving may include:"
+            ],
+            "struggle": [
               "Confidence and independence in decision-making",
               "Self-motivated and proactive in seeking out and addressing problems",
               "Creative and resourceful, able to come up with unique and effective solutions",
@@ -338,9 +360,14 @@
 
           {
             "level": "low",
-            "skill1TT1": "A low score on independent problem-solving indicates that an individual may struggle with identifying and solving problems independently, and may rely heavily on assistance or guidance from others.",
-            "skill1C": "Some characteristics of an individual with a low score on independent problem-solving may include:",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "A low score on independent problem-solving indicates that an individual may struggle with identifying and solving problems independently, and may rely heavily on assistance or guidance from others."
+            ],
+            "character": [
+              "Some characteristics of an individual with a low score on independent problem-solving may include:"
+            ],
+            "struggle": [
               "Poor time management and organizational skills",
               "Lack of self-motivation and tendency to procrastinate",
               "Lack of confidence and independence in decision-making",
@@ -354,14 +381,20 @@
       },
       {
         "skill": "Interdependent Problem-solving",
-        "skill2T1": "Interdependent problem-solving refers to the ability to work effectively with others to solve problems. ",
+        "description": "Interdependent problem-solving refers to the ability to work effectively with others to solve problems. ",
         "average": 0.0,
+        "levels": [22, 35],
         "analysis": [
           {
             "level": "high",
-            "Skill2TT1": "A high score on interdependent problem-solving indicates that an individual is able to work with others to identify and solve problems effectively",
-            "skill2C": "Some characteristics of an individual with a high score on interdependent problem-solving may include:",
-            "skill2S": [
+            "count": 1,
+            "inference": [
+              "A high score on interdependent problem-solving indicates that an individual is able to work with others to identify and solve problems effectively"
+            ],
+            "character": [
+              "Some characteristics of an individual with a high score on interdependent problem-solving may include:"
+            ],
+            "struggle": [
               "Good at facilitating and leading group discussions",
               "Strong ability to adapt and be flexible in a team setting",
               "Strong emotional intelligence to effectively manage relationships",
@@ -375,9 +408,14 @@
 
           {
             "level": "low",
-            "skill2TT1": "A low score on interdependent problem-solving indicates that an individual may struggle with effectively working with others to identify and solve problems. ",
-            "skill2C": "Some characteristics of an individual with a low score on interdependent problem-solving may include:",
-            "skill2S": [
+            "count": 1,
+            "inference": [
+              "A low score on interdependent problem-solving indicates that an individual may struggle with effectively working with others to identify and solve problems. "
+            ],
+            "character": [
+              "Some characteristics of an individual with a low score on interdependent problem-solving may include:"
+            ],
+            "struggle": [
               "Struggles to facilitate and lead group discussions",
               "Struggles to adapt and be flexible in a team setting",
               "Has a negative attitude and creates a negative atmosphere",
@@ -397,19 +435,24 @@
     "template": "percieved.html",
     "count": 1,
     "inference": true,
-    "levels": [30, 75, 120],
+    "details": false,
     "skills": [
       {
         "skill": "Percieved Stress",
-        "skill1T1": "Perceived stress refers to an individual's subjective perception of the degree to which situations are appraised as stressful. It is a measure of how much stress a person feels they are under and is determined by their personal perception of the demands placed on them, their ability to cope with those demands, and their emotional and physiological responses to those demands.",
+        "description": "Individuals' subjective perception of the threshold differentiates minor inconveniences and stress, along with a sense of how self-reliant they are while coping with increasing demands.",
         "average": 0.0,
+        "levels": [75, 120],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "Individuals' subjective perception of the threshold differentiates minor inconveniences and stress, along with a sense of how self-reliant they are while coping with increasing demands. ",
-            "skill1C": "They may feel that they are able to effectively manage and cope with the demands placed on them and that these demands do not have a significant negative impact on their well-being. They have a positive outlook and attitude toward stressors and feel a sense of control over stressful situations. They are able to effectively use coping strategies and thus feel less anxiety and worry.",
-            "skill1T2": "They may also report feeling more satisfied with their life and having a better quality of life overall.",
-            "skill1S": [
+            "count": 1,
+            "inference": [
+              "They may feel that they are able to effectively manage and cope with the demands placed on them and that these demands do not have a significant negative impact on their well-being. They have a positive outlook and attitude toward stressors and feel a sense of control over stressful situations. They are able to effectively use coping strategies and thus feel less anxiety and worry."
+            ],
+            "character": [
+              "They may also report feeling more satisfied with their life and having a better quality of life overall."
+            ],
+            "struggle": [
               "They possess a high level of confidence in their abilities.",
               "They tend to have a positive and optimistic outlook towards life.",
               "They have a strong social support network of friends and family.",
@@ -423,13 +466,16 @@
 
           {
             "level": "high",
-            "skill1TT1": "They may feel that the demands placed on them are overwhelming and that they have difficulty coping with them. They have a negative outlook and attitude toward stressors and face difficulty maintaining a sense of control over stressful situations. They struggle with effectively using coping strategies and thus constantly feel anxious and worried.",
-            "skill1C": "A person with a high level of perceived stress might exhibit the following characteristics:",
-            "skill1T2": [
+            "count": 1,
+            "inference": [
+              "They may feel that the demands placed on them are overwhelming and that they have difficulty coping with them. They have a negative outlook and attitude toward stressors and face difficulty maintaining a sense of control over stressful situations. They struggle with effectively using coping strategies and thus constantly feel anxious and worried."
+            ],
+            "character": [
+              "A person with a high level of perceived stress might exhibit the following characteristics:",
               "They may also report feeling less satisfied with their life and having a lower quality of life overall.",
               "High perceived stress can lead to physical symptoms such as headaches, muscle tension, fatigue, stomach problems, and sleep disturbances, and also mental health issues such as depression and anxiety, and one should take necessary advice from a qualified doctor or psychologist."
             ],
-            "skill1S": [
+            "struggle": [
               "They experience high levels of anxiety, worry and nervousness",
               "They may have a limited social support network and feel isolated.",
               "They tend to have a negative and pessimistic outlook towards life.",
@@ -449,25 +495,28 @@
     "template": "learning.html",
     "count": 1,
     "inference": true,
-    "levels": [0, 10, 20],
+    "details": false,
     "skills": [
       {
         "skill": "Activist",
-        "skill1T1": "Activists involve themselves fully and without bias in new experiences. Their philosophy is: I'll try anything once.",
+        "description": "Activists involve themselves fully and without bias in new experiences. Their philosophy is: I'll try anything once.",
         "average": 0.0,
+        "levels": [10, 20],
         "analysis": [
           {
             "level": "high",
-            "skill1TT1": "On the Activist subscale, the candidate received a high score. This suggests that they are content to let the present moment rule their lives and that they appreciate the here and now. They tend to be excited about everything new since they are open-minded and not skeptical. They frequently take action before thinking about the results. They are very active during the day. They use brainstorming to attack difficulties. They start hunting for the next action as soon as the first excitement has subsided. The challenge of novel experiences tends to excite them, whereas execution and long-term consolidation weary them. They are social individuals who are always interacting with others, but they also aim to center all activities on themselves. ",
-            "skill1C": "Best when",
-            "skill1S": [
+            "count": 5,
+            "inference": [
+              "On the Activist subscale, the candidate received a high score. This suggests that they are content to let the present moment rule their lives and that they appreciate the here and now. They tend to be excited about everything new since they are open-minded and not skeptical. They frequently take action before thinking about the results. They are very active during the day. They use brainstorming to attack difficulties. They start hunting for the next action as soon as the first excitement has subsided. The challenge of novel experiences tends to excite them, whereas execution and long-term consolidation weary them. They are social individuals who are always interacting with others, but they also aim to center all activities on themselves. "
+            ],
+            "character": [
               "Plunging into a challenging task",
               "Presiding over meetings and educational debates",
               "Engaging in fresh challenges, possibilities, and experiences",
               "Participating in group activities, team projects, and role-playing"
             ],
-            "skill1D": "Difficult when",
-            "skill1E": [
+
+            "struggle": [
               "Precisely adhering to detailed instructions",
               "Attending lectures or detailed explanations",
               "Reading, writing, or independently analysing",
@@ -477,16 +526,18 @@
 
           {
             "level": "low",
-            "skill1TT1": "The applicant has scored low on the Activist subscale. This suggests that they may not have a strong preference for taking risks and trying new things. They might prefer to stick with what they already know and be less eager to take on new tasks or partake in novel hobbies. Additionally, they might be more passive learners who are less likely to actively participate in their own learning.",
-            "skill1C": "Best when",
-            "skill1S": [
+            "count": 5,
+            "inference": [
+              "The applicant has scored low on the Activist subscale. This suggests that they may not have a strong preference for taking risks and trying new things. They might prefer to stick with what they already know and be less eager to take on new tasks or partake in novel hobbies. Additionally, they might be more passive learners who are less likely to actively participate in their own learning."
+            ],
+            "character": [
               "Plunging into a challenging task",
               "Presiding over meetings and educational debates",
               "Engaging in fresh challenges, possibilities, and experiences",
               "Participating in group activities, team projects, and role-playing"
             ],
-            "skill1D": "Difficult when",
-            "skill1E": [
+
+            "struggle": [
               "Precisely adhering to detailed instructions",
               "Attending lectures or detailed explanations",
               "Reading, writing, or independently analysing",
@@ -497,20 +548,23 @@
       },
       {
         "skill": "Reflector",
-        "skill2T1": "Reflectors like to stand back to ponder experiences and observe them from many different perspectives. Their philosophy is to be cautious.",
+        "description": "Reflectors like to stand back to ponder experiences and observe them from many different perspectives. Their philosophy is to be cautious.",
         "average": 0.0,
+        "levels": [14, 20],
         "analysis": [
           {
             "level": "high",
-            "Skill2TT1": "On the Reflector subscale, the applicant received a high score. This suggests that they obtain data both firsthand and from others—and like to carefully consider it before drawing any conclusions. They tend to put off coming to firm conclusions as long as possible because they believe that the careful gathering and analysis of information regarding experiences and events is what matters. They are thoughtful individuals who prefer to think things out from all aspects and ramifications before acting. They choose to be absent from meetings and conversations. They take pleasure in watching others at work. Before making their own comments, they listen to others and gauge the general direction of the conversation. They frequently keep a low profile and exude a calm, tolerant, slightly detached air. Their actions are a part of a larger picture that takes into account both the past and the present, as well as other people's and their own views.",
-            "skill2C": "Best when",
-            "skill2S": [
+            "count": 5,
+            "inference": [
+              "On the Reflector subscale, the applicant received a high score. This suggests that they obtain data both firsthand and from others—and like to carefully consider it before drawing any conclusions. They tend to put off coming to firm conclusions as long as possible because they believe that the careful gathering and analysis of information regarding experiences and events is what matters. They are thoughtful individuals who prefer to think things out from all aspects and ramifications before acting. They choose to be absent from meetings and conversations. They take pleasure in watching others at work. Before making their own comments, they listen to others and gauge the general direction of the conversation. They frequently keep a low profile and exude a calm, tolerant, slightly detached air. Their actions are a part of a larger picture that takes into account both the past and the present, as well as other people's and their own views."
+            ],
+            "character": [
               "Observing people or groups at work",
               "Having time to reflect on what happened and what they have learned",
               "Producing analysis and reports while working on projects with flexible deadlines"
             ],
-            "skill2D": "Difficult when",
-            "skill2E": [
+
+            "struggle": [
               "Being pushed into the deep end",
               "Acting without adequate planning",
               "Feeling hurried or anxious about deadlines",
@@ -520,15 +574,17 @@
 
           {
             "level": "low",
-            "Skill2TT1": "The applicant has scored low on the Reflector subscale. This suggests that they may not have a strong preference for taking a step back and observing before making a decision. Instead of taking the time to learn more and consider their options, they might prefer to take action right away and make decisions based on what they know right now. Additionally, they could be less likely to assess their own performance and learning, as well as less eager to seek out comments from others.",
-            "skill2C": "Best when",
-            "skill2S": [
+            "count": 5,
+            "inference": [
+              "The applicant has scored low on the Reflector subscale. This suggests that they may not have a strong preference for taking a step back and observing before making a decision. Instead of taking the time to learn more and consider their options, they might prefer to take action right away and make decisions based on what they know right now. Additionally, they could be less likely to assess their own performance and learning, as well as less eager to seek out comments from others."
+            ],
+            "character": [
               "Observing people or groups at work",
               "Having time to reflect on what happened and what they have learned",
               "Producing analysis and reports while working on projects with flexible deadlines"
             ],
-            "skill2D": "Difficult when",
-            "skill2E": [
+
+            "struggle": [
               "Being pushed into the deep end",
               "Acting without adequate planning",
               "Feeling hurried or anxious about deadlines",
@@ -539,21 +595,24 @@
       },
       {
         "skill": "Theorist",
-        "skill3T1": "Theorists adapt and integrate observations into complex but logically sound theories. Their philosophy is ,If its logical its good.",
+        "description": "Theorists adapt and integrate observations into complex but logically sound theories. Their philosophy is ,If its logical its good.",
         "average": 0.0,
+        "levels": [13, 20],
         "analysis": [
           {
             "level": "high",
-            "Skill3TT1": "The applicant has scored high on the Theorist subscale. This suggests that they approach challenges systematically, and methodically. They combine various facts into comprehensible theories. They have a tendency to be perfectionists who won't feel at ease unless everything is organized and makes perfect sense. They enjoy analyzing and synthesizing. They have a strong interest in fundamental presumptions, rules, theories, models, and systems thinking. Their main concerns are logicality and reason. They are typically analytical, detached, and committed to rational objectivity over anything confusing or subjective. Their method of solving issues is constantly logical. Anything that doesn't conform to their mindset is categorically rejected. They desire to have as much clarity as possible and dislike making subjective decisions, thinking outside the box, or being irreverent in any way.",
-            "skill3C": "Best when",
-            "skill3S": [
+            "count": 5,
+            "inference": [
+              "The applicant has scored high on the Theorist subscale. This suggests that they approach challenges systematically, and methodically. They combine various facts into comprehensible theories. They have a tendency to be perfectionists who won't feel at ease unless everything is organized and makes perfect sense. They enjoy analyzing and synthesizing. They have a strong interest in fundamental presumptions, rules, theories, models, and systems thinking. Their main concerns are logicality and reason. They are typically analytical, detached, and committed to rational objectivity over anything confusing or subjective. Their method of solving issues is constantly logical. Anything that doesn't conform to their mindset is categorically rejected. They desire to have as much clarity as possible and dislike making subjective decisions, thinking outside the box, or being irreverent in any way."
+            ],
+            "character": [
               "They are in structured situations with a clear purpose",
               "They have the chance to question and probe ideas behind things",
               "Put in complex situations where they have to use their skills and knowledge",
               "Offered interesting ideas or concepts even though they are not immediately relevant"
             ],
-            "skill3D": "Difficult when",
-            "skill3E": [
+
+            "struggle": [
               "They feel out of sync with the others",
               "The activity is unstructured or the briefing is inadequate",
               "Required to participate in activities that place emphasis on emotion and feelings",
@@ -563,16 +622,18 @@
 
           {
             "level": "low",
-            "Skill3TT1": "The applicant has scored low on the Theorist subscale. This suggests that they may not have a strong preference for theoretical or abstract thinking. They may prefer to focus on concrete information and practical applications rather than abstract concepts. They may also be less interested in exploring possibilities and more focused on finding proven solutions. They lack interest in fundamental presumptions, rules, theories, models, and systems thinking. ",
-            "skill3C": "Best when",
-            "skill3S": [
+            "count": 5,
+            "inference": [
+              "The applicant has scored low on the Theorist subscale. This suggests that they may not have a strong preference for theoretical or abstract thinking. They may prefer to focus on concrete information and practical applications rather than abstract concepts. They may also be less interested in exploring possibilities and more focused on finding proven solutions. They lack interest in fundamental presumptions, rules, theories, models, and systems thinking. "
+            ],
+            "character": [
               "They are in structured situations with a clear purpose",
               "They have the chance to question and probe ideas behind things",
               "Put in complex situations where they have to use their skills and knowledge",
               "Offered interesting ideas or concepts even though they are not immediately relevant"
             ],
-            "skill3D": "Difficult when",
-            "skill3E": [
+
+            "struggle": [
               "They feel out of sync with the others",
               "The activity is unstructured or the briefing is inadequate",
               "Required to participate in activities that place emphasis on emotion and feelings",
@@ -583,21 +644,24 @@
       },
       {
         "skill": "Pragmatist",
-        "skill4T1": "Pragmatists are keen on trying out ideas, theories and techniques to see if they work in practice. Their philosophy is There is always a better way and, If it works it's good",
+        "description": "Pragmatists are keen on trying out ideas, theories and techniques to see if they work in practice. Their philosophy is There is always a better way and, If it works it's good",
         "average": 0.0,
+        "levels": [14, 20],
         "analysis": [
           {
             "level": "high",
-            "Skill4TT1": "The candidate received a high Pragmatist subscale score. This suggests that they actively seek out novel concepts and seize every chance to try out new applications. They are the kind of individuals who come out following courses bursting with fresh concepts that they want to put into action. They prefer to move rapidly and confidently forward with ideas that interest them. They frequently grow impatient with rumination and protracted conversations. They are fundamentally sensible, down-to-earth individuals who enjoy making rational choices and resolving issues. They approach issues and chances as a challenge.",
-            "skill4C": "Best when",
-            "skill4S": [
+            "inference": [
+              "The candidate received a high Pragmatist subscale score. This suggests that they actively seek out novel concepts and seize every chance to try out new applications. They are the kind of individuals who come out following courses bursting with fresh concepts that they want to put into action. They prefer to move rapidly and confidently forward with ideas that interest them. They frequently grow impatient with rumination and protracted conversations. They are fundamentally sensible, down-to-earth individuals who enjoy making rational choices and resolving issues. They approach issues and chances as a challenge."
+            ],
+
+            "character": [
               "A replicable model is presented to them",
               "They are shown methods with clear benefits",
               "The topic and profession have a clear connection",
               "They get the opportunity to practice techniques and receive feedback"
             ],
-            "skill4D": "Difficult when",
-            "skill4E": [
+
+            "struggle": [
               "Learning does not seem to be paying off",
               "There are no rules or practices for doing it",
               "The lesson or experience is entirely theoretical",
@@ -608,16 +672,18 @@
 
           {
             "level": "low",
-            "Skill4TT1": "On the Pragmatist subscale, the applicant received a low score. This suggests that they don't frequently look for novel concepts or jump at the chance to try out fresh applications. They enroll in seminars seldom and even then have trouble coming up with original ideas. They resist moving forward with matters or acting swiftly or decisively on them. They might be understanding of ruminations and open-ended conversations.",
-            "skill4C": "Best when",
-            "skill4S": [
+            "inference": [
+              "On the Pragmatist subscale, the applicant received a low score. This suggests that they don't frequently look for novel concepts or jump at the chance to try out fresh applications. They enroll in seminars seldom and even then have trouble coming up with original ideas. They resist moving forward with matters or acting swiftly or decisively on them. They might be understanding of ruminations and open-ended conversations."
+            ],
+
+            "character": [
               "A replicable model is presented to them",
               "They are shown methods with clear benefits",
               "The topic and profession have a clear connection",
               "They get the opportunity to practice techniques and receive feedback"
             ],
-            "skill4D": "Difficult when",
-            "skill4E": [
+
+            "struggle": [
               "Learning does not seem to be paying off",
               "There are no rules or practices for doing it",
               "The lesson or experience is entirely theoretical",
@@ -1705,27 +1771,43 @@
     "template": "motivation.html",
     "count": 1,
     "inference": true,
-    "levels": [8, 25, 33, 40],
+    "details": false,
     "skills": [
       {
         "skill": "Expectancy",
-        "skill1T1": "Expectancy refers to the power of belief and positive thinking. It is the degree to which people believe that their efforts will be rewarded",
+        "description": "Expectancy refers to the power of belief and positive thinking. It is the degree to which people believe that their efforts will be rewarded",
         "average": 0.0,
+        "levels": [25, 33, 40],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The applicant has scored low on the Expectancy subscale. They believe that when they put in the effort they would rarely get the results for their efforts. This belief motivates them from giving their best efforts in their tasks. According to them, the efforts they actively put into achieving any task rarely translate into the successful completion of the work. They start all the tasks thinking that they will never be successful in achieving the desired results. This expectation of failure makes them demotivated throughout the task.",
-            "skill1C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on the Expectancy subscale. They believe that when they put in the effort they would rarely get the results for their efforts. This belief motivates them from giving their best efforts in their tasks. According to them, the efforts they actively put into achieving any task rarely translate into the successful completion of the work. They start all the tasks thinking that they will never be successful in achieving the desired results. This expectation of failure makes them demotivated throughout the task."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
           {
             "level": "Average",
-            "skill1TT1": "The applicant has scored average on the Expectancy subscale. They believe that when they put in the effort they will sometimes get the results for their efforts. This belief partially motivates them to give their best efforts in order to have a chance to be successful in their tasks. According to them, the efforts they actively put into achieving any task might translate into the successful completion of the work. They start all the tasks thinking that they might be successful in achieving the desired results. This faint expectation of success keeps them trying throughout the task.",
-            "skill1C": "Individuals who attain average scores in this particular scale are likely to perform similar to most people"
+            "count": 1,
+            "inference": [
+              "The applicant has scored average on the Expectancy subscale. They believe that when they put in the effort they will sometimes get the results for their efforts. This belief partially motivates them to give their best efforts in order to have a chance to be successful in their tasks. According to them, the efforts they actively put into achieving any task might translate into the successful completion of the work. They start all the tasks thinking that they might be successful in achieving the desired results. This faint expectation of success keeps them trying throughout the task."
+            ],
+            "character": [
+              "Individuals who attain average scores in this particular scale are likely to perform similar to most people"
+            ]
           },
           {
             "level": "high",
-            "skill1TT1": "The applicant has scored high on the Expectancy subscale. They believe that when they put in the effort they will get the results for their efforts. This belief motivates them to give their best efforts in order to be successful in their tasks. According to them, the efforts that they actively put into achieving any task will translate into the successful completion of the work. They start all the tasks thinking that they will be successful in achieving the desired results. This expectation of success keeps them motivated throughout the task.",
-            "skill1C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on the Expectancy subscale. They believe that when they put in the effort they will get the results for their efforts. This belief motivates them to give their best efforts in order to be successful in their tasks. According to them, the efforts that they actively put into achieving any task will translate into the successful completion of the work. They start all the tasks thinking that they will be successful in achieving the desired results. This expectation of success keeps them motivated throughout the task."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
@@ -1733,45 +1815,73 @@
         "skill": "Value",
         "skill2T1": "Value refers to the power of desire to do any task. It is the meaningfulness and enjoyableness of tasks and responsibilities.",
         "average": 0.0,
+        "levels": [20, 31, 40],
         "analysis": [
           {
             "level": "low",
-            "Skill2TT1": "The applicant has scored low in the Value subscale. They rarely value their work and thus, feel demotivated to accomplish the tasks related to their job. They are unable to find a higher purpose in their tasks, which makes those tasks unimportant to them. According to them, the tasks that they perform are not essential or play a crucial role in the bigger picture. Thus, making the successful accomplishment of those tasks irrelevant. This demotivates them from working hard on the tasks.",
-            "skill2C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant has scored low in the Value subscale. They rarely value their work and thus, feel demotivated to accomplish the tasks related to their job. They are unable to find a higher purpose in their tasks, which makes those tasks unimportant to them. According to them, the tasks that they perform are not essential or play a crucial role in the bigger picture. Thus, making the successful accomplishment of those tasks irrelevant. This demotivates them from working hard on the tasks."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
           {
             "level": "Average",
-            "Skill2TT1": "The applicant has scored average in the Value subscale. They somewhat value their work and thus, feel partially motivated to accomplish the tasks related to their job. They find a higher purpose in a few of their tasks, which makes those tasks extremely important for them. According to them, some of the tasks that they perform are essential and play a crucial role in the bigger picture. Thus, making the successful accomplishment of those specific tasks vital. This motivates them to work hard on those numbered tasks.",
-            "skill2C": "Individuals who attain average scores in this particular scale are likely to perform similar to most people"
+            "count": 1,
+            "inference": [
+              "The applicant has scored average in the Value subscale. They somewhat value their work and thus, feel partially motivated to accomplish the tasks related to their job. They find a higher purpose in a few of their tasks, which makes those tasks extremely important for them. According to them, some of the tasks that they perform are essential and play a crucial role in the bigger picture. Thus, making the successful accomplishment of those specific tasks vital. This motivates them to work hard on those numbered tasks."
+            ],
+            "character": [
+              "Individuals who attain average scores in this particular scale are likely to perform similar to most people"
+            ]
           },
 
           {
             "level": "high",
-            "skill2TT1": "The applicant has scored high in the Value subscale. They value their work and thus, feel motivated to accomplish the tasks related to their job. They find a higher purpose in their tasks, which makes those tasks extremely important for them. According to them, the tasks that they perform are essential and play a crucial role in the bigger picture. Thus, making the successful accomplishment of those tasks vital. This motivates them to work hard on the tasks.",
-            "skill2C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant has scored high in the Value subscale. They value their work and thus, feel motivated to accomplish the tasks related to their job. They find a higher purpose in their tasks, which makes those tasks extremely important for them. According to them, the tasks that they perform are essential and play a crucial role in the bigger picture. Thus, making the successful accomplishment of those tasks vital. This motivates them to work hard on the tasks."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
       {
         "skill": "Impulsivity",
-        "skill3T1": "Impulsivity refers to the power of immediacy. It is the urge to act upon short-term temptations instead of focusing on long-term goals.",
+        "description": "Impulsivity refers to the power of immediacy. It is the urge to act upon short-term temptations instead of focusing on long-term goals.",
         "average": 0.0,
+        "levels": [22, 31, 40],
         "analysis": [
           {
             "level": "low",
-            "Skill3TT1": "The applicant has scored low on the Impulsivity subscale. They easily get distracted by any new activity. They find it difficult to stay focused and committed to one task at a time. They lose a lot of time and effort as they keep on switching from one task to another without finishing the first task. As they get distracted by different temptations they also lose interest and motivation to accomplish essential tasks. Their energy and motivation to work towards fulfilling long-term goals are stanched away by temporary pleasures.",
-            "skill3C": "Individuals who attain low scores in this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on the Impulsivity subscale. They easily get distracted by any new activity. They find it difficult to stay focused and committed to one task at a time. They lose a lot of time and effort as they keep on switching from one task to another without finishing the first task. As they get distracted by different temptations they also lose interest and motivation to accomplish essential tasks. Their energy and motivation to work towards fulfilling long-term goals are stanched away by temporary pleasures."
+            ],
+            "character": [
+              "Individuals who attain low scores in this particular scale are likely to struggle with"
+            ]
           },
           {
             "level": "Average",
-            "Skill3TT1": "The applicant has scored average on the Impulsivity subscale. They sometimes get distracted by new activities. They find it difficult to stay focused and committed to one task for an extended period of time. They lose a lot of time and effort as they keep on switching from one task to another and back to the first one without finishing either task. As they occasionally get distracted by different temptations they might also lose interest and motivation to accomplish essential tasks. They need to be vigilant to save their energy and motivation to work towards fulfilling long-term goals rather than spending it on temporary pleasures.",
-            "skill3C": "Individuals who attain average scores in this particular scale are likely to perform similar to most people"
+            "count": 1,
+            "inference": [
+              "The applicant has scored average on the Impulsivity subscale. They sometimes get distracted by new activities. They find it difficult to stay focused and committed to one task for an extended period of time. They lose a lot of time and effort as they keep on switching from one task to another and back to the first one without finishing either task. As they occasionally get distracted by different temptations they might also lose interest and motivation to accomplish essential tasks. They need to be vigilant to save their energy and motivation to work towards fulfilling long-term goals rather than spending it on temporary pleasures."
+            ],
+            "character": [
+              "Individuals who attain average scores in this particular scale are likely to perform similar to most people"
+            ]
           },
 
           {
             "level": "high",
-            "skill3TT1": "The applicant has scored high on the Impulsivity subscale. They rarely get distracted by any new activity. They can easily stay focused and committed to one task for a long period of time. They effectively manage their time and efforts as they move to another task after completing the previous one. As they hold their thoughts and focus on one activity at a time, they maintain their interest and motivation to accomplish essential tasks as well as be able to focus on every minute detail. Their energy and motivation to work towards fulfilling long-term goals grow exponentially with every successful small task.",
-            "skill3C": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": "The applicant has scored high on the Impulsivity subscale. They rarely get distracted by any new activity. They can easily stay focused and committed to one task for a long period of time. They effectively manage their time and efforts as they move to another task after completing the previous one. As they hold their thoughts and focus on one activity at a time, they maintain their interest and motivation to accomplish essential tasks as well as be able to focus on every minute detail. Their energy and motivation to work towards fulfilling long-term goals grow exponentially with every successful small task.",
+            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
           }
         ]
       }
@@ -1792,7 +1902,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A high score on the value-driven style of influencing indicates the applicant has the ability to align their message with their audience's values and beliefs, building trust and credibility by demonstrating understanding and respect for their values. They are perceived as ethical, trustworthy, and effective in influencing others by appealing to their moral sense and creating mutual understanding."
             ],
@@ -1810,7 +1920,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low value-driven influence score means difficulty aligning message with audience values, leading to lack of trust and credibility. This results in the person being perceived as less ethical, trustworthy, and effective in influencing others. Difficulty creating mutual understanding and shared goals with audience."
             ],
@@ -1835,7 +1945,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A high score on goal-setting style of influencing means the applicant is good at identifying and addressing the needs and goals of the people they want to influence, and helping them develop a plan to achieve those goals. This leads to high motivation and commitment, and the audience is more likely to take action. A high score suggests they are seen as effective in helping others set and achieve goals, providing clear direction and purpose, and understanding their audience's aspirations."
             ],
@@ -1852,7 +1962,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score on the goal-setting style of influencing indicates difficulty in identifying and addressing audiences’ needs, difficulty helping them develop a plan, and lack of support and resources offered, leading to low motivation and commitment. This results in being perceived as less effective in helping others set and achieve goals, lacking the ability to provide clear direction and purpose."
             ],
@@ -1880,7 +1990,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "High score on need fulfilment style of influencing means the applicant is skilled in identifying and meeting the needs of their audience. They understand audience's needs and provide solutions and resources to meet them, building trust and credibility. They are seen as helpful, reliable, and effective in providing what their audience needs."
             ],
@@ -1897,7 +2007,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score on the need fulfilment style of influencing indicates difficulty identifying and addressing audience needs, lacking understanding of their wants and desires, and difficulty providing solutions. This results in a lack of trust and credibility, leading to low acceptance and effectiveness in providing resources. The influencer may be perceived as less helpful, unreliable, and ineffective in meeting audience needs and providing solutions to problems."
             ],
@@ -1921,7 +2031,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A high score on the visioning style of influencing means the person has the ability to create a compelling vision aligned with audience values and aspirations, motivating them to take steps towards realizing it. They use techniques like storytelling and imagery, provide guidance and support, and inspire action towards a shared goal. This results in being perceived as visionary, inspiring, and effective in motivating others towards a shared goal."
             ],
@@ -1939,7 +2049,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score on visioning style of influencing means difficulty creating a compelling future vision that aligns with the target group's values. The applicant may struggle to motivate them to make it a reality. This can lead to a lack of motivation and commitment, hindering the ability to effectively guide, provide resources and support towards a shared goal."
             ],
@@ -1964,7 +2074,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A high score on rational presentation style of influencing indicates the ability to use logical arguments, facts, and evidence to persuade others. The influencer presents information clearly and logically, using evidence to support their position and appealing to reason and logic. This results in being perceived as logical, persuasive, and effective in using evidence to make a case."
             ],
@@ -1981,7 +2091,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score in rational presentation style of influencing means difficulty in using logic, facts and evidence to persuade. May lack clear, organized presentation and supporting data, leading to less credibility and effectiveness. This could result in perception as less persuasive and logical in making a case."
             ],
@@ -2005,7 +2115,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "High score on pushing/driving style indicates applicant's ability to be assertive, direct and create a sense of urgency to influence. They motivate action through tactics like deadlines, incentives, rewards, or consequences. They are seen as persuasive, decisive and effective in getting results even under pressure."
             ],
@@ -2022,7 +2132,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score on the pushing/driving style of influencing indicates difficulty in using assertiveness, directness, and urgency to persuade others. The influencer struggles with taking charge, setting clear expectations, and pushing the audience to take action, and may lack effectiveness in tactics like setting deadlines or using incentives or consequences. This results in low motivation and commitment from the audience, and the influencer is perceived as less persuasive, less decisive, and less effective in motivating action, even under pressure."
             ],
@@ -2046,7 +2156,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "High score in institutionalizing style means the applicant is skilled at embedding ideas, policies, or practices within a group. They create systems that ease adoption and make change permanent, part of the group's culture. They are perceived as effective in implementing and maintaining change within the group."
             ],
@@ -2063,7 +2173,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score in the institutionalizing style of influencing suggests the applicant may have difficulty embedding their ideas into the organization/group and creating lasting change. They may struggle with creating systems that make it easy for people to adopt their ideas and make them part of the group's culture and way of doing things, leading to a lack of permanent change."
             ],
@@ -2087,7 +2197,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A high score on educating style means being skilled in teaching and training to help others understand and adopt ideas. They provide information, knowledge, and skills, building understanding, knowledge, and skills in the audience. They are effective in communicating new ideas. A high score suggests they are perceived as an effective teacher, trainer, and communicator."
             ],
@@ -2104,7 +2214,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score on educating style of influencing suggests a struggle to use teaching and training methods to help others understand and adopt ideas. They may not provide information, knowledge, and skills effectively, leading to a lack of understanding and acceptance of their message by the audience. They may be perceived as less effective as a teacher, trainer, or communicator, struggling to build understanding and knowledge in others."
             ],
@@ -2128,7 +2238,7 @@
         "analysis": [
           {
             "level": "high",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A high score in the supporting style of influencing shows the applicant's ability to use a collaborative and supportive approach to persuade the person or group they are trying to influence. They listen, understand the audience's perspective, and provide guidance and resources to help them make decisions. They build trust through showing genuine concern for their well-being and are successful in helping people increase their confidence and self-efficacy. This high score suggests they are seen as trustworthy and effective in aiding decision making and goal achievement."
             ],
@@ -2145,7 +2255,7 @@
 
           {
             "level": "low",
-            "count": 5,
+            "count": 1,
             "inference": [
               "A low score on the supporting style of influencing means the applicant may have difficulty using a collaborative approach to help others make decisions. They may struggle with active listening, understanding perspectives, and providing guidance. This could lead to a lack of trust and credibility, making it harder for the audience to accept or act on the influencer's message. A low score suggests they may be seen as less supportive, less trustworthy, and less effective at helping others achieve their goals."
             ],
@@ -2264,7 +2374,6 @@
           {
             "level": "high",
             "Skill2TT1": "It is important for the applicant to take everyone around them on the path of progress. They feel the need to create a better world through conserving nature and encouraging the people to be better versions of themselves. They have a sense of justice or fairness and tend to aim for it. They are dependable and trustworthy. They are people oriented and would care for others despite their differences.",
-
             "skillscores": [
               "Caring",
               "Inclusive",

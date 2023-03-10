@@ -715,7 +715,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill1" min="4" max="20" type="range" value="10" />
+            <input id="skill1" min="0" max="20" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -730,7 +730,7 @@
 
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
-            <p class="graph2_desc skill1C">{{skill1C}}</p>
+            <p class="graph2_desc skill1C">Best when</p>
 
             <p>{{skill1S}}</p>
           </div>
@@ -738,7 +738,7 @@
 
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill1D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill1E}}</p>
           </div>
         </div>
@@ -759,7 +759,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="3" max="12" type="range" value="10" />
+            <input id="skill2" min="0" max="20" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -777,13 +777,13 @@
             <!-- {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
             {{/each}} {{/if}} -->
-            <p class="graph2_desc skill2C">{{skill2C}}</p>
+            <p class="graph2_desc skill2C">Best when</p>
             <p>{{skill2S}}</p>
           </div>
         </div>
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill2D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill2E}}</p>
           </div>
         </div>
@@ -805,7 +805,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="3" max="12" type="range" value="10" />
+            <input id="skill3" min="0" max="20" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -823,13 +823,13 @@
             <!-- {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
             {{/each}} {{/if}} -->
-            <p class="graph2_desc skill2C">{{skill3C}}</p>
+            <p class="graph2_desc skill2C">Best when</p>
             <p>{{skill3S}}</p>
           </div>
         </div>
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill3D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill3E}}</p>
           </div>
         </div>
@@ -850,7 +850,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="3" max="12" type="range" value="10" />
+            <input id="skill4" min="0" max="20" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -868,13 +868,13 @@
             <!-- {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
             {{/each}} {{/if}} -->
-            <p class="graph2_desc skill2C">{{skill4C}}</p>
+            <p class="graph2_desc skill2C">Best when</p>
             <p>{{skill4S}}</p>
           </div>
         </div>
         <div class="list_after_graph1">
           <div class="list_wrapper_after_graph1 skill1D">
-            <p class="graph2_desc2 skill1C">{{skill4D}}</p>
+            <p class="graph2_desc2 skill1C">Difficult when</p>
             <p>{{skill4E}}</p>
           </div>
         </div>
@@ -929,31 +929,7 @@
         myRangeInput.value = score;
       });
 
-      // const serials = Array.from({ length: 7 }, (_, i) => i + 1);
-      // const scoredIndicator = document.querySelector(`.skill1S`);
-      // const pseudoElementStyle = window.getComputedStyle(scoredIndicator, "::before");
-      // pseudoElementStyle.setProperty("background-color", "#d8186a");
 
-      // iterate over the array of serials
-      // const serials = [{{skill1L}},{{skill2L}},{{skill3L}}, {{skill4L}}, {{skill5L}}, {{skill6L}}, {{skill7L}}]
-      // serials.forEach((serial,i) => {
-
-      // const scoredIndicator = document.getElementsByClassName(`skill${serial}S`);
-      // const scoredText = document.querySelector(`.skill${i+1}C`);
-
-      // computed style of the ::before pseudo-element of the <div> element
-      // const pseudoElementStyle = window.getComputedStyle(scoredIndicator, "::before");
-
-      //  background color of the pseudo-element based on the value of scored
-      // if (scored === "High") {
-      // pseudoElementStyle.setProperty("background-color", "#03866c");
-      // scoredText.style.color = "#03866c";
-      // } else {
-      // pseudoElementStyle.setProperty("background-color", "#d8186a");
-      // scoredText.style.color = "#d8186a";
-      // }
-      // });
-      // const labels = Utils.months({ count: 7 });
       const ctx = document.getElementById("myChart1");
       const myChart = new Chart(ctx, {
         type: "line",

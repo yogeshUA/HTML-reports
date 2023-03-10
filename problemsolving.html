@@ -34,14 +34,15 @@
       .heading {
         font-family: Inter;
         font-weight: 600;
-        font-size: 32px;
+        font-size: 48px;
         line-height: 64px;
         position: absolute;
         bottom: 240px;
         left: 25px;
         width: 40%;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
+        white-space: nowrap;
         color: white;
       }
 
@@ -516,7 +517,7 @@
           alt="hero-sec"
           class="landing_template"
         />
-        <h1 class="heading">PROBLEM SOLVING ASSESSMENT REPORT</h1>
+        <h1 class="heading">PROBLEM SOLVING <br />ASSESSMENT <br />REPORT</h1>
 
         <div class="name_wrapper">
           <span class="name">{{applicant}}</span
@@ -601,7 +602,7 @@
           <div>
             <hr color="#559C5B" size="3" />
             <em class="skill_title" style="color: #559c5b"
-              >ndependent Problem-Solving</em
+              >Independent Problem-Solving</em
             >
             <p class="skill_desc">
               The tendency to identify and solve problems without needing
@@ -630,7 +631,7 @@
 
       <div class="introduction page">
         <!-- !SKILL LIST CONTINUED -->
-        <div class="skill_list">
+        <div class="skill_list" style="margin-top: 80px">
           <div class="scores">
             <p>
               Average Score
@@ -647,12 +648,12 @@
           </div>
         </div>
 
-        <div class="graph-container">
+        <div class="graph-container" style="margin-top: 10px">
           <div class="graph">
             <canvas id="myChart1" width="200px" height="200px"></canvas>
           </div>
         </div>
-        <p class="desc_line1">
+        <p class="desc_line1" style="margin-top: 330px">
           Sanatkar, S., & Rubin, M. (2023). Reliability and validity of the
           Independent-Interdependent Problem-Solving Style Scale. International
           Journal of Psychology, 58(1), 30-41. http://doi.org/10.1002/ijop.12878
@@ -679,15 +680,15 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill1" min="4" max="20" type="range" value="10" />
+            <input id="skill1" min="7" max="35" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
-            <span>4</span>
+            <span>7</span>
             <span>low</span>
-            <span>12</span>
+            <span>22</span>
             <span>High</span>
-            <span>20</span>
+            <span>35</span>
           </div>
         </div>
         <p class="intro_sub_heading">{{skill1TT1}}</p>
@@ -715,15 +716,15 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill2" min="3" max="12" type="range" value="10" />
+            <input id="skill2" min="7" max="35" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
-            <span>3</span>
+            <span>7</span>
             <span>low</span>
-            <span>8</span>
+            <span>22</span>
             <span>High</span>
-            <span>12</span>
+            <span>35</span>
           </div>
         </div>
         <p class="intro_sub_heading">{{skill2TT1}}</p>
@@ -780,14 +781,13 @@
     </footer>
 
     <script>
-       var score = [{{ applicantData }}];
+      var score = [10];
 
       // populate the sliders with socres
       score.forEach((score, i) => {
         const myRangeInput = document.getElementById(`skill${i + 1}`);
         myRangeInput.value = score;
       });
-
 
       const ctx = document.getElementById("myChart1");
       const myChart = new Chart(ctx, {
@@ -797,7 +797,7 @@
           datasets: [
             {
               label: "",
-              data: [{{applicantData}}],
+              data: [10],
 
               pointRadius: 6,
               backgroundColor: "rgb(253, 136, 93)",
