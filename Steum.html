@@ -715,7 +715,7 @@
 
         <div class="graph_section2">
           <div>
-            <input id="skill1" min="0" max="19" type="range" value="10" />
+            <input id="skill2" min="0" max="19" type="range" value="10" />
           </div>
           <div class="range_tracker"><span></span><span></span></div>
           <div class="range_label">
@@ -811,7 +811,7 @@
     </footer>
 
     <script>
-       var score = [{{ applicantData }}];
+      var score = [{{applicantData}}];
 
       // populate the sliders with socres
       score.forEach((score, i) => {

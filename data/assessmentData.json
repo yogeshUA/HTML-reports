@@ -1315,51 +1315,82 @@
     "template": "Steum.html",
     "count": 1,
     "inference": true,
-    "levels": [0, 13, 19],
     "skills": [
       {
         "skill": "Emotional Understanding",
-        "skill1T1": "Emotional understanding is the ability to perceive and understand the emotions of oneself and others.",
+        "description": "Emotional understanding is the ability to perceive and understand the emotions of oneself and others.",
         "average": 0.0,
+        "levels": [13, 19],
         "analysis": [
           {
             "level": "low",
-            "skill1TT1": "The applicant scored low on the Situational Test of Emotion Understanding. This suggests that the they have a poor understanding of their own emotions and the emotions of others, and is unable to effectively use them to navigate through social situations. They misinterpret different emotions, and can respond to them in an inappropriate manner. They struggle with building and maintaining healthy relationships, and effectively managing and resolving conflicts. In general, having a low level of emotional understanding makes their interactions and establishing connections difficult.",
-            "skill1C": "Individuals who attain low scores on this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant scored low on the Situational Test of Emotion Understanding. This suggests that the they have a poor understanding of their own emotions and the emotions of others, and is unable to effectively use them to navigate through social situations. They misinterpret different emotions, and can respond to them in an inappropriate manner. They struggle with building and maintaining healthy relationships, and effectively managing and resolving conflicts. In general, having a low level of emotional understanding makes their interactions and establishing connections difficult."
+            ],
+            "character": [
+              "Individuals who attain low scores on this particular scale are likely to struggle with"
+            ]
           },
           {
             "level": "Average",
-            "skill1TT1": "The applicant scored average on the Situational Test of Emotion Understanding. This suggests that the they have a decent understanding of their own emotions and the emotions of others, and are able to lean on it while navigating through social situations. They are iable to identify and understand simple emotions, and can respond to them in an appropriate and helpful way, however, they strggle when it comes to complex emotions. These skills provide some support to them in building and maintaining healthy relationships, and managing and resolving conflicts. In general, having a average level of emotional understanding aids them in a variety of areas, including improved communication and relationships with others. ",
-            "skill1C": "Individuals who attain low scores on this particular scale are likely to perform similarly to most people"
+            "count": 1,
+            "inference": [
+              "The applicant scored average on the Situational Test of Emotion Understanding. This suggests that the they have a decent understanding of their own emotions and the emotions of others, and are able to lean on it while navigating through social situations. They are iable to identify and understand simple emotions, and can respond to them in an appropriate and helpful way, however, they strggle when it comes to complex emotions. These skills provide some support to them in building and maintaining healthy relationships, and managing and resolving conflicts. In general, having a average level of emotional understanding aids them in a variety of areas, including improved communication and relationships with others. "
+            ],
+            "character": [
+              "Individuals who attain low scores on this particular scale are likely to perform similarly to most people"
+            ]
           },
 
           {
             "level": "high",
-            "skill1TT1": "The applicant scored high on the Situational Test of Emotion Understanding. This suggests that the they have a good understanding of their own emotions and the emotions of others, and is able to effectively use this understanding to navigate through social situations. They are able to accurately identify and understand different emotions, and can respond to them in an appropriate and helpful way. These skills help them in building and maintaining healthy relationships, and effectively managing and resolving conflicts. In general, having a high level of emotional understanding assists them in a variety of areas, including improved communication and relationships with others.",
-            "skill1C": "Individuals who attain high scores on this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant scored high on the Situational Test of Emotion Understanding. This suggests that the they have a good understanding of their own emotions and the emotions of others, and is able to effectively use this understanding to navigate through social situations. They are able to accurately identify and understand different emotions, and can respond to them in an appropriate and helpful way. These skills help them in building and maintaining healthy relationships, and effectively managing and resolving conflicts. In general, having a high level of emotional understanding assists them in a variety of areas, including improved communication and relationships with others."
+            ],
+            "character": [
+              "Individuals who attain high scores on this particular scale are an asset when it comes to"
+            ]
           }
         ]
       },
       {
         "skill": "Emotional Management",
-        "skill2T1": "Emotional management refers to a person's ability to regulate and control their own emotions, as well as the emotions of others.",
+        "description": "Emotional management refers to a person's ability to regulate and control their own emotions, as well as the emotions of others.",
         "average": 0.0,
+        "levels": [13, 19],
         "analysis": [
           {
             "level": "low",
-            "Skill2TT1": "The applicant scored low on the Situational Test of Emotion Management. This suggests that the they struggle with regulate their own or others emotions. They might panic in circumstances where it's crucial to maintain composure and calm. They might face trouble handling their own as well as others emotions. They have difficulty in properly communicating their emotions in a healthy and suitable way. These inability might lead to issues with their mental health and well-being, as well as for building and maintaining healthy relationships with others. Activities like making decisions, effective communication, and remaining calm in trying circumstances are challenging for them.",
-            "skill2C": "Individuals who attain low scores on this particular scale are likely to struggle with"
+            "count": 1,
+            "inference": [
+              "The applicant scored low on the Situational Test of Emotion Management. This suggests that the they struggle with regulate their own or others emotions. They might panic in circumstances where it's crucial to maintain composure and calm. They might face trouble handling their own as well as others emotions. They have difficulty in properly communicating their emotions in a healthy and suitable way. These inability might lead to issues with their mental health and well-being, as well as for building and maintaining healthy relationships with others. Activities like making decisions, effective communication, and remaining calm in trying circumstances are challenging for them."
+            ],
+            "character": [
+              "Individuals who attain low scores on this particular scale are likely to struggle with"
+            ]
           },
           {
             "level": "Average",
-            "Skill2TT1": "The applicant scored average on the Situational Test of Emotion Management. This suggests that they have a similar capacity for emotional control as their peers. They are able to making wise judgments under pressure, they may also assist others in controlling their own emotions, however they might struggle with manuvering through the emotions at other times. They can communicate their simple emotions in a healthy and suitable but fumble when it comes to complex emotions. They are able to take appropriate decisions, communicate their mind, and build and maintain relationships with others.",
-            "skill2C": "Individuals who attain low scores on this particular scale are likely to perform similarly to most people"
+            "count": 1,
+            "inference": [
+              "The applicant scored average on the Situational Test of Emotion Management. This suggests that they have a similar capacity for emotional control as their peers. They are able to making wise judgments under pressure, they may also assist others in controlling their own emotions, however they might struggle with manuvering through the emotions at other times. They can communicate their simple emotions in a healthy and suitable but fumble when it comes to complex emotions. They are able to take appropriate decisions, communicate their mind, and build and maintain relationships with others."
+            ],
+            "character": [
+              "Individuals who attain low scores on this particular scale are likely to perform similarly to most people"
+            ]
           },
 
           {
             "level": "high",
-            "skill2TT1": "The applicant scored high on the Situational Test of Emotion Management. This suggests that the they have a good capacity for emotional control, which might be advantageous in circumstances where it's crucial to remain calm and maintain composure. In addition to being adept at making wise judgments under pressure, they may also assist others in controlling their own emotions. They are able to properly communicate their emotions in a healthy and suitable way while remaining composed under pressure. These skills help them in maintaining their mental health and well-being, as well as in building and maintaining healthy relationships with others. They have improved decision-making abilities, effective communication skills, and a more calm demeanour in trying circumstances.",
-            "skill2C": "Individuals who attain high scores on this particular scale are an asset when it comes to"
+            "count": 1,
+            "inference": [
+              "The applicant scored high on the Situational Test of Emotion Management. This suggests that the they have a good capacity for emotional control, which might be advantageous in circumstances where it's crucial to remain calm and maintain composure. In addition to being adept at making wise judgments under pressure, they may also assist others in controlling their own emotions. They are able to properly communicate their emotions in a healthy and suitable way while remaining composed under pressure. These skills help them in maintaining their mental health and well-being, as well as in building and maintaining healthy relationships with others. They have improved decision-making abilities, effective communication skills, and a more calm demeanour in trying circumstances."
+            ],
+            "character": [
+              "Individuals who attain high scores on this particular scale are an asset when it comes to"
+            ]
           }
         ]
       }
