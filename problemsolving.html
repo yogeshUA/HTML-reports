@@ -781,7 +781,7 @@
     </footer>
 
     <script>
-      var score = [10];
+      var score = [{{applicantData}}];
 
       // populate the sliders with socres
       score.forEach((score, i) => {
@@ -797,7 +797,7 @@
           datasets: [
             {
               label: "",
-              data: [10],
+              data: [{{applicantData}}],
 
               pointRadius: 6,
               backgroundColor: "rgb(253, 136, 93)",

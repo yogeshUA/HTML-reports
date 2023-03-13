@@ -125,6 +125,148 @@
       }
     ]
   },
+  {
+    "name": "career Adapt-Abilities Assessment",
+    "template": "career.html",
+    "count": 3,
+    "inference": true,
+    "details": false,
+    "skills": [
+      {
+        "skill": "Concern",
+        "description": "Career Concern represents how involved individuals are in thinking about and planning their careers.",
+        "average": 0.0,
+        "levels": [3.8, 5],
+        "analysis": [
+          {
+            "level": "low",
+            "count": 3,
+            "inference": [
+              "The applicant has scored low on Concern. They may have an attitude of indifference toward making future occupational and educational decisions. They lack awareness with regard to important career decisions they are required to make. They are less likely to proactively plan and construct their careers. A lack of planning may result in them foreclosing on their career choice options by failing to complete prerequisite training programs or courses required to pursue certain occupations. They may feel pessimistic about their future."
+            ],
+            "character": ["Improve Career Concern by"],
+            "struggle": [
+              ". Discussing why they believe they have few vocational futures worth pursuing.",
+              " Face-to-face counseling session with a professional to establish the root cause of their indecision and indifference."
+            ]
+          },
+
+          {
+            "level": "high",
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on the concern. They may be enthralled by making future occupational and educational decisions. They are aware of the importance and impact the career decisions they make, have on their life. They are likely to proactively plan and construct their careers. This well-planned career path results from them making well-informed career choices and taking part in training programs or courses as required to pursue their dream occupations."
+            ],
+            "character": ["Improve Career Concern by"],
+            "struggle": [
+              ". Discussing why they believe they have few vocational futures worth pursuing.",
+              " Face-to-face counseling session with a professional to establish the root cause of their indecision and indifference."
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Control",
+        "description": "Career Control represents how much responsibility individuals take with regard to building and managing their careers.",
+        "average": 0.0,
+        "levels": [3.8, 5],
+        "analysis": [
+          {
+            "level": "low",
+            "count": 3,
+            "inference": [
+              "The applicant has scored low scores on Control which suggests they lack taking responsibility or ownership over their career. Since the root of low Control may be caused by career indecision or indecision in general, interventions that focus on developing decision-making skills would be beneficial. Such interventions may include decision-making training and goal setting."
+            ],
+            "character": ["Improve Career Control by"],
+            "struggle": [
+              "Participating in decision-making training which teaches them how to collect, evaluate, and analyze data in order to make informed decisions.",
+              "Developing the skills to make good decisions, while emphasizing the importance of taking control and responsibility for constructing their own careers."
+            ]
+          },
+
+          {
+            "level": "high",
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on Control. This suggests that they feel they are in charge of their career path and choices. They would benefit from developing and following a disciplined and organized approach toward goal setting. They are more likely to steer their careers in the planned direction by exploring and actively seeking out opportunities. They take responsibility for managing their careers and attaining their professional goals."
+            ],
+            "character": ["Improve Career Control by"],
+            "struggle": [
+              "Participating in decision-making training which teaches them how to collect, evaluate, and analyze data in order to make informed decisions.",
+              "Developing the skills to make good decisions, while emphasizing the importance of taking control and responsibility for constructing their own careers."
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Curiosity",
+        "description": "Career Curiosity represents how much individuals explore the world of work in general while gathering information about specific occupations.",
+        "average": 0.0,
+        "levels": [3.8, 5],
+        "analysis": [
+          {
+            "level": "low",
+            "count": 3,
+            "inference": [
+              "The applicant has scored low on Curiosity. It suggests that they may not have developed their ability to explore and investigate the world around them. While they know how to address complex problems they may not know who they are or who they want to become. The lack of curiosity may stem from a closed attitude toward exploration. They may develop inaccurate representations of the self, thus making it difficult to choose work congruent with their values and interests. "
+            ],
+            "character": ["Improve Career Curiosity by"],
+            "struggle": [
+              " Focusing on taking part in interventions concentrated on exploring, identifying, and clarifying values and interests.",
+              " Assessing oneself with the help of interest inventories to explore personal interests and the world of work in general."
+            ]
+          },
+
+          {
+            "level": "high",
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on Curiosity. It suggests that they are willing to try and explore new vocations which keep on expanding their interest areas. They proactively and regularly engage in introspection to identify their values, interests, and abilities. They are more likely to choose fulfilling and meaningful occupations."
+            ],
+            "character": ["Improve Career Curiosity by"],
+            "struggle": [
+              " Focusing on taking part in interventions concentrated on exploring, identifying, and clarifying values and interests.",
+              " Assessing oneself with the help of interest inventories to explore personal interests and the world of work in general."
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Confidence",
+        "description": "Career Confidence represents how confident individuals feel with regard to making well-informed career decisions, i.e. decisions based on wisdom and realism.",
+        "average": 0.0,
+        "levels": [3.8, 5],
+        "analysis": [
+          {
+            "level": "low",
+            "count": 3,
+            "inference": [
+              "The applicant has scored low on Curiosity. It suggests that they may not have developed their ability to explore and investigate the world around them. While they know how to address complex problems they may not know who they are or who they want to become. The lack of curiosity may stem from a closed attitude toward exploration. They may develop inaccurate representations of the self, thus making it difficult to choose work congruent with their values and interests. "
+            ],
+            "character": ["Improve Career Confidence by"],
+            "struggle": [
+              " Utilizing counseling interventions that explore and enhance self-worth, self-esteem, and self-efficacy.",
+              "Taking the time to build strong, collaborative, and non-judgmental relationships which help in increasing trust in oneself.",
+              "Create a safe place to explore their abilities or lack thereof."
+            ]
+          },
+          {
+            "level": "high",
+            "count": 3,
+            "inference": [
+              "The applicant has scored high on Confidence. It suggests that they approach new learning tasks with the belief that they can and will succeed. The applicant would work proactively to learn new skills and solve problems, which would enable them to overcome obstacles and navigate through career transitions smoothly."
+            ],
+            "character": ["Improve Career Confidence by"],
+            "struggle": [
+              " Utilizing counseling interventions that explore and enhance self-worth, self-esteem, and self-efficacy.",
+              "Taking the time to build strong, collaborative, and non-judgmental relationships which help in increasing trust in oneself.",
+              "Create a safe place to explore their abilities or lack thereof."
+            ]
+          }
+        ]
+      }
+    ]
+  },
 
   {
     "name": "Brief Resilience Scale",

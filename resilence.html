@@ -717,7 +717,7 @@
     </footer>
 
     <script>
-      var total = {{total}};
+      var total = 10;
 
       const myRangeInput = document.querySelector('input[type="range"]');
       myRangeInput.value = total;
@@ -748,7 +748,7 @@
         );
       };
 
-      const labels = createLables([1, 5, 0.1], [1, 3, 4.3, 5]);
+      const labels = createLables([1, 5], [1, 3, 4.3, 5]);
 
       var myConfig = {
         type: "gauge",
