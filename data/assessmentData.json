@@ -2663,5 +2663,231 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Personality Assessment (Big 5)",
+    "template": "personality.html",
+    "count": 1,
+    "inference": true,
+    "details": true,
+    "skills": [
+      {
+        "skill": "Openness to Experience",
+        "description": "Openness to Experience refers to a person's willingness to accept and explore new situations and to actively seek and appreciate new experiences",
+        "average": 0.0,
+        "levels": [6, 12, 24, 30],
+        "analysis": [
+          {
+            "level": "low",
+            "inference": "The applicant seems to have a liking for following the traditionally set routes and socially accepted ways of working and behaving. They have a hard time accepting change and adjusting to it. They have a few areas of interests which they master in and steer clear of adventuring beyond their comfort zone. They are comfortable in following a set routing with repeated tasks which provides them with a sense of familiarity. They might come off as stubborn and rigid. They have an inclination towards implementing solutions that have worked before rather than experimenting with different solutions.",
+            "character": [
+              "Practical",
+              "Traditional",
+              "Conventional",
+              "Down to Earth"
+            ],
+            "struggle": [" Adjusting to change", "Having varied perspectives"]
+          },
+          {
+            "level": "average",
+            "inference": "The applicant tends to employ tried and tested ways as well as novel, innovative approaches while attending to any issue or working. They tends to base their creative ideas on some already existing piece of work/concept. They like to explore a few new ideas and concepts, however they become cautious and hesitant if the exploration is far away from their interest areas. They may feel connected or inspired by a few pieces of art (paintings, music, nature, poetry, stories). They have a moderate level of curiosity and tolerance which shows in their acceptance of diversity and variety in life. They may enjoy engaging in imaginary fantasy Worlds (novel, movies, thoughts)",
+            "character": [
+              "Regular curiosity",
+              "Average risk taker",
+              "Moderately creative",
+              "Standardly experimental"
+            ],
+            "struggle": [
+              "Conviction in the experimental ideas",
+              "Being completely original in ideas/work"
+            ]
+          },
+          {
+            "level": "high",
+            "inference": "The candidate would welcome change of any kind with open arms. They on their own will initiate few changes and innovations as they have a lot of new ideas and plans up their sleeves. They are very inventive in their approach. Their perspective of looking at work and problems are totally different, which fuels their independent style of thinking and leads to out of ordinary solutions. With their curious mind they would keep acquiring more and more knowledge and implementing it in their unique style. They most likely are passionate about music, art, poetry, philosophy, or nature. They would not be rigid with their social, political or moral beliefs.",
+            "character": [
+              "Empathy",
+              "Risk Taking",
+              "Divergent thinking",
+              "Aesthetic appreciation"
+            ],
+            "struggle": [
+              " Maintaining a realistic or practical perspective.",
+              "Constantly following a set of routine and repetitive tasks."
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Conscientiousness",
+        "description": "Conscientiousness refers to a person's tendency to strive for perfection, be methodical, meticulous and determined to accomplish goals",
+        "average": 0.0,
+        "levels": [6, 12, 24, 30],
+        "analysis": [
+          {
+            "level": "low",
+            "inference": "The applicant is likely to value their pleasure over their duty. They tend to have a lower level of achievement drive. They are inclined towards being less organized with their time, work and things. They may at times take rushed decisions which may overlook few details and consequences. They are not persistent and will give up not long after things become tough. They do not plan things ahead but will improvise as things progress. They might not be aversive to breaking a few rules and restrictions. They may be seen as undependable and careless.",
+            "character": [
+              " Carefree",
+              "Reckless",
+              "Improvising",
+              "Pleasure focused"
+            ],
+            "struggle": ["Meeting deadlines", "Clearing and following a plan"]
+          },
+          {
+            "level": "average",
+            "inference": "The applicant prefers to work spontaneously and sometimes plans their work. They are relatively punctual and organized. They put in efforts to deliver immaculate work, however due to distractions they might miss out certain details. They have aspirations and a desire for success but they tend to give up or reduce their efforts when the work gets demanding. They might at times take hasty decisions, even though they normally are pragmatic and coherent. They might come across as carefree, who sometimes bend a few rules.",
+            "character": [
+              "Average drive",
+              " Regular efficiency",
+              " Standard dedication",
+              " Moderate perseverance"
+            ],
+            "struggle": [
+              "Meeting multiple tight deadlines",
+              "Being self-disciplined for long periods of time"
+            ]
+          },
+          {
+            "level": "high",
+            "inference": "The applicant portrays dependability. For them missing a deadline or delivering subpar work is a sign of neglect towards their duty. They are organized and methodical in their work. They are perfectionists and put in efforts to include as many details as possible. They create an elaborate schedule based on the time and work they have. They have a significantly high need for achievement. They push themselves to work beyond their limits. They behave in accordance with the set regulations and policies. They might be workaholics.",
+            "character": [
+              " Efficient",
+              "Ambitious",
+              " Meticulous",
+              "Conformist"
+            ],
+            "struggle": ["Being spontaneous", "Maintaining work-life balance "]
+          }
+        ]
+      },
+      {
+        "skill": "Extroversion",
+        "description": "Extroversion refers to a person's tendency to engage in social interactions, to exhibit positive emotions, to behave impulsively, and to have a high degree of energy",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "low",
+            "inference": "The applicant comes off as an introverted person. This means that they feel drained after socializing or being in an environment with lots of stimuli (loud parties, social events). This does not mean they lack social skills. They just need to be alone after socializing to recharge their energy. That is why they prefer to work alone or in small groups of people, they are familiar with. They have a difficult time verbalizing their thoughts, especially in groups, and need to be provided with a safe environment to present their ideas. They seldom express strong emotions or excitability.",
+            "character": ["Reserved", "Shy", "Serious", "Cautious"],
+            "struggle": ["Constantly working in groups", "Speaking their mind"]
+          },
+          {
+            "level": "average",
+            "inference": "The applicant is an ambivert, that are they like to socialize, but needs some time alone to restore their energy. They can collaborate with others for work as well as work alone depending on the work and circumstances. They generally can articulate their thoughts. However they might hesitate or decide against verbalizing their perspective, if they are the only one with that view. From time to time they might act impulsively without thinking it through. They enjoy adventures occasionally.",
+            "character": [
+              "Averagely sociable",
+              "Standardly adventurous",
+              "Partially impulsive",
+              "Moderately assertive"
+            ],
+            "struggle": [
+              "Socializing in large groups",
+              "Replenishing their energy"
+            ]
+          },
+          {
+            "level": "high",
+            "inference": "The applicant tends to be energetic and adventurous. They prefer large social gatherings and feel inspired and motivated by spending time with people. They are friendly in nature, radiating warmth and comfort towards others. They actively indulges in activities involving social interactions. They generally experience and emit feelings of happiness and joy. Their boisterous mannerisms make them stand out even in a crowd. They are eloquent and assertive while communicating. They will get the best work done while working in teams. They have an inclination towards acting on their instincts.",
+            "character": ["Enthusiastic", "Outgoing", "Outgoing", "Assertive"],
+            "struggle": [
+              "Having to work alone",
+              "Controlling their excitement and impulse"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Agreeableness",
+        "description": "Agreeableness refers to an individual's concerns about fellow human beings and their value for harmonious relationships",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "low",
+            "inference": "The applicant believes that everyone has a personal agenda/interest which governs all their actions. They tends to be cautious in their approach while interacting with others. They are headstrong, which shows in their attitude, views, and behavior. They would not hesitate to break a few rules or use few connections to attain their goal. They puts their needs before others and do not back down from voicing their stance. They are proud of their achievements and welcoming of the credit and appreciation for it.",
+            "character": [
+              "Skeptical",
+              "Competitive",
+              "Opinionated",
+              "Strong headed"
+            ],
+            "struggle": [
+              "Trusting anyone",
+              "Fostering and maintaining relationships"
+            ]
+          },
+          {
+            "level": "average",
+            "inference": "The applicant believes that even though humans are good in nature, they are not free of corruption. Hence they tends to trust people sparingly. The people need to win over their trust for them to be able to believe them. They let their guards down only with a few people that they have confidence in. They are generally cooperative, but can be stubborn and uncompromising as and when needed. They may at times trick people in order to advance their goals. They can be strong headed as well as soft hearted depending on the situation.",
+            "character": [
+              "Self-assured",
+              "Partially cynical",
+              "Marginally candid",
+              "Moderately compassionate"
+            ],
+            "struggle": [
+              " Trusting anyone new",
+              "Unapologetically profiting from others"
+            ]
+          },
+          {
+            "level": "high",
+            "inference": "The applicant is soft hearted and tends to think of other humans as kind-hearted, genuine, not deceiving beings. As a result they take other individuals' actions at their face value without questioning the intentions behind it. They believe that cooperation is better than competition and end up helping everyone who ask for help even when it takes a toll on them. They are sympathetic and can see others' pain and thus easily relate with them and their point of views. They makes others feel warm and welcomed. They are soft spoken and kind. They try to avoid getting in conflicts and confrontations.",
+            "character": [
+              "Trusting",
+              "Sympathy",
+              "Cooperative",
+              "Good natured"
+            ],
+            "struggle": [
+              "Stating their ideas or opinions",
+              "Sensing threat or danger in early stages"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Emotional Stability",
+        "description": "Emotional stability is a person’s tendency to maintain composure, especially in face of conflicting situations through the implementation of healthy coping mechanisms. It is characterized by the qualities of being calm, poised,self-confident, and content.",
+        "average": 0.0,
+        "analysis": [
+          {
+            "level": "high",
+            "inference": "The applicant seems to be emotionally stable. They are usually calm and collected even under stressful situations. They rarely experience extreme emotions. They are resilient and can control their emotional reactions. As their emotions do not fog up their judgment, they make better and more rational decisions in tough conditions. They do not worry about what others think of them, which is why they are not worried about embarrassing themselves in public. They are confident in themselves and comfortable with expressing themselves in front of others.",
+            "character": ["Relaxed", "Resilient", "Level-headed", "Composed"],
+            "struggle": [
+              "Feeling or expressing negative emotions",
+              "Sensing threat or danger in early stages"
+            ]
+          },
+          {
+            "level": "average",
+            "inference": "The applicant seems to be emotionally stable to some extent. They can generally remain composed in stressful situations, and handle them without letting their emotions overpower their judgment. However, on occasions, their emotional state can cloud their mind making it difficult to resolve the issues. Even though they are not constantly affected by negative emotions, once it does, it is difficult to cope with them. They purposely avoid comparing themselves with others and prevent themselves from feeling self-conscious. It is uncommon for them to give up on anything midway.",
+            "character": [
+              "Average emotional sensitivity",
+              "Moderately excitable",
+              "Standardly resilient",
+              "Partially anxious"
+            ],
+            "struggle": [
+              "Understanding the varying intensities of their emotions",
+              "Communicating their emotional state with others"
+            ]
+          },
+          {
+            "level": "low",
+            "inference": "The applicant tends to worry and be apprehensive about everything. They feel a wide range of emotions most of which are strong, intense bouts of negative emotions like anxiety, nervousness, sadness, and so on. They have difficulty feeling worthy as they are self-conscious and often feel vulnerable in even regular interactions. They make decisions based on their emotions. Their heightened emotional state makes it hard for them to reason. Because of this they might view minor issues as major hurdles and worry more about them. Thus, limiting them from effectively managing stressful situations.",
+            "character": [
+              "Anxious",
+              "Emotionally Sensitive",
+              "Temperamental",
+              "Excitable"
+            ],
+            "struggle": ["Handling stress", "Managing emotions"]
+          }
+        ]
+      }
+    ]
   }
 ]

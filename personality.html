@@ -75,6 +75,16 @@
         border-left: 1px solid #333;
       }
 
+      table {
+        border-collapse: separate;
+        border-spacing: 0 20px; /* increase the spacing value to add more space between rows */
+      }
+      td,
+      th {
+        padding: 6px 51px; /* add vertical padding to cells to create space between rows */
+        border-bottom: 1px solid rgb(156, 146, 146); /* add a border after each row */
+      }
+
       .conadidate_section {
         /* margin: 0 48px; */
         font-family: Inter;
@@ -129,7 +139,56 @@
         font-size: 14px;
         font-weight: 700;
       }
-
+      .inner_content_wrapper1 {
+        position: absolute;
+        top: 40px;
+        left: 41px;
+        font-family: Inter;
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        gap: 69px;
+      }
+      .inner_content_wrapper2 {
+        position: absolute;
+        top: 35px;
+        left: 41px;
+        font-family: Inter;
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        gap: 63px;
+      }
+      .inner_content_wrapper3 {
+        position: absolute;
+        top: 30px;
+        left: 36px;
+        font-family: Inter;
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        gap: 55px;
+      }
+      .inner_content_wrapper4 {
+        position: absolute;
+        top: 36px;
+        left: 41px;
+        font-family: Inter;
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+      }
+      .inner_content_wrapper5 {
+        position: absolute;
+        top: 40px;
+        left: 24px;
+        font-family: Inter;
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+      }
       .content {
         font-size: 16px;
         margin-top: 40px;
@@ -157,7 +216,6 @@
         right: 60px;
         font-family: Inter;
       }
-
       .inner_heading {
         font-size: 14px;
         font-weight: 700;
@@ -173,7 +231,20 @@
         color: rgb(255, 250, 250);
         line-height: 12px;
       }
+      .inner_heading1 {
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
 
+        letter-spacing: 0.5px;
+      }
+      .inner_heading2 {
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+
+        letter-spacing: -0.5px;
+      }
       .introduction {
         font-family: Inter;
         /* margin: 110px 54px 0px; */
@@ -198,6 +269,21 @@
 
       .intro_sub_heading {
         font-size: 15px;
+        font-weight: 700;
+        font-style: italic;
+        color: #4d4d4d;
+        margin-bottom: 24px;
+        margin-top: 32px;
+      }
+
+      .intro_sub_heading1 {
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        color: #4d4d4d;
+      }
+      .intro_sub_heading2 {
+        font-size: 12px;
         font-weight: 700;
         font-style: italic;
         color: #4d4d4d;
@@ -316,12 +402,24 @@
         padding-top: 32px;
         margin-top: 111px;
       }
+      .graph_section3 {
+        border-top: 1px solid rgb(243, 79, 3);
+        padding-top: 32px;
+        margin-top: 50px;
+      }
       .graph2_desc {
-        color: #02a887;
+        color: #262928;
         font-style: italic;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 80px;
+      }
+      .graph2_desc1 {
+        color: #c20e9b;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: -17px;
       }
       .list_after_graph {
         margin-top: 40px;
@@ -346,6 +444,32 @@
         height: 100%;
         width: 30px;
         background-color: #03866c;
+        position: absolute;
+      }
+
+      .list_after_graph1 {
+        margin-top: 40px;
+        color: rgb(139, 139, 139);
+      }
+
+      .list_wrapper_after_graph1 {
+        position: relative;
+      }
+      .list_wrapper_after_graph1 p {
+        padding-left: 50px;
+        font-size: 14px;
+        line-height: 10px;
+        font-weight: 500;
+        white-space: pre-wrap;
+        line-height: 1.2em;
+        color: rgb(92, 91, 91);
+      }
+
+      .list_wrapper_after_graph1::before {
+        content: "";
+        height: 100%;
+        width: 30px;
+        background-color: #c20e9b;
         position: absolute;
       }
 
@@ -513,6 +637,12 @@
         font-weight: 500;
         color: #666565;
       }
+      .skill_desc1 {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 500;
+        color: #666565;
+      }
       .skill_list {
         display: flex;
         flex-direction: column;
@@ -548,7 +678,7 @@
           class="landing_template"
         />
         <h1 class="heading">
-          5DCRS<br />
+          PERSONALITY<br />
           ASSESSMENT<br />
           REPORT
         </h1>
@@ -566,7 +696,7 @@
             <div>
               <span class="assessment_sub_heading"
                 >Assessed for
-                <span class="sub_heading_indicator">5DCRS</span></span
+                <span class="sub_heading_indicator">Personality</span></span
               >
               <span class="company_name">For {{job}}</span>
             </div>
@@ -586,18 +716,18 @@
             class="grit_img"
           />
           <img
-            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678686341920_5DCRS-14%20%281%29.png"
+            src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1678854869877_personality-13.png"
             alt=""
             class="inner_icon"
             style="left: 106px"
           />
           <div class="inner_content_wrapper">
-            <p class="inner_heading">5DCRS</p>
+            <p class="inner_heading">Personality</p>
             <p class="inner_content">
-              Gain a comprehensive understanding of the applicant's and/or
-              employee’s tendency and pattern of seeking information and
-              experiences. With such insights, it is possible to explain and
-              predict their behavior while learning anything new.
+              Understanding the patterns of the applicant’s and/ or employees’
+              thoughts, feelings, and motives, which in turn shape their
+              behavior. With such individual characteristic behavioral insights,
+              it is possible to explain and predict behavior.
             </p>
           </div>
         </div>
@@ -612,62 +742,100 @@
       </div>
       <!-- !ASSESSMENT DETAILS -->
       <div class="introduction page">
-        <h1 class="intro_heading">Curiosity</h1>
+        <h1 class="intro_heading">Personality</h1>
         <p class="intro_sub_heading">Theory</p>
         <p class="intro_content">
-          According to Todd Kashdan et. al., curiosity has various components,
-          and individuals experience curiosity in various ways based on their
-          emotions, approaches, and levels of comfort. This scale measures these
-          components through 24 items. Each item contains a statement describing
-          the general feelings, thoughts or basic tendencies one might have
-          while exploring something novel. Respondents rate how accurate these
-          feelings and thoughts are, on a seven-point scale from Does not
-          describe me at all to Completely describes me.
+          Based on the Big Five Personality Model, this assessment describes
+          personality in 5 factors, which have been researched and developed
+          over the years and have been the subject of numerous extensive studies
+          in various areas. This assessment measures five factors of personality
+          through 30 items. Each statement describes the thoughts, feelings or
+          behavior one experiences on a daily basis. Respondents rate how often
+          they indulge in the behavior described in each statement on a
+          five-point scale from Never to Every time.
         </p>
-        <p class="intro_sub_heading">Meaning of factor</p>
-        <p class="intro_content">
-          Curiosity is a fundamental human motivation that influences learning,
-          the acquisition of knowledge, and life fulfillment.
-        </p>
+        <p class="intro_sub_heading">Meaning of factors</p>
+        <table style="margin-top: 20px">
+          <tr>
+            <th
+              class="intro_sub_heading1"
+              style="padding-left: 10px; color: #424143"
+            >
+              Factors
+            </th>
+            <th class="intro_sub_heading1" style="color: #424143">
+              Definitions
+            </th>
+            <th
+              class="intro_sub_heading1"
+              style="padding-left: 1px; color: #f15722"
+            >
+              Characteristics
+            </th>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading2">Openness to Experience</td>
+            <td style="font-size: 12px">
+              Willingness to actively seek, accept, and appreciate new
+              experiences
+            </td>
+            <td style="font-size: 12px">
+              Authenticity<br />
+              Novelty<br />
+              Risk-taking
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading2">Conscientiousness</td>
+            <td style="font-size: 12px">
+              Tendency to strive for perfection, be methodical, meticulous, and
+              determined to accomplish goals.
+            </td>
+            <td style="font-size: 12px">
+              Sense of purpose<br />
+              Self-discipline<br />
+              Success-driven
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading2">Extroversion</td>
+            <td style="font-size: 12px">
+              Tendency to engage in social interactions, exhibit positive
+              emotions, behave impulsively and have a high degree of energy.
+            </td>
+            <td style="font-size: 12px">
+              Enthusiasm<br />
+              Affection<br />
+              Eloquence
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading2">Agreeableness</td>
+            <td style="font-size: 12px">
+              Concerns about fellow human beings and value harmonious
+              relationships.
+            </td>
+            <td style="font-size: 12px">
+              Benevolence<br />
+              Compassion<br />
+              Humility
+            </td>
+          </tr>
+          <tr>
+            <td class="intro_sub_heading2">Emotional Stability</td>
+            <td style="font-size: 12px">
+              Tendency to remain composed, in conflicting situations by
+              implementing healthy coping mechanisms.
+            </td>
+            <td style="font-size: 12px">
+              Calmness<br />
+              Self-confidence<br />
+              Content
+            </td>
+          </tr>
+        </table>
         <!-- #559C5B #AF4BA8 #4F4B9E #34D025 #B619CC  #317BAF #559C5B-->
-        <div class="skill_list">
-          <div>
-            <hr color="#559C5B" size="3" />
-            <em class="skill_title" style="color: #559c5b"
-              >Joyous Exploration</em
-            >
-            <p class="skill_desc">
-              Refers to the pleasurable experience of finding the world
-              intriguing.
-            </p>
-          </div>
-          <div>
-            <hr color="#AF4BA8" size="3" />
-            <em class="skill_title" style="color: #af4ba8"
-              >Deprivation Sensitivity</em
-            >
-            <p class="skill_desc">
-              Anxiety and frustration of being aware of unknown information.
-              They will devote considerable effort to uncover it.
-            </p>
-          </div>
-          <div>
-            <hr color="#4F4B9E" size="3" />
-            <em class="skill_title" style="color: #4f4b9e">Stress Tolerance</em>
-            <p class="skill_desc">
-              Belief in the ability to cope with distress arising from exploring
-              the novelty potential of a situation.
-            </p>
-          </div>
-          <div>
-            <hr color="#34D025" size="3" />
-            <em class="skill_title" style="color: #34d025">Thrill Seeking</em>
-            <p class="skill_desc">
-              Tendency to encounter social, physical, financial, and legal risks
-              for new experiences.
-            </p>
-          </div>
-        </div>
+
         <div class="page_footer">
           <div class="footer_title">
             <div class="copyright">&#169; 2023 zapilio.com</div>
@@ -680,29 +848,7 @@
 
       <div class="introduction page">
         <!-- !SKILL LIST CONTINUED -->
-        <div class="skill_list">
-          <div>
-            <hr color="#afa231" size="3" />
-            <em class="skill_title" style="color: #afa231"
-              >Social Curiosity Overt</em
-            >
-            <p class="skill_desc">
-              An interest in others’ behavior, thoughts, and feelings expressed
-              through conversations.
-            </p>
-          </div>
-          <div>
-            <hr color="#df2a93" size="3" />
-            <em class="skill_title" style="color: #df2a93"
-              >Social Curiosity Covert</em
-            >
-            <p class="skill_desc">
-              Ways to discover details about others - indirect, surreptitious,
-              secretive methods and functions to regulate self-esteem through
-              the search for downward social comparisons.
-            </p>
-          </div>
-        </div>
+        <div class="skill_list"></div>
 
         <div class="graph-container" style="margin-top: 100px">
           <div class="graph">
@@ -713,14 +859,6 @@
           <span class="indicator_low">Average</span>
           <span class="indicator_moderate">Individual</span>
         </div>
-        <p class="desc_line1" style="margin-top: 80px">
-          Kashdan, Todd & Disabato, David & Goodman, Fallon & Mcknight, Patrick.
-          (2019). The Five-Dimensional Curiosity Scale Revised (5DCR): Briefer
-          subscales while separating general overt and covert social curiosity.
-          10.31219/osf.io/pu8f3. The factor analysis showcased a six-factor
-          structure (0.62 to 0.90) and internal consistency (0.61 to 0.79)
-          suggesting high reliability and validity.
-        </p>
 
         <div class="page_footer">
           <div class="footer_title">
@@ -732,31 +870,59 @@
         </div>
       </div>
 
-      <!-- !Joyous Exploration -->
+      <!-- !Extroversion -->
       <div class="introduction page">
-        <h1 class="intro_heading">Joyous Exploration 1</h1>
+        <h1 class="intro_heading">Extroversion</h1>
+        <p class="intro_sub_heading">
+          Extroversion refers to a person's tendency to engage in social
+          interactions, exhibit positive emotions, behave impulsively, and have
+          a high degree of energy.
+        </p>
 
-        <div class="graph_section2">
+        <div class="graph_section3">
           <div>
-            <input id="skill1" min="1" max="7" type="range" value="10" />
+            <input id="skill1" min="6" max="30" type="range" value="10" />
           </div>
-          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_tracker">
+            <span></span><span></span><span></span>
+          </div>
           <div class="range_label">
-            <span>1</span>
+            <span>6</span>
             <span>low</span>
-            <span>4</span>
+            <span>12</span>
+            <span>Moderate</span>
+            <span>24</span>
             <span>High</span>
-            <span>7</span>
+            <span>30</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
-        <p class="graph2_desc skill1C">{{skill1C}}</p>
-        <div class="list_after_graph">
-          <div class="list_wrapper_after_graph skill1S">
+        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="graph2_desc skill1C">Characteristics</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677579749866_STEUM-11.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
+
+              <div class="inner_content_wrapper1">
+                <p class="inner_heading1">Enthusiastic</p>
+                <p class="inner_heading1">Outgoing</p>
+                <p class="inner_heading1">Impulsive</p>
+                <p class="inner_heading1">Assertive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="graph2_desc1 skill1D">Might Struggle with</p>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1 skill1S">
             <p>{{skill1S}}</p>
           </div>
         </div>
-
         <div class="page_footer">
           <div class="footer_title">
             <div class="copyright">&#169; 2023 zapilio.com</div>
@@ -766,35 +932,62 @@
           <div class="page_number">05</div>
         </div>
       </div>
-
-      <!-- !Deprivation Sensitivity -->
+      <!-- !Openness to Experience -->
       <div class="introduction page">
-        <h1 class="intro_heading">Deprivation Sensitivity</h1>
+        <h1 class="intro_heading">Openness to Experience</h1>
+        <p class="intro_sub_heading">
+          Openness to Experience refers to a person's willingness to accept and
+          explore new situations and to actively seek and appreciate new
+          experiences.
+        </p>
 
-        <div class="graph_section2">
+        <div class="graph_section3">
           <div>
-            <input id="skill2" min="1" max="7" type="range" value="10" />
+            <input id="skill1" min="6" max="30" type="range" value="10" />
           </div>
-          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_tracker">
+            <span></span><span></span><span></span>
+          </div>
           <div class="range_label">
-            <span>1</span>
+            <span>6</span>
             <span>low</span>
-            <span>4</span>
+            <span>12</span>
+            <span>Moderate</span>
+            <span>24</span>
             <span>High</span>
-            <span>7</span>
+            <span>30</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill2T1}}</p>
-        <p class="graph2_desc skill2C">{{skill2C}}</p>
-        <div class="list_after_graph">
-          <div class="list_wrapper_after_graph skill2S">
-            <!-- {{#if skill2S}} {{#each skill2S}}
-            <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill2S}}</p>
-          </div>
-        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="graph2_desc skill1C">Characteristics</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677579749866_STEUM-11.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
 
+              <div class="inner_content_wrapper2">
+                <p class="inner_heading1">
+                  Aesthetic<br />
+                  appreciation<br />
+                </p>
+                <p class="inner_heading1">Empathetic</p>
+                <p class="inner_heading1">Divergent<br />thinker</p>
+                <p class="inner_heading1">Risk taker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="graph2_desc1 skill1D">Might Struggle with</p>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1 skill1S">
+            <p>{{skill1S}}</p>
+          </div>
+        </div>
         <div class="page_footer">
           <div class="footer_title">
             <div class="copyright">&#169; 2023 zapilio.com</div>
@@ -804,34 +997,67 @@
           <div class="page_number">06</div>
         </div>
       </div>
-      <!-- !Stress Tolerance -->
+      <!-- !Agreeableness -->
       <div class="introduction page">
-        <h1 class="intro_heading">Stress Tolerance</h1>
+        <h1 class="intro_heading">Agreeableness</h1>
+        <p class="intro_sub_heading">
+          Agreeableness refers to an individual's concerns about their fellow
+          human beings and their tendency to value harmonious relationships.
+        </p>
 
-        <div class="graph_section2">
+        <div class="graph_section3">
           <div>
-            <input id="skill3" min="1" max="7" type="range" value="10" />
+            <input id="skill1" min="6" max="30" type="range" value="10" />
           </div>
-          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_tracker">
+            <span></span><span></span><span></span>
+          </div>
           <div class="range_label">
-            <span>1</span>
+            <span>6</span>
             <span>low</span>
-            <span>4</span>
+            <span>12</span>
+            <span>Moderate</span>
+            <span>24</span>
             <span>High</span>
-            <span>7</span>
+            <span>30</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill3T1}}</p>
-        <p class="graph2_desc skill3C">{{skill3C}}</p>
-        <div class="list_after_graph">
-          <div class="list_wrapper_after_graph skill3S">
-            <!-- {{#if skill3S}} {{#each skill3S}}
-            <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill3S}}</p>
-          </div>
-        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="graph2_desc skill1C">Characteristics</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677579749866_STEUM-11.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
 
+              <div class="inner_content_wrapper3">
+                <p class="inner_heading1">Self-assured</p>
+                <p class="inner_heading1">
+                  Marginally<br />
+                  candid
+                </p>
+                <p class="inner_heading1">
+                  Moderately<br />
+                  compassionate
+                </p>
+                <p class="inner_heading1">
+                  Partially<br />
+                  cynical
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="graph2_desc1 skill1D">Might Struggle with</p>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1 skill1S">
+            <p>{{skill1S}}</p>
+          </div>
+        </div>
         <div class="page_footer">
           <div class="footer_title">
             <div class="copyright">&#169; 2023 zapilio.com</div>
@@ -841,35 +1067,68 @@
           <div class="page_number">07</div>
         </div>
       </div>
-
-      <!-- !Thrill Seeking -->
+      <!-- !Conscientiousness -->
       <div class="introduction page">
-        <h1 class="intro_heading">Thrill Seeking</h1>
+        <h1 class="intro_heading">Conscientiousness</h1>
+        <p class="intro_sub_heading">
+          Conscientiousness refers to a person's tendency to strive for
+          perfection, be methodical, meticulous, and determined to accomplish
+          goals.
+        </p>
 
-        <div class="graph_section2">
+        <div class="graph_section3">
           <div>
-            <input id="skill4" min="1" max="7" type="range" value="10" />
+            <input id="skill1" min="6" max="30" type="range" value="10" />
           </div>
-          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_tracker">
+            <span></span><span></span><span></span>
+          </div>
           <div class="range_label">
-            <span>1</span>
+            <span>6</span>
             <span>low</span>
-            <span>4</span>
+            <span>12</span>
+            <span>Moderate</span>
+            <span>24</span>
             <span>High</span>
-            <span>7</span>
+            <span>30</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill4T1}}</p>
-        <p class="graph2_desc skill4C">{{skill4C}}</p>
-        <div class="list_after_graph">
-          <div class="list_wrapper_after_graph skill4S">
-            <!-- {{#if skill4S}} {{#each skill4S}}
-            <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill4S}}</p>
-          </div>
-        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="graph2_desc skill1C">Characteristics</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677579749866_STEUM-11.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
 
+              <div class="inner_content_wrapper4">
+                <p class="inner_heading2">
+                  Moderate<br />
+                  perseverance
+                </p>
+                <p class="inner_heading2">
+                  Regular<br />
+                  efficiency
+                </p>
+                <p class="inner_heading2">Average drive</p>
+                <p class="inner_heading2">
+                  Standard<br />
+                  dedication
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="graph2_desc1 skill1D">Might Struggle with</p>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1 skill1S">
+            <p>{{skill1S}}</p>
+          </div>
+        </div>
         <div class="page_footer">
           <div class="footer_title">
             <div class="copyright">&#169; 2023 zapilio.com</div>
@@ -879,34 +1138,60 @@
           <div class="page_number">08</div>
         </div>
       </div>
-      <!-- !Social Curiosity Overt -->
+      <!-- !Emotional Stability -->
       <div class="introduction page">
-        <h1 class="intro_heading">Social Curiosity Overt</h1>
+        <h1 class="intro_heading">Emotional Stability</h1>
+        <p class="intro_sub_heading">
+          Emotional stability is a person’s tendency to maintain composure,
+          especially in face of conflicting situations through implementation of
+          healthy coping mechanisms. It is characterized by the qualities of
+          being calm, poised, self-confident, and content.
+        </p>
 
-        <div class="graph_section2">
+        <div class="graph_section3">
           <div>
-            <input id="skill5" min="1" max="7" type="range" value="10" />
+            <input id="skill1" min="6" max="30" type="range" value="10" />
           </div>
-          <div class="range_tracker"><span></span><span></span></div>
+          <div class="range_tracker">
+            <span></span><span></span><span></span>
+          </div>
           <div class="range_label">
-            <span>1</span>
+            <span>6</span>
             <span>low</span>
-            <span>4</span>
+            <span>12</span>
+            <span>Moderate</span>
+            <span>24</span>
             <span>High</span>
-            <span>7</span>
+            <span>30</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill5T1}}</p>
-        <p class="graph2_desc skill5C">{{skill5C}}</p>
-        <div class="list_after_graph">
-          <div class="list_wrapper_after_graph skill5S">
-            <!-- {{#if skill5S}} {{#each skill5S}}
-            <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill5S}}</p>
-          </div>
-        </div>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="graph2_desc skill1C">Characteristics</p>
+        <div>
+          <div>
+            <div class="grit_img_section">
+              <img
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677579749866_STEUM-11.png"
+                alt="grit_icon"
+                class="grit_img"
+                style="margin-left: -40px"
+              />
 
+              <div class="inner_content_wrapper5">
+                <p class="inner_heading1">Level-headed</p>
+                <p class="inner_heading1">Composed</p>
+                <p class="inner_heading1">Resilient</p>
+                <p class="inner_heading1">Relaxed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="graph2_desc1 skill1D">Might Struggle with</p>
+        <div class="list_after_graph1">
+          <div class="list_wrapper_after_graph1 skill1S">
+            <p>{{skill1S}}</p>
+          </div>
+        </div>
         <div class="page_footer">
           <div class="footer_title">
             <div class="copyright">&#169; 2023 zapilio.com</div>
@@ -914,42 +1199,6 @@
           </div>
 
           <div class="page_number">09</div>
-        </div>
-      </div>
-      <!-- !Social Curiosity Covert -->
-      <div class="introduction page">
-        <h1 class="intro_heading">Social Curiosity Covert</h1>
-
-        <div class="graph_section2">
-          <div>
-            <input id="skill6" min="1" max="7" type="range" value="10" />
-          </div>
-          <div class="range_tracker"><span></span><span></span></div>
-          <div class="range_label">
-            <span>1</span>
-            <span>low</span>
-            <span>4</span>
-            <span>High</span>
-            <span>7</span>
-          </div>
-        </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill6T1}}</p>
-        <p class="graph2_desc skill6C">{{skill6C}}</p>
-        <div class="list_after_graph">
-          <div class="list_wrapper_after_graph skill6S">
-            <!-- {{#if skill6S}} {{#each skill6S}}
-            <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill6S}}</p>
-          </div>
-        </div>
-
-        <div class="page_footer">
-          <div class="footer_title">
-            <div class="copyright">&#169; 2023 zapilio.com</div>
-            <div class="report">CONFIDENTIAL DOCUMENT</div>
-          </div>
-          <div class="page_number">10</div>
         </div>
       </div>
 
@@ -970,7 +1219,7 @@
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
 
-          <div class="page_number">12</div>
+          <div class="page_number">10</div>
         </div>
       </div>
     </main>
