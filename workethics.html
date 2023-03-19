@@ -965,7 +965,7 @@
     </footer>
 
     <script>
-       var score = [{{ applicantData }}];
+      var score = 10;
 
       // populate the sliders with socres
       score.forEach((score, i) => {
@@ -973,41 +973,23 @@
         myRangeInput.value = score;
       });
 
-      // const serials = Array.from({ length: 7 }, (_, i) => i + 1);
-      // const scoredIndicator = document.querySelector(`.skill1S`);
-      // const pseudoElementStyle = window.getComputedStyle(scoredIndicator, "::before");
-      // pseudoElementStyle.setProperty("background-color", "#d8186a");
-
-      // iterate over the array of serials
-      // const serials = [{{skill1L}},{{skill2L}},{{skill3L}}, {{skill4L}}, {{skill5L}}, {{skill6L}}, {{skill7L}}]
-      // serials.forEach((serial,i) => {
-
-      // const scoredIndicator = document.getElementsByClassName(`skill${serial}S`);
-      // const scoredText = document.querySelector(`.skill${i+1}C`);
-
-      // computed style of the ::before pseudo-element of the <div> element
-      // const pseudoElementStyle = window.getComputedStyle(scoredIndicator, "::before");
-
-      //  background color of the pseudo-element based on the value of scored
-      // if (scored === "High") {
-      // pseudoElementStyle.setProperty("background-color", "#03866c");
-      // scoredText.style.color = "#03866c";
-      // } else {
-      // pseudoElementStyle.setProperty("background-color", "#d8186a");
-      // scoredText.style.color = "#d8186a";
-      // }
-      // });
-      // const labels = Utils.months({ count: 7 });
       const ctx = document.getElementById("myChart1");
       const myChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: ["Centrality of Work", "Self-Reliance", "Hard Work", "Leisure", "Morality/Ethics", "Delay of Gratification", "Wasted Time"],
+          labels: [
+            "Centrality of Work",
+            "Self-Reliance",
+            "Hard Work",
+            "Leisure",
+            "Morality/Ethics",
+            "Delay of Gratification",
+            "Wasted Time",
+          ],
           datasets: [
             {
               label: "",
-              data: [{{applicantData}}],
-
+              data: 10,
               pointRadius: 6,
               backgroundColor: "rgb(253, 136, 93)",
               showLine: true,

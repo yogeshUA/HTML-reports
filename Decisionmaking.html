@@ -303,7 +303,7 @@
       .graph_section2 {
         border-top: 1px solid rgb(243, 79, 3);
         padding-top: 32px;
-        margin-top: 111px;
+        margin-top: 72px;
       }
       .graph2_desc {
         color: #555454;
@@ -657,6 +657,7 @@
             <div class="copyright">&#169; 2023 zapilio.com</div>
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
+          <input type="hidden" id="chartData" value="{{chartData}}" />
 
           <div class="page_number">04</div>
         </div>
@@ -680,10 +681,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill1C">{{skill1TT1}}</p>
+        <p class="graph2_desc skill1C">{{skill1T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
-            <p>{{skill1S}}</p>
+            {{#if skill1C}} {{#each skill1C}}
+            <p>{{this}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -714,13 +717,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill2C">{{skill2TT1}}</p>
+        <p class="graph2_desc skill2C">{{skill2T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill2S">
-            <!-- {{#if skill2S}} {{#each skill2S}}
+            {{#if skill2C}} {{#each skill2C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill2S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -751,13 +753,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill3C">{{skill3TT1}}</p>
+        <p class="graph2_desc skill3C">{{skill3T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill3S">
-            <!-- {{#if skill3S}} {{#each skill3S}}
+            {{#if skill3C}} {{#each skill3C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill3S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -789,13 +790,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill4C">{{skill4TT1}}</p>
+        <p class="graph2_desc skill4C">{{skill4T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill4S">
-            <!-- {{#if skill4S}} {{#each skill4S}}
+            {{#if skill4C}} {{#each skill4C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill4S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -826,13 +826,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill5C">{{skill5TT1}}</p>
+        <p class="graph2_desc skill5C">{{skill5T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill5S">
-            <!-- {{#if skill5S}} {{#each skill5S}}
+            {{#if skill5C}} {{#each skill5C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill5S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -863,13 +862,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill5C">{{skill6TT1}}</p>
+        <p class="graph2_desc skill5C">{{skill6T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill5S">
-            <!-- {{#if skill5S}} {{#each skill5S}}
+            {{#if skill6C}} {{#each skill6C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill6S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -900,13 +898,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill5C">{{skill7TT1}}</p>
+        <p class="graph2_desc skill5C">{{skill7T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill5S">
-            <!-- {{#if skill5S}} {{#each skill5S}}
+            {{#if skill7C}} {{#each skill7C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill7S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -937,13 +934,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill5C">{{skill8TT1}}</p>
+        <p class="graph2_desc skill5C">{{skill8T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill5S">
-            <!-- {{#if skill5S}} {{#each skill5S}}
+            {{#if skill8C}} {{#each skill8C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill8S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -975,13 +971,12 @@
           </div>
         </div>
 
-        <p class="graph2_desc skill5C">{{skill9TT1}}</p>
+        <p class="graph2_desc skill5C">{{skill9T}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill5S">
-            <!-- {{#if skill5S}} {{#each skill5S}}
+            {{#if skill9C}} {{#each skill9C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill9S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -995,7 +990,7 @@
         </div>
       </div>
 
-      <div class="introduction page">
+      <!-- <div class="introduction page">
         <h1 class="take_away_heading">Key takeaways</h1>
         <ul class="key_take_away_list">
           <li class="key_take_away_list_item">{{keys}}</li>
@@ -1018,7 +1013,7 @@
 
           <div class="page_number">14</div>
         </div>
-      </div>
+      </div> -->
     </main>
     <footer>
       <img
@@ -1030,24 +1025,34 @@
     </footer>
 
     <script>
-       var score = [{{ applicantData }}];
+      //var score = 10;
+      const score = JSON.parse(document.getElementById("chartData").value);
 
-      // populate the sliders with socres
+      //populate the sliders with socres
       score.forEach((score, i) => {
         const myRangeInput = document.getElementById(`skill${i + 1}`);
         myRangeInput.value = score;
       });
 
-
       const ctx = document.getElementById("myChart1");
       const myChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: ["Anxious", "Avoidant", "Brooding", "Dependent", "Intuitive", "Spontaneous", "Vigilant","Respected","Confident"],
+          labels: [
+            "Anxious",
+            "Avoidant",
+            "Brooding",
+            "Dependent",
+            "Intuitive",
+            "Spontaneous",
+            "Vigilant",
+            "Respected",
+            "Confident",
+          ],
           datasets: [
             {
               label: "",
-              data: [{{applicantData}}],
+              data: score,
 
               pointRadius: 6,
               backgroundColor: "rgb(253, 136, 93)",

@@ -304,7 +304,7 @@
       .graph_section2 {
         border-top: 1px solid rgb(243, 79, 3);
         padding-top: 32px;
-        margin-top: 111px;
+        margin-top: 70px;
       }
       .graph2_desc {
         color: #02a887;
@@ -678,11 +678,13 @@
             <span>5</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill1T1}}</p>
-        <p class="graph2_desc skill1C">{{skill1C}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T}}</p>
+        <p class="graph2_desc skill1C">Improve Career Control by</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
-            <p>{{skill1S}}</p>
+            {{#if skill1C}} {{#each skill1C}}
+            <p class="inner_heading1">{{this}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -717,14 +719,13 @@
             <span>5</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill2T1}}</p>
-        <p class="graph2_desc skill2C">{{skill2C}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill2T}}</p>
+        <p class="graph2_desc skill2C">Improve Career Control by</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill2S">
-            <!-- {{#if skill2S}} {{#each skill2S}}
-            <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill2S}}</p>
+            {{#if skill2C}} {{#each skill2C}}
+            <p class="inner_heading1">{{this}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -759,14 +760,13 @@
             <span>5</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill3T1}}</p>
-        <p class="graph2_desc skill3C">{{skill3C}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill3T}}</p>
+        <p class="graph2_desc skill3C">Improve Career Control by</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill3S">
-            <!-- {{#if skill3S}} {{#each skill3S}}
+            {{#if skill3C}} {{#each skill3C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill3S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -802,14 +802,13 @@
             <span>5</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill4T1}}</p>
-        <p class="graph2_desc skill4C">{{skill4C}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill4T}}</p>
+        <p class="graph2_desc skill4C">Improve Career Control by</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill4S">
-            <!-- {{#if skill4S}} {{#each skill4S}}
+            {{#if skill4C}} {{#each skill4C}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill4S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -823,7 +822,7 @@
         </div>
       </div>
 
-      <div class="introduction page">
+      <!-- <div class="introduction page">
         <h1 class="take_away_heading">Key takeaways</h1>
         <ul class="key_take_away_list">
           <li class="key_take_away_list_item">{{keys}}</li>
@@ -842,7 +841,7 @@
 
           <div class="page_number">12</div>
         </div>
-      </div>
+      </div> -->
     </main>
     <footer>
       <img
@@ -854,7 +853,7 @@
     </footer>
 
     <script>
-      var score = [{{applicantData}}];
+      var score =10;
 
       // populate the sliders with socres
       score.forEach((score, i) => {

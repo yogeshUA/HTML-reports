@@ -144,8 +144,8 @@
             "inference": [
               "The applicant has scored low on Concern. They may have an attitude of indifference toward making future occupational and educational decisions. They lack awareness with regard to important career decisions they are required to make. They are less likely to proactively plan and construct their careers. A lack of planning may result in them foreclosing on their career choice options by failing to complete prerequisite training programs or courses required to pursue certain occupations. They may feel pessimistic about their future."
             ],
-            "character": ["Improve Career Concern by"],
-            "struggle": [
+
+            "character": [
               ". Discussing why they believe they have few vocational futures worth pursuing.",
               " Face-to-face counseling session with a professional to establish the root cause of their indecision and indifference."
             ]
@@ -157,8 +157,8 @@
             "inference": [
               "The applicant has scored high on the concern. They may be enthralled by making future occupational and educational decisions. They are aware of the importance and impact the career decisions they make, have on their life. They are likely to proactively plan and construct their careers. This well-planned career path results from them making well-informed career choices and taking part in training programs or courses as required to pursue their dream occupations."
             ],
-            "character": ["Improve Career Concern by"],
-            "struggle": [
+
+            "character": [
               ". Discussing why they believe they have few vocational futures worth pursuing.",
               " Face-to-face counseling session with a professional to establish the root cause of their indecision and indifference."
             ]
@@ -177,8 +177,8 @@
             "inference": [
               "The applicant has scored low scores on Control which suggests they lack taking responsibility or ownership over their career. Since the root of low Control may be caused by career indecision or indecision in general, interventions that focus on developing decision-making skills would be beneficial. Such interventions may include decision-making training and goal setting."
             ],
-            "character": ["Improve Career Control by"],
-            "struggle": [
+
+            "character": [
               "Participating in decision-making training which teaches them how to collect, evaluate, and analyze data in order to make informed decisions.",
               "Developing the skills to make good decisions, while emphasizing the importance of taking control and responsibility for constructing their own careers."
             ]
@@ -190,8 +190,8 @@
             "inference": [
               "The applicant has scored high on Control. This suggests that they feel they are in charge of their career path and choices. They would benefit from developing and following a disciplined and organized approach toward goal setting. They are more likely to steer their careers in the planned direction by exploring and actively seeking out opportunities. They take responsibility for managing their careers and attaining their professional goals."
             ],
-            "character": ["Improve Career Control by"],
-            "struggle": [
+
+            "character": [
               "Participating in decision-making training which teaches them how to collect, evaluate, and analyze data in order to make informed decisions.",
               "Developing the skills to make good decisions, while emphasizing the importance of taking control and responsibility for constructing their own careers."
             ]
@@ -210,8 +210,8 @@
             "inference": [
               "The applicant has scored low on Curiosity. It suggests that they may not have developed their ability to explore and investigate the world around them. While they know how to address complex problems they may not know who they are or who they want to become. The lack of curiosity may stem from a closed attitude toward exploration. They may develop inaccurate representations of the self, thus making it difficult to choose work congruent with their values and interests. "
             ],
-            "character": ["Improve Career Curiosity by"],
-            "struggle": [
+
+            "character": [
               " Focusing on taking part in interventions concentrated on exploring, identifying, and clarifying values and interests.",
               " Assessing oneself with the help of interest inventories to explore personal interests and the world of work in general."
             ]
@@ -223,8 +223,8 @@
             "inference": [
               "The applicant has scored high on Curiosity. It suggests that they are willing to try and explore new vocations which keep on expanding their interest areas. They proactively and regularly engage in introspection to identify their values, interests, and abilities. They are more likely to choose fulfilling and meaningful occupations."
             ],
-            "character": ["Improve Career Curiosity by"],
-            "struggle": [
+
+            "character": [
               " Focusing on taking part in interventions concentrated on exploring, identifying, and clarifying values and interests.",
               " Assessing oneself with the help of interest inventories to explore personal interests and the world of work in general."
             ]
@@ -243,8 +243,8 @@
             "inference": [
               "The applicant has scored low on Curiosity. It suggests that they may not have developed their ability to explore and investigate the world around them. While they know how to address complex problems they may not know who they are or who they want to become. The lack of curiosity may stem from a closed attitude toward exploration. They may develop inaccurate representations of the self, thus making it difficult to choose work congruent with their values and interests. "
             ],
-            "character": ["Improve Career Confidence by"],
-            "struggle": [
+
+            "character": [
               " Utilizing counseling interventions that explore and enhance self-worth, self-esteem, and self-efficacy.",
               "Taking the time to build strong, collaborative, and non-judgmental relationships which help in increasing trust in oneself.",
               "Create a safe place to explore their abilities or lack thereof."
@@ -256,8 +256,8 @@
             "inference": [
               "The applicant has scored high on Confidence. It suggests that they approach new learning tasks with the belief that they can and will succeed. The applicant would work proactively to learn new skills and solve problems, which would enable them to overcome obstacles and navigate through career transitions smoothly."
             ],
-            "character": ["Improve Career Confidence by"],
-            "struggle": [
+
+            "character": [
               " Utilizing counseling interventions that explore and enhance self-worth, self-esteem, and self-efficacy.",
               "Taking the time to build strong, collaborative, and non-judgmental relationships which help in increasing trust in oneself.",
               "Create a safe place to explore their abilities or lack thereof."
@@ -2507,15 +2507,14 @@
     "skills": [
       {
         "skill": "Self Enhancement",
-        "levels": [4, 15, 24],
-        "skill1T1": "Value-driven style of influencing focuses on aligning their message with the values and beliefs of the person or group they are trying to influence.",
+        "description": "Value-driven style of influencing focuses on aligning their message with the values and beliefs of the person or group they are trying to influence.",
+        "levels": [15, 24],
         "average": 0.0,
         "analysis": [
           {
             "level": "high",
-            "skill1TT1": "For the applicant it is essential to follow the social rules and safety protocols at all times. They are against risking their or anybody's safety to order to achieve anything. Besides this they also value their traditions and would not do anything that conflicts with their traditional values system. They are the conformists and regulate their actions based on the societal expectations. They value stability in self, relationships as well as society",
-
-            "skillscores": [
+            "inference": "For the applicant it is essential to follow the social rules and safety protocols at all times. They are against risking their or anybody's safety to order to achieve anything. Besides this they also value their traditions and would not do anything that conflicts with their traditional values system. They are the conformists and regulate their actions based on the societal expectations. They value stability in self, relationships as well as society",
+            "character": [
               "Cautious",
               "Comformist",
               "Harmonious",
@@ -2527,8 +2526,8 @@
 
           {
             "level": "low",
-            "skill1TT1": "The applicant does not limit their efforts because of safety of theirs or of anybody else around them. While planning and working they exclude the restrictions that come from societal rules and regulations. They prefer to keep their life free from any sort of social, traditional, religious restrictions. They do not cower away from doing something they want because of policies or social norms. They do not involve themselves into creating harmony or stability in the society.",
-            "skillscores": [
+            "inference": "The applicant does not limit their efforts because of safety of theirs or of anybody else around them. While planning and working they exclude the restrictions that come from societal rules and regulations. They prefer to keep their life free from any sort of social, traditional, religious restrictions. They do not cower away from doing something they want because of policies or social norms. They do not involve themselves into creating harmony or stability in the society.",
+            "character": [
               "Personal Safety",
               "National Defense",
               "Social Expectations",
@@ -2541,13 +2540,14 @@
       },
       {
         "skill": "Self Transcendence",
-        "levels": [6, 22, 36],
+        "description": "Values acceptance of others as equals and concern for their welfare",
+        "levels": [22, 36],
         "average": 0.0,
         "analysis": [
           {
             "level": "high",
-            "Skill2TT1": "It is important for the applicant to take everyone around them on the path of progress. They feel the need to create a better world through conserving nature and encouraging the people to be better versions of themselves. They have a sense of justice or fairness and tend to aim for it. They are dependable and trustworthy. They are people oriented and would care for others despite their differences.",
-            "skillscores": [
+            "inference": "It is important for the applicant to take everyone around them on the path of progress. They feel the need to create a better world through conserving nature and encouraging the people to be better versions of themselves. They have a sense of justice or fairness and tend to aim for it. They are dependable and trustworthy. They are people oriented and would care for others despite their differences.",
+            "character": [
               "Caring",
               "Inclusive",
               "Dependable",
@@ -2561,9 +2561,8 @@
 
           {
             "level": "low",
-            "Skill2TT1": "The applicant believes in their individual progress and do not get themselves involved in what is others business. They do not seek support or encouragement from others nor do they encourage others for their progress. They have a limited view. They might not be keen on frequent personal contact.",
-
-            "skillscores": [
+            "inference": "The applicant believes in their individual progress and do not get themselves involved in what is others business. They do not seek support or encouragement from others nor do they encourage others for their progress. They have a limited view. They might not be keen on frequent personal contact.",
+            "character": [
               "Injustice",
               "Discrimination",
               "Environmental issues",
@@ -2574,13 +2573,14 @@
       },
       {
         "skill": "Openness to Change",
-        "levels": [4, 15, 24],
+        "description": "Values independent thought and action and favors change",
+        "levels": [15, 24],
         "average": 0.0,
         "analysis": [
           {
             "level": "high",
-            "Skill3TT1": "For the applicant it is important to have new and innovative experiences. They seek for an environment which pushes them to try and learn new things. If they have to follow a monotonous routine, then they would lose interest and experience burnout. They like to explore their thoughts and ideas. They have a liking for freedom and are action oriented. All their actions have the motive to increase or maintain their self-respect. ",
-            "skillscores": [
+            "inference": "For the applicant it is important to have new and innovative experiences. They seek for an environment which pushes them to try and learn new things. If they have to follow a monotonous routine, then they would lose interest and experience burnout. They like to explore their thoughts and ideas. They have a liking for freedom and are action oriented. All their actions have the motive to increase or maintain their self-respect. ",
+            "character": [
               "Explorer",
               "Adventurous",
               "Novelty seeker",
@@ -2593,25 +2593,21 @@
           },
           {
             "level": "low",
-            "Skill3TT1": "It is important for the applicant to be in an environment where they know what to expect. They aren't comfortable in attempting something they are unfamiliar with. They feel confident and content in following their routine. They will thrive in a monotonous routine, where all their tasks are well defined. They are comfortable with following leads.",
-            "skillscores": [
-              "Pleasure",
-              "Creativity",
-              "Adventure",
-              "Independence"
-            ]
+            "inference": "It is important for the applicant to be in an environment where they know what to expect. They aren't comfortable in attempting something they are unfamiliar with. They feel confident and content in following their routine. They will thrive in a monotonous routine, where all their tasks are well defined. They are comfortable with following leads.",
+            "character": ["Pleasure", "Creativity", "Adventure", "Independence"]
           }
         ]
       },
       {
         "skill": "Conservation",
-        "levels": [4, 15, 24],
+        "description": "Values submissiveness, self-restriction, preservation of traditional practices,and protection of stability",
+        "levels": [15, 24],
         "average": 0.0,
         "analysis": [
           {
             "level": "high",
-            "Skill4TT1": "For the applicant it is essential to follow the social rules and safety protocols at all times. They are against risking their or anybody's safety to order to achieve anything. Besides this they also value their traditions and would not do anything that conflicts with their traditional values system. They are the conformists and regulate their actions based on the societal expectations. They value stability in self, relationships as well as society.",
-            "skillscores": [
+            "inference": "For the applicant it is essential to follow the social rules and safety protocols at all times. They are against risking their or anybody's safety to order to achieve anything. Besides this they also value their traditions and would not do anything that conflicts with their traditional values system. They are the conformists and regulate their actions based on the societal expectations. They value stability in self, relationships as well as society.",
+            "character": [
               "Cautious",
               "Comformist",
               "Harmonious",
@@ -2622,8 +2618,8 @@
           },
           {
             "level": "low",
-            "Skill4TT1": "The applicant does not limit their efforts because of safety of theirs or of anybody else around them. While planning and working they exclude the restrictions that come from societal rules and regulations. They prefer to keep their life free from any sort of social, traditional, religious restrictions. They do not cower away from doing something they want because of policies or social norms. They do not involve themselves into creating harmony or stability in the society.",
-            "skillscores": [
+            "inference": "The applicant does not limit their efforts because of safety of theirs or of anybody else around them. While planning and working they exclude the restrictions that come from societal rules and regulations. They prefer to keep their life free from any sort of social, traditional, religious restrictions. They do not cower away from doing something they want because of policies or social norms. They do not involve themselves into creating harmony or stability in the society.",
+            "character": [
               "Personal Safety",
               "National Defense",
               "Social Expectations",
@@ -2636,14 +2632,15 @@
       },
       {
         "skill": "Face",
-        "levels": [6, 22, 36],
+        "description": "Face is located between the higher order self-enhancement and conservation values and is measured and interpreted independently.",
+        "levels": [22, 36],
         "average": 0.0,
         "analysis": [
           {
             "level": "high",
 
-            "Skill5TT1": "Face is located between the higher order self-enhancement and conservation values and is measured and interpreted independently.",
-            "skillscores": [
+            "inference": "Face is located between the higher order self-enhancement and conservation values and is measured and interpreted independently.",
+            "character": [
               "Follow etiquettes",
               "Maintain a Positive image",
               "Worry about their reputation",
@@ -2652,8 +2649,8 @@
           },
           {
             "level": "low",
-            "Skill5TT1": "Face is located between the higher order self-enhancement and conservation values and is measured and interpreted independently.",
-            "skillscores": [
+            "inference": "Face is located between the higher order self-enhancement and conservation values and is measured and interpreted independently.",
+            "character": [
               "Public opinion",
               "Their reputation",
               "Following etiquettes",
@@ -2766,6 +2763,7 @@
         "skill": "Extroversion",
         "description": "Extroversion refers to a person's tendency to engage in social interactions, to exhibit positive emotions, to behave impulsively, and to have a high degree of energy",
         "average": 0.0,
+        "levels": [6, 12, 24, 30],
         "analysis": [
           {
             "level": "low",
@@ -2802,6 +2800,7 @@
         "skill": "Agreeableness",
         "description": "Agreeableness refers to an individual's concerns about fellow human beings and their value for harmonious relationships",
         "average": 0.0,
+        "levels": [6, 12, 24, 30],
         "analysis": [
           {
             "level": "low",
@@ -2851,6 +2850,7 @@
         "skill": "Emotional Stability",
         "description": "Emotional stability is a person’s tendency to maintain composure, especially in face of conflicting situations through the implementation of healthy coping mechanisms. It is characterized by the qualities of being calm, poised,self-confident, and content.",
         "average": 0.0,
+        "levels": [6, 12, 24, 30],
         "analysis": [
           {
             "level": "high",
@@ -2885,6 +2885,239 @@
               "Excitable"
             ],
             "struggle": ["Handling stress", "Managing emotions"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Five-Dimensional Curiosity Scale Revised (5DCR)",
+    "template": "curiosity.html",
+    "count": 4,
+    "inference": true,
+    "details": false,
+    "skills": [
+      {
+        "skill": "Joyous Exploration",
+        "description": "Joyous Exploration refers to the pleasurable experience of finding the world intriguing. It is characterised by love of learning, a sense of fascination about activities, places, and things, and in turn, experience high levels of well-being.",
+        "average": 0.0,
+        "levels": [4, 7],
+        "analysis": [
+          {
+            "level": "Low",
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on the Joyous Exploration subscale. They do not like exploring or discovering new things. They do not find excitement in learning and discovering new things. They lack a sense of curiosity and  willingness to take risks or try new things. This results in interest only in selected areas."
+            ],
+            "character": "Individuals who attain low scores on this particular scale struggle when it comes to",
+            "struggle": [
+              "Brainstorming ideas for new products or processes",
+              "Thinking out-of-the-box solutions for business challenges",
+              "Aiding in fostering a culture of innovation and experimentation",
+              "Showing enthusiasm to explore new technologies and techniques",
+              "Establishing strong relationships through genuine curiosity about others"
+            ]
+          },
+          {
+            "level": "High",
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on the Joyous Exploration subscale. They like exploring or discovering new things and this provides them with a feeling of joy or happiness. They experience a sense of wonder and excitement as they learn and discover new things. They possess a sense of curiosity and a willingness to take risks and try new things. This results in their interest in a wide range of activities, such as traveling to new places, trying new hobbies or activities, learning about different cultures or subjects, or simply spending time outdoors and experiencing the beauty of nature. It is often associated with a feeling of freedom and a desire to fully engage with the world around us."
+            ],
+            "character": "Individuals who attain high scores on this particular scale are an asset when it comes to",
+            "struggle": [
+              "Brainstorming ideas for new products or processes",
+              "Thinking out-of-the-box solutions for business challenges",
+              "Aiding in fostering a culture of innovation and experimentation",
+              "Showing enthusiasm to explore new technologies and techniques",
+              "Establishing strong relationships through genuine curiosity about others"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Deprivation Sensitivity",
+        "description": "Deprivation Sensitivity refers to the anxiety and frustration of being aware of information you do not know, want to know, and devote considerable effort to uncover. It is characterised by experience of discomfort and annoyance until they resolve information gaps.",
+        "average": 0.0,
+        "levels": [4, 7],
+        "analysis": [
+          {
+            "level": "Low",
+            "count": 1,
+            "inference": [
+              "The applicant has scored low in the Deprivation Sensitivity subscale. They do not enjoy exploring anything. They will feel distressed and uneasy when they have to go beyond their comfort zone. For them, the thought of having to venture out creates an unsettling feeling. They might come off as disinterested and passive."
+            ],
+            "character": "Individuals who attain low scores on this particular scale struggle when it comes to",
+            "struggle": [
+              "Striving for perfection",
+              "Paying attention to details",
+              "Working with tight deadlines",
+              "Working with limited resources",
+              "Going out of their way to get something done"
+            ]
+          },
+          {
+            "level": "High",
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on the Deprivation Sensitivity subscale. They do not enjoy not knowing anything. They will feel distressed and uneasy when they realise that they have missed a piece of information, which may or may not be of use. For them, the thought of not knowing all the details creates an unsettling feeling, which fuels their pursuit for the missing piece. They might come off as know-it-alls and a bit of show off."
+            ],
+            "character": "Individuals who attain high scores on this particular scale are an asset when it comes to",
+            "struggle": [
+              "Striving for perfection",
+              "Paying attention to details",
+              "Working with tight deadlines",
+              "Working with limited resources",
+              "Going out of their way to get something done"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Stress Tolerance",
+        "description": "Stress Tolerance refers to the belief that they can cope with the distress that arises from exploring the novelty potential of a situation. It is the dispositional tendency to handle the anxiety that arises when confronting anything new.",
+        "average": 0.0,
+        "levels": [4, 7],
+        "analysis": [
+          {
+            "level": "Low",
+            "count": 1,
+            "inference": [
+              "The applicant has scored low in the Stress Tolerance subscale. They are unable to manage the distress they experience while exploring anything new. They try to avoid acquiring new knowledge, experience to dodge the anxiety that comes from venturing into the unknown. They neither enjoy the exploration nor are curious enough to wander around."
+            ],
+            "character": "Individuals who attain low scores on this particular scale struggle when it comes to",
+            "struggle": [
+              "Managing change",
+              "Crisis Management",
+              "Tight project deadlines",
+              "High-stake negotiations"
+            ]
+          },
+          {
+            "level": "High",
+            "count": 1,
+            "inference": [
+              "The applicant has scored high in the Stress Tolerance subscale. They are able to manage the distress they experience while exploring anything new. They push themselves to acquire new knowledge, experience with the aim to remove the anxiety that comes from venturing into the unknown. They do not enjoy the exploration but are curious enough to wander around."
+            ],
+            "character": "Individuals who attain high scores on this particular scale are an asset when it comes to",
+            "struggle": [
+              "Managing change",
+              "Crisis Management",
+              "Tight project deadlines",
+              "High-stake negotiations"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Thrill Seeking",
+        "description": "Thrill Seeking refers to the tendency to willingly accept social, physical, financial, and legal risks to acquire new experiences. This characteristic makes the discomfort of the unknown, desirable rather than just tolerable.",
+        "average": 0.0,
+        "levels": [4, 7],
+        "analysis": [
+          {
+            "level": "Low",
+            "count": 1,
+            "inference": [
+              "The applicant has scored low in the Thrill seeking subscale. They don't feel any excitement while exploring anything novel. They dread the unsettling feeling that comes with undertaking any groundbreaking initiative. They are usually aversive to any new adventure, and unwilling to take risks. They rarely perceive attempting anything new as exciting."
+            ],
+            "character": "Individuals who attain low scores on this particular scale struggle when it comes to",
+            "struggle": [
+              "Being venturesome",
+              "Taking risks as a leader",
+              "Embracing new, bold, and risky ideas and approaches",
+              "Navigating situations that are uncertain and prone to failure",
+              "Going beyond the set boundaries while innovating and expanding"
+            ]
+          },
+          {
+            "level": "High",
+            "count": 1,
+            "inference": [
+              "The applicant has scored high in the Thrill seeking subscale. They feel extremely excited while exploring anything novel. They enjoy the thrill that comes with undertaking any groundbreaking initiative. They are usually open to any new adventure, and willing to take risks just to enjoy the kick they receive from it. They rarely perceive attempting anything new as stressful."
+            ],
+            "character": "Individuals who attain high scores on this particular scale are an asset when it comes to",
+            "struggle": [
+              "Being venturesome",
+              "Taking risks as a leader",
+              "Embracing new, bold, and risky ideas and approaches",
+              "Navigating situations that are uncertain and prone to failure",
+              "Going beyond the set boundaries while innovating and expanding"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Social Curiosity: Overt",
+        "description": "Social Curiosity Overt refers to an interest in other people’s behaviors, thoughts, and feelings by directly speaking with them. The aim is to understand what makes people tick, rather than to initiate conversation or socialize with others.",
+        "average": 0.0,
+        "levels": [4, 7],
+        "analysis": [
+          {
+            "level": "Low",
+            "count": 1,
+            "inference": [
+              "The applicant has scored low on the Social Curiosity Overt subscale. They do not like to gather information about people by directly talking to them. They are disinterested in how individuals interpret life events, discussions about relationship dynamics, planning future social gatherings, and people’s interests and preferences. They are indifferent about the details of the lives of those around them."
+            ],
+            "character": "Individuals who attain low scores on this particular scale struggle when it comes to",
+            "struggle": [
+              "Collaborating with others",
+              "Fostering strong bonds within the team",
+              "Providing more personalized customer service",
+              "Creating an environment that encourages open discussions"
+            ]
+          },
+          {
+            "level": "High",
+            "count": 1,
+            "inference": [
+              "The applicant has scored high on the Social Curiosity Overt subscale. They like to gather information of people by directly talking to people rather than surreptitious routes such as gossiping. Their topics of conversation  revolves around socializing, including how people behave in social situations, how people interpret life events, discussions about relationship dynamics, planning future social gatherings, and people’s interests and preferences. They desire and acquire novel and unique information about those around them and not the common human experiences."
+            ],
+            "character": "Individuals who attain high scores on this particular scale are an asset when it comes to",
+            "struggle": [
+              "Collaborating with others",
+              "Fostering strong bonds within the team",
+              "Providing more personalized customer service",
+              "Creating an environment that encourages open discussions"
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Social Curiosity: Covert",
+        "description": "Social Curiosity Covert refers to how details about other people are discovered – indirect, surreptitious, secretive ways and functions to regulate self-esteem through the search for downward social comparisons",
+        "average": 0.0,
+        "levels": [4, 7],
+        "analysis": [
+          {
+            "level": "Low",
+            "count": 1,
+            "inference": [
+              "The applicant has scored low in the Social Curiosity Covert subscale. They do not like to gather information about people by hearing about others from friends/families/neighbors or reading about others in articles or watching them in video footage; or observing their behaviors, expressions, and conversations from across the room. They do not compare themselves with others. They are nonchalant about knowing more about others."
+            ],
+            "character": "Individuals who attain low scores on this particular scale struggle when it comes to",
+            "struggle": [
+              "Learning through observation",
+              "Being an unbiased mediator while resolving conflicts",
+              "Forming valuable connections based on genuine interest",
+              "Being aware of the needs and preferences of the customers",
+              "Knowing and understanding the team member's strengths and weaknesses"
+            ]
+          },
+          {
+            "level": "High",
+            "count": 1,
+            "inference": [
+              "The applicant has scored high in the Social Curiosity Covert subscale. They like to gather information about people by hearing about others from friends/families/neighbors or reading about others in articles or watching them in video footage, and observing their behaviors, expressions, and conversations from across the room. They engage in this form of downward social comparison to regulate self-esteem. Their curiosity is fueled by the desire to know more about others."
+            ],
+            "character": "Individuals who attain high scores on this particular scale are an asset when it comes to",
+            "struggle": [
+              "Learning through observation",
+              "Being an unbiased mediator while resolving conflicts",
+              "Forming valuable connections based on genuine interest",
+              "Being aware of the needs and preferences of the customers",
+              "Knowing and understanding the team member's strengths and weaknesses"
+            ]
           }
         ]
       }

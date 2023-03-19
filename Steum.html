@@ -124,6 +124,11 @@
         margin-top: 40px;
       }
       .grit_img_section {
+        width: 83%;
+        margin-top: 56px;
+        position: relative;
+      }
+      .grit_img_section1 {
         width: 100%;
         margin-top: 56px;
         position: relative;
@@ -149,23 +154,23 @@
 
       .inner_content_wrapper1 {
         position: absolute;
-        top: 54px;
-        left: 48px;
+        top: 36px;
+        left: 21px;
         font-family: Inter;
-        font-size: 42px;
+        font-size: 4px !important;
         display: flex;
         flex-direction: row;
-        gap: 65px;
+        gap: 60px;
       }
       .inner_content_wrapper2 {
         position: absolute;
-        top: 54px;
-        left: 48px;
+        top: 40px;
+        left: 18px;
         font-family: Inter;
         font-size: 42px;
         display: flex;
         flex-direction: row;
-        gap: 45px;
+        gap: 46px;
       }
 
       .inner_heading {
@@ -177,11 +182,19 @@
       }
 
       .inner_heading1 {
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 700;
         color: white;
         line-height: 0px;
         letter-spacing: 0.5px;
+      }
+      .inner_heading2 {
+        font-size: 13px;
+        font-weight: 700;
+        color: white;
+        line-height: 0px;
+        letter-spacing: 0.5px;
+        margin-left: -14px;
       }
 
       .inner_content {
@@ -332,7 +345,7 @@
       .graph_section2 {
         border-top: 1px solid rgb(243, 79, 3);
         padding-top: 32px;
-        margin-top: 111px;
+        margin-top: 56px;
       }
       .graph2_desc {
         color: #02a887;
@@ -535,7 +548,7 @@
         <h2 class="content">
           The applicant took 1 assessment on {{dtAssessment}} which was
         </h2>
-        <div class="grit_img_section">
+        <div class="grit_img_section1">
           <img
             src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419500668_image1.png"
             alt="grit_icon"
@@ -647,7 +660,7 @@
             <div class="copyright">&#169; 2023 zapilio.com</div>
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
-
+          <input type="hidden" id="chartData" value="{{chartData}}" />
           <div class="page_number">04</div>
         </div>
       </div>
@@ -673,7 +686,7 @@
             <span>19</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T}}</p>
         <p class="graph2_desc skill1C">{{skill1C}}</p>
         <div>
           <div>
@@ -689,7 +702,8 @@
                 <p class="inner_heading1">Empathy</p>
                 <p class="inner_heading1">Teamwork</p>
                 <p class="inner_heading1">Communication</p>
-                <p class="inner_heading1">Marketing</p>
+
+                <p class="inner_heading2">Marketing</p>
               </div>
             </div>
           </div>
@@ -726,7 +740,7 @@
             <span>19</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill2TT1}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill2T}}</p>
         <p class="graph2_desc skill1C">{{skill2C}}</p>
         <div>
           <div>
@@ -742,7 +756,7 @@
                 <p class="inner_heading1">Leadership</p>
                 <p class="inner_heading1">Team player</p>
                 <p class="inner_heading1">Level- Marketing</p>
-                <p class="inner_heading1">headedness</p>
+                <p class="inner_heading2">headedness</p>
               </div>
             </div>
             <!-- <p>
@@ -767,7 +781,7 @@
         </div>
       </div>
 
-      <div class="introduction page">
+      <!-- <div class="introduction page">
         <h1 class="take_away_heading">Key takeaways</h1>
         <ul class="key_take_away_list">
           <li class="key_take_away_list_item">{{skill1T1}}</li>
@@ -799,7 +813,7 @@
 
           <div class="page_number">07</div>
         </div>
-      </div>
+      </div> -->
     </main>
     <footer>
       <img
@@ -811,7 +825,8 @@
     </footer>
 
     <script>
-      var score = [{{applicantData}}];
+      //var score = [{{applicantData}}];
+        const score = JSON.parse(document.getElementById("chartData").value);
 
       // populate the sliders with socres
       score.forEach((score, i) => {
@@ -823,7 +838,7 @@
       const myChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: ["Luck", "Self Control"],
+          labels: ["Emotional Understanding", "Emotional Management"],
           datasets: [
             {
               label: "",

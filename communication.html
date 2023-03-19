@@ -302,7 +302,7 @@
       .graph_section2 {
         border-top: 1px solid rgb(243, 79, 3);
         padding-top: 32px;
-        margin-top: 111px;
+        margin-top: 73px;
       }
       .graph2_desc {
         color: #02a887;
@@ -659,6 +659,7 @@
             <div class="copyright">&#169; 2023 zapilio.com</div>
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
+          <input type="hidden" id="chartData" value="{{chartData}}" />
 
           <div class="page_number">04</div>
         </div>
@@ -681,12 +682,14 @@
             <span>20</span>
           </div>
         </div>
-        <p class="intro_sub_heading">{{skill1TT1}}</p>
+        <p class="intro_sub_heading">{{skill1T}}</p>
 
         <p class="graph2_desc skill1C">{{skill1C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill1S">
-            <p>{{skill1S}}</p>
+            {{#if skill1S}} {{#each skill1S}}
+            <p>{{this}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -717,14 +720,13 @@
             <span>24</span>
           </div>
         </div>
-        <p class="intro_sub_heading">{{skill2TT1}}</p>
+        <p class="intro_sub_heading">{{skill2T}}</p>
         <p class="graph2_desc skill2C">{{skill2C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill2S">
-            <!-- {{#if skill2S}} {{#each skill2S}}
+            {{#if skill2S}} {{#each skill2S}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill2S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -754,15 +756,14 @@
             <span>24</span>
           </div>
         </div>
-        <p class="intro_sub_heading">{{skill3TT1}}</p>
+        <p class="intro_sub_heading">{{skill3T}}</p>
 
         <p class="graph2_desc skill3C">{{skill3C}}</p>
         <div class="list_after_graph">
           <div class="list_wrapper_after_graph skill3S">
-            <!-- {{#if skill3S}} {{#each skill3S}}
+            {{#if skill3S}} {{#each skill3S}}
             <p>{{this}}</p>
-            {{/each}} {{/if}} -->
-            <p>{{skill3S}}</p>
+            {{/each}} {{/if}}
           </div>
         </div>
 
@@ -776,7 +777,7 @@
         </div>
       </div>
 
-      <div class="introduction page">
+      <!-- <div class="introduction page">
         <h1 class="take_away_heading">Key takeaways</h1>
         <ul class="key_take_away_list">
           <li class="key_take_away_list_item">{{skill1T1}}</li>
@@ -805,7 +806,7 @@
 
           <div class="page_number">12</div>
         </div>
-      </div>
+      </div> -->
     </main>
     <footer>
       <img
@@ -817,9 +818,9 @@
     </footer>
     <script>
       // Static score values
-      var score = [{{applicantData}}];
+      // var score = 10;
+      const score = JSON.parse(document.getElementById("chartData").value);
 
-      // Populate the sliders with scores
       score.forEach((score, i) => {
         const myRangeInput = document.getElementById(`skill${i + 1}`);
         myRangeInput.value = score;
@@ -834,7 +835,7 @@
           datasets: [
             {
               label: "",
-              data: [{{applicantData}}],
+              data: score,
               pointRadius: 6,
               backgroundColor: "rgb(253, 136, 93)",
               showLine: true,
