@@ -892,5 +892,38 @@
         width: "70%",
       });
     </script>
+    <script>
+      var score = 10;
+      //const score = JSON.parse(document.getElementById("chartData").value);
+
+      //score.forEach((score, i) => {
+      //const myRangeInput = document.getElementById(`skill${i + 1}`);
+      //myRangeInput.value = score;
+      //});
+
+      const config = {
+        labels: ["Authoritarian", "Democratic", "Laissez-Faire"],
+        datasets: [
+          {
+            label: "You",
+            data: 2,
+            pointRadius: 6,
+            showLine: true,
+            backgroundColor: "rgba(255, 99, 132, 0.2)",
+            borderColor: "rgb(255, 99, 132)",
+            pointBackgroundColor: "rgb(255, 99, 132)",
+            pointBorderColor: "#fff",
+          },
+        ],
+      };
+      const ctx = document.getElementById("myChart1");
+      const myChart = new Chart(ctx, {
+        type: "radar",
+        data: config,
+        options: {
+          responsive: true,
+        },
+      });
+    </script>
   </body>
 </html>

@@ -30,7 +30,7 @@
         object-fit: contain;
       }
       .table {
-        margin: 0 auto; /* set left and right margin to auto */
+        margin: 34px auto; /* set left and right margin to auto */
         width: fit-content;
       }
       td,
@@ -134,7 +134,7 @@
       }
       .grit_img_section {
         width: 100%;
-        margin-top: 56px;
+        margin-top: 17px;
         position: relative;
       }
 
@@ -164,7 +164,7 @@
         font-size: 42px;
         display: flex;
         flex-direction: row;
-        gap: 58px;
+        gap: 69px;
       }
       .inner_content_wrapper2 {
         position: absolute;
@@ -174,7 +174,7 @@
         font-size: 9px;
         display: flex;
         flex-direction: row;
-        gap: 38px;
+        gap: 51px;
       }
       .inner_content_wrapper3 {
         position: absolute;
@@ -184,7 +184,7 @@
         font-size: 1px;
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 37px;
       }
       .inner_content_wrapper4 {
         position: absolute;
@@ -236,14 +236,14 @@
       }
 
       .inner_heading1 {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 700;
         color: white;
         line-height: 0px;
         letter-spacing: 0.5px;
       }
       .inner_heading2 {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 700;
         color: white;
         line-height: 0px;
@@ -399,10 +399,10 @@
       .graph_section2 {
         border-top: 1px solid rgb(243, 79, 3);
         padding-top: 32px;
-        margin-top: 111px;
+        margin-top: 44px;
       }
       .graph2_desc {
-        color: #02a887;
+        color: rgb(139, 139, 139);
         font-style: italic;
         font-weight: 700;
         font-size: 14px;
@@ -545,7 +545,7 @@
         gap: 5px;
       }
       .graph-container {
-        margin: 60px 0;
+        margin: 142px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -684,7 +684,7 @@
       <div class="introduction page">
         <!-- !SKILL LIST CONTINUED -->
         <div class="table">
-          <table>
+          <table style="width: 652px">
             <tr>
               <th>Style</th>
               <th>Low Score</th>
@@ -717,7 +717,7 @@
             <canvas id="myChart1" width="200px" height="200px"></canvas>
           </div>
         </div>
-        <p class="desc_line1" style="margin-top: 230px">
+        <p class="desc_line1" style="margin-top: 140px">
           Steel, P. (2011). A diagnostic measure of procrastination. Paper
           presented at the 7th Procrastination Research Conference Biennial
           Meeting, Counseling the Procrastinator in Academic Settings,
@@ -732,7 +732,7 @@
             <div class="copyright">&#169; 2023 zapilio.com</div>
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
-
+          <input type="hidden" id="chartData" value="{{chartData}}" />
           <div class="page_number">04</div>
         </div>
       </div>
@@ -762,7 +762,7 @@
             <span>40</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill1TT1}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill1T}}</p>
         <p class="graph2_desc skill1C">{{skill1C}}</p>
         <div>
           <div>
@@ -833,7 +833,7 @@
             <span>40</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill2TT1}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill2T}}</p>
         <p class="graph2_desc skill1C">{{skill2C}}</p>
         <div>
           <div>
@@ -908,7 +908,7 @@
             <span>40</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill3TT1}}</p>
+        <p class="skill_desc" style="margin-top: 70px">{{skill3T}}</p>
         <p class="graph2_desc skill1C">{{skill3C}}</p>
         <div>
           <div>
@@ -929,11 +929,11 @@
                   <p>Personal</p>
                   <p>development</p>
                 </div>
-                <div class="inner_heading1">
+                <div class="inner_heading1" style="margin-left: 11px">
                   <p>Sales and</p>
                   <p>negotiations</p>
                 </div>
-                <div class="inner_heading1" style="margin-left: 15px">
+                <div class="inner_heading1" style="margin-left: 3px">
                   <p>Entrepreneurial</p>
                   <p>ventures</p>
                 </div>
@@ -953,7 +953,7 @@
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
 
-          <div class="page_number">05</div>
+          <div class="page_number">07</div>
         </div>
       </div>
 
@@ -975,7 +975,7 @@
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
 
-          <div class="page_number">06</div>
+          <div class="page_number">08</div>
         </div>
       </div>
     </main>
@@ -989,9 +989,12 @@
     </footer>
 
     <script>
-       var score = [{{ applicantData }}];
+      // var score = [{{ applicantData }}];
+      //var score = 10;
 
-      // populate the sliders with socres
+      const score = JSON.parse(document.getElementById("chartData").value);
+
+      //populate the sliders with socres
       score.forEach((score, i) => {
         const myRangeInput = document.getElementById(`skill${i + 1}`);
         myRangeInput.value = score;
@@ -1001,14 +1004,13 @@
       const myChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: ["Expectancy", "Value","Impulsivity"],
+          labels: ["Expectancy", "Value", "Impulsivity"],
           datasets: [
             {
               label: "",
-              data: [{{applicantData}}],
-
+              data: score,
               pointRadius: 6,
-              backgroundColor: "rgb(253, 136, 93)",
+              backgroundColor: "#fff",
               showLine: true,
             },
           ],

@@ -1557,7 +1557,7 @@
             "inference": [
               "The applicant received a low score on the subscale for handling emergency or crisis situations. This demonstrates that they are not quick or precise when reacting in situations that could be harmful, urgent, or life-threatening. They struggle with evaluating the benefits and drawbacks of various strategies while dealing with danger or crisis. Their inability to focus and organize their ideas has an impact on how quickly and accurately they make decisions. They cannot maintain their composure under pressure and their ability to regulate their emotions. They avoid taking the initiative to cope with threats or emergencies."
             ],
-            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
@@ -1582,7 +1582,7 @@
             "inference": [
               "On the subscale for handling work stress, the candidate received a low score. Showing a lack of ability to remain calm and composed when faced with difficult work or deadlines. They become agitated when faced with unexpected information or events. They frequently experience frustration as they try to focus their efforts on identifying practical solutions rather than blaming others. They act erratically and panic when faced with challenging circumstances. They might even cause panic in those who are around them."
             ],
-            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
@@ -1607,7 +1607,7 @@
             "inference": [
               "The candidate received a low score on the subscale measuring creative problem-solving. They have trouble analyzing and coming up with novel, innovative ideas on complex topics. By looking at problems from the inside out and backward, they are unable to come up with creative solutions. They struggle to draw links between ideas and sources, combine ideas that might not seem related, and develop innovative solutions. The thought of considering so many possibilities overwhelms them. They might ignore possibilities outside of the limitations. They despise coming up with new techniques for gathering or using resources when there aren't enough to do the task."
             ],
-            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
@@ -1632,7 +1632,7 @@
             "inference": [
               "The applicant received low scores on the dealing with uncertain and unpredictable work situations subscale. Demonstrating that when people lack access to all the facts or the complete picture, their productivity suffers. They need time to adjust and alter their responses to unexpected or unanticipated events and conditions. They encounter difficulties while they adjust their methods, goals, plans of action, or priorities in response to shifting conditions. They struggle to establish standards and enforce them so that everyone can maintain concentration in difficult situations for themselves and others. They have a black-and-white perspective."
             ],
-            "character": "Individuals who attain high scores in this particular scale are likely to struggle with"
+            "character": "Individuals who attain low scores in this particular scale are likely to struggle with"
           },
 
           {
@@ -1950,7 +1950,7 @@
         "skill": "Expectancy",
         "description": "Expectancy refers to the power of belief and positive thinking. It is the degree to which people believe that their efforts will be rewarded",
         "average": 0.0,
-        "levels": [25, 33, 40],
+        "levels": [33, 40],
         "analysis": [
           {
             "level": "low",
@@ -1986,9 +1986,9 @@
       },
       {
         "skill": "Value",
-        "skill2T1": "Value refers to the power of desire to do any task. It is the meaningfulness and enjoyableness of tasks and responsibilities.",
+        "description": "Value refers to the power of desire to do any task. It is the meaningfulness and enjoyableness of tasks and responsibilities.",
         "average": 0.0,
-        "levels": [20, 31, 40],
+        "levels": [31, 40],
         "analysis": [
           {
             "level": "low",
@@ -2027,7 +2027,7 @@
         "skill": "Impulsivity",
         "description": "Impulsivity refers to the power of immediacy. It is the urge to act upon short-term temptations instead of focusing on long-term goals.",
         "average": 0.0,
-        "levels": [22, 31, 40],
+        "levels": [31, 40],
         "analysis": [
           {
             "level": "low",
@@ -2053,8 +2053,12 @@
           {
             "level": "high",
             "count": 1,
-            "inference": "The applicant has scored high on the Impulsivity subscale. They rarely get distracted by any new activity. They can easily stay focused and committed to one task for a long period of time. They effectively manage their time and efforts as they move to another task after completing the previous one. As they hold their thoughts and focus on one activity at a time, they maintain their interest and motivation to accomplish essential tasks as well as be able to focus on every minute detail. Their energy and motivation to work towards fulfilling long-term goals grow exponentially with every successful small task.",
-            "character": "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            "inference": [
+              "The applicant has scored high on the Impulsivity subscale. They rarely get distracted by any new activity. They can easily stay focused and committed to one task for a long period of time. They effectively manage their time and efforts as they move to another task after completing the previous one. As they hold their thoughts and focus on one activity at a time, they maintain their interest and motivation to accomplish essential tasks as well as be able to focus on every minute detail. Their energy and motivation to work towards fulfilling long-term goals grow exponentially with every successful small task."
+            ],
+            "character": [
+              "Individuals who attain high scores in this particular scale are an asset when it comes to"
+            ]
           }
         ]
       }
@@ -2451,12 +2455,13 @@
     "template": "Grit.html",
     "count": 1,
     "inference": true,
-    "levels": [1, 3, 5],
+    "details": true,
     "skills": [
       {
         "skill": "Grit",
         "description": "Grit refers to a person’s passion and perseverance for long-term goals.",
         "average": 0.0,
+        "levels": [3, 5],
         "analysis": [
           {
             "level": "low",

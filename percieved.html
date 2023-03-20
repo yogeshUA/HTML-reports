@@ -218,6 +218,8 @@
         /* height: 100%; */
         /* width: 100%; */
         min-height: 150px;
+        height: 381px !important;
+        width: 623px;
       }
 
       .zc-ref {
@@ -711,8 +713,116 @@
       />
       <p>&#169; 2023 zapilio.com CONFIDENTIAL DOCUMENT</p>
     </footer>
-
     <script>
+      var total = 110;
+      //const score = JSON.parse(document.getElementById("chartData").value);
+
+      // score.forEach((score, i) => {
+      //   const myRangeInput = document.getElementById(`skill${i + 1}`);
+      //   myRangeInput.value = score;
+      //});
+      const myRangeInput = document.querySelector('input[type="range"]');
+      myRangeInput.value = total;
+      ZC.LICENSE = [
+        "569d52cefae586f634c54f86dc99e6a9",
+        "b55b025e438fa8a98e32482b5f768ff5",
+      ];
+      window.feed = function (callback) {
+        var tick = {};
+        tick.plot0 = Math.ceil(350 + Math.random() * 500);
+        callback(JSON.stringify(tick));
+      };
+
+      const createLables = (n, b) => {
+        let result = [];
+
+        for (let i = n[0]; i < n[1] + 1; i++) {
+          if (b.includes(i)) {
+            result.push(b[b.indexOf(i).toString()]);
+          } else {
+            result.push("");
+          }
+        }
+
+        return result;
+      };
+      const labels = createLables([30, 120], [30, 75, 120]);
+
+      var myConfig = {
+        type: "gauge",
+        globals: {
+          fontSize: 25,
+        },
+        plotarea: {
+          marginTop: 80,
+        },
+        plot: {
+          size: "100%",
+          valueBox: {
+            placement: "center",
+            text: "%v", //default
+            fontSize: 23,
+          },
+        },
+        tooltip: {
+          borderRadius: 5,
+        },
+        scaleR: {
+          aperture: 180,
+          minValue: 30,
+          maxValue: 120,
+          step: 1,
+          center: {
+            visible: true,
+          },
+          tick: {
+            visible: false,
+          },
+          item: {
+            offsetR: 1,
+          },
+          labels: labels,
+          ring: {
+            size: 80,
+            rules: [
+              {
+                rule: "%v >= 30 && %v <= 75",
+                backgroundColor: "#D8186A",
+              },
+              {
+                rule: "%v >= 75 && %v <= 120",
+                backgroundColor: "#A39A34",
+              },
+              {
+                rule: "%v >= 75  && %v <= 120",
+                backgroundColor: "#2C9E8F",
+              },
+            ],
+          },
+        },
+        series: [
+          {
+            values: [total], // starting value
+            backgroundColor: "#333",
+            indicator: [15, 5, 10, 10, 1],
+            animation: {
+              effect: 1,
+              method: 1,
+              sequence: 4,
+              speed: 900,
+            },
+          },
+        ],
+      };
+
+      zingchart.render({
+        id: "myChart",
+        data: myConfig,
+        height: 400,
+        width: "70%",
+      });
+    </script>
+    <!-- <script>
       var total = 2;
 
       const myRangeInput = document.querySelector('input[type="range"]');
@@ -816,6 +926,6 @@
         height: 400,
         width: "70%",
       });
-    </script>
+    </script> -->
   </body>
 </html>
