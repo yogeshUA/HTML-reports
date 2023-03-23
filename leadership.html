@@ -53,17 +53,38 @@
         flex-wrap: wrap;
         color: white;
       }
-
       .graph_section {
         /* margin-top: 44px; */
-        display: flex;
+        /*  display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;*/
       }
 
       #myChart {
-        min-height: 150px;
-        height: 300px;
+        /* height: 100%; */
+        /* width: 100%; */
+        /* min-height: 150px;
+        height: 300px;*/
+      }
+
+      .graph_section {
+        position: relative;
+        top: -33px;
+        left: 464px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -1027px;
+      }
+
+      #myChart {
+        height: 264px;
+      }
+      #myChart2 {
+        height: 264px;
+      }
+       #myChart3 {
+        height: 264px;
       }
 
       .zc-ref {
@@ -72,8 +93,9 @@
       .score_label {
         display: flex;
         flex-direction: column;
-        /* position: absolute; */
-        margin-top: 30px;
+        position: absolute;
+        margin-left: 639px;
+        margin-top: 55px;
       }
 
       .indicator_low,
@@ -240,12 +262,20 @@
       }
       .grit_img_section {
         width: 100%;
-        margin-top: 17px;
+        margin-top: -17px;
         position: relative;
+      }
+      .grit_img_section1 {
+        width: 100%;
+        margin-top: 40px;
+        position: relative;
+      }
+      .grit_img1 {
+        width: 100%;
       }
 
       .grit_img {
-        width: 100%;
+        width: 54%;
       }
       .inner_icon {
         position: absolute;
@@ -264,34 +294,44 @@
 
       .inner_content_wrapper1 {
         position: absolute;
-        top: 54px;
-        left: 35px;
+        top: 27px;
+        left: 24px;
         font-family: Inter;
         font-size: 42px;
         display: flex;
         flex-direction: row;
-        gap: 69px;
+        gap: 51px;
+        flex-wrap: wrap;
+      }
+      .inner_content_wrapper1:nth-child(1),
+      .inner_content_wrapper1:nth-child(2),
+      .inner_content_wrapper1:nth-child(3),
+      .inner_content_wrapper1:nth-child(4) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 25%;
       }
       .inner_content_wrapper2 {
-        position: absolute;
-        top: 54px;
-        left: 15px;
-        font-family: Inter;
-        font-size: 9px;
-        display: flex;
-        flex-direction: row;
-        gap: 51px;
-      }
-      .inner_content_wrapper3 {
-        position: absolute;
-        top: 54px;
-        left: 35px;
-        font-family: Inter;
-        font-size: 1px;
-        display: flex;
-        flex-direction: row;
-        gap: 37px;
-      }
+    position: absolute;
+    top: 29px;
+    left: 15px;
+    font-family: Inter;
+    font-size: 9px;
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+}
+     .inner_content_wrapper3 {
+    position: absolute;
+    top: 29px;
+    left: 15px;
+    font-family: Inter;
+    font-size: 9px;
+    display: flex;
+    flex-direction: row;
+    gap: 53px;
+}
       .inner_content_wrapper4 {
         position: absolute;
         top: 54px;
@@ -342,12 +382,15 @@
       }
 
       .inner_heading1 {
+        word-wrap: break-word;
+        word-break: break-all;
+        max-width: 82px;
         font-size: 12px;
         font-weight: 700;
         color: white;
-        line-height: 0px;
-        letter-spacing: 0.5px;
+        letter-spacing: -0.5px;
       }
+
       .inner_heading2 {
         font-size: 12px;
         font-weight: 700;
@@ -502,15 +545,23 @@
         padding-top: 32px;
         margin-top: 44px;
       }
-      .graph2_desc {
-        color: rgb(139, 139, 139);
+      .graph_desc2 {
+        color: #03866c;
         font-style: italic;
         font-weight: 700;
         font-size: 14px;
-        margin-top: 80px;
+        margin-top: -1px;
+      }
+
+      .graph_desc {
+        color: #a1086e;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: -1px;
       }
       .list_after_graph {
-        margin-top: 40px;
+        margin-top: -43px;
         color: rgb(139, 139, 139);
       }
 
@@ -522,7 +573,7 @@
         font-size: 14px;
         line-height: 10px;
         font-weight: 500;
-        white-space: pre-wrap;
+
         line-height: 1.2em;
         color: rgb(92, 91, 91);
       }
@@ -532,6 +583,30 @@
         height: 100%;
         width: 30px;
         background-color: #03866c;
+        position: absolute;
+      }
+      .list_after_graph1 {
+        margin-top: 22px;
+        color: rgb(139, 139, 139);
+      }
+
+      .list_wrapper_after_graph1 {
+        position: relative;
+      }
+      .list_wrapper_after_graph1 p {
+        padding-left: 50px;
+        font-size: 14px;
+        line-height: 10px;
+        font-weight: 500;
+
+        line-height: 1.2em;
+        color: rgb(92, 91, 91);
+      }
+      .list_wrapper_after_graph1::before {
+        content: "";
+        height: 100%;
+        width: 30px;
+        background-color: #a1086e;
         position: absolute;
       }
 
@@ -636,7 +711,7 @@
         font-weight: 600;
       }
       .skill_desc {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
         color: #666565;
       }
@@ -655,6 +730,13 @@
         height: 500px;
         width: 500px;
         margin-top: 74px;
+      }
+
+      .graph2_desc {
+        font-size: 15px;
+        font-weight: 500;
+        color: #666565;
+        font-style: italic;
       }
 
       .desc_line1,
@@ -704,11 +786,11 @@
         <h2 class="content">
           The applicant took 1 assessment on {{dtAssessment}} which was
         </h2>
-        <div class="grit_img_section">
+        <div class="grit_img_section1">
           <img
             src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677419500668_image1.png"
             alt="grit_icon"
-            class="grit_img"
+            class="grit_img1"
           />
           <img
             src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677725943108_Leadership-11.png"
@@ -816,7 +898,7 @@
         </div>
       </div>
 
-      <!-- !Expectancy-->
+      <!-- !Authoritarian-->
       <div class="introduction page">
         <h1 class="intro_heading">Authoritarian</h1>
 
@@ -834,37 +916,87 @@
             <span class="indicator_veryhigh">Very high</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 33px">{{skill1T}}</p>
-        <p class="graph2_desc skill1C">{{skill1C}}</p>
+        <p class="skill_desc" style="margin-top: -28px">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="skill_desc">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="skill_desc">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="graph2_desc skill1C">Characteristics</p>
         <div>
           <div>
             <div class="grit_img_section">
               <img
-                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1679541710702_ommon%20image%20and%20vector.-13.png"
                 alt="grit_icon"
                 class="grit_img"
-                style="margin-left: -40px"
+                style="margin-left: -29px"
               />
 
               <div class="inner_content_wrapper1">
                 <div class="inner_heading1">
-                  <p>Innovation</p>
+                  <p>Control over<br />group</p>
                 </div>
                 <div class="inner_heading1">
-                  <p>Sales</p>
-                  <p>Goals</p>
+                  <p>Set rules</p>
                 </div>
                 <div class="inner_heading1">
-                  <p>Talent</p>
-                  <p>Acquisition</p>
+                  <p>
+                    No input or<br />
+                    discussions
+                  </p>
                 </div>
-                <div class="inner_heading1">
-                  <p>Product</p>
-                </div>
-                <div class="inner_heading1">
-                  <p>Mergers and</p>
-                  <p>Acquisition</p>
-                </div>
+              </div>
+            </div>
+            <div class="list_after_graph">
+              <div class="list_wrapper_after_graph skill2S">
+                <!-- {{#if skill2S}} {{#each skill2S}}
+            <p>{{this}}</p>
+            {{/each}} {{/if}} -->
+                <p
+                  class="graph_desc skill2C"
+                  style="color: #03866c; font-weight: bold"
+                >
+                  Strength
+                </p>
+                <p>Group members know exactly where they stand</p>
+                <p>
+                  Decisions can be taken rapidly, which is great in a crisis
+                </p>
+                <p>
+                  Members can concentrate on ‘operational’ tasks, without having
+                  to worry about ‘strategic’ issues
+                </p>
+              </div>
+            </div>
+            <div class="list_after_graph1">
+              <div class="list_wrapper_after_graph1 skill1D">
+                <p
+                  class="graph_desc2 skill1C"
+                  style="color: #a1086e; font-weight: bold"
+                >
+                  Weakness
+                </p>
+                <p>Does not allow members any space to develop</p>
+                <p>Can lead to un-informed and shallow decisions</p>
+                <p>
+                  Unlikely to win a complete commitment from all group members
+                </p>
               </div>
             </div>
           </div>
@@ -880,66 +1012,99 @@
         </div>
       </div>
 
-      <!-- !Value-->
+      <!-- !Democratic-->
       <div class="introduction page">
-        <h1 class="intro_heading">Value</h1>
-        <p class="intro_sub_heading">
-          It is the meaningfulness and enjoyableness of tasks and
-          responsibilities.
-        </p>
+        <h1 class="intro_heading">Democratic</h1>
 
-        <div class="graph_section2">
-          <div>
-            <input id="skill2" min="8" max="40" type="range" value="10" />
+        <div class="graph_section">
+          <div id="myChart2" style="overflow: hidden">
+            <a class="zc-ref" href="https://www.zingchart.com/"
+              >Charts by ZingChart</a
+            >
           </div>
-          <div class="range_tracker">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="range_label">
-            <span>8</span>
-            <span>low</span>
-            <span>20</span>
-            <span>moderate</span>
-            <span>31</span>
-            <span>High</span>
-            <span>40</span>
+          <div class="score_label">
+            <span class="indicator_verylow">Very low</span>
+            <span class="indicator_low">Low</span>
+            <span class="indicator_moderate">Moderate</span>
+            <span class="indicator_high">High</span>
+            <span class="indicator_veryhigh">Very high</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill2T}}</p>
-        <p class="graph2_desc skill1C">{{skill2C}}</p>
+        <p class="skill_desc" style="margin-top: -28px">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="skill_desc">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="skill_desc">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="graph2_desc skill1C">Characteristics</p>
         <div>
           <div>
             <div class="grit_img_section">
               <img
-                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1679541710702_ommon%20image%20and%20vector.-13.png"
                 alt="grit_icon"
                 class="grit_img"
-                style="margin-left: -40px"
+                style="margin-left: -29px"
               />
 
               <div class="inner_content_wrapper2">
                 <div class="inner_heading1">
-                  <p>Mission-driven</p>
-                  <p>organizations</p>
+                  <p>Collaborative</p>
                 </div>
                 <div class="inner_heading1">
-                  <p>Employee</p>
-                  <p>wellness</p>
-                  <p>programs</p>
+                  <p>Open-minded</p>
                 </div>
                 <div class="inner_heading1">
-                  <p>Socially</p>
-                  <p>responsible</p>
-                  <p>companies</p>
+                  <p>Works for <br/> common goals</p>
                 </div>
-                <div class="inner_heading1">
-                  <p>Diversity and</p>
-                  <p>management</p>
-                </div>
-                <div class="inner_heading2">
-                  <p>Corporate social</p>
-                  <p>responsibility</p>
-                </div>
+              </div>
+            </div>
+            <div class="list_after_graph">
+              <div class="list_wrapper_after_graph skill2S">
+                <!-- {{#if skill2S}} {{#each skill2S}}
+            <p>{{this}}</p>
+            {{/each}} {{/if}} -->
+                <p
+                  class="graph_desc skill2C"
+                  style="color: #03866c; font-weight: bold"
+                >
+                  Strength
+                </p>
+                <p>Gives the power to group members</p>
+                <p>Builds individual responsibility amongst members</p>
+                <p>
+                  Energises and motivates group members to achieve their tasks
+                </p>
+              </div>
+            </div>
+            <div class="list_after_graph1">
+              <div class="list_wrapper_after_graph1 skill1D">
+                <p
+                  class="graph_desc2 skill1C"
+                  style="color: #a1086e; font-weight: bold"
+                >
+                  Weakness
+                </p>
+                <p>Can frustrate members who like clear direction</p>
+<p>Inappropriate when rapid decisions are needed</p>
+<p>The most popular decisions are not always the best</p>
+<p>May slow down tasks, as it encourages discussions, not actions</p>
+                </p>
               </div>
             </div>
           </div>
@@ -951,68 +1116,103 @@
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
 
-          <div class="page_number">06</div>
+          <div class="page_number">05</div>
         </div>
       </div>
-      <!-- !Impulsivity-->
-      <div class="introduction page">
-        <h1 class="intro_heading">Impulsivity</h1>
-        <p class="intro_sub_heading">
-          It is the urge to act upon short-term temptations instead of focusing
-          on long-term goals.
-        </p>
 
-        <div class="graph_section2">
-          <div>
-            <input id="skill3" min="8" max="40" type="range" value="10" />
+      <!-- !Laissez-Faire-->
+      <div class="introduction page">
+        <h1 class="intro_heading">Laissez-Faire</h1>
+
+        <div class="graph_section">
+          <div id="myChart3" style="overflow: hidden">
+            <a class="zc-ref" href="https://www.zingchart.com/"
+              >Charts by ZingChart</a
+            >
           </div>
-          <div class="range_tracker">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="range_label">
-            <span>8</span>
-            <span>low</span>
-            <span>22</span>
-            <span>moderate</span>
-            <span>31</span>
-            <span>High</span>
-            <span>40</span>
+          <div class="score_label">
+            <span class="indicator_verylow">Very low</span>
+            <span class="indicator_low">Low</span>
+            <span class="indicator_moderate">Moderate</span>
+            <span class="indicator_high">High</span>
+            <span class="indicator_veryhigh">Very high</span>
           </div>
         </div>
-        <p class="skill_desc" style="margin-top: 70px">{{skill3T}}</p>
-        <p class="graph2_desc skill1C">{{skill3C}}</p>
+        <p class="skill_desc" style="margin-top: -28px">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="skill_desc">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="skill_desc">
+          The applicant falls in the very high range of Democratic style of
+          leadership The applicant is team-centric and likes to involve every
+          member in the decision-making process. Everyone gets an opportunity to
+          communicate their ideas and thoughts thus ensuring they are
+          enthusiastic and completely on board with every decision taken.
+        </p>
+        <p class="graph2_desc skill1C">Characteristics</p>
         <div>
           <div>
             <div class="grit_img_section">
               <img
-                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1677672243997_ommon%20image%20and%20vector.-12%20%281%29.png"
+                src="https://s3.amazonaws.com/images.zapilio.com/hp/profile-1679541710702_ommon%20image%20and%20vector.-13.png"
                 alt="grit_icon"
                 class="grit_img"
-                style="margin-left: -40px"
+                style="margin-left: -29px"
               />
 
               <div class="inner_content_wrapper3">
-                <div class="inner_heading1" style="margin-left: -10px">
-                  <p>Crisis</p>
-                  <p>management</p>
+                <div class="inner_heading1">
+                  <p>Freedom to<br/> work</p>
                 </div>
                 <div class="inner_heading1">
-                  <p>Personal</p>
-                  <p>development</p>
-                </div>
-                <div class="inner_heading1" style="margin-left: 11px">
-                  <p>Sales and</p>
-                  <p>negotiations</p>
-                </div>
-                <div class="inner_heading1" style="margin-left: 3px">
-                  <p>Entrepreneurial</p>
-                  <p>ventures</p>
+                  <p>Hands-off<br/> approach</p>
                 </div>
                 <div class="inner_heading1">
-                  <p>Creative</p>
-                  <p>problem-</p>
-                  <p>solving</p>
+                  <p>Confidence<br/> in the team <br/>members</p>
                 </div>
+              </div>
+            </div>
+            <div class="list_after_graph">
+              <div class="list_wrapper_after_graph skill2S">
+                <!-- {{#if skill2S}} {{#each skill2S}}
+            <p>{{this}}</p>
+            {{/each}} {{/if}} -->
+                <p
+                  class="graph_desc skill2C"
+                  style="color: #03866c; font-weight: bold"
+                >
+                 Strength</p>
+                 <p>Encourages individual expression</p>
+<p>Can be empowering in the right circumstances</p>
+<p>Provides complete freedom for members to work following their style
+
+                </p>
+              </div>
+            </div>
+            <div class="list_after_graph1">
+              <div class="list_wrapper_after_graph1 skill1D">
+                <p
+                  class="graph_desc2 skill1C"
+                  style="color: #a1086e; font-weight: bold"
+                >
+                  Weakness
+                </p>
+                <p>May result in many ‘informal’ leaders</p>
+<p>Can allow the group to become aimless and chaotic</p>
+<p>Various expert opinions might make communication difficult</p>
+<p>Can make inexperienced or less experienced members feel lost
+</p>
+                </p>
               </div>
             </div>
           </div>
@@ -1024,7 +1224,7 @@
             <div class="report">CONFIDENTIAL DOCUMENT</div>
           </div>
 
-          <div class="page_number">07</div>
+          <div class="page_number">05</div>
         </div>
       </div>
 
@@ -1108,8 +1308,8 @@
       //const myRangeInput = document.getElementById(`skill${i + 1}`);
       //myRangeInput.value = score;
       //});
-      const myRangeInput = document.querySelector('input[type="range"]');
-      myRangeInput.value = total;
+      // const myRangeInput = document.querySelector('input[type="range"]');
+      // myRangeInput.value = total;
       ZC.LICENSE = [
         "569d52cefae586f634c54f86dc99e6a9",
         "b55b025e438fa8a98e32482b5f768ff5",
@@ -1216,6 +1416,21 @@
 
       zingchart.render({
         id: "myChart",
+
+        data: myConfig,
+        height: 400,
+        width: "70%",
+      });
+
+      zingchart.render({
+        id: "myChart2",
+
+        data: myConfig,
+        height: 400,
+        width: "70%",
+      });
+      zingchart.render({
+        id: "myChart3",
         data: myConfig,
         height: 400,
         width: "70%",

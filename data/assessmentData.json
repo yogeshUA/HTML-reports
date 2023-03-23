@@ -572,6 +572,220 @@
       }
     ]
   },
+
+  {
+    "name": "Leadership Style Questionnaire",
+    "template": "leadership.html",
+    "count": 1,
+    "inference": true,
+    "details": false,
+    "skills": [
+      {
+        "skill": "Authoritarian",
+        "description": "Authoritarian",
+        "average": 0.0,
+        "levels": [11, 16, 21, 26, 31],
+        "analysis": [
+          {
+            "level": "very low",
+            "count": 1,
+            "inference": [
+              "The applicant is not at all a traditional leader. They do not crave respect from the members for themselves and their decisions. They do not command the members with detailed instructions on what needs to be done. They do not direct their energy to create an environment that is formal and work-focused. This results in an environment where the members behave, work and interact in a casual manner.",
+              "They avoid being the authority and the decision-maker. They neither take the initiative in taking decisions nor expect the team members to accept them without any resistance.",
+              "They take a lot of input from all team members. They do not alter their work to appease the organization or authoritative figures.",
+              "They do not limit themselves to turning the vision of their superiors into reality. They rarely follow organizational policies and protocols.",
+              "They create an environment that is casual and relaxed. This style of leadership would disrupt an organization that has a hierarchical structure. They frequently question authority and expect their subordinates to question them as well. Here, the decisions are rarely accepted and implemented immediately.",
+              "They might not use material and monetary benefits to boost the interest and involvement of the employees. They get completely involved in executing/implementing the decisions."
+            ]
+          },
+          {
+            "level": "low",
+            "count": 1,
+            "inference": [
+              "The applicant is not out an out traditional leader. They do not crave respect from the members for themselves and their decisions. They barely command the members with detailed instructions on what needs to be done. They rarely direct their energy to create an environment that is formal and work-focused. This results in an environment where the members behave, work and interact in a casual manner.",
+              "They avoid being the authority and the decision-maker. They seldom take the initiative in taking decisions.",
+              "They are open to input from all team members. They hardly alter their work to appease the organization or authoritative figures. They sparsely limit themselves to turning the vision of their superiors into reality. They rarely follow organizational policies and protocols.",
+              "They create an environment that is mostly casual and relaxed. This style of leadership would cause hindrances in the functioning of an organization that has a hierarchical structure. They every now and then question authority and expect their subordinates to question them as well. Here, the decisions are rarely accepted and never implemented immediately.",
+              "They might not use material and monetary benefits to boost the interest and involvement of the employees. They get involved in executing/implementing the decisions.",
+              ""
+            ]
+          },
+          {
+            "level": "moderate",
+            "count": 1,
+            "inference": [
+              "The applicant is a somewhat traditional leader. They seek respect for them and their decisions the members. They sometimes give the members detailed instructions on what needs to be done. They push themselves to create an environment that is formal and work-focused. The marginally structured format of working and interaction nudges the members to behave in a professional manner.",
+              "They make an effort to be authoritative and decisive. In a few situations, they will take the initiative in taking decisions and expect the team members to accept them. They take inputs from the team members, from time to time.",
+              "They strive to uphold and bring to reality the vision of their superiors. They try their best to maintain the hierarchical structure and follow the necessary protocols. They follow a top-down approach, but sometimes question authority and include their subordinate's perspectives. In general, the decisions are accepted and implemented, even though not immediately.",
+              "They partially use rewards and incentives as motivating factors. They communicate the targets and the rewards attached to them to the members. They use material and monetary benefits to boost the interest and involvement of the employees.",
+              "They constantly communicate the changes in the targets. They sometimes participate in executing/implementing the decisions.",
+              ""
+            ]
+          },
+          {
+            "level": "high",
+            "count": 1,
+            "inference": [
+              "The applicants are majorly traditional leaders. They ensure that the members respect them and their decisions. They mostly give the members detailed instructions on what needs to be done. They focus on creating an environment that is formal and work-focused. The structured format of working and interaction makes the members behave in a professional manner.",
+              "They have the tendency to be authoritative and decision-makers. In many situations, they will take the initiative in taking decisions and expect the team members to accept them with little resistance. They will take a few inputs from the team members.",
+              "They focus on upholding and bringing to reality the vision of their superiors. They try their best to maintain the hierarchical structure and follow the necessary protocols.",
+              "They establish a largely structured and controlled environment. This style of leadership is advantageous in an organization that has an overall hierarchical structure. They prefer a top-down approach, that is they do not usually question authority and expect their subordinates to not question them as well. In general, the decisions are accepted and implemented almost immediately.",
+              "They preferably use rewards and incentives as motivating factors. While using this style, they make the objectives clear from the beginning. They ensure that the members are aware of their targets and the rewards attached to them. They use material and monetary benefits to boost the interest and involvement of the employees.",
+              "When following this style of leadership they normally command the team members. They typically stay clear from executing/implementing the decisions. They would share the envisioned results and expect the members to achieve them."
+            ]
+          },
+          {
+            "level": "very high",
+            "count": 1,
+            "inference": [
+              "The applicant is a traditional leader. They ensure that the members respect them and their decisions. They give the members detailed instructions on what needs to be done. They create an environment that is formal and work-focused. The structured format of working and interaction makes the members behave in a professional manner.",
+              "They like being the authority and the decision-maker. In any situation, they will take the initiative in taking decisions and expect the team members to accept them without any resistance. They will take little to no input from any team members.",
+              "They prioritize the organization and the authoritative figures. They focus on upholding and bringing to reality the vision of their superiors. They believe in maintaining the hierarchical structure and following the necessary protocols with perfection.",
+              "They create an environment that is structured and controlled. This style of leadership is advantageous in an organization that has a hierarchical structure. They prefer a top-down approach, that is they do not question authority and expect their subordinates to not question them as well. Here, the decisions are accepted and implemented immediately.",
+              "They use rewards and incentives as motivating factors. While using this style, they make the objectives clear from the beginning. They ensure that the members are aware of their targets and the rewards attached to them. They use material and monetary benefits to boost the interest and involvement of the employees.",
+              "When following this style of leadership they prefer to command the team members. They do not get involved in executing/implementing the decisions. They would share the envisioned results and expect the members to achieve them."
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Democratic",
+        "description": "Democratic",
+        "average": 0.0,
+        "levels": [11, 16, 21, 26, 31],
+        "analysis": [
+          {
+            "level": "very low",
+            "count": 1,
+            "inference": [
+              "The applicant is not at all team centric. They do not put effort into bringing the team together and working as a unit. They do not wait for the members to communicate their ideas and thoughts. They are comfortable making a decision even without everyone's support.",
+              "They create an environment that is rarely inclusive and respectful toward everyone. They do not like to involve everyone in the decision-making process. They barely check if the majority of members are pleased with the final decision or not.",
+              "They do not stress the growth, self-dependence, or strength of the member's decision-making skills. They do not divert their attention to teaching the members how to become self-sufficient.",
+              "They create an environment that is seldom autonomous and unrestrained. This style of leadership would derail the progress when the team is working in close association with each other. They do not get themselves involved with the members on a personal level. They are unaffected by whether or not members feel a sense of belongingness.",
+              "They believe that the members' individual progress and advancement are a side product of the work being done.",
+              "They give the members limited freedom and autonomy to take decisions and work their way. They usually don't involve the members in the decisions. They sparsely collaborate with the members to achieve the desired results."
+            ]
+          },
+          {
+            "level": "low",
+            "count": 1,
+            "inference": [
+              "The applicant is not team centric. They do not put the effort into bringing the team together and working as a unit. They hardly invite members to communicate their ideas and thoughts. They can make decisions even without having everyone's support.",
+              "They create an environment that is a little inclusive and respectful toward everyone. They do not like to involve everyone in the decision-making process. They hardly check if the majority of members are pleased with the final decision or not.",
+              "They do not stress the growth, self-dependence, or strength of the member's decision-making skills. They put in nominal energy to teach the members how to become self-sufficient.",
+              "They create an environment that is somewhat autonomous and unrestrained. This style of leadership would generate more obstacles in achieving the target when the team is working in close association with each other. They stay clear of other members' personal life. They are unaffected by whether or not members feel a sense of belongingness.",
+              "They believe that the members' individual progress and advancement are a side product of the work being done. They give the members freedom and autonomy to take decisions and work their way just for the sake of it.",
+              "They usually don't involve the members in the decisions. They sparsely collaborate with the members to achieve the desired results."
+            ]
+          },
+          {
+            "level": "moderate",
+            "count": 1,
+            "inference": [
+              "The applicant is somewhat team centric. They try to bring the team together and work as a unit. They give the members the opportunity and confidence to communicate their ideas and thoughts. They aim to get everyone on board with every decision they take together.",
+              "They create an environment that is largely inclusive and respectful toward everyone. This sense of involvement and contribution makes the members give their best effort in work. They like to involve all the members in the decision-making process, where everyone contributes to the discussion. They ensure that majority of the members are pleased with the final decision.",
+              "They focus on the growth and self-dependence of the members and strengthen their decision-making skills. They believe in giving the members the chance to become self-sufficient in getting the work done.",
+              "They create an environment that is notably autonomous and unrestrained. This style of leadership is beneficial when the team is working in close association with each other. They put in the energy to create a bond with each individual. They ensure that majority of the members feel a sense of belongingness and can confide in one another.",
+              "They use the members' individual progress and advancement as a motivating factor. They give the members considerable freedom and autonomy to take decisions and work their way.",
+              "They usually involve the members in the decisions and implement them with the members. They mostly collaborate with the members to achieve the desired results."
+            ]
+          },
+          {
+            "level": "high",
+            "count": 1,
+            "inference": [
+              "The applicant is majorly team centric. They make efforts to bring the team together and work as a unit. They generally give the members the opportunity and confidence to communicate their ideas and thoughts. They encourage everyone to be enthusiastic and completely on board with every decision they take together.",
+              "They create an environment that is largely inclusive and respectful toward everyone. This sense of involvement and contribution makes the members give their best effort in work. They like to involve all the members in the decision-making process, where everyone contributes to the discussion. They ensure that majority of the members are pleased with the final decision. They encourage members to deliberate upon the ideas or issues before reaching any conclusion.",
+              "They focus on the growth and self-dependence of the members and strengthen their decision-making skills. They believe in giving the members the chance to become self-sufficient in getting the work done.",
+              "They create an environment that is notably autonomous and unrestrained. This style of leadership is beneficial when the team is working in close association with each other. They put in the energy to create a bond with each individual. They ensure that majority of the members feel a sense of belongingness and can confide in one another.",
+              "They use the members' individual progress and advancement as a motivating factor. While using this style, they give the members considerable freedom and autonomy to take decisions and work their way. They normally ensure that the members have space to express their individuality and get their best work done. The resulting autonomy is used to boost the interest and involvement of the employees.",
+              "When following this style of leadership they prefer to work with the team members. They usually consider the decisions and their execution and implementation with the members. They mostly collaborate with the members to achieve the desired results."
+            ]
+          },
+          {
+            "level": "very high",
+            "count": 1,
+            "inference": [
+              "The applicant is team centric. They make efforts to bring the team together and work as a unit. They give the members the opportunity and confidence to communicate their ideas and thoughts. They ensure that everyone is enthusiastic and completely on board with every decision they take together.",
+              "They create an environment that is inclusive and respectful toward everyone. This sense of involvement and contribution makes the members give their best effort in work. They like to involve all the members in the decision-making process, where everyone contributes to the discussion. They ensure that everyone is pleased with the final decision. They encourage members to deliberate upon the ideas or issues before reaching any conclusion.",
+              "They prioritize the growth and self-dependence of the members. They focus on strengthening the decision-making skills and independence of the members. They believe in making the members self-sufficient in getting the work done.",
+              "They create an environment that is autonomous and unrestrained. This style of leadership is advantageous when the team is working in close association with each other. They put in the energy to create a bond with each individual. They ensure that the members feel a sense of belongingness and can confide in one another.",
+              "They use the members' individual progress and advancement as a motivating factor. While using this style, they give the members the freedom and authority to take decisions and work their way. They ensure that the members have space to express their individuality and get their best work done. The resulting autonomy is used to boost the interest and involvement of the employees.",
+              "When following this style of leadership they prefer to work with the team members. They consider the decisions and their execution and implementation with the members. They would collaborate with the members to achieve the desired results."
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "Laissez-faire",
+        "description": "Laissez-faire",
+        "average": 0.0,
+        "levels": [11, 16, 21, 26, 31],
+        "analysis": [
+          {
+            "level": "very low",
+            "count": 1,
+            "inference": [
+              "The applicant is not at all lenient and laid-back. They do not walk away from supervising the members and their work. They never give the members the free hand to choose what to work on and how to work. They create an environment that is rarely relaxed and unrestricted for everyone.",
+              "This style of leadership rarely believes in giving the members the freedom to take their decisions on their own.",
+              "They believe that the members need help and guidance to achieve the goals and targets. They provide the members with little to no information to take the decision.",
+              "They believe the members aren't self-sufficient in getting the work done. They create an environment that is barely autonomous and unrestrained.",
+              "This style of leadership would be disruptive when the members are veterans in the field. They are constantly involved in the members' work and are micromanaging their work.",
+              "While using this style, they never give the members the freedom and authority to take decisions and work their way. They do not leave any space for the members to express their individuality. They make the members work in their preferred manner. They prefer to guide the members at every step of the process."
+            ]
+          },
+          {
+            "level": "low",
+            "count": 1,
+            "inference": [
+              "The applicant is not at all lenient and laid-back. They do not walk away from supervising the members and their work. They never give the members the free hand to choose what to work on and how to work. They create an environment that is rarely relaxed and unrestricted for everyone.",
+              "This style of leadership rarely believes in giving the members the freedom to take their decisions on their own. They believe that the members need help and guidance to achieve the goals and targets.",
+              "They provide the members with little to no information to take the decision.",
+              "They believe the members aren't self-sufficient in getting the work done. They create an environment that is barely autonomous and unrestrained.",
+              "This style of leadership would be disruptive when the members are veterans in the field. They are constantly involved in the members' work and are micromanaging their work.",
+              "While using this style, they never give the members the freedom and authority to take decisions and work their way. They do not leave any space for the members to express their individuality. They make the members work in their preferred manner. They prefer to guide the members at every step of the process."
+            ]
+          },
+          {
+            "level": "moderate",
+            "count": 1,
+            "inference": [
+              "The applicant is sometimes lenient and laid-back. They supervise the members and their work but do not breathe down their necks. They from time to time give the members the free hand to choose what to work on and how to work.",
+              "They create an environment that is partially relaxed and unrestricted for everyone.",
+              "This style of leadership believes in giving the members the freedom to take their decisions on their own sometimes while on other occasions the members need to be instructed. They believe that the members need to be nudged from time to time to achieve the goals and targets.",
+              "They provide the members with some information to take the decision but, would even hide some sensitive information. They believe the members can be self-sufficient and can get the work done with a little bit of nudging.",
+              "They create an environment that is moderately autonomous and unrestrained. This style of leadership would be have might be beneficial when the members are veterans in the field. They at times involve themselves in the members' work and their work.",
+              "While using this style, they recurrently give the members the freedom and authority to take decisions and work their way. They leave plenty of space for the members to express their individuality and work in their individual preferred manner."
+            ]
+          },
+          {
+            "level": "high",
+            "count": 1,
+            "inference": [
+              "The applicant is mostly lenient and laid-back. They take a step back and let the members decide their plan of work. They usually give the members the free hand to choose what to work on and how to work.",
+              "They create an environment that is majorly relaxed and unrestricted for everyone. This sense of freedom and ownership makes the members give their best effort in work.",
+              "This style of leadership normally believes in giving the members the freedom to take their decisions on their own. They believe that the members are experts and better qualified to make decisions. They provide the members with all the information needed to take the decision and occasionally involve themselves in the decision-making process. They try to enhance growth and self-dependence and strengthen the members' decision-making skills. They believe in making the members self-sufficient in getting the work done.",
+              "They create an environment that is mostly autonomous and unrestrained. This style of leadership is advantageous when the members are mainly veterans in the field. They believe in letting the members as experts work in their own way. They rarely meddle in the members' work and give them complete autonomy.",
+              "They use the members' individual progress and advancement as a motivating factor. They find ways to provide the members with space to express their individuality and get their best work done.",
+              "The resulting autonomy is used to boost the interest and involvement of the employees. When following this style of leadership they generally let the team members decide and execute their own decisions. They give the members the freedom to work in their individual preferred manner. They prefer to share a broader goal to be achieved and leave the decisions and execution to the members."
+            ]
+          },
+          {
+            "level": "very high",
+            "count": 1,
+            "inference": [
+              "The applicant is lenient and laid-back. They take a step back and let the members decide their plan of work. They give the members the free hand to choose what to work on and how to work. They create an environment that is relaxed and unrestricted for everyone. This sense of freedom and ownership makes the members give their best effort in work.",
+              "This style of leadership believes in giving the members the freedom to take their decisions on their own. They believe that the members are experts and better qualified to make decisions. They provide the members with all the information needed to take the decision but pull themselves out of the decision-making process.",
+              "They prioritize the growth and self-dependence of the members. They focus on strengthening the decision-making skills and independence of the members. They believe in making the members self-sufficient in getting the work done.",
+              "They create an environment that is autonomous and unrestrained. This style of leadership is advantageous when the members are veterans in the field. They believe in letting the members in their own way as experts work. They do not meddle in the members' work and give them complete autonomy.",
+              "They use the members' individual progress and advancement as a motivating factor. They ensure that the members have space to express their individuality and get their best work done.",
+              "The resulting autonomy is used to boost the interest and involvement of the employees. When following this style, of leadership they prefer to let the team members decide and execute their own decisions. They give the members the freedom to work in their individual preferred manner. They would share a broader goal and leave the decisions and execution to the members."
+            ]
+          }
+        ]
+      }
+    ]
+  },
   {
     "name": "Percieved Stress",
     "template": "percieved.html",
